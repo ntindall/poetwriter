@@ -40,8 +40,24 @@ def normalize(word_map):
 	return word_map
 
 def generate(frequency_map, word_map):
-	seed = frequency_map
-	return
+	output = ""
+	seed = ""
+	seed_key = frequency_map.most_common(1)[0][0]
+	for i in range(len(frequency_map.most_common(1)[0][0])): #hacky shit
+		seed += frequency_map.most_common(1)[0][0][i] + " "
+	output += seed
+
+	for _ in range(100):
+		next = word_map[seed_key].most_common(1)[0][0]
+		output += next + " "	
+		broken_seed = seed.split()
+		print broken_seed
+		broken_seed.pop(0)
+		broken_seed.append(next)
+		seed = ' '.join(broken_seed)
+		seed_key = tuple(broken_seed)
+		print seed_key
+	print output
 
 corpus = getCorpus()
 frequency_map, word_map = analyze(corpus)

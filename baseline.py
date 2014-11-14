@@ -46,7 +46,7 @@ def generate(frequency_map, word_map):
 	seed = ""
 	seed_key = util.weightedRandomChoice(frequency_map)
 	count = 0
-	for i in range(len(seed_key)): #hacky shit
+	for i in range(len(seed_key)):
 		seed += seed_key[i] + " "
 		count += 1
 	output += seed
@@ -72,7 +72,7 @@ def beautify(output, i):
 
 corpus = getCorpus()
 frequency_map, word_map = analyze(corpus)
-normalize(word_map)
+#normalize(word_map)
 
 for i in range(npoems):
 	output = generate(frequency_map, word_map)

@@ -1,11 +1,13 @@
 from optparse import OptionParser
 from collections import Counter
+import util, math, random
 
 if __name__ == '__main__':
 	parser = OptionParser()
 	parser.add_option('-n', '--n-gram', type='int', dest='ngrams', default=1)
 	parser.add_option('-f', '--file', dest='filename', default=1)
 	(options, args) = parser.parse_args()
+	npoems = 10
 
 def getCorpus():
 	f = open(options.filename, 'r')
@@ -42,24 +44,36 @@ def normalize(word_map):
 def generate(frequency_map, word_map):
 	output = ""
 	seed = ""
-	seed_key = frequency_map.most_common(1)[0][0]
-	for i in range(len(frequency_map.most_common(1)[0][0])): #hacky shit
-		seed += frequency_map.most_common(1)[0][0][i] + " "
+	seed_key = util.weightedRandomChoice(frequency_map)
+	count = 0
+	for i in range(len(seed_key)): #hacky shit
+		seed += seed_key[i] + " "
+		count += 1
 	output += seed
 
-	for _ in range(100):
-		next = word_map[seed_key].most_common(1)[0][0]
-		output += next + " "	
+	for _ in range(120):
+		if seed_key not in word_map:
+			break
+		next = util.weightedRandomChoice(word_map[seed_key])
+		count += 1
+		output += next + ("\n" if (count % 8 == 0) else " ")
 		broken_seed = seed.split()
-		print broken_seed
 		broken_seed.pop(0)
 		broken_seed.append(next)
 		seed = ' '.join(broken_seed)
 		seed_key = tuple(broken_seed)
-		print seed_key
+	return output
+
+def beautify(output, i):
+	print "Poem Number:", i
 	print output
+	print "------------------"
+	print ""
 
 corpus = getCorpus()
 frequency_map, word_map = analyze(corpus)
 normalize(word_map)
-generate(frequency_map, word_map)
+
+for i in range(npoems):
+	output = generate(frequency_map, word_map)
+	beautify(output, i)

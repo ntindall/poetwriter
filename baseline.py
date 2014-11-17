@@ -6,8 +6,9 @@ if __name__ == '__main__':
 	parser = OptionParser()
 	parser.add_option('-n', '--n-gram', type='int', dest='ngrams', default=1)
 	parser.add_option('-f', '--file', dest='filename', default=1)
+	parser.add_option('-o', '--output', type='int', dest='npoems', default=1)
 	(options, args) = parser.parse_args()
-	npoems = 10
+#	npoems = 1
 
 def getCorpus():
 	f = open(options.filename, 'r')
@@ -74,6 +75,6 @@ corpus = getCorpus()
 frequency_map, word_map = analyze(corpus)
 #normalize(word_map)
 
-for i in range(npoems):
+for i in range(options.npoems):
 	output = generate(frequency_map, word_map)
 	beautify(output, i)

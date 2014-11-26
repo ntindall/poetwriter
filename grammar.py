@@ -1,4 +1,5 @@
 import util
+from collections import Counter
 
 # Corpus object
 # ------------------------

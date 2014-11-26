@@ -1,9 +1,13 @@
+#STD LIBRARIES
 from optparse import OptionParser
-from collections import Counter
 import util, math, random
+
+#CUSTOM LIBRARIES
+import en #NLP library
+
+#FILES
 from poetry import * 
 from grammar import *
-import en #NLP
 
 if __name__ == '__main__':
     parser = OptionParser()

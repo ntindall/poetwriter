@@ -4,6 +4,10 @@ import util, math, random
 
 #CUSTOM LIBRARIES
 import en #NLP library
+from wordnik import * #dictionary with part of speech, synonyms, related word
+apiUrl = 'http://api.wordnik.com/v4'
+apiKey = '1453b0da46be3985ab0040b354601405dbb094b3e77e51454'
+client = swagger.ApiClient(apiKey, apiUrl)
 
 #FILES
 from poetry import * 

@@ -1,5 +1,8 @@
 import random
 
+
+# Takes a random choice based on a weight dict
+# is deterministic for small corpora 
 def weightedRandomChoice(weightDict):
     weights = []
     elems = []
@@ -20,7 +23,9 @@ def weightedRandomChoice(weightDict):
 
 def getSyllables(word):
     #boilerplate
-    return 1
-
-
-        
+    return weightedRandomChoice({2:1,1:1}) 
+    # flexible system, but given flatness of weight dict , 
+    # just re-adds last word on line until this function returns
+    # 1 rather than 2 (i.e. 2 2 2 1 2 --> 2 2 2 1 1) but the word added
+    # is the same regardless of syllable count. Will cause an issue when syllable
+    # counts are deterministic

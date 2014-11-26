@@ -1,4 +1,10 @@
 import random
+import re
+
+
+def clean(string):
+    mixed_case = re.sub(r'[^\w\s-]', '', string)
+    return mixed_case.lower()
 
 
 # Takes a random choice based on a weight dict

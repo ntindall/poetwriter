@@ -3,6 +3,7 @@ from collections import Counter
 import util, math, random
 from poetry import * 
 from grammar import *
+import re
 
 if __name__ == '__main__':
     parser = OptionParser()
@@ -28,6 +29,7 @@ class Corpus(object):
     def analyze(self, n):
         queue = []
         for line in self.file:
+            line = util.clean(line)
             words = queue + line.split() # current words to be considered
             queue = [] # reset queue upon reading new line
             while (len(words) > n):
@@ -77,7 +79,8 @@ def generate(corpus):
 
 corpus = Corpus(options.filename)
 corpus.analyze(options.ngrams)
-#print corpus.frequency_map
+for x in corpus.frequency_map:
+    print x, corpus.frequency_map[x]
 
 for i in range(options.npoems):
     output = generate(corpus)

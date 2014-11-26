@@ -3,7 +3,6 @@ from collections import Counter
 import util, math, random
 from poetry import * 
 from grammar import *
-import re
 
 if __name__ == '__main__':
     parser = OptionParser()
@@ -59,6 +58,7 @@ def generate(corpus):
 
     while not poem:
         curr = poem.getLine()
+
         while curr:
             word = grammar.next()
             if not word: # Seed has no successsor words
@@ -79,8 +79,6 @@ def generate(corpus):
 
 corpus = Corpus(options.filename)
 corpus.analyze(options.ngrams)
-for x in corpus.frequency_map:
-    print x, corpus.frequency_map[x]
 
 for i in range(options.npoems):
     output = generate(corpus)

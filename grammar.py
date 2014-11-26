@@ -12,6 +12,7 @@ class Grammar(object):
         self.word_map = wmap
         self.seed_key = None
         self.seed = ""
+        self.past_seed = False
 
     # Gets the next word from the grammar predictor
     # (Implemented as n-gram)
@@ -34,8 +35,12 @@ class Grammar(object):
 
     # Iterates seed
     def update(self, next):
-        broken_seed = self.seed.split()
-        broken_seed.pop(0)
-        broken_seed.append(next)
-        self.seed = ' '.join(broken_seed)
-        self.seed_key = tuple(broken_seed)
+        # Only should update after the second call to update
+        if not self.past_seed:
+            self.past_seed = True
+        else:
+            broken_seed = self.seed.split()
+            broken_seed.pop(0)
+            broken_seed.append(next)
+            self.seed = ' '.join(broken_seed).strip()
+            self.seed_key = tuple(broken_seed)

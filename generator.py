@@ -75,7 +75,7 @@ class PoetrySearchProblem(searchutil.SearchProblem):
             curr = new_poem.getLine()
             if curr: 
                 if (curr.syllables == curr.goal):
-                    cost = -1000 #new line bonus
+                    cost = -1000 #new line bonus 
                 else:
                     cost = curr.syllables * 10 #favor forward motion
                 if curr.add(word):
@@ -83,6 +83,8 @@ class PoetrySearchProblem(searchutil.SearchProblem):
                     broken_seed.pop(0)
                     broken_seed.append(word)
                     new_seed = tuple(broken_seed)
+                    if new_seed in self.grammar.frequency_map: #favor more frequent seeds
+                        cost += 10.0 / self.grammar.frequency_map[new_seed]
                     if not curr: #line has been finished
                         new_poem.iterate()
                     result.append((word, (new_poem, new_seed), cost))

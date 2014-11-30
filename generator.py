@@ -1,6 +1,6 @@
 #STD LIBRARIES
 from optparse import OptionParser
-import util, math, random
+import math, random
 
 #CUSTOM LIBRARIES
 import en #NLP library
@@ -10,6 +10,7 @@ apiKey = '1453b0da46be3985ab0040b354601405dbb094b3e77e51454'
 client = swagger.ApiClient(apiKey, apiUrl)
 
 #FILES
+import searchutil, util
 from poetry import * 
 from grammar import *
 
@@ -42,6 +43,32 @@ def generate(corpus):
         poem.iterate()
     return poem.format()
 
+class PoetrySearchProblem(searchutil.SearchProblem):
+    def __init__(self, poem, grammar): self.poem, self.grammar = poem, grammar
+    def startState(self): return self.poem, None
+    def isGoal(self, state): return self.poem
+    # Return a list of (action, newState, cost) tuples corresponding to edges
+    # coming out of |state|.
+    def succAndCost(self, state):
+        poem, seed = state
+        if not seed: #initialize seed
+            seed = util.weightedRandomChoice(self.grammar.frequency_map)
+            new_poem = poem
+            words = ""
+            for i in range(len(seed)):
+                new_poem.getLine().add(seed[i])
+            return [(seed, (new_poem, seed), 0)]
+        result = []
+        broken_seed = [seed[i] for i in range(len(seed))]
+        broken_seed.pop(0)
+        for word in self.grammar.word_map[seed]:
+            new_poem = poem
+            new_poem.getLine().add(word)
+            broken_seed.append(word)
+            new_seed = tuple(broken_seed)
+            result.append((word, (new_poem, new_seed), 0))
+        return result
+
 #########################################################################
 # MAIN EXECUTION
 #########################################################################
@@ -49,7 +76,18 @@ def generate(corpus):
 corpus = Corpus(options.filename)
 corpus.analyze(options.ngrams)
 
-for i in range(options.npoems):
-    output = generate(corpus)
-    print output
+#NEW 
+parameters = [(8,[]) for _ in range(8)] #stub, assumed 8 syllables (words) per line
+poem = Poetry(parameters)
+grammar = Grammar(corpus.frequency_map, corpus.word_map)
+problem = PoetrySearchProblem(poem, grammar)
+ucs = searchutil.UniformCostSearch(verbose=5)
+ucs.solve(problem)
+print problem.poem.format()
+#NEW
+
+
+# for i in range(options.npoems):
+#     output = generate(corpus)
+#     print output
 # END

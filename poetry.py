@@ -30,6 +30,10 @@ class Poetry (object):
     # --------------
     # Returns the line currently being edited
     def getLine(self):
+        if not self.lines[self.currentLine]: #current line not eligible
+            self.currentLine += 1
+        if self.currentLine == self.numLines:
+            return None
         return self.lines[self.currentLine]
 
     # Function: format

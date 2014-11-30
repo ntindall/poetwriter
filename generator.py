@@ -59,6 +59,7 @@ class PoetrySearchProblem(searchutil.SearchProblem):
             words = ""
             for i in range(len(seed)):
                 new_poem.getLine().add(seed[i])
+                self.poem = new_poem
             return [(seed, (new_poem, seed), 0)]
         result = []
         for word in self.grammar.word_map[seed]:
@@ -76,6 +77,7 @@ class PoetrySearchProblem(searchutil.SearchProblem):
                     new_seed = tuple(broken_seed)
                     if not curr: #previous line was completed
                         new_poem.iterate()
+                    self.poem = new_poem #sneaky
                     result.append((word, (new_poem, new_seed), cost))
         return result
 
@@ -87,7 +89,7 @@ corpus = Corpus(options.filename)
 corpus.analyze(options.ngrams)
 
 #NEW 
-parameters = [(8,[]) for _ in range(8)] #stub, assumed 8 syllables (words) per line
+parameters = [(8,[]) for _ in range(2)] #stub, assumed 8 syllables (words) per line
 poem = Poetry(parameters)
 grammar = Grammar(corpus.frequency_map, corpus.word_map)
 problem = PoetrySearchProblem(poem, grammar)

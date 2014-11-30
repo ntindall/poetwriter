@@ -18,7 +18,6 @@ class Poetry (object):
     # --------------
     # Allow Poetry objects to be evaluated as booleans
     def __nonzero__(self):
-        print (self.currentLine == self.numLines)
         return (self.currentLine == self.numLines)
 
     # Function: iterate

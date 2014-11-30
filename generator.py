@@ -48,7 +48,7 @@ class PoetrySearchProblem(searchutil.SearchProblem):
     def startState(self): return self.poem, None
     def isGoal(self, state):
         poem, seed = state
-        return poem.currentLine == poem.numLines
+        return poem
     # Return a list of (action, newState, cost) tuples corresponding to edges
     # coming out of |state|.
     def succAndCost(self, state):
@@ -62,14 +62,21 @@ class PoetrySearchProblem(searchutil.SearchProblem):
             return [(seed, (new_poem, seed), 0)]
         result = []
         for word in self.grammar.word_map[seed]:
+            cost = 0
             new_poem = copy.deepcopy(poem)
             print new_poem.format()
-            new_poem.getLine().add(word)
-            broken_seed = [seed[i] for i in range(len(seed))]
-            broken_seed.pop(0)
-            broken_seed.append(word)
-            new_seed = tuple(broken_seed)
-            result.append((word, (new_poem, new_seed), 0))
+            curr = new_poem.getLine()
+            if curr: 
+                if curr.add(word):
+                    if poem.currentLine != new_poem.currentLine: #favor forward progress
+                        cost = -100
+                    broken_seed = [seed[i] for i in range(len(seed))]
+                    broken_seed.pop(0)
+                    broken_seed.append(word)
+                    new_seed = tuple(broken_seed)
+                    if not curr: #previous line was completed
+                        new_poem.iterate()
+                    result.append((word, (new_poem, new_seed), cost))
         return result
 
 #########################################################################

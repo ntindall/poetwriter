@@ -1,6 +1,6 @@
 #STD LIBRARIES
 from optparse import OptionParser
-import math, random
+import math, random, copy
 
 #CUSTOM LIBRARIES
 import en #NLP library
@@ -46,7 +46,9 @@ def generate(corpus):
 class PoetrySearchProblem(searchutil.SearchProblem):
     def __init__(self, poem, grammar): self.poem, self.grammar = poem, grammar
     def startState(self): return self.poem, None
-    def isGoal(self, state): return self.poem
+    def isGoal(self, state):
+        poem, seed = state
+        return poem.currentLine == poem.numLines
     # Return a list of (action, newState, cost) tuples corresponding to edges
     # coming out of |state|.
     def succAndCost(self, state):
@@ -59,11 +61,12 @@ class PoetrySearchProblem(searchutil.SearchProblem):
                 new_poem.getLine().add(seed[i])
             return [(seed, (new_poem, seed), 0)]
         result = []
-        broken_seed = [seed[i] for i in range(len(seed))]
-        broken_seed.pop(0)
         for word in self.grammar.word_map[seed]:
-            new_poem = poem
+            new_poem = copy.deepcopy(poem)
+            print new_poem.format()
             new_poem.getLine().add(word)
+            broken_seed = [seed[i] for i in range(len(seed))]
+            broken_seed.pop(0)
             broken_seed.append(word)
             new_seed = tuple(broken_seed)
             result.append((word, (new_poem, new_seed), 0))

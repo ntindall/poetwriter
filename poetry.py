@@ -32,6 +32,7 @@ class Poetry (object):
     def getLine(self):
         if not self.lines[self.currentLine]: #current line not eligible
             self.currentLine += 1
+            print "updating"
         if self.currentLine == self.numLines:
             return None
         return self.lines[self.currentLine]

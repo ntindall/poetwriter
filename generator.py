@@ -44,40 +44,47 @@ def generate(corpus):
     return poem.format()
 
 class PoetrySearchProblem(searchutil.SearchProblem):
-    def __init__(self, poem, grammar): self.poem, self.grammar = poem, grammar
-    def startState(self): return self.poem, None
+    #boilerplate
+    def __init__(self, poem, grammar): 
+        self.poem, self.grammar = poem, grammar
+
+    def startState(self):
+        #(current poem state, seed) tuple
+        return self.poem, None
+
     def isGoal(self, state):
         poem, seed = state
         return poem
+
     # Return a list of (action, newState, cost) tuples corresponding to edges
     # coming out of |state|.
     def succAndCost(self, state):
         poem, seed = state
         if not seed: #initialize seed
             seed = util.weightedRandomChoice(self.grammar.frequency_map)
-            new_poem = poem
+            new_poem = copy.deepcopy(poem)
             words = ""
             for i in range(len(seed)):
                 new_poem.getLine().add(seed[i])
                 self.poem = new_poem
             return [(seed, (new_poem, seed), 0)]
         result = []
+        print poem.format()
         for word in self.grammar.word_map[seed]:
-            cost = 0
             new_poem = copy.deepcopy(poem)
-            print new_poem.format()
             curr = new_poem.getLine()
             if curr: 
+                if (curr.syllables == curr.goal):
+                    cost = -1000 #new line bonus
+                else:
+                    cost = curr.syllables * 10 #favor forward motion
                 if curr.add(word):
-                    if poem.currentLine != new_poem.currentLine: #favor forward progress
-                        cost = -100
                     broken_seed = [seed[i] for i in range(len(seed))]
                     broken_seed.pop(0)
                     broken_seed.append(word)
                     new_seed = tuple(broken_seed)
-                    if not curr: #previous line was completed
+                    if not curr: #line has been finished
                         new_poem.iterate()
-                    self.poem = new_poem #sneaky
                     result.append((word, (new_poem, new_seed), cost))
         return result
 
@@ -89,13 +96,14 @@ corpus = Corpus(options.filename)
 corpus.analyze(options.ngrams)
 
 #NEW 
-parameters = [(8,[]) for _ in range(2)] #stub, assumed 8 syllables (words) per line
+parameters = [(8,[]) for _ in range(8)] #stub, assumed 8 syllables (words) per line
 poem = Poetry(parameters)
 grammar = Grammar(corpus.frequency_map, corpus.word_map)
 problem = PoetrySearchProblem(poem, grammar)
-ucs = searchutil.UniformCostSearch(verbose=5)
+ucs = searchutil.UniformCostSearch(verbose=1)
 ucs.solve(problem)
-print problem.poem.format()
+solution, final_seed = ucs.solution
+print solution.format()
 #NEW
 
 

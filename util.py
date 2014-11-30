@@ -27,7 +27,7 @@ def weightedRandomChoice(weightDict):
 
 def getSyllables(word):
     #boilerplate
-    return weightedRandomChoice({2:1,1:1}) 
+    return 2 #weightedRandomChoice({2:1,1:1}) 
     # flexible system, but given flatness of weight dict , 
     # just re-adds last word on line until this function returns
     # 1 rather than 2 (i.e. 2 2 2 1 2 --> 2 2 2 1 1) but the word added

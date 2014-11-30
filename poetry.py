@@ -31,8 +31,8 @@ class Poetry (object):
     # Returns the line currently being edited
     def getLine(self):
         if not self.lines[self.currentLine]: #current line not eligible
-            self.currentLine += 1
             print "updating"
+           # self.currentLine += 1
         if self.currentLine == self.numLines:
             return None
         return self.lines[self.currentLine]
@@ -51,6 +51,7 @@ class Line (object):
     # --------------
     # Constructor for the Line class.
     def __init__(self, syllables, pairs):
+        self.goal = syllables
         self.syllables = syllables #while syllables > 0
         self.pairs = pairs
         self.words = []

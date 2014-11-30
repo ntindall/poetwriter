@@ -36,6 +36,7 @@ class UniformCostSearch(SearchAlgorithm):
         self.actions = None
         self.totalCost = None
         self.numStatesExplored = 0
+        self.solution = None
 
         # Initialize data structures
         frontier = PriorityQueue()  # Explored states are maintained by the frontier.
@@ -56,6 +57,7 @@ class UniformCostSearch(SearchAlgorithm):
 
             # Check if we've reached the goal; if so, extract solution
             if problem.isGoal(state):
+                self.solution = state
                 self.actions = []
                 while state != startState:
                     action, prevState = backpointers[state]
@@ -79,6 +81,50 @@ class UniformCostSearch(SearchAlgorithm):
                     backpointers[newState] = (action, state)
         if self.verbose >= 1:
             print "No path found"
+
+def backtrackingSearch(problem):
+    best = [float('inf'), None]
+    def recurse(state, pastCost, history):
+        # Base case
+        if problem.isGoal(state):
+            # Update the minimum cost path
+            if pastCost < best[0]:
+                best[0] = pastCost
+                best[1] = list(history)  # COPY
+            return
+        # Recursive case
+        for action, newState, cost in problem.succAndCost(state):
+            history.append((action, newState, cost))
+            recurse(newState, pastCost + cost, history)
+            history.pop()
+    recurse(problem.startState(), 0, [])
+    return tuple(best)
+
+def dynamicProgramming(problem):
+    cache = {} # state -> (futureCost, best action, newState, cost)
+
+    # Returns the future cost of state (minimum cost path to a goal).
+    def recurse(state):
+        # Base case
+        if problem.isGoal(state):
+            return 0
+        # Recursive case
+        if state not in cache:
+            cache[state] = min( \
+                (cost + recurse(newState), action, newState, cost) \
+                for action, newState, cost in problem.succAndCost(state))
+        return cache[state][0]
+    totalCost = recurse(problem.startState())
+
+    # Reconstruct the solution
+    state = problem.startState()
+    history = []
+    while not problem.isGoal(state):
+        futureCost, action, newState, cost = cache[state]
+        history.append((action, newState, cost))
+        state = newState
+
+    return (totalCost, history)
 
 # Data structure for supporting uniform cost search.
 class PriorityQueue:
@@ -108,29 +154,3 @@ class PriorityQueue:
             self.priorities[state] = self.DONE
             return (state, priority)
         return (None, None) # Nothing left...
-
-############################################################
-# Simple examples of search problems to test your code for Problem 1.
-
-# A simple search problem on the number line:
-# Start at 0, want to go to 10, costs 1 to move down, 2 to move up.
-class NumberLineSearchProblem:
-    def startState(self): return 0
-    def isGoal(self, state): return state == 10
-    def succAndCost(self, state): return [('West', state-1, 1), ('East', state+1, 2)]
-
-# A simple search problem on a square grid:
-# Start at init position, want to go to (0, 0)
-# cost 2 to move up/left, 1 to move down/right
-class GridSearchProblem(SearchProblem):
-    def __init__(self, size, x, y): self.size, self.start = size, (x,y)
-    def startState(self): return self.start
-    def isGoal(self, state): return state == (0, 0)
-    def succAndCost(self, state):
-        x, y = state
-        results = []
-        if x-1 >= 0: results.append(('North', (x-1, y), 2))
-        if x+1 < self.size: results.append(('South', (x+1, y), 1))
-        if y-1 >= 0: results.append(('West', (x, y-1), 2))
-        if y+1 < self.size: results.append(('East', (x, y+1), 1))
-        return results

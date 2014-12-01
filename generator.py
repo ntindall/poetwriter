@@ -102,9 +102,13 @@ parameters = [(8,[]) for _ in range(8)] #stub, assumed 8 syllables (words) per l
 poem = Poetry(parameters)
 grammar = Grammar(corpus.frequency_map, corpus.word_map)
 problem = PoetrySearchProblem(poem, grammar)
+
+#UNIFORM COST SEARCH (DJIKSTRA'S)
 #ucs = searchutil.UniformCostSearch(verbose=1)
 #ucs.solve(problem)
 #solution, final_seed = ucs.solution
+
+#DEPTH FIRST SEARCH
 bts = searchutil.BacktrackingSearch(verbose=1)
 bts.solve(problem)
 solution, final_seed = bts.solution

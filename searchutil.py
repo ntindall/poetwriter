@@ -82,6 +82,7 @@ class UniformCostSearch(SearchAlgorithm):
         if self.verbose >= 1:
             print "No path found"
 
+#Change to be implemented iteratively if possible (not a big deal)
 class BacktrackingSearch(SearchAlgorithm):
     def __init__(self, verbose=0):
         self.verbose = verbose
@@ -120,8 +121,9 @@ class BacktrackingSearch(SearchAlgorithm):
                     recurse(newState, pastCost + cost, history)
                     history.pop()
         recurse(problem.startState(), 0, [])
-        return tuple(best)
+        return tuple(best) #unused functionality, returns immediately
 
+#DP probably not useful for our problem, but here it is
 def dynamicProgramming(problem):
     cache = {} # state -> (futureCost, best action, newState, cost)
 

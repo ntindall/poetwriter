@@ -82,23 +82,45 @@ class UniformCostSearch(SearchAlgorithm):
         if self.verbose >= 1:
             print "No path found"
 
-def backtrackingSearch(problem):
-    best = [float('inf'), None]
-    def recurse(state, pastCost, history):
-        # Base case
-        if problem.isGoal(state):
-            # Update the minimum cost path
-            if pastCost < best[0]:
-                best[0] = pastCost
-                best[1] = list(history)  # COPY
-            return
-        # Recursive case
-        for action, newState, cost in problem.succAndCost(state):
-            history.append((action, newState, cost))
-            recurse(newState, pastCost + cost, history)
-            history.pop()
-    recurse(problem.startState(), 0, [])
-    return tuple(best)
+class BacktrackingSearch(SearchAlgorithm):
+    def __init__(self, verbose=0):
+        self.verbose = verbose
+
+    def solve(self, problem):
+        self.solution = None
+        self.actions = None
+        self.totalCost = None
+        self.numStatesExplored = 0
+
+        best = [float('inf'), None]
+        def recurse(state, pastCost, history):
+            if self.solution is None:
+                self.numStatesExplored += 1
+                # Base case
+                if problem.isGoal(state):
+                    self.solution = state
+                    self.actions = []
+                    for past_state in history:
+                        self.actions.append(past_state[0])
+                    self.totalCost = pastCost
+                    if self.verbose >= 1:
+                        print "numStatesExplored = %d" % self.numStatesExplored
+                        print "totalCost = %s" % self.totalCost
+                        print "actions = %s" % self.actions
+                    # Update the minimum cost path
+                    if pastCost < best[0]:
+                        best[0] = pastCost
+                        best[1] = list(history)  # COPY
+                    return
+                # Recursive case
+                for action, newState, cost in problem.succAndCost(state):
+                    if self.verbose >= 3:
+                        print "  Action %s => %s with cost %s + %s" % (action, newState, pastCost, cost)
+                    history.append((action, newState, cost))
+                    recurse(newState, pastCost + cost, history)
+                    history.pop()
+        recurse(problem.startState(), 0, [])
+        return tuple(best)
 
 def dynamicProgramming(problem):
     cache = {} # state -> (futureCost, best action, newState, cost)

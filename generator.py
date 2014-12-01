@@ -139,7 +139,7 @@ for i in range(options.npoems):
     #solution, final_seed = ucs.solution
 
     #DEPTH FIRST SEARCH
-    bts = searchutil.BacktrackingSearch(verbose=1)
+    bts = searchutil.DepthFirstSearch(verbose=1)
     bts.solve(problem)
     solution, final_seed = bts.solution
 

@@ -83,7 +83,7 @@ class UniformCostSearch(SearchAlgorithm):
             print "No path found"
 
 #Change to be implemented iteratively if possible (not a big deal)
-class BacktrackingSearch(SearchAlgorithm):
+class DepthFirstSearch(SearchAlgorithm):
     def __init__(self, verbose=0):
         self.verbose = verbose
 
@@ -98,7 +98,10 @@ class BacktrackingSearch(SearchAlgorithm):
         # the determinicity of the n-gram system for the corpus
         self.size = 0
 
-        best = [float('inf'), None]
+        # We are not interested in finding the best solution, but merely
+        # finding a solution, so we don't need to do a complete traversal
+        # of the graph. 
+        # best = [float('inf'), None]
         def recurse(state, pastCost, history):
             if self.solution is None:
                 self.numStatesExplored += 1
@@ -114,10 +117,10 @@ class BacktrackingSearch(SearchAlgorithm):
                         print "totalCost = %s" % self.totalCost
                         print "graphSize = %s" % self.size
                         print "actions = %s" % self.actions
-                    # Update the minimum cost path
-                    if pastCost < best[0]:
-                        best[0] = pastCost
-                        best[1] = list(history)  # COPY
+                    # Update the minimum cost path, not used here.
+                    # if pastCost < best[0]:
+                    #     best[0] = pastCost
+                    #     best[1] = list(history)  # COPY
                     return
                 # Recursive case
                 successors = problem.succAndCost(state)
@@ -129,7 +132,7 @@ class BacktrackingSearch(SearchAlgorithm):
                     recurse(newState, pastCost + cost, history)
                     history.pop()
         recurse(problem.startState(), 0, [])
-        return tuple(best) #unused functionality, returns immediately
+        #return tuple(best) #unused functionality, returns immediately
 
 #DP probably not useful for our problem, but here it is
 def dynamicProgramming(problem):

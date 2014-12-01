@@ -46,12 +46,18 @@ def generate(corpus):
 class PoetrySearchProblem(searchutil.SearchProblem):
     #boilerplate
     def __init__(self, poem, grammar): 
+        # B
         self.poem, self.grammar = poem, grammar
 
+    # Poem object passed into problem, with syllabic and rhyme
+    # constraints initialized with the object
     def startState(self):
-        #(current poem state, seed) tuple
+        #(current poem state, seed)
         return self.poem, None
 
+    # Goal has been reached when the poem is completed.
+    # Poetry objects keep track of their current progress, and will
+    # evaluate true once they are completed. 
     def isGoal(self, state):
         poem, seed = state
         return poem
@@ -59,26 +65,45 @@ class PoetrySearchProblem(searchutil.SearchProblem):
     # Return a list of (action, newState, cost) tuples corresponding to edges
     # coming out of |state|.
     def succAndCost(self, state):
+        #(current poem state, seed)
         poem, seed = state
-        if not seed: #initialize seed
+
+        # Initial call, seed needs to be initialized. 
+        # -------------------------------------------
+        if not seed:
+            #Assumption: the initial seed will fit on the first line. 
+
+
+
             seed = util.weightedRandomChoice(self.grammar.frequency_map)
-            new_poem = copy.deepcopy(poem)
+            new_poem = copy.deepcopy(poem) #necessary
             words = ""
-            for i in range(len(seed)):
+            for i in range(len(seed)): #push seeds into first line
                 new_poem.getLine().add(seed[i])
                 self.poem = new_poem
             return [(seed, (new_poem, seed), 0)]
+        
+        # Branching calls
+        # -------------------------------------------
         result = []
-        print poem.format()
-        for word in self.grammar.word_map[seed]:
-            new_poem = copy.deepcopy(poem)
+        #print poem.format() #comment out if you want to see the poem being constructed
+
+        # IMPORTANT NOTE
+        # For every successor word, consider all possible children nodes.
+        # Pruning to meet rhyming and syllabic constraints of actions needs to be
+        # performed here. There is no error checking in the Line or Poetry objects.
+        # The rhyming word needs to be passed back and forth between Poetry and Line
+        # objects once they are completed (not implemented)
+        for word in self.grammar.word_map[seed]: #CONSIDER ALL POSSIBLE BRANCHES
+            new_poem = copy.deepcopy(poem) #necessary
             curr = new_poem.getLine()
             if curr: 
                 if (curr.syllables == curr.goal):
                     cost = -1000 #new line bonus 
                 else:
                     cost = curr.syllables * 10 #favor forward motion
-                if curr.add(word):
+
+                if curr.add(word): #if the word fits on the current line
                     broken_seed = [seed[i] for i in range(len(seed))]
                     broken_seed.pop(0)
                     broken_seed.append(word)
@@ -94,25 +119,33 @@ class PoetrySearchProblem(searchutil.SearchProblem):
 # MAIN EXECUTION
 #########################################################################
 
+# Example usage:
+# python generator.py -n 2 -f "lyrics/eminem.txt" -o 4
+
 corpus = Corpus(options.filename)
 corpus.analyze(options.ngrams)
 
 #NEW 
 parameters = [(8,[]) for _ in range(8)] #stub, assumed 8 syllables (words) per line
-poem = Poetry(parameters)
 grammar = Grammar(corpus.frequency_map, corpus.word_map)
-problem = PoetrySearchProblem(poem, grammar)
 
-#UNIFORM COST SEARCH (DJIKSTRA'S)
-#ucs = searchutil.UniformCostSearch(verbose=1)
-#ucs.solve(problem)
-#solution, final_seed = ucs.solution
+for i in range(options.npoems):
+    poem = Poetry(parameters)
+    problem = PoetrySearchProblem(poem, grammar)
 
-#DEPTH FIRST SEARCH
-bts = searchutil.BacktrackingSearch(verbose=1)
-bts.solve(problem)
-solution, final_seed = bts.solution
-print solution.format()
+    #UNIFORM COST SEARCH (DJIKSTRA'S)
+    #ucs = searchutil.UniformCostSearch(verbose=1)
+    #ucs.solve(problem)
+    #solution, final_seed = ucs.solution
+
+    #DEPTH FIRST SEARCH
+    bts = searchutil.BacktrackingSearch(verbose=1)
+    bts.solve(problem)
+    solution, final_seed = bts.solution
+
+    print ""
+    print "RESULT"
+    print solution.format()
 #NEW
 
 

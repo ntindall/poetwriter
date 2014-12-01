@@ -65,7 +65,8 @@ class Line (object):
 
     # Function: add
     # --------------
-    # Adds a new word to the line
+    # Adds a new word to the line, does not add to line if the
+    # word does not 
     def add(self, word):
         #check with pairs (stub)
         syllabic_count = util.getSyllables(word)

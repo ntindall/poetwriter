@@ -1,6 +1,9 @@
 import random
 import re
 
+
+# Used to strip down corpus of non a-z,A-Z chars
+# and defaults to lower case. 
 def clean(string):
     mixed_case = re.sub(r'[^\w\s-]', '', string)
     return mixed_case.lower()
@@ -25,6 +28,7 @@ def weightedRandomChoice(weightDict):
             return elems[chosenIndex]
     raise Exception('Should not reach here')
 
+# Called in poetry.py
 def getSyllables(word):
     #boilerplate
     return 2 #weightedRandomChoice({2:1,1:1}) 
@@ -33,3 +37,7 @@ def getSyllables(word):
     # 1 rather than 2 (i.e. 2 2 2 1 2 --> 2 2 2 1 1) but the word added
     # is the same regardless of syllable count. Will cause an issue when syllable
     # counts are deterministic
+
+def rhyme(word1, word2):
+    #Checks if two words rhyme
+    return True

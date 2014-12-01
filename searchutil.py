@@ -93,6 +93,11 @@ class BacktrackingSearch(SearchAlgorithm):
         self.totalCost = None
         self.numStatesExplored = 0
 
+        # A heuristic for the size of the graph, documents the number of possible
+        # actions stemming from explored states. Gives the user an idea about
+        # the determinicity of the n-gram system for the corpus
+        self.size = 0
+
         best = [float('inf'), None]
         def recurse(state, pastCost, history):
             if self.solution is None:
@@ -107,6 +112,7 @@ class BacktrackingSearch(SearchAlgorithm):
                     if self.verbose >= 1:
                         print "numStatesExplored = %d" % self.numStatesExplored
                         print "totalCost = %s" % self.totalCost
+                        print "graphSize = %s" % self.size
                         print "actions = %s" % self.actions
                     # Update the minimum cost path
                     if pastCost < best[0]:
@@ -114,7 +120,9 @@ class BacktrackingSearch(SearchAlgorithm):
                         best[1] = list(history)  # COPY
                     return
                 # Recursive case
-                for action, newState, cost in problem.succAndCost(state):
+                successors = problem.succAndCost(state)
+                self.size += len(successors)
+                for action, newState, cost in successors:
                     if self.verbose >= 3:
                         print "  Action %s => %s with cost %s + %s" % (action, newState, pastCost, cost)
                     history.append((action, newState, cost))

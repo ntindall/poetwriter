@@ -114,7 +114,8 @@ class PoetrySearchProblem(searchutil.SearchProblem):
                         new_poem.iterate()
                         if curr.propagator:
                             for line_i in curr.pairs:
-                                new_poem[line_i].constraint = word
+                                if new_poem[line_i].constraint == "": #line has no previous constraint
+                                    new_poem[line_i].constraint = word
                     result.append((word, (new_poem, new_seed), cost))
         return result
 
@@ -128,8 +129,16 @@ class PoetrySearchProblem(searchutil.SearchProblem):
 corpus = Corpus(options.filename)
 corpus.analyze(options.ngrams)
 
-#NEW
-pairs = [(0,1), (2,3), (3,4),(5,6),(6,7)] #assumption, pairs are increasing (propogator, receiver) order, can't propogate to self
+# NEW
+# About the pairs.
+# Assumption, pairs are increasing (propogator, receiver) 
+# order, can't propogate to self. Chains must be fully realized,
+# i.e. [(0,1), (0,7), (6,7)] is invalid, while [(0,1), (0,6),(0,7),(6,7)]
+# is valid (though the last item is redundant).
+# [(0,1),(0,5),(2,3),(3,4),(5,6),(6,7)] will work, while [(0,1),(0,7),(2,3),(3,4),(5,6),(6,7)]
+# will yield errors, better to be consistent: [(0,1), (0,5), (0,6),(0,7),(2,3),(2,4)]
+# Successive chains are safe, while separated ones require more tentative handling
+pairs = [(0,1),(0,5),(2,3),(3,4),(5,6),(6,7)]
 parameters = [(8, pairs) for _ in range(8)] #stub, assumed 8 syllables (words) per line
 grammar = Grammar(corpus.frequency_map, corpus.word_map)
 

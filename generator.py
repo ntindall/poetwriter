@@ -1,6 +1,6 @@
 #STD LIBRARIES
 from optparse import OptionParser
-import math, random, copy
+import math, random, copy, operator
 
 #CUSTOM LIBRARIES
 import en #NLP library
@@ -93,22 +93,18 @@ class PoetrySearchProblem(searchutil.SearchProblem):
         # performed here. There is no error checking in the Line or Poetry objects.
         # The rhyming word needs to be passed back and forth between Poetry and Line
         # objects once they are completed (not implemented)
-        for word in self.grammar.word_map[seed]: #CONSIDER ALL POSSIBLE BRANCHES
+        for word, frequency in self.grammar.word_map[seed].iteritems(): #CONSIDER ALL POSSIBLE BRANCHES
+        # word: the word that follows the current seed given the n-gram model
+        # frequency: the number of times that that word occurs after the given seed
             new_poem = copy.deepcopy(poem) #necessary
             curr = new_poem.getLine()
             if curr: 
-                if (curr.syllables_left == curr.goal):
-                    cost = -1000 #new line bonus 
-                else:
-                    cost = curr.syllables_left * 10 #favor forward motion
-
                 if curr.add(word): #if the word fits on the current line
                     broken_seed = [seed[i] for i in range(len(seed))]
                     broken_seed.pop(0)
                     broken_seed.append(word)
                     new_seed = tuple(broken_seed)
-                    if new_seed in self.grammar.frequency_map: #favor more frequent seeds
-                        cost += 10.0 / self.grammar.frequency_map[new_seed]
+                    cost = frequency
                     if not curr: #line has been finished
                         if curr.propagator:
                             for line_i in curr.paired_indices:
@@ -116,6 +112,9 @@ class PoetrySearchProblem(searchutil.SearchProblem):
                                     new_poem[line_i].constraint = word
                         new_poem.iterate()
                     result.append((word, (new_poem, new_seed), cost))
+
+        # Idea: sort by descending frequencies so that it looks down more likely paths first
+        result.sort(key=operator.itemgetter(2), reverse=True)
         return result
 
 #########################################################################

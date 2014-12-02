@@ -97,18 +97,18 @@ class PoetrySearchProblem(searchutil.SearchProblem):
             new_poem = copy.deepcopy(poem) #necessary
             curr = new_poem.getLine()
             if curr: 
-                # if (curr.syllables_left == curr.goal):
-                #     cost = -1000 #new line bonus 
-                # else:
-                #     cost = curr.syllables_left * 10 #favor forward motion
+                if (curr.syllables_left == curr.goal):
+                    cost = -1000 #new line bonus 
+                else:
+                    cost = curr.syllables_left * 10 #favor forward motion
 
                 if curr.add(word): #if the word fits on the current line
                     broken_seed = [seed[i] for i in range(len(seed))]
                     broken_seed.pop(0)
                     broken_seed.append(word)
                     new_seed = tuple(broken_seed)
-                    # if new_seed in self.grammar.frequency_map: #favor more frequent seeds
-                    #     cost += 10.0 / self.grammar.frequency_map[new_seed]
+                    if new_seed in self.grammar.frequency_map: #favor more frequent seeds
+                        cost += 10.0 / self.grammar.frequency_map[new_seed]
                     if not curr: #line has been finished
                         if curr.propagator:
                             for line_i in curr.paired_indices:

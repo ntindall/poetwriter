@@ -125,8 +125,9 @@ class PoetrySearchProblem(searchutil.SearchProblem):
 corpus = Corpus(options.filename)
 corpus.analyze(options.ngrams)
 
-#NEW 
-parameters = [(8,[]) for _ in range(8)] #stub, assumed 8 syllables (words) per line
+#NEW
+pairs = [(0,1), (2,3)]
+parameters = [(8, pairs) for _ in range(8)] #stub, assumed 8 syllables (words) per line
 grammar = Grammar(corpus.frequency_map, corpus.word_map)
 
 for i in range(options.npoems):
@@ -145,7 +146,7 @@ for i in range(options.npoems):
 
     print ""
     print "RESULT"
-    print solution.format()
+    print solution
 #NEW
 
 

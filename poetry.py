@@ -9,8 +9,8 @@ class Poetry (object):
         # lineParams are (# syllable, [pair]) tuples
         # pairs are indexed by position in lineParams (and thus in self.lines)
         self.lines = []
-        for param in lineParams:
-            self.lines.append(Line(param[0],param[1]))
+        for i, param in enumerate(lineParams):
+            self.lines.append(Line(i, param[0],param[1]))
         self.currentLine = 0
         self.numLines = len(lineParams)
 
@@ -19,6 +19,22 @@ class Poetry (object):
     # Allow Poetry objects to be evaluated as booleans
     def __nonzero__(self):
         return (self.currentLine == self.numLines)
+
+    # Function: getitem
+    # --------------
+    # Allow poetry lines to be accesed by their line index, i.e.
+    # firstLine = poem[0] = self.lines[0]
+    def __getitem__(self, key):
+        return self.lines[key]
+
+    # Function: __str__
+    # --------------
+    # Formats poetry to be printed to console
+    def __str__(self):
+        output = ""
+        for line in self.lines:
+            output += line.toString() + '\n'
+        return output
 
     # Function: iterate
     # --------------
@@ -37,31 +53,36 @@ class Poetry (object):
             return None
         return self.lines[self.currentLine]
 
-    # Function: format
-    # --------------
-    # Formats poetry for printing
-    def format(self):
-        output = ""
-        for line in self.lines:
-            output += line.toString() + '\n'
-        return output
-
 # The current state of a given line of poetry
 class Line (object):
     # --------------
     # Constructor for the Line class.
-    def __init__(self, syllables, pairs):
+    def __init__(self, i, syllables, pairs):
+        self.number = i
         self.goal = syllables
         self.syllables = syllables #while syllables > 0
         self.pairs = pairs
         self.words = []
         self.last = ""
+        self.propogator = False #line propogates a rhyme constraint
+        self.receiver = False #line receives a rhyme constraint
+        for tup in pairs:
+            if tup[0] == i:
+                self.propogator = True
+            if tup[1] == i:
+                self.receiver = True
 
     # Function: nonzero
     # --------------
     # Allow Line objects to be evaluated as booleans
     def __nonzero__(self):
         return (self.syllables != 0)
+
+    # Function: __str__ 
+    # --------------
+    # Converts to string
+    def __str__(self):
+        return ' '.join(self.words)
 
     # Function: add
     # --------------
@@ -85,8 +106,5 @@ class Line (object):
         else:
             return False 
 
-    # Function: toString
-    # --------------
-    # Converts to string
     def toString(self):
         return ' '.join(self.words)

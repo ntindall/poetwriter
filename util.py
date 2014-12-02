@@ -2,7 +2,7 @@ import random
 import re
 
 
-# Used to strip down corpus of non a-z,A-Z chars
+# Used to strip down corpus of non a-z,A-Z,0-9 chars
 # and defaults to lower case. 
 def clean(string):
     mixed_case = re.sub(r'[^\w\s-]', '', string)
@@ -32,7 +32,7 @@ def weightedRandomChoice(weightDict):
 def getSyllables(word):
     #boilerplate
     #print len(word)
-    return max(len(word) / 3,1)
+    return max(len(word) / 3, 1)
 
 def rhyme(word1, word2):
     if word1 == "" or word2 == "": return True #no constraint

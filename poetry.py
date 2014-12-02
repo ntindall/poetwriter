@@ -46,9 +46,10 @@ class Poetry (object):
     # --------------
     # Returns the line currently being edited
     def getLine(self):
-        if not self.lines[self.currentLine]: #current line not eligible
-            print "updating"
-           # self.currentLine += 1
+        # if not self.lines[self.currentLine]: #current line not eligible
+        #     print "updating"
+        #    # self.currentLine += 1 
+        # Better to iterate manually
         if self.currentLine == self.numLines:
             return None
         return self.lines[self.currentLine]
@@ -61,16 +62,20 @@ class Line (object):
         self.number = i
         self.goal = syllables
         self.syllables = syllables #while syllables > 0
-        self.pairs = pairs
+        self.pairs = []
         self.words = []
         self.last = ""
-        self.propogator = False #line propogates a rhyme constraint
+
+        self.constraint = ""
+        self.propagator = False #line propogates a rhyme constraint
         self.receiver = False #line receives a rhyme constraint
         for tup in pairs:
             if tup[0] == i:
                 self.propogator = True
+                self.pairs.append(tup[0])
             if tup[1] == i:
                 self.receiver = True
+
 
     # Function: nonzero
     # --------------
@@ -98,6 +103,15 @@ class Line (object):
             return True
         # word fits, is final word
         if (self.syllables == syllabic_count):
+            if self.receiver:
+                if util.rhyme(word, self.constraint):
+                    self.words.append(word)
+                    self.syllables -= syllabic_count
+                    self.last = word
+                    return True
+                else: 
+                    return False
+            #Curr is not receiver, proceed as normal
             self.words.append(word)
             self.syllables -= syllabic_count
             self.last = word

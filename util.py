@@ -31,7 +31,7 @@ def weightedRandomChoice(weightDict):
 # Called in poetry.py
 def getSyllables(word):
     #boilerplate
-    return 2 #weightedRandomChoice({2:1,1:1}) 
+    return weightedRandomChoice({2:1,1:1,3:1}) 
     # flexible system, but given flatness of weight dict , 
     # just re-adds last word on line until this function returns
     # 1 rather than 2 (i.e. 2 2 2 1 2 --> 2 2 2 1 1) but the word added
@@ -40,4 +40,4 @@ def getSyllables(word):
 
 def rhyme(word1, word2):
     #Checks if two words rhyme
-    return True
+    return weightedRandomChoice({True:1, False:1})

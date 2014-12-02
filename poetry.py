@@ -105,11 +105,13 @@ class Line (object):
         if (self.syllables == syllabic_count):
             if self.receiver:
                 if util.rhyme(word, self.constraint):
+                    #print "rhyme found"
                     self.words.append(word)
                     self.syllables -= syllabic_count
                     self.last = word
                     return True
                 else: 
+                   #print "no rhyme here"
                     return False
             #Curr is not receiver, proceed as normal
             self.words.append(word)

@@ -12,6 +12,11 @@ class Corpus(object):
         self.word_map = {}
     
     # n-gram algorithm
+
+    # Consider a second analyze algorithm with:
+        # a) no line break characters
+        # b) 
+
     def analyze(self, n):
         queue = []
         for line in self.file:

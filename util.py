@@ -35,17 +35,20 @@ def getSyllables(word):
     return max(len(word) / 3, 1)
 
 def rhyme(word1, word2):
-    if word1 == "" or word2 == "": return True #no constraint
-    last_vowel1 = ""
-    last_vowel2 = ""
+    return word1[-2:] == word2[-2:]
 
-    for z in word1[::-1]:
-        if z in 'aeiou':
-            last_vowel1 = z
-            break
 
-    for y in word2[::-1]:
-        if y in 'aeiou':
-            last_vowel2 = y
-            break
-    return last_vowel2 == last_vowel1
+#     if word1 == "" or word2 == "": return True #no constraint
+#     last_vowel1 = ""
+#     last_vowel2 = ""
+
+#     for z in word1[::-1]:
+#         if z in 'aeiou':
+#             last_vowel1 = z
+#             break
+
+#     for y in word2[::-1]:
+#         if y in 'aeiou':
+#             last_vowel2 = y
+#             break
+#     return last_vowel2 == last_vowel1

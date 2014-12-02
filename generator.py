@@ -138,8 +138,9 @@ corpus.analyze(options.ngrams)
 # [(0,1),(0,5),(2,3),(3,4),(5,6),(6,7)] will work, while [(0,1),(0,7),(2,3),(3,4),(5,6),(6,7)]
 # will yield errors, better to be consistent: [(0,1), (0,5), (0,6),(0,7),(2,3),(2,4)]
 # Successive chains are safe, while separated ones require more tentative handling
-pairs = [(0,1),(0,5),(2,3),(3,4),(5,6),(6,7)]
-parameters = [(8, pairs) for _ in range(8)] #stub, assumed 8 syllables (words) per line
+pairs = [(0,2),(1,3),(4,6),(5,7),(8,10),(9,11),(12,13)]
+haiku = [(5,[]),(7,[]),(5,[])]
+parameters = [(10, pairs) for _ in range(14)] #stub, assumed 8 syllables (words) per line
 grammar = Grammar(corpus.frequency_map, corpus.word_map)
 
 for i in range(options.npoems):

@@ -35,7 +35,7 @@ def getSyllables(word):
     return max(len(word) / 3, 1)
 
 def rhyme(word1, word2):
-    return (word1[-3:] == word2[-3:]) and (word1 != word2)
+    return (word1[-2:] == word2[-2:]) or (word1 == word2)
 
 
 #     if word1 == "" or word2 == "": return True #no constraint

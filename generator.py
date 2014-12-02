@@ -44,9 +44,8 @@ def generate(corpus):
     return poem.format()
 
 class PoetrySearchProblem(searchutil.SearchProblem):
-    #boilerplate
+
     def __init__(self, poem, grammar): 
-        # B
         self.poem, self.grammar = poem, grammar
 
     # Poem object passed into problem, with syllabic and rhyme
@@ -80,7 +79,7 @@ class PoetrySearchProblem(searchutil.SearchProblem):
             words = ""
             for i in range(len(seed)): #push seeds into first line
                 new_poem.getLine().add(seed[i])
-                self.poem = new_poem
+            self.poem = new_poem
             return [(seed, (new_poem, seed), 0)]
         
         # Branching calls
@@ -98,24 +97,24 @@ class PoetrySearchProblem(searchutil.SearchProblem):
             new_poem = copy.deepcopy(poem) #necessary
             curr = new_poem.getLine()
             if curr: 
-                if (curr.syllables == curr.goal):
-                    cost = -1000 #new line bonus 
-                else:
-                    cost = curr.syllables * 10 #favor forward motion
+                # if (curr.syllables_left == curr.goal):
+                #     cost = -1000 #new line bonus 
+                # else:
+                #     cost = curr.syllables_left * 10 #favor forward motion
 
                 if curr.add(word): #if the word fits on the current line
                     broken_seed = [seed[i] for i in range(len(seed))]
                     broken_seed.pop(0)
                     broken_seed.append(word)
                     new_seed = tuple(broken_seed)
-                    if new_seed in self.grammar.frequency_map: #favor more frequent seeds
-                        cost += 10.0 / self.grammar.frequency_map[new_seed]
+                    # if new_seed in self.grammar.frequency_map: #favor more frequent seeds
+                    #     cost += 10.0 / self.grammar.frequency_map[new_seed]
                     if not curr: #line has been finished
-                        new_poem.iterate()
                         if curr.propagator:
-                            for line_i in curr.pairs:
+                            for line_i in curr.paired_indices:
                                 if new_poem[line_i].constraint == "": #line has no previous constraint
                                     new_poem[line_i].constraint = word
+                        new_poem.iterate()
                     result.append((word, (new_poem, new_seed), cost))
         return result
 
@@ -128,11 +127,12 @@ class PoetrySearchProblem(searchutil.SearchProblem):
 
 corpus = Corpus(options.filename)
 corpus.analyze(options.ngrams)
+#print corpus.word_map
 
 # NEW
 # About the pairs.
-# Assumption, pairs are increasing (propogator, receiver) 
-# order, can't propogate to self. Chains must be fully realized,
+# Assumption, pairs are increasing (propagator, receiver) 
+# order, can't propagate to self. Chains must be fully realized,
 # i.e. [(0,1), (0,7), (6,7)] is invalid, while [(0,1), (0,6),(0,7),(6,7)]
 # is valid (though the last item is redundant).
 # [(0,1),(0,5),(2,3),(3,4),(5,6),(6,7)] will work, while [(0,1),(0,7),(2,3),(3,4),(5,6),(6,7)]

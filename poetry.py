@@ -61,8 +61,8 @@ class Line (object):
     def __init__(self, i, syllables, pairs):
         self.number = i
         self.goal = syllables
-        self.syllables = syllables #while syllables > 0
-        self.pairs = []
+        self.syllables_left = syllables #while syllables > 0
+        self.paired_indices = []
         self.words = []
         self.last = ""
 
@@ -72,7 +72,7 @@ class Line (object):
         for tup in pairs:
             if tup[0] == i:
                 self.propagator = True
-                self.pairs.append(tup[1])
+                self.paired_indices.append(tup[1])
             if tup[1] == i:
                 self.receiver = True
 
@@ -81,7 +81,7 @@ class Line (object):
     # --------------
     # Allow Line objects to be evaluated as booleans
     def __nonzero__(self):
-        return (self.syllables != 0)
+        return (self.syllables_left > 0)
 
     # Function: __str__ 
     # --------------
@@ -97,17 +97,17 @@ class Line (object):
         #check with pairs (stub)
         syllabic_count = util.getSyllables(word)
         # word fits with room to spare
-        if (self.syllables > syllabic_count):
+        if (self.syllables_left > syllabic_count):
             self.words.append(word)
-            self.syllables -= syllabic_count
+            self.syllables_left -= syllabic_count
             return True
         # word fits, is final word
-        if (self.syllables == syllabic_count):
+        if (self.syllables_left == syllabic_count):
             if self.receiver:
                 if util.rhyme(word, self.constraint):
                     #print "rhyme found"
                     self.words.append(word)
-                    self.syllables -= syllabic_count
+                    self.syllables_left -= syllabic_count
                     self.last = word
                     return True
                 else: 
@@ -115,7 +115,7 @@ class Line (object):
                     return False
             #Curr is not receiver, proceed as normal
             self.words.append(word)
-            self.syllables -= syllabic_count
+            self.syllables_left -= syllabic_count
             self.last = word
             return True
         # word doesn't fit

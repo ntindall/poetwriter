@@ -31,13 +31,21 @@ def weightedRandomChoice(weightDict):
 # Called in poetry.py
 def getSyllables(word):
     #boilerplate
-    return weightedRandomChoice({2:1,1:1,3:1}) 
-    # flexible system, but given flatness of weight dict , 
-    # just re-adds last word on line until this function returns
-    # 1 rather than 2 (i.e. 2 2 2 1 2 --> 2 2 2 1 1) but the word added
-    # is the same regardless of syllable count. Will cause an issue when syllable
-    # counts are deterministic
+    #print len(word)
+    return max(len(word) / 3,1)
 
 def rhyme(word1, word2):
-    #Checks if two words rhyme
-    return weightedRandomChoice({True:1, False:1})
+    if word1 == "" or word2 == "": return True #no constraint
+    last_vowel1 = ""
+    last_vowel2 = ""
+
+    for z in word1[::-1]:
+        if z in 'aeiou':
+            last_vowel1 = z
+            break
+
+    for y in word2[::-1]:
+        if y in 'aeiou':
+            last_vowel2 = y
+            break
+    return last_vowel2 == last_vowel1

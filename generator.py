@@ -114,7 +114,7 @@ class PoetrySearchProblem(searchutil.SearchProblem):
                         new_poem.iterate()
                         if curr.propagator:
                             for line_i in curr.pairs:
-                                new_poem[i].constraint = word
+                                new_poem[line_i].constraint = word
                     result.append((word, (new_poem, new_seed), cost))
         return result
 
@@ -129,7 +129,7 @@ corpus = Corpus(options.filename)
 corpus.analyze(options.ngrams)
 
 #NEW
-pairs = [(0,1), (2,3)] #assumption, pairs are increasing (propogator, receiver) order
+pairs = [(0,1), (2,3), (3,4),(5,6),(6,7)] #assumption, pairs are increasing (propogator, receiver) order, can't propogate to self
 parameters = [(8, pairs) for _ in range(8)] #stub, assumed 8 syllables (words) per line
 grammar = Grammar(corpus.frequency_map, corpus.word_map)
 
@@ -145,11 +145,13 @@ for i in range(options.npoems):
     #DEPTH FIRST SEARCH
     bts = searchutil.DepthFirstSearch(verbose=1)
     bts.solve(problem)
-    solution, final_seed = bts.solution
-
     print ""
-    print "RESULT"
-    print solution
+    if bts.solution:
+        solution, final_seed = bts.solution
+        print "RESULT"
+        print solution
+    else:
+        print "NO SOLUTION FOUND"
 #NEW
 
 

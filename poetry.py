@@ -71,8 +71,8 @@ class Line (object):
         self.receiver = False #line receives a rhyme constraint
         for tup in pairs:
             if tup[0] == i:
-                self.propogator = True
-                self.pairs.append(tup[0])
+                self.propagator = True
+                self.pairs.append(tup[1])
             if tup[1] == i:
                 self.receiver = True
 

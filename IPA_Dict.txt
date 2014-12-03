@@ -4555,7 +4555,6 @@ antidepressants,	æˌntajˌdɪpɹɛˈsʌnts
 antidepressants(1),	æˌntiˌdɪpɹɛˈsʌnts
 antidiscrimination,	æˌntidɪskɹɪˌmʌnejˈʃʌn
 antidiscrimination(1),	æˌntajdɪskɹɪˌmʌnejˈʃʌn
-XXXXX
 antidisestablishmentarianism,	æˌntajdɪsʌstæˌblɪʃmʌntɛˈɹiʌnɪzʌm
 antidote,		æˈntɪdowˌt
 antidote(1),		æˈnɪdowˌt
@@ -25705,7 +25704,6 @@ counterrevolt(1),	kawˈnɚɹivowˌlt
 counterrevolution,	kawˌntɚɹɛvʌluˈʃʌn
 counterrevolution(1),	kawˌnɚɹɛvʌluˈʃʌn
 counterrevolutionary,	kawˌntɚɹɛvʌluˈʃʌnɛˌɹi
-XXXXX
 counterrevolutionary(1),	kawˌnɚɹɛvʌluˈʃʌnɛˌɹi
 counters,		kawˈntɚz
 countersue,		kawˈntɚsuˌ
@@ -59847,7 +59845,6 @@ internationalists(1),	ɪˌnɚnæˈʃʌnʌlɪsts
 internationalists(2),	ɪˌntɚnæˈʃʌnʌlɪs
 internationalists(3),	ɪˌnɚnæˈʃʌnʌlɪs
 internationalization,	ɪˌntɚnæˌʃʌnʌlɪzejˈʃʌn
-XXXXX
 internationalization(1),	ɪˌnɚnæˌʃʌnʌlɪzejˈʃʌn
 internationalize,	ɪˌntɚnæˈʃʌnʌlajˌz
 internationalize(1),	ɪˌnɚnæˈʃʌnʌlajˌz
@@ -116391,7 +116388,6 @@ superbowl,		suˈpɚbowˌl
 superbowl's,		suˈpɚbowˌlz
 superbowls,		suˈpɚbowˌlz
 supercalifragilistic,	suˌpɚkæˌlʌfɹæˈʤʌlɪˌstɪk
-XXXXX
 supercalifragilisticexpealidoshus,	suˌpɚkæˌlʌfɹæˈʤʌlɪˌstɪkɛˌkspiæˌlʌdowˈʃʌs
 supercenter,		suˈpɚsɛˌntɚ
 supercenters,		suˈpɚsɛˌntɚs

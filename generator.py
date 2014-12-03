@@ -72,8 +72,6 @@ class PoetrySearchProblem(searchutil.SearchProblem):
         if not seed:
             #Assumption: the initial seed will fit on the first line. 
 
-
-
             seed = util.weightedRandomChoice(self.grammar.frequency_map)
             new_poem = copy.deepcopy(poem) #necessary
             words = ""
@@ -93,28 +91,29 @@ class PoetrySearchProblem(searchutil.SearchProblem):
         # performed here. There is no error checking in the Line or Poetry objects.
         # The rhyming word needs to be passed back and forth between Poetry and Line
         # objects once they are completed (not implemented)
-        for word, frequency in self.grammar.word_map[seed].iteritems(): #CONSIDER ALL POSSIBLE BRANCHES
-        # word: the word that follows the current seed given the n-gram model
-        # frequency: the number of times that that word occurs after the given seed
-            new_poem = copy.deepcopy(poem) #necessary
-            curr = new_poem.getLine()
-            if curr: 
-                if curr.add(word): #if the word fits on the current line
-                    broken_seed = [seed[i] for i in range(len(seed))]
-                    broken_seed.pop(0)
-                    broken_seed.append(word)
-                    new_seed = tuple(broken_seed)
-                    cost = frequency
-                    if not curr: #line has been finished
-                        if curr.propagator:
-                            for line_i in curr.paired_indices:
-                                if new_poem[line_i].constraint == "": #line has no previous constraint
-                                    new_poem[line_i].constraint = word
-                        new_poem.iterate()
-                    result.append((word, (new_poem, new_seed), cost))
+        if seed in self.grammar.word_map: 
+            for word, frequency in self.grammar.word_map[seed].iteritems(): #CONSIDER ALL POSSIBLE BRANCHES
+            # word: the word that follows the current seed given the n-gram model
+            # frequency: the number of times that that word occurs after the given seed
+                new_poem = copy.deepcopy(poem) #necessary
+                curr = new_poem.getLine()
+                if curr: 
+                    if curr.add(word): #if the word fits on the current line
+                        broken_seed = [seed[i] for i in range(len(seed))]
+                        broken_seed.pop(0)
+                        broken_seed.append(word)
+                        new_seed = tuple(broken_seed)
+                        cost = frequency
+                        if not curr: #line has been finished
+                            if curr.propagator:
+                                for line_i in curr.paired_indices:
+                                    if new_poem[line_i].constraint == "": #line has no previous constraint
+                                        new_poem[line_i].constraint = word
+                            new_poem.iterate()
+                        result.append((word, (new_poem, new_seed), cost))
 
-        # Idea: sort by descending frequencies so that it looks down more likely paths first
-        result.sort(key=operator.itemgetter(2), reverse=True)
+            # Idea: sort by descending frequencies so that it looks down more likely paths first
+            result.sort(key=operator.itemgetter(2), reverse=True)
         return result
 
 #########################################################################

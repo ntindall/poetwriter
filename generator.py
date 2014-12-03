@@ -85,7 +85,7 @@ class PoetrySearchProblem(searchutil.SearchProblem):
         # Branching calls
         # -------------------------------------------
         result = []
-        print poem.format() #comment out if you want to see the poem being constructed
+        print poem #comment out if you want to see the poem being constructed
 
         # IMPORTANT NOTE
         # For every successor word, consider all possible children nodes.
@@ -139,7 +139,7 @@ corpus.analyze(options.ngrams)
 # will yield errors, better to be consistent: [(0,1), (0,5), (0,6),(0,7),(2,3),(2,4)]
 # Successive chains are safe, while separated ones require more tentative handling
 pairs = [(0,1),(2,3),(4,5),(6,7)]
-parameters = [(8, pairs) for _ in range(8)] #stub, assumed 8 syllables (words) per line
+parameters = [(12, pairs) for _ in range(8)] #stub, assumed 8 syllables (words) per line
 grammar = Grammar(corpus.frequency_map, corpus.word_map)
 
 for i in range(options.npoems):
@@ -158,6 +158,8 @@ for i in range(options.npoems):
     if bts.solution:
         solution, final_seed = bts.solution
         print "RESULT"
+        print 'source text: eminem.txt'
+        print ""
         print solution
     else:
         print "NO SOLUTION FOUND"

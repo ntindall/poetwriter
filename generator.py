@@ -85,7 +85,7 @@ class PoetrySearchProblem(searchutil.SearchProblem):
         # Branching calls
         # -------------------------------------------
         result = []
-        #print poem.format() #comment out if you want to see the poem being constructed
+        print poem.format() #comment out if you want to see the poem being constructed
 
         # IMPORTANT NOTE
         # For every successor word, consider all possible children nodes.

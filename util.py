@@ -65,8 +65,7 @@ def rhymeVowel(ipa_reading):
 # Called in poetry.py
 def getSyllables(word):
     #boilerplate
-    #print len(word)
-    return max(len(word) / 3, 1)
+    return max(len(word) / 4, 1)
 
 d = {}
 with open('IPA_Dict.txt') as f:

@@ -85,13 +85,55 @@ def rhyme(word1, word2):
         else:
             return False
 
+## GETTING PARTS OF SPEECH
+
+posd = {}
+with codecs.open('mobyposi.i', encoding='ISO-8859-1') as f:
+    for line in f:
+        temp = line.replace(u"×", " ").split()
+        if (len(temp) == 2):
+            posd[temp[0]] = temp[1]
+
+
+def partsOfSpeech(word):
+    if word in posd.keys():
+        return posd[word]
+    else:
+        return u'X'
+
+#Parts of speech are:
+    # #Noun                           N
+    # Plural                          p
+    # Noun Phrase     h
+    # Verb (usu participle)    V
+    # Verb (transitive)       t
+    # Verb (intransitive)     i
+    # Adjective                     A
+    # Adverb                      v
+    # Conjunction                 C
+    # Preposition                 P
+    # Interjection                !
+    # Pronoun                     r
+    # Definite Article        D
+    # Indefinite Article      I
+    # Nominative                  o
+
 #############EXECUTION
+
+
 
 d = {}
 with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:
     for line in f:
         temp = line.replace(',', '').split()
-        d[temp[0]] = (temp[1], rhymeVowel(temp[1]), numSyllables(temp[1]))
-        #print temp[0], temp[1], numSyllables(temp[1])
+        d[temp[0]] = (temp[1], rhymeVowel(temp[1]), numSyllables(temp[1]), partsOfSpeech(temp[0]))
+        print temp[0], d[temp[0]]
+
 
 #print d
+
+#  #       
+
+
+
+

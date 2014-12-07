@@ -49,7 +49,7 @@ d = {}
 with open('IPA_Dict.txt') as f:
 	for line in f:
 		temp = line.replace(',', '').split()
-		print temp
+
 		d[temp[0]] = (temp[1], rhymeVowel(temp[1]), numSyllables(temp[1]))
 print rhymes(sys.argv[1], sys.argv[2])
 

@@ -85,7 +85,7 @@ class PoetrySearchProblem(searchutil.SearchProblem):
         # Branching calls
         # -------------------------------------------
         result = []
-        print poem #comment out if you want to see the poem being constructed
+        #print poem #comment out if you want to see the poem being constructed
 
         # IMPORTANT NOTE
         # For every successor word, consider all possible children nodes.
@@ -93,29 +93,30 @@ class PoetrySearchProblem(searchutil.SearchProblem):
         # performed here. There is no error checking in the Line or Poetry objects.
         # The rhyming word needs to be passed back and forth between Poetry and Line
         # objects once they are completed (not implemented)
-        for word in self.grammar.word_map[seed]: #CONSIDER ALL POSSIBLE BRANCHES
-            new_poem = copy.deepcopy(poem) #necessary
-            curr = new_poem.getLine()
-            if curr: 
-                if (curr.syllables_left == curr.goal):
-                    cost = -1000 #new line bonus 
-                else:
-                    cost = curr.syllables_left * 10 #favor forward motion
+        if seed in self.grammar.word_map:
+            for word in self.grammar.word_map[seed]: #CONSIDER ALL POSSIBLE BRANCHES
+                new_poem = copy.deepcopy(poem) #necessary
+                curr = new_poem.getLine()
+                if curr: 
+                    if (curr.syllables_left == curr.goal):
+                        cost = -1000 #new line bonus 
+                    else:
+                        cost = curr.syllables_left * 10 #favor forward motion
 
-                if curr.add(word): #if the word fits on the current line
-                    broken_seed = [seed[i] for i in range(len(seed))]
-                    broken_seed.pop(0)
-                    broken_seed.append(word)
-                    new_seed = tuple(broken_seed)
-                    if new_seed in self.grammar.frequency_map: #favor more frequent seeds
-                        cost += 10.0 / self.grammar.frequency_map[new_seed]
-                    if not curr: #line has been finished
-                        if curr.propagator:
-                            for line_i in curr.paired_indices:
-                                if new_poem[line_i].constraint == "": #line has no previous constraint
-                                    new_poem[line_i].constraint = word
-                        new_poem.iterate()
-                    result.append((word, (new_poem, new_seed), cost))
+                    if curr.add(word): #if the word fits on the current line
+                        broken_seed = [seed[i] for i in range(len(seed))]
+                        broken_seed.pop(0)
+                        broken_seed.append(word)
+                        new_seed = tuple(broken_seed)
+                        if new_seed in self.grammar.frequency_map: #favor more frequent seeds
+                            cost += 10.0 / self.grammar.frequency_map[new_seed]
+                        if not curr: #line has been finished
+                            if curr.propagator:
+                                for line_i in curr.paired_indices:
+                                    if new_poem[line_i].constraint == "": #line has no previous constraint
+                                        new_poem[line_i].constraint = word
+                            new_poem.iterate()
+                        result.append((word, (new_poem, new_seed), cost))
         return result
 
 #########################################################################
@@ -139,7 +140,7 @@ corpus.analyze(options.ngrams)
 # will yield errors, better to be consistent: [(0,1), (0,5), (0,6),(0,7),(2,3),(2,4)]
 # Successive chains are safe, while separated ones require more tentative handling
 pairs = [(0,1),(2,3),(4,5),(6,7)]
-parameters = [(12, pairs) for _ in range(8)] #stub, assumed 8 syllables (words) per line
+parameters = [(10, pairs) for _ in range(8)] #stub, assumed 8 syllables (words) per line
 grammar = Grammar(corpus.frequency_map, corpus.word_map)
 
 for i in range(options.npoems):
@@ -158,8 +159,7 @@ for i in range(options.npoems):
     if bts.solution:
         solution, final_seed = bts.solution
         print "RESULT"
-        print 'source text: eminem.txt'
-        print ""
+
         print solution
     else:
         print "NO SOLUTION FOUND"

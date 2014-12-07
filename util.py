@@ -35,17 +35,24 @@ def weightedRandomChoice(weightDict):
     raise Exception('Should not reach here')
 
 #must be unicode!!!! 
-vowels = u'æɑəɪieɛɹɝɚɐʌʊuo'
+vowels = u'æɑəɪieɛɝɚɐʌʊuoɔa' #ɹ
 
 
 def numSyllables(ipa_reading):
     num = 0
-    for i in range(len(ipa_reading)-1):
+    for i in range(len(ipa_reading)):
         if ipa_reading[i] in vowels:
-            if i != len(ipa_reading)-1:
-                if ipa_reading[i+1] != '\'':
-                    num += 1
+            num += 1
+
     return num
+
+# Called in poetry.py
+def getSyllables(word):
+    if word not in d:
+        # heuristic
+        return max(len(word) / 3, 1)
+    else:
+        return d[word][2]
 
 #ipa_reading is a unicode string
 def rhymeVowel(ipa_reading):
@@ -64,18 +71,6 @@ def rhymeVowel(ipa_reading):
     # vowel and the following consonants
     return stripped_ipa[i::]
 
-# Called in poetry.py
-def getSyllables(word):
-    #boilerplate
-    #print len(word)
-    return max(len(word) / 3, 1)
-
-d = {}
-with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:
-    for line in f:
-        temp = line.replace(',', '').split()
-        d[temp[0]] = (temp[1], rhymeVowel(temp[1]), getSyllables(temp[1]))
-
 def rhyme(word1, word2):
 
     if word1 not in d or word2 not in d:
@@ -90,18 +85,13 @@ def rhyme(word1, word2):
         else:
             return False
 
+#############EXECUTION
 
-#     if word1 == "" or word2 == "": return True #no constraint
-#     last_vowel1 = ""
-#     last_vowel2 = ""
+d = {}
+with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:
+    for line in f:
+        temp = line.replace(',', '').split()
+        d[temp[0]] = (temp[1], rhymeVowel(temp[1]), numSyllables(temp[1]))
+        #print temp[0], temp[1], numSyllables(temp[1])
 
-#     for z in word1[::-1]:
-#         if z in 'aeiou':
-#             last_vowel1 = z
-#             break
-
-#     for y in word2[::-1]:
-#         if y in 'aeiou':
-#             last_vowel2 = y
-#             break
-#     return last_vowel2 == last_vowel1
+#print d

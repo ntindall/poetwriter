@@ -1,6 +1,8 @@
 # coding: UTF-8
 import random
 import re
+import sys
+import codecs
 
 
 
@@ -32,8 +34,8 @@ def weightedRandomChoice(weightDict):
             return elems[chosenIndex]
     raise Exception('Should not reach here')
 
-
-vowels = 'æɑəɪieɛɹɝɚɐʌʊuo'
+#must be unicode!!!! 
+vowels = u'æɑəɪieɛɹɝɚɐʌʊuo'
 
 
 def numSyllables(ipa_reading):
@@ -45,18 +47,18 @@ def numSyllables(ipa_reading):
                     num += 1
     return num
 
+#ipa_reading is a unicode string
 def rhymeVowel(ipa_reading):
-
     #removes stressing on syllables; can add back later for more fine-grained rhyme
     stripped_ipa = ipa_reading.replace('\'', '')
 
-    
-
     # get the position of the last vowel
-    last_vowel_index = -1
-    for i in reversed(range(len(stripped_ipa)-1)): 
+    for i in reversed(range(len(stripped_ipa))): 
         if stripped_ipa[i] in vowels:
             break
+
+    #print ":".join("{:02x}".format(ord(c)) for c in stripped_ipa), stripped_ipa
+    #print ":".join("{:02x}".format(ord(c)) for c in stripped_ipa[i::]), stripped_ipa[i::]
 
     # return suffix starting at the last vowel: the characteristic of whether a word rhymes depends on the last 
     # vowel and the following consonants
@@ -69,13 +71,12 @@ def getSyllables(word):
     return max(len(word) / 3, 1)
 
 d = {}
-with open('IPA_Dict.txt') as f:
+with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:
     for line in f:
         temp = line.replace(',', '').split()
         d[temp[0]] = (temp[1], rhymeVowel(temp[1]), getSyllables(temp[1]))
 
 def rhyme(word1, word2):
-
 
     if word1 not in d or word2 not in d:
         # heuristic

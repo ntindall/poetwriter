@@ -1,10 +1,13 @@
 require 'rapgenius'
 
 
+num = ARGV[0]
+title = ARGV[1]
 
-seed_song = RapGenius::Song.find(235723) # song, seed
+seed_song = RapGenius::Song.find(num) # song, seed
 artist = seed_song.artist
 puts artist.name
+puts ""
 y = 1
 while true do
 	songs = artist.songs(page: y)
@@ -25,7 +28,7 @@ while true do
 				array[i] = line.lyric
 			end
 
-			newfile = File.open("eminem.txt", "a")
+			newfile = File.open(file, "a")
 			for i in 0..array.length-1
 				newfile.puts "#{array[i]}"
 			end

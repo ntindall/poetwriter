@@ -19,6 +19,8 @@ if __name__ == '__main__':
     parser.add_option('-n', '--n-gram', type='int', dest='ngrams', default=1)
     parser.add_option('-f', '--file', dest='filename', default=1)
     parser.add_option('-o', '--output', type='int', dest='npoems', default=3)
+    parser.add_option('-l', '--sentence-length', type='int', dest='sentenceLength', default=1)
+    parser.add_option('-s', '--source', dest='source')
     (options, args) = parser.parse_args()
  
 # Generate poetry based on a corpus       
@@ -97,7 +99,7 @@ class PoetrySearchProblem(searchutil.SearchProblem):
             # frequency: the number of times that that word occurs after the given seed
                 new_poem = copy.deepcopy(poem) #necessary
                 curr = new_poem.getLine()
-                if curr: 
+                if curr:
                     if curr.add(word): #if the word fits on the current line
                         broken_seed = [seed[i] for i in range(len(seed))]
                         broken_seed.pop(0)
@@ -123,7 +125,7 @@ class PoetrySearchProblem(searchutil.SearchProblem):
 # python generator.py -n 2 -f "lyrics/eminem.txt" -o 4
 print "reading corpus file..."
 corpus = Corpus(options.filename)
-corpus.analyze(options.ngrams)
+corpus.analyze(options.ngrams, options.source)
 #print corpus.word_map
 print "finished reading corpus."
 # NEW
@@ -143,12 +145,11 @@ print "finished reading corpus."
 # parameters = [(10, pairs) for _ in range(14)] #stub, assumed 8 syllables (words) per line
 pairs = [(0,1),(2,3),(4,5),(6,7)]
 parameters = [(10, pairs) for _ in range(8)] #stub, assumed 8 syllables (words) per line
-
 grammar = Grammar(corpus.frequency_map, corpus.word_map)
 
 
 for i in range(options.npoems):
-    poem = Poetry(parameters)
+    poem = Poetry(parameters, options.sentenceLength)
     problem = PoetrySearchProblem(poem, grammar)
 
     #UNIFORM COST SEARCH (DJIKSTRA'S)

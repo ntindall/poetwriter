@@ -125,7 +125,7 @@ class PoetrySearchProblem(searchutil.SearchProblem):
 # python generator.py -n 2 -f "lyrics/eminem.txt" -o 4
 print "reading corpus file..."
 corpus = Corpus(options.filename)
-corpus.analyze(options.ngrams, options.source)
+corpus.analyze(options.ngrams)
 #print corpus.word_map
 print "finished reading corpus."
 # NEW
@@ -149,7 +149,7 @@ grammar = Grammar(corpus.frequency_map, corpus.word_map)
 
 
 for i in range(options.npoems):
-    poem = Poetry(parameters, options.sentenceLength)
+    poem = Poetry(parameters)
     problem = PoetrySearchProblem(poem, grammar)
 
     #UNIFORM COST SEARCH (DJIKSTRA'S)

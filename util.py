@@ -5,10 +5,6 @@ import sys
 import codecs
 import pickle
 
-
-
-
-
 # Used to strip down corpus of non a-z,A-Z,0-9 chars
 # and defaults to lower case. 
 def clean(string):
@@ -44,6 +40,7 @@ def numSyllables(ipa_reading):
     for i in range(len(ipa_reading)):
         if ipa_reading[i] in vowels:
             num += 1
+
     return num
 
 # Called in poetry.py
@@ -74,6 +71,17 @@ def rhymeVowel(ipa_reading):
     else:
         return stripped_ipa[i::]
 
+# Called in poetry.py
+def getSyllables(word):
+    #boilerplate
+    return max(len(word) / 4, 1)
+
+d = {}
+with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:
+    for line in f:
+        temp = line.replace(',', '').split()
+        d[temp[0]] = (temp[1], rhymeVowel(temp[1]), getSyllables(temp[1]))
+
 def rhyme(word1, word2):
 
     if word1 not in d or word2 not in d:
@@ -87,6 +95,15 @@ def rhyme(word1, word2):
             return True
         else:
             return False
+
+## GETTING PARTS OF SPEECH
+
+posd = {}
+with codecs.open('mobyposi.i', encoding='ISO-8859-1') as f:
+    for line in f:
+        temp = line.replace(u"×", " ").split()
+        if (len(temp) == 2):
+            posd[temp[0]] = temp[1]
 
 
 def partsOfSpeech(word):
@@ -113,25 +130,11 @@ def partsOfSpeech(word):
     # Indefinite Article      I
     # Nominative                  o
 
-############# EXECUTION
+#############EXECUTION
 
 print "loading the dictionary..."
 d = pickle.load(open("word_data.p", "rb"))
 print "finished loading dictionary."
-
-# GETTING PARTS OF SPEECH
-
-# posd = {}
-# with codecs.open('mobyposi.i', encoding='ISO-8859-1') as f:
-#     for line in f:
-#         temp = line.replace(u"×", " ").split()
-#         if (len(temp) == 2):
-#             posd[temp[0]] = temp[1]
-# d = {}
-# with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:
-#     for line in f:
-#         temp = line.replace(',', '').split()
-#         d[temp[0]] = (temp[1], rhymeVowel(temp[1]), getSyllables(temp[1]))
 
 # n = 0
 # with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:
@@ -144,21 +147,3 @@ print "finished loading dictionary."
 
 # This writes the dictionary to file
 #pickle.dump(d, open("word_data.p", "wb"))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

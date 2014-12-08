@@ -81,7 +81,7 @@ def rhyme(word1, word2):
         # heuristic, safe to take slice if len < 3
         return (word1[-3:] == word2[-3:] and word1 != word2)
     else:
-        if word1 == word2:
+        if d[word1][0] == d[word2][0]:
             return False
         if d[word1][1] == d[word2][1]:
             print word1, word2

@@ -3,11 +3,11 @@ from optparse import OptionParser
 import math, random, copy, operator
 
 #CUSTOM LIBRARIES
-import en #NLP library
-from wordnik import * #dictionary with part of speech, synonyms, related word
-apiUrl = 'http://api.wordnik.com/v4'
-apiKey = '1453b0da46be3985ab0040b354601405dbb094b3e77e51454'
-client = swagger.ApiClient(apiKey, apiUrl)
+#import en #NLP library
+#from wordnik import * #dictionary with part of speech, synonyms, related word
+#apiUrl = 'http://api.wordnik.com/v4'
+#apiKey = '1453b0da46be3985ab0040b354601405dbb094b3e77e51454'
+#client = swagger.ApiClient(apiKey, apiUrl)
 
 #FILES
 import searchutil, util
@@ -121,11 +121,11 @@ class PoetrySearchProblem(searchutil.SearchProblem):
 
 # Example usage:
 # python generator.py -n 2 -f "lyrics/eminem.txt" -o 4
-
+print "reading corpus file..."
 corpus = Corpus(options.filename)
 corpus.analyze(options.ngrams)
 #print corpus.word_map
-
+print "finished reading corpus."
 # NEW
 # About the pairs.
 # Assumption, pairs are increasing (propagator, receiver) 
@@ -143,7 +143,9 @@ corpus.analyze(options.ngrams)
 # parameters = [(10, pairs) for _ in range(14)] #stub, assumed 8 syllables (words) per line
 pairs = [(0,1),(2,3),(4,5),(6,7)]
 parameters = [(10, pairs) for _ in range(8)] #stub, assumed 8 syllables (words) per line
+
 grammar = Grammar(corpus.frequency_map, corpus.word_map)
+
 
 for i in range(options.npoems):
     poem = Poetry(parameters)

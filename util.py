@@ -98,12 +98,6 @@ def rhyme(word1, word2):
 
 ## GETTING PARTS OF SPEECH
 
-posd = {}
-with codecs.open('mobyposi.i', encoding='ISO-8859-1') as f:
-    for line in f:
-        temp = line.replace(u"×", " ").split()
-        if (len(temp) == 2):
-            posd[temp[0]] = temp[1]
 
 
 def partsOfSpeech(word):

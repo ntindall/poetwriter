@@ -50,6 +50,12 @@ class Poetry (object):
             return None
         return self.lines[self.currentLine]
 
+    # Function: isFirst
+    # --------------
+    # Returns whether the poem is at the first word of a sentence
+    def isFirst(self):
+        return self.lines[self.currentLine].isFirst()
+
 # The current state of a given line of poetry
 class Line (object):
     # --------------
@@ -88,9 +94,9 @@ class Line (object):
 
     # Function: isFirst
     # --------------
-    # Returns whether the line is the first line of a sentence
-    def isBegin(self):
-        if (self.number % self.sentenceLength == 0):
+    # Returns whether the line is at the first word of a sentence
+    def isFirst(self):
+        if ((self.number % self.sentenceLength == 0) and (len(self.words) == 0)):
             return True
         else:
             return False
@@ -111,14 +117,19 @@ class Line (object):
     def add(self, word):
         #check with pairs (stub)
         syllabic_count = util.getSyllables(word)
+        #print "word has ", syllabic_count, " syllables"
+        #print "the line has ", self.syllables_left, "syllables left"
         # word fits with room to spare
         if (self.syllables_left > syllabic_count):
+            #print "word fits with room to spare"
             self.words.append(word)
             self.syllables_left -= syllabic_count
             return True
         # word fits, is final word
         if (self.syllables_left == syllabic_count):
+            #print "word fits"
             if self.receiver:
+                #print "word is a receiver"
                 if util.rhyme(word, self.constraint):
                     #print "rhyme found"
                     self.words.append(word)
@@ -126,7 +137,7 @@ class Line (object):
                     self.last = word
                     return True
                 else: 
-                   #print "no rhyme here"
+                    #print "no rhyme here"
                     return False
             #Curr is not receiver, proceed as normal
             self.words.append(word)

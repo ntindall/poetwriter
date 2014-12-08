@@ -1,4 +1,5 @@
 import util
+import string
 from collections import Counter
 
 # Corpus object
@@ -10,6 +11,7 @@ class Corpus(object):
         self.file = open(name, 'r')
         self.frequency_map = Counter()
         self.word_map = {}
+        self.begin_map = Counter()
     
     # n-gram algorithm
 
@@ -21,7 +23,13 @@ class Corpus(object):
         queue = []
         for line in self.file:
             line = util.clean(line)
-            words = queue + line.split() # current words to be considered
+            words = queue
+            #Assumes each line in the corpus is a separate 'sentence'
+            for _ in range(n):
+                words.append('-BEGIN-')
+            words.extend(line.split()) # current words to be considered
+            if line.split():
+                self.begin_map[line.split()[0]] += 1
             if ((source == "rap") and ((line == "") or (string.find(line, "verse") != -1) or (string.find(line, "hook") != -1))):
                 words = []
             queue = [] # reset queue upon reading new line
@@ -51,12 +59,13 @@ class Corpus(object):
 class Grammar(object):
     # --------------
     # Constructor for the Grammar class.
-    def __init__(self, fmap, wmap):
+    def __init__(self, fmap, wmap, bmap):
         self.frequency_map = fmap
         self.word_map = wmap
         self.seed_key = None
         self.seed = ""
         self.past_seed = False
+        self.begin_map = bmap
 
     # Gets the next word from the grammar predictor
     # (Implemented as n-gram)

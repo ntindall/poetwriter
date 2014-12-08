@@ -70,15 +70,18 @@ def rhymeVowel(ipa_reading):
 
     # return suffix starting at the last vowel: the characteristic of whether a word rhymes depends on the last 
     # vowel and the following consonants
-    return stripped_ipa[i::]
+    if (len(stripped_ipa)-i < 3 and i != 0):
+        return stripped_ipa[i-1::]
+    else:
+        return stripped_ipa[i::]
 
 def rhyme(word1, word2):
 
     if word1 not in d or word2 not in d:
-        # heuristic
-        return (word1[-2:] == word2[-2:] and word1 != word2)
+        # heuristic, safe to take slice if len < 3
+        return (word1[-3:] == word2[-3:] and word1 != word2)
     else:
-        if word1 == word2:
+        if d[word1][0] == d[word2][0]:
             return False
         if d[word1][1] == d[word2][1]:
             print word1, word2
@@ -122,22 +125,22 @@ def partsOfSpeech(word):
 
 #############EXECUTION
 
+print "loading the dictionary..."
+d = pickle.load(open("word_data.p", "rb"))
+print "finished loading dictionary."
 
+# n = 0
+# with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:
+#     for line in f:
+#         temp = line.replace(',', '').split()
+#         d[temp[0]] = (temp[1], rhymeVowel(temp[1]), numSyllables(temp[1]), partsOfSpeech(temp[0]) )
+        
+#         n += 1
+#         print n, temp[0]
 
-d = {}
-n = 0
-with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:
-    for line in f:
-        temp = line.replace(',', '').split()
-        d[temp[0]] = (temp[1], rhymeVowel(temp[1]), numSyllables(temp[1]), partsOfSpeech(temp[0]))
-        n += 1
-        print temp[0], n
+# This writes the dictionary to file
+#pickle.dump(d, open("word_data.p", "wb"))
 
-pickle.dump(d, open("word_data.p", "wb"))
-
-#print d
-
-#  #       
 
 
 

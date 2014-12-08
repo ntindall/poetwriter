@@ -79,7 +79,7 @@ def rhyme(word1, word2):
         if d[word1][0] == d[word2][0]:
             return False
         if d[word1][1] == d[word2][1]:
-            print word1, word2
+            print "Rhyming:", word1, word2
             return True
         else:
             return False
@@ -111,9 +111,9 @@ def partsOfSpeech(word):
 
 ############# EXECUTION
 
-print "loading the dictionary..."
+print "[ ] Loading the dictionary..."
 d = pickle.load(open("word_data.p", "rb"))
-print "finished loading dictionary."
+print "[ ] Finished loading dictionary."
 
 # GETTING PARTS OF SPEECH
 

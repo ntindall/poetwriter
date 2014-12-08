@@ -85,7 +85,7 @@ class PoetrySearchProblem(searchutil.SearchProblem):
         # Branching calls
         # -------------------------------------------
         result = []
-        print poem #comment out if you want to see the poem being constructed
+        #print poem #comment out if you want to see the poem being constructed
 
         # IMPORTANT NOTE
         # For every successor word, consider all possible children nodes.
@@ -123,11 +123,11 @@ class PoetrySearchProblem(searchutil.SearchProblem):
 
 # Example usage:
 # python generator.py -n 2 -f "lyrics/eminem.txt" -o 4
-print "reading corpus file..."
+print "[ ] Reading corpus file..."
 corpus = Corpus(options.filename)
-corpus.analyze(options.ngrams)
+corpus.analyze(options.ngrams, options.source)
 #print corpus.word_map
-print "finished reading corpus."
+print "[ ] Finished reading corpus, n-gram model generated."
 # NEW
 # About the pairs.
 # Assumption, pairs are increasing (propagator, receiver) 
@@ -144,12 +144,12 @@ print "finished reading corpus."
 # haiku = [(5,[]),(7,[]),(5,[])]
 # parameters = [(10, pairs) for _ in range(14)] #stub, assumed 8 syllables (words) per line
 pairs = [(0,1),(2,3),(4,5),(6,7)]
-parameters = [(10, pairs) for _ in range(8)] #stub, assumed 8 syllables (words) per line
+parameters = [(10, pairs) for _ in range(8)] #stub, assumed 10 syllables (words) per line
 grammar = Grammar(corpus.frequency_map, corpus.word_map)
 
 
 for i in range(options.npoems):
-    poem = Poetry(parameters)
+    poem = Poetry(parameters, options.sentenceLength)
     problem = PoetrySearchProblem(poem, grammar)
 
     #UNIFORM COST SEARCH (DJIKSTRA'S)

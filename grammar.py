@@ -17,11 +17,13 @@ class Corpus(object):
         # a) no line break characters
         # b) 
 
-    def analyze(self, n):
+    def analyze(self, n, source):
         queue = []
         for line in self.file:
             line = util.clean(line)
             words = queue + line.split() # current words to be considered
+            if ((source == "rap") and ((line == "") or (string.find(line, "verse") != -1) or (string.find(line, "hook") != -1))):
+                words = []
             queue = [] # reset queue upon reading new line
             while (len(words) > n):
                 key = []

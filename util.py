@@ -89,16 +89,6 @@ def rhyme(word1, word2):
         else:
             return False
 
-## GETTING PARTS OF SPEECH
-
-posd = {}
-with codecs.open('mobyposi.i', encoding='ISO-8859-1') as f:
-    for line in f:
-        temp = line.replace(u"×", " ").split()
-        if (len(temp) == 2):
-            posd[temp[0]] = temp[1]
-
-
 def partsOfSpeech(word):
     if word in posd.keys():
         return posd[word]
@@ -123,12 +113,20 @@ def partsOfSpeech(word):
     # Indefinite Article      I
     # Nominative                  o
 
-#############EXECUTION
+############# EXECUTION
 
 print "loading the dictionary..."
 d = pickle.load(open("word_data.p", "rb"))
 print "finished loading dictionary."
 
+# GETTING PARTS OF SPEECH
+
+# posd = {}
+# with codecs.open('mobyposi.i', encoding='ISO-8859-1') as f:
+#     for line in f:
+#         temp = line.replace(u"×", " ").split()
+#         if (len(temp) == 2):
+#             posd[temp[0]] = temp[1]
 # d = {}
 # with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:
 #     for line in f:

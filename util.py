@@ -125,23 +125,22 @@ def partsOfSpeech(word):
 
 #############EXECUTION
 
-d = {}
 print "loading the dictionary..."
-#d = pickle.load(open("word_data.p", "rb"))
+d = pickle.load(open("word_data.p", "rb"))
 print "finished loading dictionary."
-n = 0
-with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:
-    for line in f:
-        temp = line.replace(',', '').split()
-        d[temp[0]] = (temp[1], rhymeVowel(temp[1]), numSyllables(temp[1]), partsOfSpeech(temp[0]) )
-        #, partsOfSpeech(temp[0]))
-        n += 1
-        print n, temp[0]
-pickle.dump(d, open("word_data.p", "wb"))
 
-#print d
+# n = 0
+# with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:
+#     for line in f:
+#         temp = line.replace(',', '').split()
+#         d[temp[0]] = (temp[1], rhymeVowel(temp[1]), numSyllables(temp[1]), partsOfSpeech(temp[0]) )
+        
+#         n += 1
+#         print n, temp[0]
 
-#  #       
+# This writes the dictionary to file
+#pickle.dump(d, open("word_data.p", "wb"))
+
 
 
 

@@ -1,4 +1,4 @@
-import util
+import util, string
 from collections import Counter
 
 # Corpus object

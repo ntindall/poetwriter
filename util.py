@@ -79,11 +79,10 @@ def rhyme(word1, word2):
         if d[word1][0] == d[word2][0]:
             return False
         if d[word1][1] == d[word2][1]:
-            print "Rhyming:", word1, word2
+           # print "Rhyming:", word1, word2
             return True
         else:
             return False
-
 
 def partsOfSpeech(word):
     if word in posd.keys():

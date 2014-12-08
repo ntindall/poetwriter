@@ -44,7 +44,6 @@ def numSyllables(ipa_reading):
     for i in range(len(ipa_reading)):
         if ipa_reading[i] in vowels:
             num += 1
-
     return num
 
 # Called in poetry.py
@@ -89,9 +88,6 @@ def rhyme(word1, word2):
         else:
             return False
 
-## GETTING PARTS OF SPEECH
-
-
 
 def partsOfSpeech(word):
     if word in posd.keys():
@@ -117,11 +113,25 @@ def partsOfSpeech(word):
     # Indefinite Article      I
     # Nominative                  o
 
-#############EXECUTION
+############# EXECUTION
 
 print "loading the dictionary..."
 d = pickle.load(open("word_data.p", "rb"))
 print "finished loading dictionary."
+
+# GETTING PARTS OF SPEECH
+
+# posd = {}
+# with codecs.open('mobyposi.i', encoding='ISO-8859-1') as f:
+#     for line in f:
+#         temp = line.replace(u"×", " ").split()
+#         if (len(temp) == 2):
+#             posd[temp[0]] = temp[1]
+# d = {}
+# with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:
+#     for line in f:
+#         temp = line.replace(',', '').split()
+#         d[temp[0]] = (temp[1], rhymeVowel(temp[1]), getSyllables(temp[1]))
 
 # n = 0
 # with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:

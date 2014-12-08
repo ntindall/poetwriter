@@ -73,7 +73,7 @@ def beautify(output, i):
 
 corpus = getCorpus()
 frequency_map, word_map = analyze(corpus)
-#normalize(word_map)
+
 
 for i in range(options.npoems):
 	output = generate(frequency_map, word_map)

@@ -5,12 +5,16 @@ class Poetry (object):
     # Function: Init
     # --------------
     # Constructor for the Poetry class.
-    def __init__(self, lineParams, sentenceLength):
+    def __init__(self, lineParams):
         # lineParams are (# syllable, [pair]) tuples
         # pairs are indexed by position in lineParams (and thus in self.lines)
         self.lines = []
         for i, param in enumerate(lineParams):
+<<<<<<< HEAD
             self.lines.append(Line(i, param[0],param[1], sentenceLength))
+=======
+            self.lines.append(Line(i, param[0],param[1]))
+>>>>>>> parent of 1f1976d... Changes to grammar.py, poetry.py, generator.py in place
         self.currentLine = 0
         self.numLines = len(lineParams)
 
@@ -54,14 +58,13 @@ class Poetry (object):
 class Line (object):
     # --------------
     # Constructor for the Line class.
-    def __init__(self, i, syllables, pairs, sentenceLength):
+    def __init__(self, i, syllables, pairs):
         self.number = i
         self.goal = syllables
         self.syllables_left = syllables #while syllables > 0
         self.paired_indices = []
         self.words = []
         self.last = ""
-        self.sentenceLength = sentenceLength
 
         self.constraint = ""
         self.propagator = False #line propogates a rhyme constraint
@@ -73,6 +76,7 @@ class Line (object):
             if tup[1] == i:
                 self.receiver = True
 
+<<<<<<< HEAD
     # Function: isFirst
     # --------------
     # Returns whether the line is the first line of a sentence
@@ -91,6 +95,8 @@ class Line (object):
         else:
             return False
 
+=======
+>>>>>>> parent of 1f1976d... Changes to grammar.py, poetry.py, generator.py in place
 
     # Function: nonzero
     # --------------
@@ -107,7 +113,7 @@ class Line (object):
     # Function: add
     # --------------
     # Adds a new word to the line, does not add to line if the
-    # word does not fit constraints
+    # word does not 
     def add(self, word):
         #check with pairs (stub)
         syllabic_count = util.getSyllables(word)

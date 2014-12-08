@@ -18,14 +18,18 @@ class Corpus(object):
         # a) no line break characters
         # b) 
 
-    def analyze(self, n, source):
+    def analyze(self, n):
         queue = []
         for line in self.file:
             line = util.clean(line)
+<<<<<<< HEAD
             splitLine = line.split()
             words = queue + splitLine # current words to be considered
             if ((source == "rap") and ((line == "") or (string.find(line, "verse") != -1) or (string.find(line, "hook") != -1))):
                 words = []
+=======
+            words = queue + line.split() # current words to be considered
+>>>>>>> parent of 1f1976d... Changes to grammar.py, poetry.py, generator.py in place
             queue = [] # reset queue upon reading new line
             while (len(words) > n):
                 key = []

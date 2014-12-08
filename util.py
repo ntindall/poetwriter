@@ -5,10 +5,6 @@ import sys
 import codecs
 import pickle
 
-
-
-
-
 # Used to strip down corpus of non a-z,A-Z,0-9 chars
 # and defaults to lower case. 
 def clean(string):
@@ -151,21 +147,3 @@ print "finished loading dictionary."
 
 # This writes the dictionary to file
 #pickle.dump(d, open("word_data.p", "wb"))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

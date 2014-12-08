@@ -3,6 +3,7 @@ import random
 import re
 import sys
 import codecs
+import pickle
 
 
 
@@ -99,7 +100,8 @@ def partsOfSpeech(word):
     if word in posd.keys():
         return posd[word]
     else:
-        return u'X'
+        # if the word is not in the part-of-speech dictionary, return the character X.
+        return u'X' 
 
 #Parts of speech are:
     # #Noun                           N
@@ -123,16 +125,32 @@ def partsOfSpeech(word):
 
 
 d = {}
+n = 0
 with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:
     for line in f:
         temp = line.replace(',', '').split()
         d[temp[0]] = (temp[1], rhymeVowel(temp[1]), numSyllables(temp[1]), partsOfSpeech(temp[0]))
-        print temp[0], d[temp[0]]
+        n += 1
+        print temp[0], n
 
+pickle.dump(d, open("word_data.p", "wb"))
 
 #print d
 
 #  #       
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

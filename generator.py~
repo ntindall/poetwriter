@@ -1,13 +1,13 @@
 #STD LIBRARIES
 from optparse import OptionParser
-import math, random, copy, operator
+import math, random, copy
 
 #CUSTOM LIBRARIES
-#import en #NLP library
-#from wordnik import * #dictionary with part of speech, synonyms, related word
-#apiUrl = 'http://api.wordnik.com/v4'
-#apiKey = '1453b0da46be3985ab0040b354601405dbb094b3e77e51454'
-#client = swagger.ApiClient(apiKey, apiUrl)
+import en #NLP library
+from wordnik import * #dictionary with part of speech, synonyms, related word
+apiUrl = 'http://api.wordnik.com/v4'
+apiKey = '1453b0da46be3985ab0040b354601405dbb094b3e77e51454'
+client = swagger.ApiClient(apiKey, apiUrl)
 
 #FILES
 import searchutil, util
@@ -19,8 +19,6 @@ if __name__ == '__main__':
     parser.add_option('-n', '--n-gram', type='int', dest='ngrams', default=1)
     parser.add_option('-f', '--file', dest='filename', default=1)
     parser.add_option('-o', '--output', type='int', dest='npoems', default=3)
-    parser.add_option('-l', '--sentence-length', type='int', dest='sentenceLength', default=1)
-    parser.add_option('-s', '--source', dest='source')
     (options, args) = parser.parse_args()
  
 # Generate poetry based on a corpus       
@@ -74,6 +72,8 @@ class PoetrySearchProblem(searchutil.SearchProblem):
         if not seed:
             #Assumption: the initial seed will fit on the first line. 
 
+
+
             seed = util.weightedRandomChoice(self.grammar.frequency_map)
             new_poem = copy.deepcopy(poem) #necessary
             words = ""
@@ -93,28 +93,29 @@ class PoetrySearchProblem(searchutil.SearchProblem):
         # performed here. There is no error checking in the Line or Poetry objects.
         # The rhyming word needs to be passed back and forth between Poetry and Line
         # objects once they are completed (not implemented)
-        if seed in self.grammar.word_map: 
-            for word, frequency in self.grammar.word_map[seed].iteritems(): #CONSIDER ALL POSSIBLE BRANCHES
-            # word: the word that follows the current seed given the n-gram model
-            # frequency: the number of times that that word occurs after the given seed
-                new_poem = copy.deepcopy(poem) #necessary
-                curr = new_poem.getLine()
-                if curr:
-                    if curr.add(word): #if the word fits on the current line
-                        broken_seed = [seed[i] for i in range(len(seed))]
-                        broken_seed.pop(0)
-                        broken_seed.append(word)
-                        new_seed = tuple(broken_seed)
-                        cost = frequency
-                        if not curr: #line has been finished
-                            if curr.propagator:
-                                for line_i in curr.paired_indices:
-                                    if new_poem[line_i].constraint == "": #line has no previous constraint
-                                        new_poem[line_i].constraint = word
-                            new_poem.iterate()
-                        result.append((word, (new_poem, new_seed), cost))
-            # Idea: sort by descending frequencies so that it looks down more likely paths first
-            result.sort(key=operator.itemgetter(2), reverse=True)
+        for word in self.grammar.word_map[seed]: #CONSIDER ALL POSSIBLE BRANCHES
+            new_poem = copy.deepcopy(poem) #necessary
+            curr = new_poem.getLine()
+            if curr: 
+                if (curr.syllables_left == curr.goal):
+                    cost = -1000 #new line bonus 
+                else:
+                    cost = curr.syllables_left * 10 #favor forward motion
+
+                if curr.add(word): #if the word fits on the current line
+                    broken_seed = [seed[i] for i in range(len(seed))]
+                    broken_seed.pop(0)
+                    broken_seed.append(word)
+                    new_seed = tuple(broken_seed)
+                    if new_seed in self.grammar.frequency_map: #favor more frequent seeds
+                        cost += 10.0 / self.grammar.frequency_map[new_seed]
+                    if not curr: #line has been finished
+                        if curr.propagator:
+                            for line_i in curr.paired_indices:
+                                if new_poem[line_i].constraint == "": #line has no previous constraint
+                                    new_poem[line_i].constraint = word
+                        new_poem.iterate()
+                    result.append((word, (new_poem, new_seed), cost))
         return result
 
 #########################################################################
@@ -123,11 +124,11 @@ class PoetrySearchProblem(searchutil.SearchProblem):
 
 # Example usage:
 # python generator.py -n 2 -f "lyrics/eminem.txt" -o 4
-print "reading corpus file..."
+
 corpus = Corpus(options.filename)
-corpus.analyze(options.ngrams, options.source)
+corpus.analyze(options.ngrams)
 #print corpus.word_map
-print "finished reading corpus."
+
 # NEW
 # About the pairs.
 # Assumption, pairs are increasing (propagator, receiver) 
@@ -137,19 +138,12 @@ print "finished reading corpus."
 # [(0,1),(0,5),(2,3),(3,4),(5,6),(6,7)] will work, while [(0,1),(0,7),(2,3),(3,4),(5,6),(6,7)]
 # will yield errors, better to be consistent: [(0,1), (0,5), (0,6),(0,7),(2,3),(2,4)]
 # Successive chains are safe, while separated ones require more tentative handling
-
-
-
-# pairs = [(0,2),(1,3),(4,6),(5,7),(8,10),(9,11),(12,13)]
-# haiku = [(5,[]),(7,[]),(5,[])]
-# parameters = [(10, pairs) for _ in range(14)] #stub, assumed 8 syllables (words) per line
 pairs = [(0,1),(2,3),(4,5),(6,7)]
-parameters = [(10, pairs) for _ in range(8)] #stub, assumed 8 syllables (words) per line
+parameters = [(12, pairs) for _ in range(8)] #stub, assumed 8 syllables (words) per line
 grammar = Grammar(corpus.frequency_map, corpus.word_map)
 
-
 for i in range(options.npoems):
-    poem = Poetry(parameters, options.sentenceLength)
+    poem = Poetry(parameters)
     problem = PoetrySearchProblem(poem, grammar)
 
     #UNIFORM COST SEARCH (DJIKSTRA'S)

@@ -5,12 +5,12 @@ class Poetry (object):
     # Function: Init
     # --------------
     # Constructor for the Poetry class.
-    def __init__(self, lineParams, sentenceLength):
+    def __init__(self, lineParams):
         # lineParams are (# syllable, [pair]) tuples
         # pairs are indexed by position in lineParams (and thus in self.lines)
         self.lines = []
         for i, param in enumerate(lineParams):
-            self.lines.append(Line(i, param[0],param[1], sentenceLength))
+            self.lines.append(Line(i, param[0],param[1]))
         self.currentLine = 0
         self.numLines = len(lineParams)
 
@@ -54,14 +54,13 @@ class Poetry (object):
 class Line (object):
     # --------------
     # Constructor for the Line class.
-    def __init__(self, i, syllables, pairs, sentenceLength):
+    def __init__(self, i, syllables, pairs):
         self.number = i
         self.goal = syllables
         self.syllables_left = syllables #while syllables > 0
         self.paired_indices = []
         self.words = []
         self.last = ""
-        self.sentenceLength = sentenceLength
 
         self.constraint = ""
         self.propagator = False #line propogates a rhyme constraint
@@ -72,24 +71,6 @@ class Line (object):
                 self.paired_indices.append(tup[1])
             if tup[1] == i:
                 self.receiver = True
-
-    # Function: isFirst
-    # --------------
-    # Returns whether the line is the first line of a sentence
-    def isBegin(self):
-        if (self.number % self.sentenceLength == 0):
-            return True
-        else:
-            return False
-
-    # Function: isLast
-    # --------------
-    # Returns whether the line is the last line of a sentence
-    def isLast(self):
-        if (self.number % self.sentenceLength == self.sentenceLength - 1):
-            return True
-        else:
-            return False
 
 
     # Function: nonzero
@@ -107,7 +88,7 @@ class Line (object):
     # Function: add
     # --------------
     # Adds a new word to the line, does not add to line if the
-    # word does not fit constraints
+    # word does not 
     def add(self, word):
         #check with pairs (stub)
         syllabic_count = util.getSyllables(word)

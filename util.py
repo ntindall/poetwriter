@@ -70,11 +70,6 @@ def rhymeVowel(ipa_reading):
     else:
         return stripped_ipa[i::]
 
-# Called in poetry.py
-def getSyllables(word):
-    #boilerplate
-    return max(len(word) / 4, 1)
-
 def rhyme(word1, word2):
 
     if word1 not in d or word2 not in d:

@@ -77,7 +77,7 @@ def getSyllables(word):
     return max(len(word) / 4, 1)
 
 d = {}
-with open('IPA_Dict.txt') as f:
+with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:
     for line in f:
         temp = line.replace(',', '').split()
         d[temp[0]] = (temp[1], rhymeVowel(temp[1]), getSyllables(temp[1]))

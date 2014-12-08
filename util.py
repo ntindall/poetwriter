@@ -89,6 +89,7 @@ def rhyme(word1, word2):
         else:
             return False
 
+
 def partsOfSpeech(word):
     if word in posd.keys():
         return posd[word]

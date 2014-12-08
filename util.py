@@ -40,7 +40,6 @@ def numSyllables(ipa_reading):
     for i in range(len(ipa_reading)):
         if ipa_reading[i] in vowels:
             num += 1
-
     return num
 
 # Called in poetry.py
@@ -75,12 +74,6 @@ def rhymeVowel(ipa_reading):
 def getSyllables(word):
     #boilerplate
     return max(len(word) / 4, 1)
-
-d = {}
-with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:
-    for line in f:
-        temp = line.replace(',', '').split()
-        d[temp[0]] = (temp[1], rhymeVowel(temp[1]), getSyllables(temp[1]))
 
 def rhyme(word1, word2):
 
@@ -135,6 +128,12 @@ def partsOfSpeech(word):
 print "loading the dictionary..."
 d = pickle.load(open("word_data.p", "rb"))
 print "finished loading dictionary."
+
+# d = {}
+# with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:
+#     for line in f:
+#         temp = line.replace(',', '').split()
+#         d[temp[0]] = (temp[1], rhymeVowel(temp[1]), getSyllables(temp[1]))
 
 # n = 0
 # with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:

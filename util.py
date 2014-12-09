@@ -41,8 +41,8 @@ def isNoun(word):
     return False;
 
 def isNotPrepOrArticle(word):
-    if word in d.keys():
-        return not (u'P' in d[word][3] or u'D' in d[word][3] or u'I' in d[word][3])
+    if word in d:
+        return d[word][4]
     return False;
 
 def numSyllables(ipa_reading):
@@ -122,7 +122,7 @@ def partsOfSpeech(word):
 ############# EXECUTION
 
 print "[ ] Loading the dictionary..."
-d = pickle.load(open("word_data.p", "rb"))
+d = pickle.load(open("new_word_data.p", "rb"))
 print "[ ] Finished loading dictionary."
 
 # GETTING PARTS OF SPEECH

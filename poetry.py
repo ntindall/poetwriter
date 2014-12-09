@@ -147,7 +147,7 @@ class Line (object):
                 self.last = word
                 return True
             else:
-                return false
+                return False
         # word doesn't fit
         else:
             return False 

@@ -101,10 +101,8 @@ class PoetrySearchProblem(searchutil.SearchProblem):
                 for y in range(self.ngrams - 1):
                     first_seed.append('-BEGIN-')
                 startWord = util.weightedRandomChoice(self.grammar.begin_map)
-                #print "startWord is: ", startWord
                 first_seed.append(startWord)
                 seed = tuple(first_seed)
-                #print "seed is: ", seed
                 new_poem = copy.deepcopy(poem)
                 curr = new_poem.getLine()
                 if curr:
@@ -207,9 +205,7 @@ if options.type == 'octave': #eight lines of iambic pentameter ABBA CDDC
     pairs = [(0,3),(1,2),(4,7),(5,6)]
     parameters = [(10, pairs) for _ in range(8)]
 
-
-#initialize grammar
-
+#Initialize grammar
 grammar = Grammar(corpus.frequency_map, corpus.word_map, corpus.begin_map)
 
 for i in range(options.npoems):

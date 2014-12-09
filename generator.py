@@ -66,6 +66,7 @@ class PoetrySearchProblem(searchutil.SearchProblem):
         #(current poem state, seed)
         poem, seed = state
         numSeeds = self.beginseeds
+        
         # Initial call, seed needs to be initialized. 
         # -------------------------------------------
         if not seed:
@@ -79,7 +80,7 @@ class PoetrySearchProblem(searchutil.SearchProblem):
                 for i in range(len(seed)): #push seeds into first line
                     new_poem.getLine().add(seed[i])
                 self.poem = new_poem
-                toReturn.append([(seed, (new_poem, seed), 0)])
+                toReturn.append((seed, (new_poem, seed), 0))
             return toReturn
         
         # Branching calls

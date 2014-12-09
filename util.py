@@ -42,6 +42,7 @@ def isNoun(word):
 
 def isNotPrepOrArticle(word):
     if word in d:
+        #print word, d[word][4]
         return d[word][4]
     return False;
 

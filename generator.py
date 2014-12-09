@@ -65,18 +65,22 @@ class PoetrySearchProblem(searchutil.SearchProblem):
     def succAndCost(self, state):
         #(current poem state, seed)
         poem, seed = state
+        numSeeds = self.beginseeds
         # Initial call, seed needs to be initialized. 
         # -------------------------------------------
         if not seed:
-            #Assumption: the initial seed will fit on the first line. 
-            seed = util.weightedRandomChoice(self.grammar.frequency_map)
-            while ((seed[0] not in self.grammar.begin_map) or ('-BEGIN-' in seed)):
+            toReturn = []
+            #Assumption: the initial seed will fit on the first line.
+            for _ in range(numSeeds):
                 seed = util.weightedRandomChoice(self.grammar.frequency_map)
-            new_poem = copy.deepcopy(poem) #necessary
-            for i in range(len(seed)): #push seeds into first line
-                new_poem.getLine().add(seed[i])
-            self.poem = new_poem
-            return [(seed, (new_poem, seed), 0)]
+                while ((seed[0] not in self.grammar.begin_map) or ('-BEGIN-' in seed)):
+                    seed = util.weightedRandomChoice(self.grammar.frequency_map)
+                new_poem = copy.deepcopy(poem) #necessary
+                for i in range(len(seed)): #push seeds into first line
+                    new_poem.getLine().add(seed[i])
+                self.poem = new_poem
+                toReturn.append([(seed, (new_poem, seed), 0)])
+            return toReturn
         
         # Branching calls
         # -------------------------------------------
@@ -88,7 +92,7 @@ class PoetrySearchProblem(searchutil.SearchProblem):
 
         if (poem.isFirst()):
             #print "poem isFirst so we get new sentence seeds"
-            numSeeds = self.beginseeds #This is the number of starting seeds this returns
+            #This is the number of starting seeds this returns
             for x in range(numSeeds):
                 first_seed = []
                 for y in range(self.ngrams - 1):

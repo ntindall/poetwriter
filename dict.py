@@ -1,20 +1,30 @@
 import pickle, sys
 
-d = pickle.load(open("word_data.p", "rb"))
-new_dict = {}
+def rhyme(word1, word2):
 
-def isNotPrepOrArticle(word):
-    return not (u'P' in d[word][3] or u'D' in d[word][3] or u'I' in d[word][3] or u'C' in d[word][3]) 
-    return False;
+    if word1 not in d or word2 not in d:
+        # heuristic, safe to take slice if len < 3
+        return (word1[-3:] == word2[-3:] and word1 != word2)
+    else:
+        if d[word1][0] == d[word2][0]:
+            return False
+        if d[word1][1] == d[word2][1]:
+            return True
+        else:
+            return False
 
-n = 0
+d = pickle.load(open("new_word_data.p", "rb"))
+
+rhymecount = {}
 for word in d.keys():
-	a, b, c, f = d[word]
-	e = isNotPrepOrArticle(word)
-	new_dict[word] = (a, b, c, f, e)
-	n += 1
-	print n, word, new_dict[word]
+	counter = 0
+	for word2 in d.keys():
+		if rhyme(word, word2):
+			counter += 1
+	rhymecount[word] = counter
+	print word, counter
 
-pickle.dump(new_dict, open("new_word_data.p", "wb"))
+
+pickle.dump(rhymecount, open("rhymecount.p", "wb"))
 
 #print isNotPrepOrArticle(sys.argv[1]), d[sys.argv[1]]

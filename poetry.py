@@ -126,11 +126,11 @@ class Line (object):
             self.syllables_left -= syllabic_count
             return True
         # word fits, is final word
-        if (self.syllables_left == syllabic_count):
+        if (self.syllables_left == syllabic_count) and util.isNotPrepOrArticle(word):
             #print "word fits"
             if self.receiver:
                 #print "word is a receiver"
-                if util.rhyme(word, self.constraint) and util.isNoun(word):
+                if util.rhyme(word, self.constraint):
                     #print "rhyme found"
                     self.words.append(word)
                     self.syllables_left -= syllabic_count

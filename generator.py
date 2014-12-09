@@ -16,9 +16,11 @@ if __name__ == '__main__':
     parser.add_option('-s', '--source', dest='source')
     parser.add_option('-p', '--probabilistic', type='int', dest='probabilistic', default=1)
     parser.add_option('-b', '--begin-seeds', type='int', dest='beginseeds', default=5)
+    parser.add_option('-t', '--type', dest='type', default='sonnet')
+    parser.add_option('-r', '--branching', type='int', dest='branching')
     (options, args) = parser.parse_args()
  
-# Generate poetry based on a corpus       
+# Generate poetry based on a corpus, stepping stone implementation     
 def generate(corpus):
     parameters = [(8,[]) for _ in range(8)] #stub, assumed 8 syllables (words) per line
     poem = Poetry(parameters)
@@ -159,9 +161,13 @@ class PoetrySearchProblem(searchutil.SearchProblem):
                 toAdd = util.weightedRandomChoice(result)
                 toReturn.append(toAdd)
                 del result[toAdd]
+            if (options.branching):
+                return toReturn[:options.branching]
             return toReturn
         else:
             result.sort(key=operator.itemgetter(2), reverse=True)
+            if (options.branching):
+                return result[:options.branching]
             return result
 
 #########################################################################
@@ -170,30 +176,41 @@ class PoetrySearchProblem(searchutil.SearchProblem):
 
 # Example usage:
 # python generator.py -n 2 -f "lyrics/eminem.txt" -o 4
+# python generator.py -f corpora/shakespeare.txt -n 2 -o 1 -s rap -l 2 -b 10 -t octave -r 3 -p 1
+
 print "[ ] Reading corpus file..."
 corpus = Corpus(options.filename)
 corpus.analyze(options.ngrams, options.source)
 #print corpus.word_map
 print "[ ] Finished reading corpus, n-gram model generated."
-# NEW
-# About the pairs.
-# Assumption, pairs are increasing (propagator, receiver) 
-# order, can't propagate to self. Chains must be fully realized,
-# i.e. [(0,1), (0,7), (6,7)] is invalid, while [(0,1), (0,6),(0,7),(6,7)]
-# is valid (though the last item is redundant).
-# [(0,1),(0,5),(2,3),(3,4),(5,6),(6,7)] will work, while [(0,1),(0,7),(2,3),(3,4),(5,6),(6,7)]
-# will yield errors, better to be consistent: [(0,1), (0,5), (0,6),(0,7),(2,3),(2,4)]
+
+
+# HYPERPARAMETERS: THE PAIR LIST
+# 
+# Assumption: pairs are increasing (propagator, receiver) order, can't propagate to self. 
+# Chains must be fully realized, i.e. [(0,1), (0,7), (6,7)] is invalid, while [(0,1), (0,6),(0,7),(6,7)]
+# is valid (though the last item is redundant). [(0,1),(0,5),(2,3),(3,4),(5,6),(6,7)] will work, while 
+# [(0,1),(0,7),(2,3),(3,4),(5,6),(6,7)], will yield errors, better to be consistent:
+# [(0,1), (0,5), (0,6),(0,7),(2,3),(2,4)]
+#
 # Successive chains are safe, while separated ones require more tentative handling
 
+if options.type == 'sonnet':
+    pairs = [(0,2),(1,3),(4,6),(5,7),(8,10),(9,11),(12,13)] #ABABCDCDEFEFGG
+    parameters = [(10, pairs) for _ in range(14)]
+if options.type == 'haiku':
+    parameters = [(5,[]),(7,[]),(5,[])]
+if options.type == 'eight': #eight lines of iambic tetameter AA BB CC DD
+    pairs = [(0,1),(2,3),(4,5),(6,7)]
+    parameters = [(8, pairs) for _ in range(8)]
+if options.type == 'octave': #eight lines of iambic pentameter ABBA CDDC
+    pairs = [(0,3),(1,2),(4,7),(5,6)]
+    parameters = [(10, pairs) for _ in range(8)]
 
 
-# pairs = [(0,2),(1,3),(4,6),(5,7),(8,10),(9,11),(12,13)]
-# haiku = [(5,[]),(7,[]),(5,[])]
-# parameters = [(10, pairs) for _ in range(14)] #stub, assumed 8 syllables (words) per line
-pairs = [(0,1),(2,3),(4,5),(6,7)]
-parameters = [(10, pairs) for _ in range(8)] #stub, assumed 10 syllables (words) per line
+#initialize grammar
+
 grammar = Grammar(corpus.frequency_map, corpus.word_map, corpus.begin_map)
-
 
 for i in range(options.npoems):
     poem = Poetry(parameters, options.sentenceLength)
@@ -215,9 +232,8 @@ for i in range(options.npoems):
         print solution
     else:
         print "NO SOLUTION FOUND"
-#NEW
 
-
+# # Part of stepping stone
 # for i in range(options.npoems):
 #     output = generate(corpus)
 #     print output

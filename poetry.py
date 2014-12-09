@@ -126,25 +126,28 @@ class Line (object):
             self.syllables_left -= syllabic_count
             return True
         # word fits, is final word
-        if (self.syllables_left == syllabic_count) and util.isNotPrepOrArticle(word):
-            #print "word fits"
-            if self.receiver:
-                #print "word is a receiver"
-                if util.rhyme(word, self.constraint):
-                    #print "rhyme found"
-                    self.words.append(word)
-                    self.syllables_left -= syllabic_count
-                    self.last = word
-                    print word, 'is a noun'
-                    return True
-                else: 
-                    #print "no rhyme here"
-                    return False
-            #Curr is not receiver, proceed as normal
-            self.words.append(word)
-            self.syllables_left -= syllabic_count
-            self.last = word
-            return True
+        if (self.syllables_left == syllabic_count):
+            if util.isNotPrepOrArticle(word):
+                #print "word fits"
+                if self.receiver:
+                    #print "word is a receiver"
+                    if util.rhyme(word, self.constraint):
+                        #print "rhyme found"
+                        self.words.append(word)
+                        self.syllables_left -= syllabic_count
+                        self.last = word
+                        print word, 'is a noun'
+                        return True
+                    else: 
+                        #print "no rhyme here"
+                        return False
+                #Curr is not receiver, proceed as normal
+                self.words.append(word)
+                self.syllables_left -= syllabic_count
+                self.last = word
+                return True
+            else:
+                return false
         # word doesn't fit
         else:
             return False 

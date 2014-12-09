@@ -1,3 +1,7 @@
+# FILE: poetry.py 
+# ---------------------------------
+# Houses the Poetry and Line classes
+
 import util
 
 # The current state of a given poem

@@ -1,3 +1,8 @@
+# FILE: util.py 
+# ---------------------------------
+# Contains utility functions used thoughout every module. 
+
+
 # coding: UTF-8
 import random
 import re

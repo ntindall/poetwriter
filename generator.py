@@ -1,3 +1,7 @@
+# FILE: generator.py
+# ---------------------------------
+# Main generator script
+
 #STD LIBRARIES
 from optparse import OptionParser
 import math, random, copy, operator, time

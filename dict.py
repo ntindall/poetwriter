@@ -1,3 +1,7 @@
+# FILE: dict.py 
+# ---------------------------------
+# Testing module for pickle dictionary
+
 import pickle, sys
 
 d = pickle.load(open("word_data.p", "rb"))

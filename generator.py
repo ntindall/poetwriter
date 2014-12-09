@@ -14,6 +14,8 @@ if __name__ == '__main__':
     parser.add_option('-o', '--output', type='int', dest='npoems', default=3)
     parser.add_option('-l', '--sentence-length', type='int', dest='sentenceLength', default=1)
     parser.add_option('-s', '--source', dest='source')
+    parser.add_option('-p', '--probabilistic', type='int', dest='probabilistic', default=1)
+    parser.add_option('-b', '--begin-seeds', type='int', dest='beginseeds', default=5)
     (options, args) = parser.parse_args()
  
 # Generate poetry based on a corpus       
@@ -40,8 +42,10 @@ def generate(corpus):
 
 class PoetrySearchProblem(searchutil.SearchProblem):
 
-    def __init__(self, poem, grammar, ngrams): 
+    def __init__(self, poem, grammar, ngrams, probabilistic, beginseeds): 
         self.poem, self.grammar, self.ngrams = poem, grammar, ngrams
+        self.probabilistic = probabilistic
+        self.beginseeds = beginseeds
 
     # Poem object passed into problem, with syllabic and rhyme
     # constraints initialized with the object
@@ -61,17 +65,14 @@ class PoetrySearchProblem(searchutil.SearchProblem):
     def succAndCost(self, state):
         #(current poem state, seed)
         poem, seed = state
-        initialState = False
         # Initial call, seed needs to be initialized. 
         # -------------------------------------------
         if not seed:
             #Assumption: the initial seed will fit on the first line. 
-            initialState = True
             seed = util.weightedRandomChoice(self.grammar.frequency_map)
             while ((seed[0] not in self.grammar.begin_map) or ('-BEGIN-' in seed)):
                 seed = util.weightedRandomChoice(self.grammar.frequency_map)
             new_poem = copy.deepcopy(poem) #necessary
-            words = ""
             for i in range(len(seed)): #push seeds into first line
                 new_poem.getLine().add(seed[i])
             self.poem = new_poem
@@ -79,63 +80,85 @@ class PoetrySearchProblem(searchutil.SearchProblem):
         
         # Branching calls
         # -------------------------------------------
-        result = []
-       # print poem #comment out if you want to see the poem being constructed
-        
+        if self.probabilistic:
+            result = {}
+        else:
+            result = []
+        print poem #comment out if you want to see the poem being constructed
 
+        if (poem.isFirst()):
+            #print "poem isFirst so we get new sentence seeds"
+            numSeeds = self.beginseeds #This is the number of starting seeds this returns
+            for x in range(numSeeds):
+                first_seed = []
+                for y in range(self.ngrams - 1):
+                    first_seed.append('-BEGIN-')
+                startWord = util.weightedRandomChoice(self.grammar.begin_map)
+                #print "startWord is: ", startWord
+                first_seed.append(startWord)
+                seed = tuple(first_seed)
+                #print "seed is: ", seed
+                new_poem = copy.deepcopy(poem)
+                curr = new_poem.getLine()
+                if curr:
+                    if curr.add(startWord):
+                        #print "added seed potentially"
+                        #time.sleep(5)
+                        if not curr: #line has been finished
+                            if curr.propagator:
+                                for line_i in curr.paired_indices:
+                                    if new_poem[line_i].constraint == "": #line has no previous constraint
+                                        new_poem[line_i].constraint = startWord
+                            new_poem.iterate()
+                        if self.probabilistic:
+                            result[(startWord, (new_poem, seed), self.grammar.begin_map[startWord])] = self.grammar.begin_map[startWord]
+                        else:
+                            result.append((startWord, (new_poem, seed), self.grammar.begin_map[startWord]))
 
-        if (poem.isFirst() and not(initialState)):
-            #print "poem is first so we get a new sentence seed"
-            first_seed = []
-            #PROBLEM PROBLEM WE WANT THE WORD IN THE SEED TO BE THE FIRST WORD,
-            #NOT THE PRECURSOR WORD
-            #@#%$^@#$%^#@$#%$@^@%$@$#%@$^@$#%@#$^@$%@#$^@$%@$#^
-            #@#$%@#$%@%^#%$^%$#%^%@$%$#@^$@%^@$@#$%@$^@$%^@$%^@#$
-            #STOP HERE
-            #PROBLEM
-            #AYYYY
-            #BUT FIX THIS THO
-            #ALSO, MAKE THE NGRAM SELECTION PROBABILISTIC YO
-            for _ in range(self.ngrams - 1):
-                first_seed.append('-BEGIN-')
-            first_seed.append(util.weightedRandomChoice(self.grammar.begin_map))
-            seed = tuple(first_seed)
-
-        #if poem.isFirst(): print "seed is: ", seed
         # IMPORTANT NOTE
         # For every successor word, consider all possible children nodes.
         # Pruning to meet rhyming and syllabic constraints of actions needs to be
         # performed here. There is no error checking in the Line or Poetry objects.
         # The rhyming word needs to be passed back and forth between Poetry and Line
         # objects once they are completed (not implemented)
-        if seed in self.grammar.word_map:
-            #if poem.isFirst(): print "seed is in the word_map"
-            #if poem.isFirst(): time.sleep(15)
-            for word, frequency in self.grammar.word_map[seed].iteritems(): #CONSIDER ALL POSSIBLE BRANCHES
-                #print "word choice: ", word
-            # word: the word that follows the current seed given the n-gram model
-            # frequency: the number of times that that word occurs after the given seed
-                if (not(word == '-BEGIN-')):
-                    new_poem = copy.deepcopy(poem) #necessary
-                    curr = new_poem.getLine()
-                    if curr:
-                        if curr.add(word): #if the word fits on the current line
-                            #print "word fits"
-                            broken_seed = [seed[i] for i in range(len(seed))]
-                            broken_seed.pop(0)
-                            broken_seed.append(word)
-                            new_seed = tuple(broken_seed)
-                            cost = frequency
-                            if not curr: #line has been finished
-                                if curr.propagator:
-                                    for line_i in curr.paired_indices:
-                                        if new_poem[line_i].constraint == "": #line has no previous constraint
-                                            new_poem[line_i].constraint = word
-                                new_poem.iterate()
-                            result.append((word, (new_poem, new_seed), cost))
-            # Idea: sort by descending frequencies so that it looks down more likely paths first
+        else:
+            if seed in self.grammar.word_map:
+                for word, frequency in self.grammar.word_map[seed].iteritems(): #CONSIDER ALL POSSIBLE BRANCHES
+                # word: the word that follows the current seed given the n-gram model
+                # frequency: the number of times that that word occurs after the given seed
+                    if (not(word == '-BEGIN-')):
+                        new_poem = copy.deepcopy(poem) #necessary
+                        curr = new_poem.getLine()
+                        if curr:
+                            if curr.add(word): #if the word fits on the current line
+                                broken_seed = [seed[i] for i in range(len(seed))]
+                                broken_seed.pop(0)
+                                broken_seed.append(word)
+                                new_seed = tuple(broken_seed)
+                                cost = frequency
+                                if not curr: #line has been finished
+                                    if curr.propagator:
+                                        for line_i in curr.paired_indices:
+                                            if new_poem[line_i].constraint == "": #line has no previous constraint
+                                                new_poem[line_i].constraint = word
+                                    new_poem.iterate()
+                                if self.probabilistic:
+                                    result[(word, (new_poem, new_seed), cost)] = cost
+                                else:
+                                    result.append((word, (new_poem, new_seed), cost))
+        # Idea: sort by descending frequencies so that it looks down more likely paths first
+        # or make the ordering probabilistic
+        if self.probabilistic:
+            toReturn = []
+            resultLength = len(result.keys())
+            for _ in range(resultLength):
+                toAdd = util.weightedRandomChoice(result)
+                toReturn.append(toAdd)
+                del result[toAdd]
+            return toReturn
+        else:
             result.sort(key=operator.itemgetter(2), reverse=True)
-        return result
+            return result
 
 #########################################################################
 # MAIN EXECUTION
@@ -170,7 +193,7 @@ grammar = Grammar(corpus.frequency_map, corpus.word_map, corpus.begin_map)
 
 for i in range(options.npoems):
     poem = Poetry(parameters, options.sentenceLength)
-    problem = PoetrySearchProblem(poem, grammar, options.ngrams)
+    problem = PoetrySearchProblem(poem, grammar, options.ngrams, options.probabilistic, options.beginseeds)
 
     #UNIFORM COST SEARCH (DJIKSTRA'S)
     #ucs = searchutil.UniformCostSearch(verbose=1)

@@ -4,7 +4,7 @@
 
 #STD LIBRARIES
 from optparse import OptionParser
-import math, random, copy, operator, time, statistics
+import math, random, copy, operator, time, numpy
 
 #FILES
 import searchutil, util
@@ -276,7 +276,7 @@ for i in range(options.npoems):
 
 #Print generated poems 
 if (options.npoems > 1):
-    total = 0
+    times = []
     for poem, bts, time in written: #includes times of unfound solutions
         if poem: 
             bts.stats()
@@ -284,11 +284,15 @@ if (options.npoems > 1):
             print ""
             print poem
             print ""
-        total += time
+        times.append(time)
     print "[ ] attempted to satisfy %d poems" % options.npoems
     print "[ ] %d found" % sum(1 if t[0] else 0 for t in written)
-    print "[ ] total time = %f" % total
-    print "[ ] average = %f" % (total / options.npoems)
+    print "[ ] total time = %f" % sum(times)
+    print "[ ] mean = %f" % numpy.average(times)
+    print "[ ] median = %f" % numpy.median(times)
+    print "[ ] stdev = %f" % numpy.std(times)
+
+
 
 
 # # Part of stepping stone

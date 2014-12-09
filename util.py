@@ -34,6 +34,11 @@ def weightedRandomChoice(weightDict):
 #must be unicode!!!! 
 vowels = u'æɑəɪieɛɝɚɐʌʊuoɔa' #ɹ
 
+#called in poetry.py
+def isNoun(word):
+    if word in d.keys():
+        return u'N' in d[word][3]
+    return False;
 
 def numSyllables(ipa_reading):
     num = 0

@@ -80,7 +80,7 @@ class PoetrySearchProblem(searchutil.SearchProblem):
         # Branching calls
         # -------------------------------------------
         result = []
-       # print poem #comment out if you want to see the poem being constructed
+        print poem #comment out if you want to see the poem being constructed
         
 
 

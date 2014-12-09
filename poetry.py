@@ -130,11 +130,12 @@ class Line (object):
             #print "word fits"
             if self.receiver:
                 #print "word is a receiver"
-                if util.rhyme(word, self.constraint):
+                if util.rhyme(word, self.constraint) and util.isNoun(word):
                     #print "rhyme found"
                     self.words.append(word)
                     self.syllables_left -= syllabic_count
                     self.last = word
+                    print word, 'is a noun'
                     return True
                 else: 
                     #print "no rhyme here"

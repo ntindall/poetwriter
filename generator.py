@@ -4,7 +4,7 @@
 
 #STD LIBRARIES
 from optparse import OptionParser
-import math, random, copy, operator, time
+import math, random, copy, operator, time, statistics
 
 #FILES
 import searchutil, util
@@ -207,6 +207,9 @@ class PoetrySearchProblem(searchutil.SearchProblem):
 # Example usage:
 # python generator.py -n 2 -f "lyrics/eminem.txt" -o 4
 # python generator.py -f corpora/shakespeare.txt -n 2 -o 1 -s rap -l 2 -b 10 -t octave -r 3 -p 1
+# python generator.py -f corpora/shakespeare.txt -n 2 -o 2 -l 2 -b 10 -t eight -r 3 -p 1 -v 1
+# python generator.py -f corpora/shakespeare.txt -n 3 -o 5 -l 2 -b 10 -t eight -r 3 -p 1 -v 1
+
 
 print "[ ] Reading corpus file..."
 corpus = Corpus(options.filename)
@@ -247,6 +250,7 @@ if (options.verbose > 2):
 
 written = []
 for i in range(options.npoems):
+    start = time.time()
     poem = Poetry(parameters, options.sentenceLength)
     problem = PoetrySearchProblem(poem, grammar, options.ngrams, options.probabilistic, options.beginseeds)
 
@@ -258,24 +262,33 @@ for i in range(options.npoems):
     #DEPTH FIRST SEARCH
     bts = searchutil.DepthFirstSearch(verbose=1)
     bts.solve(problem)
+    end = time.time()
     print ""
     if bts.solution:
         solution, final_seed = bts.solution
-        written.append((solution, bts))
+        written.append((solution, bts, end - start))
         print "RESULT"
 
         print solution
     else:
+        written.append((None,None, end-start))
         print "NO SOLUTION FOUND"
 
 #Print generated poems 
 if (options.npoems > 1):
-    print "[ ] attempted to satisfy %n poems", options.npoems
-    print "[ ] %n found", len(written)
-    for poem, bts in written:
-        bts.stats()
-        print poem
-        print ""
+    total = 0
+    for poem, bts, time in written: #includes times of unfound solutions
+        if poem: 
+            bts.stats()
+            print "Time = %f" % time
+            print ""
+            print poem
+            print ""
+        total += time
+    print "[ ] attempted to satisfy %d poems" % options.npoems
+    print "[ ] %d found" % sum(1 if t[0] else 0 for t in written)
+    print "[ ] total time = %f" % total
+    print "[ ] average = %f" % (total / options.npoems)
 
 
 # # Part of stepping stone

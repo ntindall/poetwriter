@@ -45,7 +45,7 @@ if __name__ == '__main__':
     parser.add_option('-t', '--type', dest='type', default='sonnet')
 
     # Verbosity of the generator module
-    parser.add_option('-v', '--verbose', type='int', dest='verbose' default=0)
+    parser.add_option('-v', '--verbose', type='int', dest='verbose', default=0)
     (options, args) = parser.parse_args()
  
 # Generate poetry based on a corpus, stepping stone implementation     
@@ -119,10 +119,12 @@ class PoetrySearchProblem(searchutil.SearchProblem):
             result = {}
         else:
             result = []
-        print poem #comment out if you want to see the poem being constructed
+        if (options.verbose > 0):
+            print poem 
 
         if (poem.isFirst()):
-            #print "poem isFirst so we get new sentence seeds"
+            if (options.verbose > 1):
+                print "[ ] poem isFirst so we get new sentence seeds"
             #This is the number of starting seeds this returns
             for x in range(numSeeds):
                 first_seed = []
@@ -135,8 +137,8 @@ class PoetrySearchProblem(searchutil.SearchProblem):
                 curr = new_poem.getLine()
                 if curr:
                     if curr.add(startWord):
-                        #print "added seed potentially"
-                        #time.sleep(5)
+                        if (options.verbose > 1):
+                            print "[ ] reseeded grammar with: ", startWord
                         if not curr: #line has been finished
                             if curr.propagator:
                                 for line_i in curr.paired_indices:
@@ -163,6 +165,8 @@ class PoetrySearchProblem(searchutil.SearchProblem):
                         curr = new_poem.getLine()
                         if curr:
                             if curr.add(word): #if the word fits on the current line
+                                if (options.verbose > 1):
+                                    print "[ ] added seed ", startWord
                                 broken_seed = [seed[i] for i in range(len(seed))]
                                 broken_seed.pop(0)
                                 broken_seed.append(word)
@@ -207,7 +211,8 @@ class PoetrySearchProblem(searchutil.SearchProblem):
 print "[ ] Reading corpus file..."
 corpus = Corpus(options.filename)
 corpus.analyze(options.ngrams, options.source)
-#print corpus.word_map
+if (options.verbose > 2):
+    print corpus.word_map
 print "[ ] Finished reading corpus, n-gram model generated."
 
 
@@ -236,6 +241,11 @@ if options.type == 'octave': #eight lines of iambic pentameter ABBA CDDC
 #Initialize grammar
 grammar = Grammar(corpus.frequency_map, corpus.word_map, corpus.begin_map)
 
+if (options.verbose > 2):
+    print "[ ] Pairs: ", pairs
+    print "[ ] Parameters: ", parameters
+
+written = []
 for i in range(options.npoems):
     poem = Poetry(parameters, options.sentenceLength)
     problem = PoetrySearchProblem(poem, grammar, options.ngrams, options.probabilistic, options.beginseeds)
@@ -251,11 +261,22 @@ for i in range(options.npoems):
     print ""
     if bts.solution:
         solution, final_seed = bts.solution
+        written.append((solution, bts))
         print "RESULT"
 
         print solution
     else:
         print "NO SOLUTION FOUND"
+
+#Print generated poems 
+if (options.npoems > 1):
+    print "[ ] attempted to satisfy %n poems", options.npoems
+    print "[ ] %n found", len(written)
+    for poem, bts in written:
+        bts.stats()
+        print poem
+        print ""
+
 
 # # Part of stepping stone
 # for i in range(options.npoems):

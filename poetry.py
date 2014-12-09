@@ -119,10 +119,10 @@ class Line (object):
     # Adds a new word to the line, does not add to line if the
     # word does not fit constraints
     def add(self, word):
-        #check with pairs (stub)
         syllabic_count = util.getSyllables(word)
         #print "word has ", syllabic_count, " syllables"
         #print "the line has ", self.syllables_left, "syllables left"
+        
         # word fits with room to spare
         if (self.syllables_left > syllabic_count):
             #print "word fits with room to spare"
@@ -140,7 +140,7 @@ class Line (object):
                         self.words.append(word)
                         self.syllables_left -= syllabic_count
                         self.last = word
-                        print word, 'is a noun'
+                        #print word, 'is a noun'
                         return True
                     else: 
                         #print "no rhyme here"

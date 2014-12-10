@@ -188,14 +188,12 @@ class PoetrySearchProblem(searchutil.SearchProblem):
 # python generator.py -f corpora/shakespeare.txt -n 2 -o 2 -l 2 -b 10 -t eight -r 3 -p 1 -v 1
 # python generator.py -f corpora/shakespeare.txt -n 3 -o 5 -l 2 -b 10 -t eight -r 3 -p 1 -v 1
 
-
 print "[ ] Reading corpus file..."
 corpus = Corpus(options.filename)
 corpus.analyze(options.ngrams, options.source)
 if (options.verbose > 2):
     print corpus.word_map
 print "[ ] Finished reading corpus, n-gram model generated."
-
 
 # HYPERPARAMETERS: THE PAIR LIST
 # 
@@ -229,6 +227,7 @@ if (options.verbose > 2):
     print "[ ] Pairs: ", pairs
     print "[ ] Parameters: ", parameters
 
+# Keep track of every poem written
 written = []
 
 for i in range(options.npoems):

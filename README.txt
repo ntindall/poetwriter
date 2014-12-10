@@ -98,7 +98,43 @@ util.py: Utility functions
 ---------------------------------------------------------------
 - ALGORITHMIC APPROACH                                        -
 ---------------------------------------------------------------
+Our algorithm uses depth first search in order to solve the 
+constraints of the poetry object. We have defined the search
+problem in the following manner:
+
+* startState: (current poem state, current seed)
+* isGoal(state): state[0] is a completed poem
+* succAndCost(state): performs search over the language model
+  by iteratively re-seeding corpus in an attempt to satisfy
+  the Poetry class. Words are added to lines, and paths dis-
+  carded if they break the constraints of the model.
 
 ---------------------------------------------------------------
 - USAGE                                                       -
 ---------------------------------------------------------------
+
+* (-n), default 1
+  Order of the n gram model
+* (-f), default "whitman.txt"
+  Corpus file, used to train the languaeg model
+* (-o), default 3
+  The number of poems to output
+* (-l), default 1
+  The phrase length (number of lines that the n-gram wraps 
+  around before reseeding).
+* (-s)
+  The type of corpus, in order to facilitate corpus cleanup
+* (-p), default true
+  Whether the model is probabalistic when selecting actions (if 
+  not selected, chooses more frequent seeds first
+* (-b), default 3
+  The number of initial seeds to try before backtracking 
+  (when the grammar is reseeded)
+* (-r)
+  The number of children seeds to try before backtracking, 
+  selects the r most frequent children or the first r children
+  randomly selected (if probabilistic).
+* (-t), default quad
+  The type of poetry to output (options: sonnet, haiku, eight, octave, quad)
+* (-v), default 0
+  The verbosity of the program

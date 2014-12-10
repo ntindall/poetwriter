@@ -18,8 +18,8 @@ if __name__ == '__main__':
     # Order of the n gram model
     parser.add_option('-n', '--n-gram', type='int', dest='ngrams', default=1)
 
-    # Corpus file, used to train the languaeg model
-    parser.add_option('-f', '--file', dest='filename', default=1)
+    # Corpus file, used to train the language model
+    parser.add_option('-f', '--file', dest='filename', default="corpora/whitman.txt")
 
     # The number of poems to be output
     parser.add_option('-o', '--output', type='int', dest='npoems', default=3)
@@ -35,14 +35,14 @@ if __name__ == '__main__':
     parser.add_option('-p', '--probabilistic', type='int', dest='probabilistic', default=1)
 
     # The number of initial seeds to try before backtracking (when the grammar is reseeded)
-    parser.add_option('-b', '--begin-seeds', type='int', dest='beginseeds', default=5)
+    parser.add_option('-b', '--begin-seeds', type='int', dest='beginseeds', default=3)
 
-    # The number of children seeds to try before backtracking, selects the b most frequent 
-    # children or the first b children seeded (if probabilistic)
+    # The number of children seeds to try before backtracking, selects the r most frequent 
+    # children or the first r children seeded (if probabilistic)
     parser.add_option('-r', '--branching', type='int', dest='branching')
 
-    # The type of poetry to output (options: sonnet, haiku, eight, octave)
-    parser.add_option('-t', '--type', dest='type', default='sonnet')
+    # The type of poetry to output (options: sonnet, haiku, eight, octave, quad)
+    parser.add_option('-t', '--type', dest='type', default='quad')
 
     # Verbosity of the generator module
     parser.add_option('-v', '--verbose', type='int', dest='verbose', default=0)

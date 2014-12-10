@@ -4,6 +4,7 @@
 
 import util
 import string
+import glob
 from collections import Counter
 
 # Corpus object
@@ -16,6 +17,7 @@ class Corpus(object):
         self.frequency_map = Counter()
         self.word_map = {}
         self.begin_map = Counter()
+        self.numlines = 0
     
     # n-gram algorithm
 
@@ -26,6 +28,7 @@ class Corpus(object):
     def analyze(self, n, source):
         queue = []
         for line in self.file:
+            self.numlines += 1
             line = util.clean(line)
             words = queue
             #Assumes each line in the corpus is a separate 'sentence'
@@ -101,3 +104,12 @@ class Grammar(object):
             broken_seed.append(next)
             self.seed = ' '.join(broken_seed).strip()
             self.seed_key = tuple(broken_seed)
+
+print "[ ] Reading corpus file in grammar..."
+files = glob.glob('corpora/*.txt')
+
+for txt in files:
+    
+    corpus = Corpus(txt)
+    corpus.analyze(2, 'rap')
+    print txt, ', num keys =', len(corpus.word_map.keys()), ', num lines =', corpus.numlines

@@ -47,28 +47,6 @@ if __name__ == '__main__':
     # Verbosity of the generator module
     parser.add_option('-v', '--verbose', type='int', dest='verbose', default=0)
     (options, args) = parser.parse_args()
- 
-# Generate poetry based on a corpus, stepping stone implementation     
-def generate(corpus):
-    parameters = [(8,[]) for _ in range(8)] #stub, assumed 8 syllables (words) per line
-    poem = Poetry(parameters)
-    grammar = Grammar(corpus.frequency_map, corpus.word_map)
-
-    while not poem:
-        curr = poem.getLine()
-        while curr:
-            word = grammar.next()
-            if not word: # Seed has no successsor words
-                break
-            if not curr.add(word):
-                # Word doesn't fit, try a different one
-                # Will get stuck here under a rigid syllable counting system
-                # Need to add flexibility within grammar to prevent failure
-                # See util.getSyllables
-                continue
-            grammar.update(word) #word added successfully, update seed
-        poem.iterate()
-    return poem.format()
 
 class PoetrySearchProblem(searchutil.SearchProblem):
 
@@ -299,12 +277,3 @@ if (options.npoems > 1):
     print "[ ] mean s = %f" % numpy.average(explored)
     print "[ ] median s = %f" % numpy.median(explored)
     print "[ ] stdev s= %f" % numpy.std(explored)
-
-
-
-
-# # Part of stepping stone
-# for i in range(options.npoems):
-#     output = generate(corpus)
-#     print output
-# END

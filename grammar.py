@@ -34,7 +34,7 @@ class Corpus(object):
             words.extend(line.split()) # current words to be considered
             if line.split():
                 self.begin_map[line.split()[0]] += 1
-            if ((source == "rap") and ((line == "") or (string.find(line, "verse") != -1) or (string.find(line, "hook") != -1))):
+            if ((source == "rap") and ((line == "") or (string.find(line, "verse") != -1) or (string.find(line, "hook") != -1) or or (string.find(line, "bridge") != -1))):
                 words = []
             queue = [] # reset queue upon reading new line
             while (len(words) > n):

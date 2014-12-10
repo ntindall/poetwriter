@@ -4,7 +4,7 @@
 
 #STD LIBRARIES
 from optparse import OptionParser
-import math, random, copy, operator, time, numpy
+import  math, random, copy, operator, time, numpy
 
 #FILES
 import searchutil, util
@@ -195,7 +195,7 @@ if (options.verbose > 2):
     print corpus.word_map
 print "[ ] Finished reading corpus, n-gram model generated."
 
-# HYPERPARAMETERS: THE PAIR LIST
+# ABOUT: THE PAIR LIST
 # 
 # Assumption: pairs are increasing (propagator, receiver) order, can't propagate to self. 
 # Chains must be fully realized, i.e. [(0,1), (0,7), (6,7)] is invalid, while [(0,1), (0,6),(0,7),(6,7)]

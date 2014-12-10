@@ -42,18 +42,19 @@ baseline.py: Algorithmic baseline
 * Formed algorithmic backbone and framework on which to improve
 * Archaic
 
-dict.py
-dictionary.py
-generator.py
+generator.py: Main execution
+* Run from command line to generate poetry, parses command line
+  to 
+* Instantiates a corpus and runs n gram analysis
+* Determines aparameter
+
 grammar.py
 new_word_data.p
 poetry.py
 rap_genius_scraper.rb
 README.txt
 searchutil.py
-stepping_stone.py
 util.py
-word_data.p
 
 ---------------------------------------------------------------
 - ALGORITHMIC APPROACH                                        -

@@ -52,7 +52,7 @@ def generate(frequency_map, word_map):
 		count += 1
 	output += seed
 
-	for _ in range(60 - options.ngrams):
+	for _ in range(48 - options.ngrams):
 		if seed_key not in word_map:
 			break
 		next = util.weightedRandomChoice(word_map[seed_key])

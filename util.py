@@ -130,7 +130,7 @@ print "[ ] Loading the dictionary..."
 d = pickle.load(open("new_word_data.p", "rb"))
 print "[ ] Finished loading dictionary."
 
-# GETTING PARTS OF SPEECH
+# DICTIONARY GENERATION 
 
 # posd = {}
 # with codecs.open('mobyposi.i', encoding='ISO-8859-1') as f:
@@ -143,15 +143,6 @@ print "[ ] Finished loading dictionary."
 #     for line in f:
 #         temp = line.replace(',', '').split()
 #         d[temp[0]] = (temp[1], rhymeVowel(temp[1]), getSyllables(temp[1]))
-
-# n = 0
-# with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:
-#     for line in f:
-#         temp = line.replace(',', '').split()
-#         d[temp[0]] = (temp[1], rhymeVowel(temp[1]), numSyllables(temp[1]), partsOfSpeech(temp[0]) )
-        
-#         n += 1
-#         print n, temp[0]
 
 # This writes the dictionary to file
 #pickle.dump(d, open("word_data.p", "wb"))

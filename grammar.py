@@ -105,11 +105,11 @@ class Grammar(object):
             self.seed = ' '.join(broken_seed).strip()
             self.seed_key = tuple(broken_seed)
 
-print "[ ] Reading corpus file in grammar..."
-files = glob.glob('corpora/*.txt')
+# print "[ ] Reading corpus file in grammar..."
+# files = glob.glob('corpora/*.txt')
 
-for txt in files:
+# for txt in files:
     
-    corpus = Corpus(txt)
-    corpus.analyze(2, 'rap')
-    print txt, ', num keys =', len(corpus.word_map.keys()), ', num lines =', corpus.numlines
+#     corpus = Corpus(txt)
+#     corpus.analyze(2, 'rap')
+#     print txt, ', num keys =', len(corpus.word_map.keys()), ', num lines =', corpus.numlines

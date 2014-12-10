@@ -23,10 +23,37 @@ README.txt
 ---------------------------------------------------------------
 - INTRODUCTION                                                -
 ---------------------------------------------------------------
+Our task for this project was to design a framework for poetry 
+generation that allows a human to give a corpus as input and 
+specify formal constraints, and have our intelligent creation 
+generate novel, semantically meaningful poetry meeting those 
+constraints. Our algorithm has special optimizations for the 
+corpora of rap artists in an attempt to generate rap-styled 
+poetry; however, the general case of the problem is one of 
+poetic generation. In this project, our constraints are on the 
+syllable counts of lines and the rhyming patterns between lines. 
 
 ---------------------------------------------------------------
 - FILES                                                       -
 ---------------------------------------------------------------
+baseline.py: Algorithmic baseline
+* Trains language model with user specified corpus (-f), number
+  of poems generated (-o), and model order (-n).
+* Formed algorithmic backbone and framework on which to improve
+* Archaic
+
+dict.py
+dictionary.py
+generator.py
+grammar.py
+new_word_data.p
+poetry.py
+rap_genius_scraper.rb
+README.txt
+searchutil.py
+stepping_stone.py
+util.py
+word_data.p
 
 ---------------------------------------------------------------
 - ALGORITHMIC APPROACH                                        -

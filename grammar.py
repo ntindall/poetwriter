@@ -20,11 +20,6 @@ class Corpus(object):
         self.numlines = 0
     
     # n-gram algorithm
-
-    # Consider a second analyze algorithm with:
-        # a) no line break characters
-        # b) 
-
     def analyze(self, n, source):
         queue = []
         for line in self.file:

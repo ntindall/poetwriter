@@ -143,33 +143,6 @@ class DepthFirstSearch(SearchAlgorithm):
         recurse(problem.startState(), 0, [])
         #return tuple(best) #unused functionality, returns immediately
 
-#DP probably not useful for our problem, but here it is
-def dynamicProgramming(problem):
-    cache = {} # state -> (futureCost, best action, newState, cost)
-
-    # Returns the future cost of state (minimum cost path to a goal).
-    def recurse(state):
-        # Base case
-        if problem.isGoal(state):
-            return 0
-        # Recursive case
-        if state not in cache:
-            cache[state] = min( \
-                (cost + recurse(newState), action, newState, cost) \
-                for action, newState, cost in problem.succAndCost(state))
-        return cache[state][0]
-    totalCost = recurse(problem.startState())
-
-    # Reconstruct the solution
-    state = problem.startState()
-    history = []
-    while not problem.isGoal(state):
-        futureCost, action, newState, cost = cache[state]
-        history.append((action, newState, cost))
-        state = newState
-
-    return (totalCost, history)
-
 # Data structure for supporting uniform cost search.
 class PriorityQueue:
     def  __init__(self):

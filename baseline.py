@@ -1,3 +1,7 @@
+# FILE: baseline.py 
+# ---------------------------------
+# Baseline implementation
+
 from optparse import OptionParser
 from collections import Counter
 import util, math, random

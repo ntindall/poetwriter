@@ -1,6 +1,16 @@
 \documentclass[10pt,twocolumn]{article}
 \usepackage{titling}
 \usepackage{hyperref}
+
+\usepackage{tikz}
+\usetikzlibrary{calc, arrows}
+
+\usepackage{float}
+\floatstyle{boxed}
+\restylefloat{figure}
+
+\usepackage{adjustbox}
+
 \newcommand{\subtitle}[1]{%
   \posttitle{%
     \par\end{center}
@@ -63,7 +73,60 @@ Our advanced method performs depth-first-search over the n-gram model in order t
 	\item \verb!isGoal(state)!: if constraints of poem have been satisfied
 	\item \verb!succAndCost(state)!: returns a list of valid (word, (new poem, new seed), word frequency) tuples, where (new poem, new seed) is a successor pair for (poem, seed) that satisfies the constraints of the model (only valid actions taken). 
 	\end{enumerate}
-	
+\begin{figure}
+\caption{Corpus model with \emph{n} $= 1$}
+\centering
+\adjustbox{max width = \linewidth}{
+\begin{tikzpicture}[->,>=stealth',every node/.style={circle,draw},level 1/.style={sibling distance=20mm},level 2/.style={sibling distance=30mm},level 3/.style={sibling distance=12mm},
+%scale=0.7, transform shape
+]
+\node [shape=rectangle,fill = orange!90!blue](nA){The}
+   child { node[shape=rectangle,fill = orange!90!blue] (nB) {way}
+              child { node[shape=rectangle,fill = orange!90!blue!50] (nD) {to}
+                         child { node[shape=rectangle,fill = orange!90!blue!50] (nH) {be} }
+                         	child { node[shape=rectangle,fill = orange!90!blue!50] (nI)  {try} }
+                         child { node[shape=rectangle, fill = orange!90!blue!50] (nJ) {live} }
+                       }
+              child {  node [shape=rectangle,fill = orange!90!blue] (nE) {by}
+                         child { node [shape=rectangle,fill = orange!90!blue!50] (nK) {way} }
+                         child { node [shape=rectangle,fill = orange!90!blue] (nL) {the} }
+                       }
+            }
+   child { node (nC) [shape=rectangle,] {sun}
+           };
+
+\end{tikzpicture}
+}
+\end{figure}
+
+\begin{figure}
+\caption{Corpus model with \emph{n} $= 2$}
+\centering
+\adjustbox{max width =\linewidth}{
+\begin{tikzpicture}[->,>=stealth',every node/.style={circle,draw},level 1/.style={sibling distance=50mm},level 2/.style={sibling distance=47mm},level 3/.style={sibling distance=23mm},
+%scale=0.7, transform shape
+]
+\node [shape=rectangle,fill = orange!90!blue](nA){(This, is)}
+   child { node[shape=rectangle,fill = orange!90!blue] (nB) {(is, a)}
+              child { node[shape=rectangle,fill = orange!90!blue!50] (nD) {(a, man)}
+                         child { node[shape=rectangle,fill = orange!90!blue!50] (nH) {(man, named)} }
+                       }
+              child { node[shape=rectangle,fill = orange!90!blue!50] (nM) {(a, test)}
+                         child { node[shape=rectangle,fill = orange!90!blue!50] (nN) {(test, of)} }
+                         child { node[shape=rectangle,fill = orange!90!blue!50] (nO) {(test, taker)} }
+                       }
+              child {  node [shape=rectangle,fill = orange!90!blue] (nE) {(a, claim)}
+                         child { node [shape=rectangle,fill = orange!90!blue] (nK) {(claim, of)} }
+                         child { node [shape=rectangle] (nL) {(claim, that)} }
+                       }
+            }
+   child { node (nC) [shape=rectangle,] {(is, war)}
+           };
+
+\end{tikzpicture}
+}
+\end{figure}
+
 Principal among challenges we faced during development were formalizing the rhyme and syllabic constraints, specifically: 1. how to incorporate these constraints into the model in order to direct the depth first search 2. how to evaluate the number of syllables in a word, 3. how to determine if two words rhyme, and 4. limitations of corpora. Important for the success of 2-4 was the utilization of Moby Python IPA Dictionary. 
 \begin{enumerate}
 \item is solved by a propagator-receiver framework in which end-line constraints are imposed in the forwards direction after a rhyme-propagating rhyme is completed. For example, if lines 0 and 1 are designated to rhyme, then after the search has completed line 0, the rhyming constraint is propagated forwards onto line 1 (the receiver). This facilitates forward motion but also allows the algorithm to backtrack by arm's length when it gets stuck.

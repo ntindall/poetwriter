@@ -36,6 +36,19 @@ syllable counts of lines and the rhyming patterns between lines.
 ---------------------------------------------------------------
 - FILES                                                       -
 ---------------------------------------------------------------
+baseline.py
+dict.py
+dictionary.py
+generator.py
+grammar.py
+new_word_data.p
+poetry.py
+rap_genius_scraper.rb
+README.txt
+searchutil.py
+stepping_stone.py
+util.py
+word_data.p
 
 ---------------------------------------------------------------
 - ALGORITHMIC APPROACH                                        -

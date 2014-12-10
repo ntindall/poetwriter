@@ -1,3 +1,7 @@
+# FILE: util.py 
+# ---------------------------------
+# Houses the Corpus and Grammar classes
+
 import util
 import string
 from collections import Counter

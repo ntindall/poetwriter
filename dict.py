@@ -1,3 +1,7 @@
+# FILE: dict.py 
+# ---------------------------------
+# Testing module for pickle dictionary
+
 import pickle, sys
 
 def rhyme(word1, word2):

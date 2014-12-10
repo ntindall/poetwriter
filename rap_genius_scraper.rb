@@ -1,5 +1,8 @@
-require 'rapgenius'
+# FILE: rap_genius_scraper.rb
+# ---------------------------------
+# Lyrics scraper for rapgenius.com
 
+require 'rapgenius'
 
 num = ARGV[0]
 title = ARGV[1]

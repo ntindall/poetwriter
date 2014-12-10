@@ -1,13 +1,13 @@
+# FILE: dictionary.py 
+# ---------------------------------
+# Development module for pickle dictionary dump
+
 # coding: UTF-8
 import random
 import re
 import sys
 import codecs
 import pickle
-
-
-
-
 
 # Used to strip down corpus of non a-z,A-Z,0-9 chars
 # and defaults to lower case. 
@@ -37,7 +37,6 @@ def weightedRandomChoice(weightDict):
 
 #must be unicode!!!! 
 vowels = u'æɑəɪieɛɝɚɐʌʊuoɔa' #ɹ
-
 
 def numSyllables(ipa_reading):
     num = 0
@@ -77,13 +76,6 @@ def rhymeVowel(ipa_reading):
         #print 'DIARRHEA'
         return stripped_ipa[i::]
 
-
-
-
-
-
-
-	
 def rhymes(word1, word2):
 	if word1 not in d or word2 not in d:
 		# heuristic
@@ -108,8 +100,3 @@ with codecs.open('IPA_Dict.txt', encoding='utf-8') as f:
 
 
 rhymes(sys.argv[1], sys.argv[2])
-
-
-
-
-

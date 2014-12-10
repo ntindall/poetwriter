@@ -1,4 +1,8 @@
 # coding: UTF-8
+
+# FILE: util.py 
+# ---------------------------------
+# Contains utility functions used thoughout every module. 
 import random
 import re
 import sys
@@ -38,7 +42,7 @@ vowels = u'æɑəɪieɛɝɚɐʌʊuoɔa' #ɹ
 def isNoun(word):
     if word in d.keys():
         return u'N' in d[word][3]
-    return False;
+    return False
 
 def isNotPrepOrArticle(word):
     if word in d:

@@ -1,23 +1,51 @@
+# FILE: generator.py
+# ---------------------------------
+# Main generator script
+
 #STD LIBRARIES
 from optparse import OptionParser
-import math, random, copy, operator, time
+import math, random, copy, operator, time, numpy
 
 #FILES
 import searchutil, util
 from poetry import * 
 from grammar import *
 
+# Parse the command line string and behave appropriately 
 if __name__ == '__main__':
     parser = OptionParser()
+
+    # Order of the n gram model
     parser.add_option('-n', '--n-gram', type='int', dest='ngrams', default=1)
+
+    # Corpus file, used to train the languaeg model
     parser.add_option('-f', '--file', dest='filename', default=1)
+
+    # The number of poems to be output
     parser.add_option('-o', '--output', type='int', dest='npoems', default=3)
+
+    # The phrase length (number of lines that the n-gram wraps around before reseeding)
     parser.add_option('-l', '--sentence-length', type='int', dest='sentenceLength', default=1)
+
+    # The type of corpus, in order to facilitate corpus cleanup
     parser.add_option('-s', '--source', dest='source')
+
+    # Whether the model is probabalistic when selecting actions (if not selected, chooses 
+    # more frequent seeds first. 
     parser.add_option('-p', '--probabilistic', type='int', dest='probabilistic', default=1)
+
+    # The number of initial seeds to try before backtracking (when the grammar is reseeded)
     parser.add_option('-b', '--begin-seeds', type='int', dest='beginseeds', default=5)
-    parser.add_option('-t', '--type', dest='type', default='sonnet')
+
+    # The number of children seeds to try before backtracking, selects the b most frequent 
+    # children or the first b children seeded (if probabilistic)
     parser.add_option('-r', '--branching', type='int', dest='branching')
+
+    # The type of poetry to output (options: sonnet, haiku, eight, octave)
+    parser.add_option('-t', '--type', dest='type', default='sonnet')
+
+    # Verbosity of the generator module
+    parser.add_option('-v', '--verbose', type='int', dest='verbose', default=0)
     (options, args) = parser.parse_args()
  
 # Generate poetry based on a corpus, stepping stone implementation     
@@ -91,10 +119,12 @@ class PoetrySearchProblem(searchutil.SearchProblem):
             result = {}
         else:
             result = []
-        print poem #comment out if you want to see the poem being constructed
+        if (options.verbose > 0):
+            print poem 
 
         if (poem.isFirst()):
-            #print "poem isFirst so we get new sentence seeds"
+            if (options.verbose > 1):
+                print "[ ] poem isFirst so we get new sentence seeds"
             #This is the number of starting seeds this returns
             for x in range(numSeeds):
                 first_seed = []
@@ -107,8 +137,8 @@ class PoetrySearchProblem(searchutil.SearchProblem):
                 curr = new_poem.getLine()
                 if curr:
                     if curr.add(startWord):
-                        #print "added seed potentially"
-                        #time.sleep(5)
+                        if (options.verbose > 1):
+                            print "[ ] reseeded grammar with: ", startWord
                         if not curr: #line has been finished
                             if curr.propagator:
                                 for line_i in curr.paired_indices:
@@ -135,6 +165,8 @@ class PoetrySearchProblem(searchutil.SearchProblem):
                         curr = new_poem.getLine()
                         if curr:
                             if curr.add(word): #if the word fits on the current line
+                                if (options.verbose > 1):
+                                    print "[ ] added seed ", startWord
                                 broken_seed = [seed[i] for i in range(len(seed))]
                                 broken_seed.pop(0)
                                 broken_seed.append(word)
@@ -175,11 +207,15 @@ class PoetrySearchProblem(searchutil.SearchProblem):
 # Example usage:
 # python generator.py -n 2 -f "lyrics/eminem.txt" -o 4
 # python generator.py -f corpora/shakespeare.txt -n 2 -o 1 -s rap -l 2 -b 10 -t octave -r 3 -p 1
+# python generator.py -f corpora/shakespeare.txt -n 2 -o 2 -l 2 -b 10 -t eight -r 3 -p 1 -v 1
+# python generator.py -f corpora/shakespeare.txt -n 3 -o 5 -l 2 -b 10 -t eight -r 3 -p 1 -v 1
+
 
 print "[ ] Reading corpus file..."
 corpus = Corpus(options.filename)
 corpus.analyze(options.ngrams, options.source)
-#print corpus.word_map
+if (options.verbose > 2):
+    print corpus.word_map
 print "[ ] Finished reading corpus, n-gram model generated."
 
 
@@ -208,7 +244,13 @@ if options.type == 'octave': #eight lines of iambic pentameter ABBA CDDC
 #Initialize grammar
 grammar = Grammar(corpus.frequency_map, corpus.word_map, corpus.begin_map)
 
+if (options.verbose > 2):
+    print "[ ] Pairs: ", pairs
+    print "[ ] Parameters: ", parameters
+
+written = []
 for i in range(options.npoems):
+    start = time.time()
     poem = Poetry(parameters, options.sentenceLength)
     problem = PoetrySearchProblem(poem, grammar, options.ngrams, options.probabilistic, options.beginseeds)
 
@@ -220,14 +262,38 @@ for i in range(options.npoems):
     #DEPTH FIRST SEARCH
     bts = searchutil.DepthFirstSearch(verbose=1)
     bts.solve(problem)
+    end = time.time()
     print ""
     if bts.solution:
         solution, final_seed = bts.solution
+        written.append((solution, bts, end - start))
         print "RESULT"
 
         print solution
     else:
+        written.append((None,None, end-start))
         print "NO SOLUTION FOUND"
+
+#Print generated poems 
+if (options.npoems > 1):
+    times = []
+    for poem, bts, time in written: #includes times of unfound solutions
+        if poem: 
+            bts.stats()
+            print "Time = %f" % time
+            print ""
+            print poem
+            print ""
+        times.append(time)
+    print "[ ] attempted to satisfy %d poems" % options.npoems
+    print "[ ] %d found" % sum(1 if t[0] else 0 for t in written)
+    print "[ ] total time = %f" % sum(times)
+    print "[ ] mean = %f" % numpy.average(times)
+    print "[ ] median = %f" % numpy.median(times)
+    print "[ ] stdev = %f" % numpy.std(times)
+
+
+
 
 # # Part of stepping stone
 # for i in range(options.npoems):

@@ -1,0 +1,655 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  9 DEC 2014 23:12
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**writeup.tex
+(./writeup.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+(./acmtog.cls
+Document Class: acmtog 2012/03/07
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+) (./url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+\trimheight=\dimen102
+\trimwidth=\dimen103
+\typeheight=\dimen104
+\typewidth=\dimen105
+\normaltextheight=\dimen106
+\blindfoliodrop=\dimen107
+\tempbox=\box26
+\tempdimen=\dimen108
+\normaltextheight=\dimen109
+\c@secnumbookdepth=\count79
+\c@theorem=\count80
+\c@strategy=\count81
+\c@property=\count82
+\c@proposition=\count83
+\c@exam=\count84
+\c@part=\count85
+\c@section=\count86
+\c@subsection=\count87
+\c@subsubsection=\count88
+\c@paragraph=\count89
+\c@figure=\count90
+\c@table=\count91
+\belowcaptionskip=\skip41
+\tbbox=\box27
+\tabledim=\dimen110
+\@narrowfig=\dimen111
+\@nfigbox=\box28
+\@nfcapbox=\box29
+\@abstract=\box30
+\@terms=\box31
+\@keywords=\box32
+\bibindent=\dimen112
+LaTeX Info: Redefining \cal on input line 1053.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup5
+\symboldletters=\mathgroup6
+\symboldsymbols=\mathgroup7
+\symboldlasy=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 137.
+LaTeX Info: Redefining \bm on input line 203.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count92
+))
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+))
+(./writeup.aux)
+\openout1 = `writeup.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 29.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+\bibhang=\skip42
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count93
+\scratchdimen=\dimen115
+\scratchbox=\box33
+\nofMPsegments=\count94
+\nofMParguments=\count95
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count96
+\MPscratchDim=\dimen116
+\MPnumerator=\count97
+\makeMPintoPDFobject=\count98
+\everyMPtoPDFconversion=\toks16
+) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 63.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 63.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 63.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 63.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 65--69
+[][]\OT1/ptm/m/n/8 Manuel M. Oliveira ac-knowl-edges a CNPq-Brazil fel-low-ship
+
+ []
+
+
+Underfull \hbox (badness 4108) in paragraph at lines 65--69
+\OT1/ptm/m/n/8 Au-thors' ad-dresses: Sean Fog-a-rty, (Cur-rent ad-dress) NASA A
+mes
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 69.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 69.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 69.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 69.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 69.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 69.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 69.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 69.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 100.
+
+
+LaTeX Warning: Citation `BLR-2007' on page 1 undefined on input line 100.
+
+
+LaTeX Warning: Citation `BDDG-03' on page 1 undefined on input line 114.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 159.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 159.
+
+LaTeX Warning: Citation `CDFKMS-06' on page 1 undefined on input line 172.
+
+
+LaTeX Warning: Citation `BCHH:Collewijn:1988' on page 1 undefined on input line
+ 175.
+
+
+LaTeX Warning: Reference `sec:PLRValidation' on page 1 undefined on input line 
+178.
+
+
+LaTeX Warning: Reference `sec:patterndeformations' on page 1 undefined on input
+ line 184.
+
+
+LaTeX Warning: Reference `subsec:Variations' on page 1 undefined on input line 
+188.
+
+
+LaTeX Warning: Reference `fig:videocomparison' on page 1 undefined on input lin
+e 195.
+
+
+LaTeX Warning: Reference `tab:symbols' on page 1 undefined on input line 195.
+
+[1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+Non-PDF special ignored!
+
+
+]
+
+LaTeX Warning: Citation `DS-02' on page 2 undefined on input line 224.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: Citation `Dod-1900' on page 2 undefined on input line 253.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 260.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 260.
+
+Overfull \vbox (0.50241pt too high) has occurred while \output is active []
+
+
+[2]
+
+LaTeX Warning: Citation `DC-1901' on page 3 undefined on input line 280.
+
+
+LaTeX Warning: Reference `eq:efferent_neural_signal_1' on page 3 undefined on i
+nput line 332.
+
+
+LaTeX Warning: Reference `eq:efferent_neural_signal_2' on page 3 undefined on i
+nput line 333.
+
+
+LaTeX Warning: Reference `eq:delay_differential' on page 3 undefined on input l
+ine 340.
+
+
+LaTeX Warning: Citation `Duc-2002' on page 3 undefined on input line 341.
+
+
+LaTeX Warning: Reference `eq:Hill_function' on page 3 undefined on input line 3
+42.
+
+
+LaTeX Warning: Reference `eq:moon' on page 3 undefined on input line 372.
+
+
+LaTeX Warning: Citation `GPMBH-2005' on page 3 undefined on input line 379.
+
+
+LaTeX Warning: Reference `eq:longtin' on page 3 undefined on input line 382.
+
+
+LaTeX Warning: Reference `eq:longtin' on page 3 undefined on input line 390.
+
+
+LaTeX Warning: Reference `subsec:DynamicCase' on page 3 undefined on input line
+ 395.
+
+
+LaTeX Warning: Reference `subsec:Variations' on page 3 undefined on input line 
+395.
+
+
+Underfull \hbox (badness 2142) in paragraph at lines 392--398
+[]\OT1/ptm/m/n/9 Starting from Longtin and Mil-ton's and from Moon and
+ []
+
+
+Overfull \vbox (0.57443pt too high) has occurred while \output is active []
+
+
+[3]
+
+LaTeX Warning: Reference `eq:longtin' on page 4 undefined on input line 411.
+
+
+LaTeX Warning: Reference `eq:Milton_for_experiment' on page 4 undefined on inpu
+t line 429.
+
+
+LaTeX Warning: Reference `eq:moonChanged' on page 4 undefined on input line 430
+.
+
+
+LaTeX Warning: Reference `eq:moonsEqualsLongtins2' on page 4 undefined on input
+ line 439.
+
+
+LaTeX Warning: Reference `eq:moonsEqualsLongtins2' on page 4 undefined on input
+ line 454.
+
+
+LaTeX Warning: Reference `eq:moon' on page 4 undefined on input line 457.
+
+
+LaTeX Warning: Reference `eq:moon' on page 4 undefined on input line 460.
+
+
+LaTeX Warning: Reference `eq:moonsEqualsLongtins2' on page 4 undefined on input
+ line 463.
+
+
+LaTeX Warning: Reference `fig:Longtin_v_Moon_right_and_comparison' on page 4 un
+defined on input line 470.
+
+
+LaTeX Warning: Reference `eq:moonsEqualsLongtins2' on page 4 undefined on input
+ line 474.
+
+
+LaTeX Warning: Reference `eq:approx_log_terms' on page 4 undefined on input lin
+e 475.
+
+
+LaTeX Warning: Reference `eq:moonsEqualsLongtins1' on page 4 undefined on input
+ line 476.
+
+
+LaTeX Warning: Reference `eq:our_model' on page 4 undefined on input line 483.
+
+
+LaTeX Warning: Reference `eq:moon' on page 4 undefined on input line 484.
+
+
+LaTeX Warning: Reference `eq:moon' on page 4 undefined on input line 486.
+
+
+LaTeX Warning: Reference `eq:our_model' on page 4 undefined on input line 486.
+
+
+LaTeX Warning: Reference `fig:Longtin_v_Moon_right_and_comparison' on page 4 un
+defined on input line 488.
+
+
+LaTeX Warning: Reference `eq:approx_log_terms' on page 4 undefined on input lin
+e 498.
+
+
+LaTeX Warning: Reference `eq:moon' on page 4 undefined on input line 498.
+
+
+LaTeX Warning: Reference `eq:our_model' on page 4 undefined on input line 498.
+
+
+LaTeX Warning: Reference `eq:approx_log_terms' on page 4 undefined on input lin
+e 498.
+
+
+LaTeX Warning: Reference `eq:moon' on page 4 undefined on input line 498.
+
+
+LaTeX Warning: Reference `eq:our_model' on page 4 undefined on input line 498.
+
+
+LaTeX Warning: Reference `eq:our_model' on page 4 undefined on input line 505.
+
+
+LaTeX Warning: Reference `eq:our_model' on page 4 undefined on input line 522.
+
+
+LaTeX Warning: Reference `eq:moon' on page 4 undefined on input line 540.
+
+
+LaTeX Warning: Citation `google' on page 4 undefined on input line 550.
+
+
+LaTeX Warning: Reference `subsec:EquilibriumCase' on page 4 undefined on input 
+line 558.
+
+
+LaTeX Warning: Reference `eq:our_model' on page 4 undefined on input line 559.
+
+
+LaTeX Warning: Reference `sec:PLRValidation' on page 4 undefined on input line 
+571.
+
+
+Overfull \vbox (0.50241pt too high) has occurred while \output is active []
+
+
+[4]
+
+LaTeX Warning: Reference `eq:ctD' on page 5 undefined on input line 590.
+
+
+LaTeX Warning: Reference `eq:dTEval' on page 5 undefined on input line 698.
+
+
+LaTeX Warning: Reference `eq:Link_n_Stark' on page 5 undefined on input line 70
+3.
+
+
+Overfull \vbox (0.57443pt too high) has occurred while \output is active []
+
+
+[5]
+
+LaTeX Warning: Reference `eq:moon' on page 6 undefined on input line 725.
+
+
+LaTeX Warning: Reference `eq:moon' on page 6 undefined on input line 729.
+
+
+LaTeX Warning: Reference `eq:isocurve' on page 6 undefined on input line 739.
+
+
+LaTeX Warning: Reference `eq:isocurve' on page 6 undefined on input line 759.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: Reference `subsec:EquilibriumCase' on page 6 undefined on input 
+line 777.
+
+
+LaTeX Warning: Reference `eq:isocurve' on page 6 undefined on input line 778.
+
+
+LaTeX Warning: Reference `eq:isocurve' on page 6 undefined on input line 806.
+
+
+LaTeX Warning: Reference `eq:isocurve' on page 6 undefined on input line 816.
+
+
+LaTeX Warning: Reference `eq:moon' on page 6 undefined on input line 829.
+
+
+Overfull \vbox (0.50241pt too high) has occurred while \output is active []
+
+
+[6]
+
+LaTeX Warning: Reference `eq:invariance_iris_deformation' on page 7 undefined o
+n input line 912.
+
+
+LaTeX Warning: Reference `eq:invariance_iris_deformation' on page 7 undefined o
+n input line 923.
+
+
+LaTeX Warning: Reference `eq:isocurve' on page 7 undefined on input line 934.
+
+
+LaTeX Warning: Reference `eq:isocurve' on page 7 undefined on input line 977.
+
+
+Overfull \vbox (0.57443pt too high) has occurred while \output is active []
+
+
+[7]
+
+LaTeX Warning: Citation `Abril07' on page 8 undefined on input line 1045.
+
+
+LaTeX Warning: Citation `Cohen07' on page 8 undefined on input line 1046.
+
+
+LaTeX Warning: Citation `JCohen96' on page 8 undefined on input line 1046.
+
+
+LaTeX Warning: Citation `Kosiur01' on page 8 undefined on input line 1047.
+
+
+LaTeX Warning: Citation `Harel79' on page 8 undefined on input line 1048.
+
+
+LaTeX Warning: Citation `Editor00' on page 8 undefined on input line 1048.
+
+
+LaTeX Warning: Citation `Editor00a' on page 8 undefined on input line 1050.
+
+
+LaTeX Warning: Citation `Spector90' on page 8 undefined on input line 1051.
+
+
+LaTeX Warning: Citation `Douglass98' on page 8 undefined on input line 1052.
+
+
+LaTeX Warning: Citation `Knuth97' on page 8 undefined on input line 1052.
+
+
+LaTeX Warning: Citation `Andler79' on page 8 undefined on input line 1054.
+
+
+LaTeX Warning: Citation `Smith10' on page 8 undefined on input line 1055.
+
+
+LaTeX Warning: Citation `VanGundy07' on page 8 undefined on input line 1056.
+
+
+LaTeX Warning: Citation `Harel78' on page 8 undefined on input line 1057.
+
+
+LaTeX Warning: Citation `Clarkson85' on page 8 undefined on input line 1057.
+
+
+LaTeX Warning: Citation `anisi03' on page 8 undefined on input line 1058.
+
+
+LaTeX Warning: Citation `Thornburg01' on page 8 undefined on input line 1058.
+
+
+LaTeX Warning: Citation `Ablamowicz07' on page 8 undefined on input line 1058.
+
+
+LaTeX Warning: Citation `Poker06' on page 8 undefined on input line 1059.
+
+
+LaTeX Warning: Citation `Obama08' on page 8 undefined on input line 1059.
+
+
+LaTeX Warning: Citation `Novak03' on page 8 undefined on input line 1059.
+
+
+LaTeX Warning: Citation `Lee05' on page 8 undefined on input line 1060.
+
+
+LaTeX Warning: Citation `JoeScientist001' on page 8 undefined on input line 106
+0.
+
+
+LaTeX Warning: Citation `rous08' on page 8 undefined on input line 1061.
+
+
+LaTeX Warning: Citation `SaeediMEJ10' on page 8 undefined on input line 1062.
+
+
+LaTeX Warning: Citation `SaeediJETC10' on page 8 undefined on input line 1062.
+
+
+LaTeX Warning: Citation `Kirschmer:2010:AEI:1958016.1958018' on page 8 undefine
+d on input line 1063.
+
+
+LaTeX Warning: Citation `MR781536' on page 8 undefined on input line 1065.
+
+
+LaTeX Warning: Citation `MR781537' on page 8 undefined on input line 1065.
+
+No file writeup.bbl.
+
+Overfull \vbox (0.50241pt too high) has occurred while \output is active []
+
+
+[8] (./writeup.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2140 strings out of 493117
+ 29174 string characters out of 6135433
+ 101349 words of memory out of 5000000
+ 5555 multiletter control sequences out of 15000+600000
+ 42307 words of font info for 98 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 37i,9n,23p,251b,244s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
+/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times
+/utmri8a.pfb>
+Output written on writeup.pdf (8 pages, 207533 bytes).
+PDF statistics:
+ 92 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

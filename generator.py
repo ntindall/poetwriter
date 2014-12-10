@@ -235,11 +235,6 @@ for i in range(options.npoems):
     poem = Poetry(parameters, options.sentenceLength)
     problem = PoetrySearchProblem(poem, grammar, options.ngrams, options.probabilistic, options.beginseeds)
 
-    #UNIFORM COST SEARCH (DJIKSTRA'S)
-    #ucs = searchutil.UniformCostSearch(verbose=1)
-    #ucs.solve(problem)
-    #solution, final_seed = ucs.solution
-
     #DEPTH FIRST SEARCH
     bts = searchutil.DepthFirstSearch(verbose=1)
     bts.solve(problem)

@@ -100,12 +100,12 @@ def rhyme(word1, word2):
             return False
 
 
-def partsOfSpeech(word):
-    if word in posd.keys():
-        return posd[word]
-    else:
-        # if the word is not in the part-of-speech dictionary, return the character X.
-        return u'X' 
+# def partsOfSpeech(word):
+#     if word in posd.keys():
+#         return posd[word]
+#     else:
+#         # if the word is not in the part-of-speech dictionary, return the character X.
+#         return u'X' 
 
 #Parts of speech are:
     # #Noun                           N

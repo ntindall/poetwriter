@@ -30,6 +30,6 @@ d = pickle.load()
 # 	print word, counter
 
 
-pickle.dump(d, open("new_new_word_data.p", "wb"), 2)
+#pickle.dump(d, open("new_new_word_data.p", "wb"), 2)
 
-#print isNotPrepOrArticle(sys.argv[1]), d[sys.argv[1]]
+print isNotPrepOrArticle(sys.argv[1]), d[sys.argv[1]]

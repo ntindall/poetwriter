@@ -36,7 +36,12 @@ syllable counts of lines and the rhyming patterns between lines.
 ---------------------------------------------------------------
 - FILES                                                       -
 ---------------------------------------------------------------
-baseline.py
+baseline.py: Algorithmic baseline
+* Trains language model with user specified corpus (-f), number
+  of poems generated (-o), and model order (-n).
+* Formed algorithmic backbone and framework on which to improve
+* Archaic
+
 dict.py
 dictionary.py
 generator.py

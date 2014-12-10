@@ -19,6 +19,7 @@ README.txt
 * FILES
 * ALGORITHMIC APPROACH
 * USAGE
+* EXAMPLE
 
 ---------------------------------------------------------------
 - INTRODUCTION                                                -
@@ -138,3 +139,12 @@ problem in the following manner:
   The type of poetry to output (options: sonnet, haiku, eight, octave, quad)
 * (-v), default 0
   The verbosity of the program
+
+---------------------------------------------------------------
+- EXAMPLE                                                     -
+---------------------------------------------------------------
+# python generator.py -n 2 -f "lyrics/eminem.txt" -o 4
+# python generator.py -f corpora/shakespeare.txt -n 2 -o 1 -s rap -l 2 -b 10 -t octave -r 3 -p 1
+# python generator.py -f corpora/shakespeare.txt -n 2 -o 2 -l 2 -b 10 -t eight -r 3 -p 1 -v 1
+# python generator.py -f corpora/shakespeare.txt -n 3 -o 5 -l 2 -b 10 -t eight -r 3 -p 1 -v 1
+

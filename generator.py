@@ -240,6 +240,9 @@ if options.type == 'eight': #eight lines of iambic tetameter AA BB CC DD
 if options.type == 'octave': #eight lines of iambic pentameter ABBA CDDC
     pairs = [(0,3),(1,2),(4,7),(5,6)]
     parameters = [(10, pairs) for _ in range(8)]
+if options.type == 'quad':
+    pairs = [(0,1), (1,2), (2,3)]
+    parameters = [(10, pairs) for _ in range(4)]
 
 #Initialize grammar
 grammar = Grammar(corpus.frequency_map, corpus.word_map, corpus.begin_map)
@@ -249,6 +252,7 @@ if (options.verbose > 2):
     print "[ ] Parameters: ", parameters
 
 written = []
+
 for i in range(options.npoems):
     start = time.time()
     poem = Poetry(parameters, options.sentenceLength)

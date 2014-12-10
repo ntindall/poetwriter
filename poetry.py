@@ -127,7 +127,7 @@ class Line (object):
             return True
         # word fits, is final word
         if (self.syllables_left == syllabic_count):
-            #if util.isNotPrepOrArticle(word):
+            if util.isNotPrepOrArticle(word):
                 #print "word fits"
                 if self.receiver:
                     #print "word is a receiver"
@@ -146,8 +146,8 @@ class Line (object):
                 self.syllables_left -= syllabic_count
                 self.last = word
                 return True
-            #else:
-             #   return False
+            else:
+                return False
         # word doesn't fit
         else:
             return False 

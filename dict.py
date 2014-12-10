@@ -13,18 +13,19 @@ def rhyme(word1, word2):
         else:
             return False
 
-d = pickle.load(open("new_word_data.p", "rb"))
+filename = open("new_word_data.p", "rb")
+d = pickle.load()
 
-rhymecount = {}
-for word in d.keys():
-	counter = 0
-	for word2 in d.keys():
-		if rhyme(word, word2):
-			counter += 1
-	rhymecount[word] = counter
-	print word, counter
+# rhymecount = {}
+# for word in d.keys():
+# 	counter = 0
+# 	for word2 in d.keys():
+# 		if rhyme(word, word2):
+# 			counter += 1
+# 	rhymecount[word] = counter
+# 	print word, counter
 
 
-pickle.dump(rhymecount, open("rhymecount.p", "wb"))
+pickle.dump(d, open("new_new_word_data.p", "wb"), 2)
 
 #print isNotPrepOrArticle(sys.argv[1]), d[sys.argv[1]]

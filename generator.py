@@ -268,33 +268,37 @@ for i in range(options.npoems):
     bts.solve(problem)
     end = time.time()
     print ""
+    written.append((bts.solution, bts, end - start))
     if bts.solution:
         solution, final_seed = bts.solution
-        written.append((solution, bts, end - start))
         print "RESULT"
 
         print solution
     else:
-        written.append((None,None, end-start))
         print "NO SOLUTION FOUND"
 
 #Print generated poems 
 if (options.npoems > 1):
     times = []
+    explored = []
     for poem, bts, time in written: #includes times of unfound solutions
-        if poem: 
-            bts.stats()
+        num_states_explored = bts.stats()
+        if poem:
             print "Time = %f" % time
             print ""
             print poem
             print ""
         times.append(time)
+        explored.append(num_states_explored)
     print "[ ] attempted to satisfy %d poems" % options.npoems
     print "[ ] %d found" % sum(1 if t[0] else 0 for t in written)
     print "[ ] total time = %f" % sum(times)
-    print "[ ] mean = %f" % numpy.average(times)
-    print "[ ] median = %f" % numpy.median(times)
-    print "[ ] stdev = %f" % numpy.std(times)
+    print "[ ] mean t = %f" % numpy.average(times)
+    print "[ ] median t = %f" % numpy.median(times)
+    print "[ ] stdev t = %f" % numpy.std(times)
+    print "[ ] mean s = %f" % numpy.average(explored)
+    print "[ ] median s = %f" % numpy.median(explored)
+    print "[ ] stdev s= %f" % numpy.std(explored)
 
 
 

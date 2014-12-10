@@ -89,10 +89,12 @@ class DepthFirstSearch(SearchAlgorithm):
 
     def stats(self):
         if self.verbose >= 1:
-            print "numStatesExplored = %d" % self.numStatesExplored
-            print "totalCost = %s" % self.totalCost
-            print "graphSize = %s" % self.size
-            print "actions = %s" % self.actions
+            if self.solution:
+                print "numStatesExplored = %d" % self.numStatesExplored
+                print "totalCost = %s" % self.totalCost
+                print "graphSize = %s" % self.size
+                print "actions = %s" % self.actions
+        return self.numStatesExplored
 
     def solve(self, problem):
         self.solution = None

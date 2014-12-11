@@ -255,7 +255,7 @@ if (options.npoems > 1):
     explored = []
     for solution, bts, time in written: #includes times of unfound solutions
         num_states_explored = bts.stats()
-        if solution[0]:
+        if solution:
             print "Time = %f" % time
             print ""
             print solution[0]

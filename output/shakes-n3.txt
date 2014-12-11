@@ -1,0 +1,53 @@
+[ ] Loading the dictionary...
+[ ] Finished loading dictionary.
+[ ] Reading corpus file...
+[ ] Finished reading corpus, n-gram model generated.
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+[ ] attempted to satisfy 20 poems
+[ ] 0 found
+[ ] total time = 110.453830
+[ ] mean t = 5.522691
+[ ] median t = 5.295469
+[ ] stdev t = 1.975450
+[ ] mean s = 73.100000
+[ ] median s = 45.500000
+[ ] stdev s= 90.145383

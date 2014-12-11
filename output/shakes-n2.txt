@@ -1,0 +1,633 @@
+[ ] Loading the dictionary...
+[ ] Finished loading dictionary.
+[ ] Reading corpus file...
+[ ] Finished reading corpus, n-gram model generated.
+numStatesExplored = 210
+totalCost = 6365
+graphSize = 281
+actions = [('strength', 'of'), 'limb', 'and', 'thou', 'knowst', 'thou', 'any', 'that', 'draws', 'breath', 'in', 'this', 'how', 'who', 'is', 'this-', 'my', 'niece', 'there', 'is', 'not', 'a', 'man', 'but', 'i', 'am', 'not', 'too', 'hot', 'that', 'make', 'to', 'thee', 'ill', 'but', 'lean', 'luck', 'in', 'my', 'mouth', 'i', 'am', 'as', 'i', 'suck', 'to', 'answer', 'this', 'before', 'the', 'match', 'be', 'playd', 'on', 'her', 'what', 'you', 'will', 'catch']
+
+RESULT
+strength of limb and thou knowst thou
+any that draws breath in this how
+who is this- my niece there is not
+a man but i am not too hot
+that make to thee ill but lean luck
+in my mouth i am as i suck
+to answer this before the match
+be playd on her what you will catch
+
+numStatesExplored = 875
+totalCost = 6345
+graphSize = 953
+actions = [('half', 'of'), 'the', 'house', 'of', 'her', 'tears', 'will', 'choke', 'me', 'if', 'it', 'prove', 'so', 'then', 'ill', 'for', 'i', 'have', 'a', 'beard', 'is', 'a', 'dear', 'thing', 'to', 'my', 'revenge', 'is', 'no', 'fear', 'the', 'crows', 'to', 'feed', 'my', 'humour', 'well', 'but', 'i', 'can', 'tell', 'you', 'more', 'than', 'hell', 'of', 'him', 'will', 'we', 'ride', 'through', 'the', 'realm', 'shall', 'not', 'find', 'him', 'out', 'at', 'the', 'helm']
+
+RESULT
+half of the house of her tears will
+choke me if it prove so then ill
+for i have a beard is a dear
+thing to my revenge is no fear
+the crows to feed my humour well
+but i can tell you more than hell
+of him will we ride through the realm
+shall not find him out at the helm
+
+numStatesExplored = 742
+totalCost = 10859
+graphSize = 822
+actions = [('was', 'drawn'), 'about', 'this', 'hour', 'i', 'think', 'i', 'can', 'my', 'love', 'shall', 'i', 'fly', 'be', 'not', 'he', 'would', 'not', 'be', 'a', 'man', 'of', 'my', 'good', 'lord', 'you', 'shall', 'have', 'anne', 'and', 'i', 'if', 'there', 'be', 'devils', 'would', 'i', 'might', 'love', 'thee', 'kate', 'this', 'is', 'good', 'to', 'die', 'than', 'thou', 'and', 'my', 'kind', 'lord', 'o', 'tis', 'the', 'eye', 'of', 'that', 'i', 'hoard']
+
+RESULT
+was drawn about this hour i
+think i can my love shall i fly
+be not he would not be a man
+of my good lord you shall have anne
+and i if there be devils would
+i might love thee kate this is good
+to die than thou and my kind lord
+o tis the eye of that i hoard
+
+numStatesExplored = 992
+totalCost = 7211
+graphSize = 1056
+actions = [('many', 'friends'), 'as', 'two', 'grains', 'of', 'wheat', 'to', 'rome', 'of', 'safety', 'and', 'give', 'sweet', 'and', 'bid', 'me', 'kneel', 'first', 'let', 'me', 'hear', 'from', 'him', 'now', 'he', 'lives', 'in', 'the', 'ear', 'tell', 'him', 'of', 'my', 'poor', 'eyes', 'let', 'fall', 'the', 'face', 'and', 'use', 'him', 'as', 'a', 'ball', 'cor', 'tis', 'known', 'already', 'that', 'i', 'might', 'not', 'you', 'hear', 'of', 'it', 'so', 'lie']
+
+RESULT
+many friends as two grains of wheat
+to rome of safety and give sweet
+and bid me kneel first let me hear
+from him now he lives in the ear
+tell him of my poor eyes let fall
+the face and use him as a ball
+cor tis known already that i
+might not you hear of it so lie
+
+numStatesExplored = 220
+totalCost = 10706
+graphSize = 290
+actions = [('wincot', 'if'), 'she', 'dares', 'trust', 'me', 'i', 'must', 'be', 'a', 'torment', 'i', 'did', 'cry', 'enter', 'demetrius', 'and', 'thus', 'far', 'you', 'shall', 'have', 'no', 'mind', 'to', 'us', 'enter', 'benvolio', 'and', 'men', 'have', 'i', 'made', 'no', 'such', 'men', 'are', 'to', 'be', 'high', 'and', 'better', 'twere', 'that', 'both', 'with', 'eye', 'and', 'yet', 'i', 'protest', 'in', 'the', 'thigh']
+
+RESULT
+wincot if she dares trust me i
+must be a torment i did cry
+enter demetrius and thus
+far you shall have no mind to us
+enter benvolio and men have i
+made no such men are to be high
+and better twere that both with eye
+and yet i protest in the thigh
+
+numStatesExplored = 704
+totalCost = 2304
+graphSize = 771
+actions = [('remote', 'where'), 'thou', 'shalt', 'know', 'this', 'strong', 'right', 'hand', 'of', 'the', 'court', 'in', 'the', 'song', 'her', 'advocate', 'to', 'th', 'heart', 'she', 'says', 'you', 'are', 'i', 'th', 'part', 'but', 'what', 'mean', 'you', 'sir', 'walk', 'in', 'death', 'to', 'her', 'love', 'for', 'her', 'with', 'a', 'breath', 'ford', 'master', 'brook', 'i', 'will', 'give', 'it', 'you', 'aside', 'i', 'do', 'the', 'wise', 'sit']
+
+RESULT
+remote where thou shalt know this strong
+right hand of the court in the song
+her advocate to th heart
+she says you are i th part
+but what mean you sir walk in death
+to her love for her with a breath
+ford master brook i will give it
+you aside i do the wise sit
+
+numStatesExplored = 393
+totalCost = 14441
+graphSize = 452
+actions = [('of', 'your'), 'loneliness', 'and', 'find', 'it', 'otherwise', 'i', 'would', 'i', 'had', 'wit', 'o', 'would', 'i', 'were', 'a', 'bad', 'world', 'i', 'neer', 'again', 'shall', 'see', 'and', 'i', 'lie', 'and', 'thus', 'he', 'waxed', 'like', 'a', 'good', 'way', 'and', 'move', 'in', 'that', 'the', 'devil', 'may', 'and', 'bootless', 'unto', 'them', 'thus', 'find', 'i', 'like', 'that', 'richmond', 'should', 'be', 'blind']
+
+RESULT
+of your loneliness and find it
+otherwise i would i had wit
+o would i were a bad world i
+neer again shall see and i lie
+and thus he waxed like a good way
+and move in that the devil may
+and bootless unto them thus find
+i like that richmond should be blind
+
+numStatesExplored = 214
+totalCost = 989
+graphSize = 274
+actions = [('for', 'i'), 'have', 'reachd', 'for', 'know', 'thou', 'noble', 'thing', 'more', 'than', 'in', 'a', 'brow', 'act', 'ii', 'scene', 'i', 'needs', 'must', 'be', 'told', 'so', 'lest', 'perchance', 'he', 'will', 'make', 'bold', 'falstaff', 'call', 'him', 'hither', 'to', 'fight', 'a', 'blow', 'to', 'heaven', 'i', 'will', 'write', 'cassio', 'i', 'love', 'thee', 'not', 'thy', 'sword', 'a', 'peasant', 'stand', 'up', 'for', 'the', 'lord']
+
+RESULT
+for i have reachd for know thou
+noble thing more than in a brow
+act ii scene i needs must be told
+so lest perchance he will make bold
+falstaff call him hither to fight
+a blow to heaven i will write
+cassio i love thee not thy sword
+a peasant stand up for the lord
+
+numStatesExplored = 900
+totalCost = 9123
+graphSize = 967
+actions = [('am', 'i'), 'that', 'have', 'offended', 'him', 'and', 'takes', 'away', 'by', 'this', 'is', 'trim', 'her', 'writ', 'to', 'me', 'home', 'to', 'rome', 'i', 'make', 'men', 'of', 'peace', 'well', 'hear', 'him', 'lie', 'and', 'with', 'my', 'mistress', 'come', 'to', 'know', 'the', 'merchant', 'of', 'syracuse', 'go', 'but', 'am', 'in', 'that', 'it', 'pleases', 'him', 'shall', 'not', 'pluck', 'my', 'foot', 'and', 'the', 'grim']
+
+RESULT
+am i that have offended him
+and takes away by this is trim
+her writ to me home to rome i
+make men of peace well hear him lie
+and with my mistress come to know
+the merchant of syracuse go
+but am in that it pleases him
+shall not pluck my foot and the grim
+
+numStatesExplored = 759
+totalCost = 4733
+graphSize = 823
+actions = [('thine', 'enemy'), 'in', 'their', 'own', 'wills', 'and', 'fates', 'do', 'so', 'and', 'he', 'that', 'kills', 'for', 'who', 'would', 'be', 'satisfied', 'let', 'me', 'my', 'masters', 'know', 'you', 'that', 'set', 'yet', 'brutus', 'says', 'he', 'that', 'moves', 'none', 'none', 'i', 'shall', 'i', 'do', 'love', 'my', 'son', 'that', 'they', 'have', 'done', 'it', 'must', 'be', 'brief', 'the', 'life', 'that', 'late', 'broke', 'from', 'the', 'thief']
+
+RESULT
+thine enemy in their own wills
+and fates do so and he that kills
+for who would be satisfied let
+me my masters know you that set
+yet brutus says he that moves none
+none i shall i do love my son
+that they have done it must be brief
+the life that late broke from the thief
+
+numStatesExplored = 934
+totalCost = 4575
+graphSize = 1005
+actions = [('ay', 'by'), 'my', 'consent', 'when', 'tis', 'done', 'by', 'me', 'thou', 'mayst', 'slide', 'from', 'the', 'sun', 'that', 'father', 'ruffian', 'that', 'will', 'face', 'me', 'out', 'of', 'love', 'in', 'such', 'a', 'place', 'is', 'dirt', 'to', 'him', 'then', 'and', 'the', 'right', 'good', 'night', 'to-morrow', 'is', 'a', 'slight', 'of', 'what', 'is', 'thy', 'lady', 'that', 'i', 'could', 'be', 'sad', 'but', 'when', 'i', 'was', 'dry']
+
+RESULT
+ay by my consent when tis done
+by me thou mayst slide from the sun
+that father ruffian that will face
+me out of love in such a place
+is dirt to him then and the right
+good night to-morrow is a slight
+of what is thy lady that i
+could be sad but when i was dry
+
+numStatesExplored = 717
+totalCost = 5376
+graphSize = 805
+actions = [('that', 'i'), 'know', 'not', 'where', 'is', 'that', 'think', 'you', 'think', 'you', 'of', 'it', 'let', 'him', 'sink', 'to', 'tell', 'me', 'thy', 'hand', 'stand', 'up', 'stand', 'an', 'you', 'be', 'bound', 'by', 'oath', 'and', 'band', 'of', 'his', 'wife', 'that', 'he', 'hath', 'in', 'it', 'at', 'thy', 'hands', 'and', 'part', 'for', 'his', 'wit', 'if', 'all', 'the', 'points', 'in', 'the', 'law', 'hath', 'not', 'such', 'an', 'oath', 'is', 'of', 'a', 'lath']
+
+RESULT
+that i know not where is that think
+you think you of it let him sink
+to tell me thy hand stand up stand
+an you be bound by oath and band
+of his wife that he hath in it
+at thy hands and part for his wit
+if all the points in the law hath
+not such an oath is of a lath
+
+numStatesExplored = 344
+totalCost = 1494
+graphSize = 400
+actions = [('return', 'was'), 'most', 'great', 'affliction', 'of', 'spirit', 'in', 'his', 'vocation', 'all', 'kneeling', 'long', 'live', 'lord', 'titus', 'by', 'your', 'wit', 'in', 'this', 'the', 'poultice', 'lear', 'ay', 'boy', 'its', 'for', 'love', 'of', 'soul', 'i', 'have', 'stayd', 'in', 'france', 'or', 'the', 'pole', 'this', 'tribute', 'from', 'us', 'to', 'this', 'place', 'becomes', 'thee', 'well', 'there', 'is', 'my', 'grace']
+
+RESULT
+return was most great affliction
+of spirit in his vocation
+all kneeling long live lord titus
+by your wit in this the poultice
+lear ay boy its for love of soul
+i have stayd in france or the pole
+this tribute from us to this place
+becomes thee well there is my grace
+
+numStatesExplored = 339
+totalCost = 5236
+graphSize = 407
+actions = [('and', 'the'), 'chairs', 'of', 'order', 'look', 'you', 'she', 'lovd', 'not', 'the', 'lark', 'to', 'the', 'view', 'duke', 'if', 'his', 'rule', 'be', 'true', 'love', 'may', 'appear', 'plain', 'and', 'true', 'faith', 'so', 'they', 'to', 'be', 'sure', 'of', 'your', 'praise', 'is', 'come', 'again', 'and', 'then', 'as', 'in', 'the', 'dumb', 'for', 'let', 'the', 'issue', 'of', 'your', 'age', 'some', 'mischief', 'on', 'him', 'by', 'his', 'page']
+
+RESULT
+and the chairs of order look you
+she lovd not the lark to the view
+duke if his rule be true love may
+appear plain and true faith so they
+to be sure of your praise is come
+again and then as in the dumb
+for let the issue of your age
+some mischief on him by his page
+
+numStatesExplored = 588
+totalCost = 15539
+graphSize = 653
+actions = [('you', 'a'), 'chamber', 'for', 'pyramus', 'is', 'not', 'like', 'thy', 'wit', 'is', 'more', 'than', 'tis', 'for', 'the', 'best', 'heir', 'o', 'th', 'land', 'who', 'are', 'in', 'the', 'way', 'that', 'i', 'stand', 'and', 'instantly', 'break', 'with', 'us', 'it', 'ill', 'make', 'bold', 'withal', 'and', 'i', 'sit', 'and', 'never', 'changes', 'but', 'keeps', 'you', 'from', 'the', 'monument', 'of', 'the', 'hue']
+
+RESULT
+you a chamber for pyramus is
+not like thy wit is more than tis
+for the best heir o th land
+who are in the way that i stand
+and instantly break with us it
+ill make bold withal and i sit
+and never changes but keeps you
+from the monument of the hue
+
+numStatesExplored = 1281
+totalCost = 336
+graphSize = 1349
+actions = [('they', 'did'), 'in', 'the', 'deed', 'so', 'far', 'will', 'i', 'bring', 'thee', 'where', 'that', 'and', 'that', 'ill', 'sound', 'trumpet', 'a', 'loud', 'note', 'to', 'troy', 'and', 'the', 'death', 'of', 'faith', 'to', 'the', 'boy', 'talbot', 'but', 'ere', 'they', 'meet', 'with', 'joy', 'hearts', 'dance', 'with', 'you', 'more', 'than', 'a', 'boy', 'angelo', 'the', 'money', 'is', 'it', 'likely', 'thou', 'wilt', 'and', 'thou', 'art', 'quit']
+
+RESULT
+they did in the deed so far will
+i bring thee where that and that ill
+sound trumpet a loud note to troy
+and the death of faith to the boy
+talbot but ere they meet with joy
+hearts dance with you more than a boy
+angelo the money is it
+likely thou wilt and thou art quit
+
+numStatesExplored = 574
+totalCost = 16045
+graphSize = 640
+actions = [('most', 'reverend'), 'signior', 'do', 'you', 'not', 'see', 'to', 'make', 'me', 'to', 'the', 'view', 'enter', 'king', 'edward', 'to', 'my', 'lord', 'talbot', 'do', 'not', 'mark', 'that', 'my', 'sword', 'and', 'ditches', 'grave', 'you', 'all', 'i', 'know', 'not', 'that', 'she', 'were', 'by', 'to', 'my', 'foe', 'and', 'the', 'feeder', 'of', 'my', 'dear', 'dear', 'love', 'i', 'cross', 'me', 'thus', 'much', 'i', 'fear']
+
+RESULT
+most reverend signior do you
+not see to make me to the view
+enter king edward to my lord
+talbot do not mark that my sword
+and ditches grave you all i know
+not that she were by to my foe
+and the feeder of my dear dear
+love i cross me thus much i fear
+
+numStatesExplored = 1853
+totalCost = 5148
+graphSize = 1927
+actions = [('ours', 'so'), 'do', 'you', 'the', 'duke', 'it', 'shall', 'i', 'find', 'him', 'which', 'is', 'the', 'pit', 'second', 'citizen', 'and', 'so', 'am', 'i-', 'but', 'what', 'of', 'her', 'as', 'a', 'lamb', 'the', 'bush', 'shall', 'it', 'thee', 'and', 'to', 'speak', 'what', 'does', 'this', 'mean', 'if', 'on', 'the', 'beak', 'as', 'easily', 'as', 'i', 'love', 'you', 'if', 'what', 'thou', 'art', 'so', 'full', 'of', 'view']
+
+RESULT
+ours so do you the duke it
+shall i find him which is the pit
+second citizen and so am
+i- but what of her as a lamb
+the bush shall it thee and to speak
+what does this mean if on the beak
+as easily as i love you
+if what thou art so full of view
+
+numStatesExplored = 1190
+totalCost = 765
+graphSize = 1261
+actions = [('sing', 'it'), 'to', 'be', 'a', 'king', 'the', 'king', 'is', 'come', 'even', 'now', 'i', 'may', 'sing', 'serve', 'the', 'turn', 'of', 'no', 'woman', 'may', 'be', 'heard', 'so', 'much', 'give', 'me', 'my', 'stay', 'countess', 'wilt', 'thou', 'needs', 'stand', 'for', 'i', 'should', 'rob', 'my', 'sweet', 'wife', 'my', 'lord', 'lie', 'queen', 'no', 'further', 'in', 'the', 'business', 'is', 'we', 'should', 'not', 'come', 'from', 'venice']
+
+RESULT
+sing it to be a king the king
+is come even now i may sing
+serve the turn of no woman may
+be heard so much give me my stay
+countess wilt thou needs stand for i
+should rob my sweet wife my lord lie
+queen no further in the business
+is we should not come from venice
+
+numStatesExplored = 188
+totalCost = 1138
+graphSize = 247
+actions = [('in', 'to'), 'my', 'love', 'and', 'dear', 'in', 'use', 'with', 'so', 'full', 'a', 'month', 'and', 'a', 'goose', 'when', 'rocks', 'impregnable', 'are', 'not', 'you', 'it', 'is', 'too', 'bright', 'to', 'be', 'bought', 'these', 'quarrels', 'must', 'be', 'relieved', 'there', 'is', 'a', 'man', 'for', 'what', 'in', 'thee', 'fair', 'imogen', 'no', 'no', 'it', 'begins', 'to', 'run', 'away', 'from', 'the', 'king', 'ins']
+
+RESULT
+in to my love and dear in use
+with so full a month and a goose
+when rocks impregnable are not
+you it is too bright to be bought
+these quarrels must be relieved there
+is a man for what in thee fair
+imogen no no it begins
+to run away from the king ins
+
+numStatesExplored = 210
+totalCost = 6365
+graphSize = 281
+actions = [('strength', 'of'), 'limb', 'and', 'thou', 'knowst', 'thou', 'any', 'that', 'draws', 'breath', 'in', 'this', 'how', 'who', 'is', 'this-', 'my', 'niece', 'there', 'is', 'not', 'a', 'man', 'but', 'i', 'am', 'not', 'too', 'hot', 'that', 'make', 'to', 'thee', 'ill', 'but', 'lean', 'luck', 'in', 'my', 'mouth', 'i', 'am', 'as', 'i', 'suck', 'to', 'answer', 'this', 'before', 'the', 'match', 'be', 'playd', 'on', 'her', 'what', 'you', 'will', 'catch']
+Time = 9.898612
+
+strength of limb and thou knowst thou
+any that draws breath in this how
+who is this- my niece there is not
+a man but i am not too hot
+that make to thee ill but lean luck
+in my mouth i am as i suck
+to answer this before the match
+be playd on her what you will catch
+
+
+numStatesExplored = 875
+totalCost = 6345
+graphSize = 953
+actions = [('half', 'of'), 'the', 'house', 'of', 'her', 'tears', 'will', 'choke', 'me', 'if', 'it', 'prove', 'so', 'then', 'ill', 'for', 'i', 'have', 'a', 'beard', 'is', 'a', 'dear', 'thing', 'to', 'my', 'revenge', 'is', 'no', 'fear', 'the', 'crows', 'to', 'feed', 'my', 'humour', 'well', 'but', 'i', 'can', 'tell', 'you', 'more', 'than', 'hell', 'of', 'him', 'will', 'we', 'ride', 'through', 'the', 'realm', 'shall', 'not', 'find', 'him', 'out', 'at', 'the', 'helm']
+Time = 30.158936
+
+half of the house of her tears will
+choke me if it prove so then ill
+for i have a beard is a dear
+thing to my revenge is no fear
+the crows to feed my humour well
+but i can tell you more than hell
+of him will we ride through the realm
+shall not find him out at the helm
+
+
+numStatesExplored = 742
+totalCost = 10859
+graphSize = 822
+actions = [('was', 'drawn'), 'about', 'this', 'hour', 'i', 'think', 'i', 'can', 'my', 'love', 'shall', 'i', 'fly', 'be', 'not', 'he', 'would', 'not', 'be', 'a', 'man', 'of', 'my', 'good', 'lord', 'you', 'shall', 'have', 'anne', 'and', 'i', 'if', 'there', 'be', 'devils', 'would', 'i', 'might', 'love', 'thee', 'kate', 'this', 'is', 'good', 'to', 'die', 'than', 'thou', 'and', 'my', 'kind', 'lord', 'o', 'tis', 'the', 'eye', 'of', 'that', 'i', 'hoard']
+Time = 28.084384
+
+was drawn about this hour i
+think i can my love shall i fly
+be not he would not be a man
+of my good lord you shall have anne
+and i if there be devils would
+i might love thee kate this is good
+to die than thou and my kind lord
+o tis the eye of that i hoard
+
+
+numStatesExplored = 992
+totalCost = 7211
+graphSize = 1056
+actions = [('many', 'friends'), 'as', 'two', 'grains', 'of', 'wheat', 'to', 'rome', 'of', 'safety', 'and', 'give', 'sweet', 'and', 'bid', 'me', 'kneel', 'first', 'let', 'me', 'hear', 'from', 'him', 'now', 'he', 'lives', 'in', 'the', 'ear', 'tell', 'him', 'of', 'my', 'poor', 'eyes', 'let', 'fall', 'the', 'face', 'and', 'use', 'him', 'as', 'a', 'ball', 'cor', 'tis', 'known', 'already', 'that', 'i', 'might', 'not', 'you', 'hear', 'of', 'it', 'so', 'lie']
+Time = 28.879644
+
+many friends as two grains of wheat
+to rome of safety and give sweet
+and bid me kneel first let me hear
+from him now he lives in the ear
+tell him of my poor eyes let fall
+the face and use him as a ball
+cor tis known already that i
+might not you hear of it so lie
+
+
+numStatesExplored = 220
+totalCost = 10706
+graphSize = 290
+actions = [('wincot', 'if'), 'she', 'dares', 'trust', 'me', 'i', 'must', 'be', 'a', 'torment', 'i', 'did', 'cry', 'enter', 'demetrius', 'and', 'thus', 'far', 'you', 'shall', 'have', 'no', 'mind', 'to', 'us', 'enter', 'benvolio', 'and', 'men', 'have', 'i', 'made', 'no', 'such', 'men', 'are', 'to', 'be', 'high', 'and', 'better', 'twere', 'that', 'both', 'with', 'eye', 'and', 'yet', 'i', 'protest', 'in', 'the', 'thigh']
+Time = 12.443014
+
+wincot if she dares trust me i
+must be a torment i did cry
+enter demetrius and thus
+far you shall have no mind to us
+enter benvolio and men have i
+made no such men are to be high
+and better twere that both with eye
+and yet i protest in the thigh
+
+
+numStatesExplored = 704
+totalCost = 2304
+graphSize = 771
+actions = [('remote', 'where'), 'thou', 'shalt', 'know', 'this', 'strong', 'right', 'hand', 'of', 'the', 'court', 'in', 'the', 'song', 'her', 'advocate', 'to', 'th', 'heart', 'she', 'says', 'you', 'are', 'i', 'th', 'part', 'but', 'what', 'mean', 'you', 'sir', 'walk', 'in', 'death', 'to', 'her', 'love', 'for', 'her', 'with', 'a', 'breath', 'ford', 'master', 'brook', 'i', 'will', 'give', 'it', 'you', 'aside', 'i', 'do', 'the', 'wise', 'sit']
+Time = 19.022784
+
+remote where thou shalt know this strong
+right hand of the court in the song
+her advocate to th heart
+she says you are i th part
+but what mean you sir walk in death
+to her love for her with a breath
+ford master brook i will give it
+you aside i do the wise sit
+
+
+numStatesExplored = 393
+totalCost = 14441
+graphSize = 452
+actions = [('of', 'your'), 'loneliness', 'and', 'find', 'it', 'otherwise', 'i', 'would', 'i', 'had', 'wit', 'o', 'would', 'i', 'were', 'a', 'bad', 'world', 'i', 'neer', 'again', 'shall', 'see', 'and', 'i', 'lie', 'and', 'thus', 'he', 'waxed', 'like', 'a', 'good', 'way', 'and', 'move', 'in', 'that', 'the', 'devil', 'may', 'and', 'bootless', 'unto', 'them', 'thus', 'find', 'i', 'like', 'that', 'richmond', 'should', 'be', 'blind']
+Time = 15.615977
+
+of your loneliness and find it
+otherwise i would i had wit
+o would i were a bad world i
+neer again shall see and i lie
+and thus he waxed like a good way
+and move in that the devil may
+and bootless unto them thus find
+i like that richmond should be blind
+
+
+numStatesExplored = 214
+totalCost = 989
+graphSize = 274
+actions = [('for', 'i'), 'have', 'reachd', 'for', 'know', 'thou', 'noble', 'thing', 'more', 'than', 'in', 'a', 'brow', 'act', 'ii', 'scene', 'i', 'needs', 'must', 'be', 'told', 'so', 'lest', 'perchance', 'he', 'will', 'make', 'bold', 'falstaff', 'call', 'him', 'hither', 'to', 'fight', 'a', 'blow', 'to', 'heaven', 'i', 'will', 'write', 'cassio', 'i', 'love', 'thee', 'not', 'thy', 'sword', 'a', 'peasant', 'stand', 'up', 'for', 'the', 'lord']
+Time = 7.692924
+
+for i have reachd for know thou
+noble thing more than in a brow
+act ii scene i needs must be told
+so lest perchance he will make bold
+falstaff call him hither to fight
+a blow to heaven i will write
+cassio i love thee not thy sword
+a peasant stand up for the lord
+
+
+numStatesExplored = 900
+totalCost = 9123
+graphSize = 967
+actions = [('am', 'i'), 'that', 'have', 'offended', 'him', 'and', 'takes', 'away', 'by', 'this', 'is', 'trim', 'her', 'writ', 'to', 'me', 'home', 'to', 'rome', 'i', 'make', 'men', 'of', 'peace', 'well', 'hear', 'him', 'lie', 'and', 'with', 'my', 'mistress', 'come', 'to', 'know', 'the', 'merchant', 'of', 'syracuse', 'go', 'but', 'am', 'in', 'that', 'it', 'pleases', 'him', 'shall', 'not', 'pluck', 'my', 'foot', 'and', 'the', 'grim']
+Time = 25.325657
+
+am i that have offended him
+and takes away by this is trim
+her writ to me home to rome i
+make men of peace well hear him lie
+and with my mistress come to know
+the merchant of syracuse go
+but am in that it pleases him
+shall not pluck my foot and the grim
+
+
+numStatesExplored = 759
+totalCost = 4733
+graphSize = 823
+actions = [('thine', 'enemy'), 'in', 'their', 'own', 'wills', 'and', 'fates', 'do', 'so', 'and', 'he', 'that', 'kills', 'for', 'who', 'would', 'be', 'satisfied', 'let', 'me', 'my', 'masters', 'know', 'you', 'that', 'set', 'yet', 'brutus', 'says', 'he', 'that', 'moves', 'none', 'none', 'i', 'shall', 'i', 'do', 'love', 'my', 'son', 'that', 'they', 'have', 'done', 'it', 'must', 'be', 'brief', 'the', 'life', 'that', 'late', 'broke', 'from', 'the', 'thief']
+Time = 16.139455
+
+thine enemy in their own wills
+and fates do so and he that kills
+for who would be satisfied let
+me my masters know you that set
+yet brutus says he that moves none
+none i shall i do love my son
+that they have done it must be brief
+the life that late broke from the thief
+
+
+numStatesExplored = 934
+totalCost = 4575
+graphSize = 1005
+actions = [('ay', 'by'), 'my', 'consent', 'when', 'tis', 'done', 'by', 'me', 'thou', 'mayst', 'slide', 'from', 'the', 'sun', 'that', 'father', 'ruffian', 'that', 'will', 'face', 'me', 'out', 'of', 'love', 'in', 'such', 'a', 'place', 'is', 'dirt', 'to', 'him', 'then', 'and', 'the', 'right', 'good', 'night', 'to-morrow', 'is', 'a', 'slight', 'of', 'what', 'is', 'thy', 'lady', 'that', 'i', 'could', 'be', 'sad', 'but', 'when', 'i', 'was', 'dry']
+Time = 23.802042
+
+ay by my consent when tis done
+by me thou mayst slide from the sun
+that father ruffian that will face
+me out of love in such a place
+is dirt to him then and the right
+good night to-morrow is a slight
+of what is thy lady that i
+could be sad but when i was dry
+
+
+numStatesExplored = 717
+totalCost = 5376
+graphSize = 805
+actions = [('that', 'i'), 'know', 'not', 'where', 'is', 'that', 'think', 'you', 'think', 'you', 'of', 'it', 'let', 'him', 'sink', 'to', 'tell', 'me', 'thy', 'hand', 'stand', 'up', 'stand', 'an', 'you', 'be', 'bound', 'by', 'oath', 'and', 'band', 'of', 'his', 'wife', 'that', 'he', 'hath', 'in', 'it', 'at', 'thy', 'hands', 'and', 'part', 'for', 'his', 'wit', 'if', 'all', 'the', 'points', 'in', 'the', 'law', 'hath', 'not', 'such', 'an', 'oath', 'is', 'of', 'a', 'lath']
+Time = 19.583371
+
+that i know not where is that think
+you think you of it let him sink
+to tell me thy hand stand up stand
+an you be bound by oath and band
+of his wife that he hath in it
+at thy hands and part for his wit
+if all the points in the law hath
+not such an oath is of a lath
+
+
+numStatesExplored = 344
+totalCost = 1494
+graphSize = 400
+actions = [('return', 'was'), 'most', 'great', 'affliction', 'of', 'spirit', 'in', 'his', 'vocation', 'all', 'kneeling', 'long', 'live', 'lord', 'titus', 'by', 'your', 'wit', 'in', 'this', 'the', 'poultice', 'lear', 'ay', 'boy', 'its', 'for', 'love', 'of', 'soul', 'i', 'have', 'stayd', 'in', 'france', 'or', 'the', 'pole', 'this', 'tribute', 'from', 'us', 'to', 'this', 'place', 'becomes', 'thee', 'well', 'there', 'is', 'my', 'grace']
+Time = 7.536705
+
+return was most great affliction
+of spirit in his vocation
+all kneeling long live lord titus
+by your wit in this the poultice
+lear ay boy its for love of soul
+i have stayd in france or the pole
+this tribute from us to this place
+becomes thee well there is my grace
+
+
+numStatesExplored = 339
+totalCost = 5236
+graphSize = 407
+actions = [('and', 'the'), 'chairs', 'of', 'order', 'look', 'you', 'she', 'lovd', 'not', 'the', 'lark', 'to', 'the', 'view', 'duke', 'if', 'his', 'rule', 'be', 'true', 'love', 'may', 'appear', 'plain', 'and', 'true', 'faith', 'so', 'they', 'to', 'be', 'sure', 'of', 'your', 'praise', 'is', 'come', 'again', 'and', 'then', 'as', 'in', 'the', 'dumb', 'for', 'let', 'the', 'issue', 'of', 'your', 'age', 'some', 'mischief', 'on', 'him', 'by', 'his', 'page']
+Time = 10.863133
+
+and the chairs of order look you
+she lovd not the lark to the view
+duke if his rule be true love may
+appear plain and true faith so they
+to be sure of your praise is come
+again and then as in the dumb
+for let the issue of your age
+some mischief on him by his page
+
+
+numStatesExplored = 588
+totalCost = 15539
+graphSize = 653
+actions = [('you', 'a'), 'chamber', 'for', 'pyramus', 'is', 'not', 'like', 'thy', 'wit', 'is', 'more', 'than', 'tis', 'for', 'the', 'best', 'heir', 'o', 'th', 'land', 'who', 'are', 'in', 'the', 'way', 'that', 'i', 'stand', 'and', 'instantly', 'break', 'with', 'us', 'it', 'ill', 'make', 'bold', 'withal', 'and', 'i', 'sit', 'and', 'never', 'changes', 'but', 'keeps', 'you', 'from', 'the', 'monument', 'of', 'the', 'hue']
+Time = 19.747262
+
+you a chamber for pyramus is
+not like thy wit is more than tis
+for the best heir o th land
+who are in the way that i stand
+and instantly break with us it
+ill make bold withal and i sit
+and never changes but keeps you
+from the monument of the hue
+
+
+numStatesExplored = 1281
+totalCost = 336
+graphSize = 1349
+actions = [('they', 'did'), 'in', 'the', 'deed', 'so', 'far', 'will', 'i', 'bring', 'thee', 'where', 'that', 'and', 'that', 'ill', 'sound', 'trumpet', 'a', 'loud', 'note', 'to', 'troy', 'and', 'the', 'death', 'of', 'faith', 'to', 'the', 'boy', 'talbot', 'but', 'ere', 'they', 'meet', 'with', 'joy', 'hearts', 'dance', 'with', 'you', 'more', 'than', 'a', 'boy', 'angelo', 'the', 'money', 'is', 'it', 'likely', 'thou', 'wilt', 'and', 'thou', 'art', 'quit']
+Time = 29.266464
+
+they did in the deed so far will
+i bring thee where that and that ill
+sound trumpet a loud note to troy
+and the death of faith to the boy
+talbot but ere they meet with joy
+hearts dance with you more than a boy
+angelo the money is it
+likely thou wilt and thou art quit
+
+
+numStatesExplored = 574
+totalCost = 16045
+graphSize = 640
+actions = [('most', 'reverend'), 'signior', 'do', 'you', 'not', 'see', 'to', 'make', 'me', 'to', 'the', 'view', 'enter', 'king', 'edward', 'to', 'my', 'lord', 'talbot', 'do', 'not', 'mark', 'that', 'my', 'sword', 'and', 'ditches', 'grave', 'you', 'all', 'i', 'know', 'not', 'that', 'she', 'were', 'by', 'to', 'my', 'foe', 'and', 'the', 'feeder', 'of', 'my', 'dear', 'dear', 'love', 'i', 'cross', 'me', 'thus', 'much', 'i', 'fear']
+Time = 21.879245
+
+most reverend signior do you
+not see to make me to the view
+enter king edward to my lord
+talbot do not mark that my sword
+and ditches grave you all i know
+not that she were by to my foe
+and the feeder of my dear dear
+love i cross me thus much i fear
+
+
+numStatesExplored = 1853
+totalCost = 5148
+graphSize = 1927
+actions = [('ours', 'so'), 'do', 'you', 'the', 'duke', 'it', 'shall', 'i', 'find', 'him', 'which', 'is', 'the', 'pit', 'second', 'citizen', 'and', 'so', 'am', 'i-', 'but', 'what', 'of', 'her', 'as', 'a', 'lamb', 'the', 'bush', 'shall', 'it', 'thee', 'and', 'to', 'speak', 'what', 'does', 'this', 'mean', 'if', 'on', 'the', 'beak', 'as', 'easily', 'as', 'i', 'love', 'you', 'if', 'what', 'thou', 'art', 'so', 'full', 'of', 'view']
+Time = 38.187948
+
+ours so do you the duke it
+shall i find him which is the pit
+second citizen and so am
+i- but what of her as a lamb
+the bush shall it thee and to speak
+what does this mean if on the beak
+as easily as i love you
+if what thou art so full of view
+
+
+numStatesExplored = 1190
+totalCost = 765
+graphSize = 1261
+actions = [('sing', 'it'), 'to', 'be', 'a', 'king', 'the', 'king', 'is', 'come', 'even', 'now', 'i', 'may', 'sing', 'serve', 'the', 'turn', 'of', 'no', 'woman', 'may', 'be', 'heard', 'so', 'much', 'give', 'me', 'my', 'stay', 'countess', 'wilt', 'thou', 'needs', 'stand', 'for', 'i', 'should', 'rob', 'my', 'sweet', 'wife', 'my', 'lord', 'lie', 'queen', 'no', 'further', 'in', 'the', 'business', 'is', 'we', 'should', 'not', 'come', 'from', 'venice']
+Time = 23.683220
+
+sing it to be a king the king
+is come even now i may sing
+serve the turn of no woman may
+be heard so much give me my stay
+countess wilt thou needs stand for i
+should rob my sweet wife my lord lie
+queen no further in the business
+is we should not come from venice
+
+
+numStatesExplored = 188
+totalCost = 1138
+graphSize = 247
+actions = [('in', 'to'), 'my', 'love', 'and', 'dear', 'in', 'use', 'with', 'so', 'full', 'a', 'month', 'and', 'a', 'goose', 'when', 'rocks', 'impregnable', 'are', 'not', 'you', 'it', 'is', 'too', 'bright', 'to', 'be', 'bought', 'these', 'quarrels', 'must', 'be', 'relieved', 'there', 'is', 'a', 'man', 'for', 'what', 'in', 'thee', 'fair', 'imogen', 'no', 'no', 'it', 'begins', 'to', 'run', 'away', 'from', 'the', 'king', 'ins']
+Time = 4.944105
+
+in to my love and dear in use
+with so full a month and a goose
+when rocks impregnable are not
+you it is too bright to be bought
+these quarrels must be relieved there
+is a man for what in thee fair
+imogen no no it begins
+to run away from the king ins
+
+
+[ ] attempted to satisfy 20 poems
+[ ] 20 found
+[ ] total time = 392.754881
+[ ] mean t = 19.637744
+[ ] median t = 19.665316
+[ ] stdev t = 8.754403
+[ ] mean s = 700.850000
+[ ] median s = 710.500000
+[ ] stdev s= 416.642326

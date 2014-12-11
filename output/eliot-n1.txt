@@ -1,0 +1,633 @@
+[ ] Loading the dictionary...
+[ ] Finished loading dictionary.
+[ ] Reading corpus file...
+[ ] Finished reading corpus, n-gram model generated.
+numStatesExplored = 1041
+totalCost = 313
+graphSize = 1113
+actions = [('from',), 'a', 'garden', 'if', 'the', 'fever', 'of', 'feet', 'her', 'hand', 'of', 'the', 'river', 'held', 'him', 'sing', 'to', 'smile', 'that', 'the', 'park', 'where', 'the', 'floors', 'of', 'life', 'in', 'the', 'dark', 'i', 'am', 'not', 'want', 'honour', 'in', 'hand', 'on', 'your', 'feet', 'and', 'behind', 'that', 'stand', 'the', 'seven', 'sacred', 'heart', 'was', 'drawn', 'and', 'you', 'and', 'we', 'would', 'meet', 'the', 'dawn']
+
+RESULT
+from a garden if the fever
+of feet her hand of the river
+held him sing to smile that the park
+where the floors of life in the dark
+i am not want honour in hand
+on your feet and behind that stand
+the seven sacred heart was drawn
+and you and we would meet the dawn
+
+numStatesExplored = 537
+totalCost = 301
+graphSize = 599
+actions = [('in',), 'the', 'slightest', 'twist', 'of', 'the', 'street', 'lamp', 'muttered', 'in', 'the', 'floors', 'of', 'feet', 'in', 'depraved', 'may', 'be', 'said', 'or', 'it', 'is', 'not', 'have', 'no', 'sort', 'of', 'a', 'bit', 'but', 'this', 'or', 'three', 'who', 'will', 'be', 'dry', 'brain', 'in', 'memory', 'throws', 'up', 'high', 'let', 'us', 'by', 'the', 'room', 'and', 'him', 'leave', 'it', 'have', 'been', 'together', 'and', 'grieve']
+
+RESULT
+in the slightest twist of the street
+lamp muttered in the floors of feet
+in depraved may be said or it
+is not have no sort of a bit
+but this or three who will be dry
+brain in memory throws up high
+let us by the room and him leave
+it have been together and grieve
+
+numStatesExplored = 235
+totalCost = 342
+graphSize = 302
+actions = [('of',), 'the', 'ladies', 'of', 'the', 'house', 'think', 'at', 'a', 'gesso', 'ground', 'and', 'go', 'and', 'drink', 'the', 'advantage', 'after', 'the', 'world', 'i', 'feel', 'as', 'she', 'is', 'time', 'and', 'curled', 'i', 'after', 'all', 'what', 'did', 'he', 'said', 'that', 'it', 'does', 'the', 'lamp', 'that', 'is', 'read', 'beyond', 'the', 'matter', 'with', 'a', 'dry', 'and', 'i', 'thought', 'of', 'her', 'hand', 'of', 'high']
+
+RESULT
+of the ladies of the house think
+at a gesso ground and go and drink
+the advantage after the world
+i feel as she is time and curled
+i after all what did he said
+that it does the lamp that is read
+beyond the matter with a dry
+and i thought of her hand of high
+
+numStatesExplored = 1086
+totalCost = 461
+graphSize = 1155
+actions = [('of',), 'the', 'street', 'hardly', 'know', 'you', 'meet', 'the', 'door', 'sleep', 'at', 'the', 'strength', 'to', 'eat', 'a', 'garden', 'if', 'i', 'saw', 'the', 'last', 'twist', 'of', 'the', 'form', 'that', 'it', 'is', 'passed', 'when', 'the', 'glazen', 'shelves', 'kept', 'must', 'leave', 'me', 'so', 'much', 'of', 'the', 'smoke', 'and', 'grieve', 'and', 'you', 'madam', 'are', 'not', 'by', 'flies', 'fought', 'in', 'the', 'lady', 'in', 'the', 'skies']
+
+RESULT
+of the street hardly know you meet
+the door sleep at the strength to eat
+a garden if i saw the last
+twist of the form that it is passed
+when the glazen shelves kept must leave
+me so much of the smoke and grieve
+and you madam are not by flies
+fought in the lady in the skies
+
+numStatesExplored = 1056
+totalCost = 227
+graphSize = 1131
+actions = [('the',), 'world', 'came', 'through', 'the', 'host', 'with', 'light', 'poor', 'travellers', 'to', 'find', 'a', 'slight', 'and', 'tear', 'from', 'over', 'a', 'smile', 'falls', 'from', 'ham', 'to', 'me', 'so', 'much', 'of', 'balls', 'she', 'is', 'a', 'pair', 'of', 'fog', 'that', 'was', 'there', 'is', 'not', 'believed', 'in', 'a', 'pas', 'are', 'the', 'street', 'lamp', 'said', 'so', 'all', 'night', 'comes', 'to', 'this', 'music', 'is', 'a', 'slight']
+
+RESULT
+the world came through the host with light
+poor travellers to find a slight
+and tear from over a smile falls
+from ham to me so much of balls
+she is a pair of fog that was
+there is not believed in a pas
+are the street lamp said so all night
+comes to this music is a slight
+
+numStatesExplored = 493
+totalCost = 145
+graphSize = 549
+actions = [('from',), 'the', 'hippos', 'feeble', 'steps', 'may', 'be', 'eaten', 'to', 'wonder', 'how', 'they', 'midnight', 'shakes', 'the', 'street', 'lamp', 'muttered', 'in', 'your', 'hair', 'over', 'her', 'shuttered', 'gaping', 'at', 'the', 'hard', 'and', 'for', 'it', 'cannot', 'see', 'the', 'saints', 'he', 'shall', 'sit', 'that', 'cross', 'across', 'the', 'footman', 'hold', 'it', 'now', 'when', 'i', 'have', 'heard', 'the', 'old']
+
+RESULT
+from the hippos feeble steps may
+be eaten to wonder how they
+midnight shakes the street lamp muttered
+in your hair over her shuttered
+gaping at the hard and for it
+cannot see the saints he shall sit
+that cross across the footman hold
+it now when i have heard the old
+
+numStatesExplored = 2965
+totalCost = 284
+graphSize = 3024
+actions = [('do',), 'i', 'use', 'it', 'until', 'the', 'smell', 'hearing', 'taste', 'and', 'go', 'through', 'the', 'bell', 'et', 'la', 'lune', 'ne', 'bave', 'pas', 'dans', 'un', 'courant', 'de', 'tout', 'gonfles', 'de', 'son', 'i', 'have', 'no', 'i', 'thought', 'to', 'a', 'field', 'of', 'lilacs', 'are', 'the', 'arms', 'and', 'peeled', 'and', 'when', 'i', 'am', 'pinned', 'and', 'it', 'may', 'be', 'washed', 'as', 'grishkin', 'in', 'the', 'day']
+
+RESULT
+do i use it until the smell
+hearing taste and go through the bell
+et la lune ne bave pas dans un
+courant de tout gonfles de son
+i have no i thought to a field
+of lilacs are the arms and peeled
+and when i am pinned and it may
+be washed as grishkin in the day
+
+numStatesExplored = 1318
+totalCost = 251
+graphSize = 1380
+actions = [('une',), 'nuit', 'dt', 'les', 'rides', 'du', 'grand', 'air', 'indifferent', 'and', 'him', 'shall', 'i', 'dare', 'among', 'velleities', 'and', 'modest', 'but', 'this', 'refer', 'to', 'an', 'august', 'as', 'if', 'the', 'hands', 'was', 'such', 'a', 'pink', 'from', 'you', 'see', 'the', 'street', 'were', 'not', 'think', 'and', 'the', 'garden', 'if', 'she', 'has', 'said', 'to', 'find', 'expression', 'in', 'the', 'bed']
+
+RESULT
+une nuit dt les rides du grand air
+indifferent and him shall i dare
+among velleities and modest
+but this refer to an august
+as if the hands was such a pink
+from you see the street were not think
+and the garden if she has said
+to find expression in the bed
+
+numStatesExplored = 1466
+totalCost = 267
+graphSize = 1542
+actions = [('by',), 'the', 'night', 'in', 'the', 'light', 'and', 'shake', 'of', 'greek', 'was', 'submarine', 'and', 'make', 'but', 'what', 'is', 'successful', 'with', 'i', 'shall', 'sit', 'for', 'i', 'feel', 'like', 'a', 'dry', 'in', 'the', 'floors', 'of', 'its', 'grey', 'and', 'clutch', 'and', 'time', 'there', 'will', 'be', 'time', 'and', 'touch', 'you', 'reach', 'your', 'hand', 'of', 'you', 'and', 'go', 'on', 'his', 'arms', 'that', 'clings', 'to', 'the', 'snow']
+
+RESULT
+by the night in the light and shake
+of greek was submarine and make
+but what is successful with i
+shall sit for i feel like a dry
+in the floors of its grey and clutch
+and time there will be time and touch
+you reach your hand of you and go
+on his arms that clings to the snow
+
+numStatesExplored = 247
+totalCost = 340
+graphSize = 324
+actions = [('is',), 'based', 'upon', 'your', 'hair', 'is', 'not', 'it', 'flow', 'from', 'a', 'toy', 'that', 'i', 'bought', 'i', 'mean', 'to', 'me', 'my', 'coat', 'my', 'friend', 'you', 'and', 'white', 'and', 'he', 'knew', 'the', 'end', 'and', 'a', 'thousand', 'small', 'house', 'is', 'not', 'it', 'perfume', 'from', 'the', 'world', 'i', 'bought', 'in', 'the', 'dark', 'room', 'and', 'he', 'is', 'read', 'among', 'the', 'soul', 'stretched', 'on', 'the', 'head']
+
+RESULT
+is based upon your hair is not
+it flow from a toy that i bought
+i mean to me my coat my friend
+you and white and he knew the end
+and a thousand small house is not
+it perfume from the world i bought
+in the dark room and he is read
+among the soul stretched on the head
+
+numStatesExplored = 2126
+totalCost = 308
+graphSize = 2192
+actions = [('for',), 'i', 'dare', 'to', 'find', 'a', 'dull', 'head', 'among', 'some', 'way', 'we', 'have', 'the', 'dead', 'and', 'indeed', 'there', 'was', 'much', 'it', 'will', 'say', 'at', 'being', 'one', 'that', 'if', 'still', 'discuss', 'the', 'praise', 'of', 'sweeney', 'spreads', 'his', 'arms', 'already', 'known', 'the', 'beds', 'the', 'wind', 'in', 'the', 'brown', 'hair', 'of', 'steaks', 'in', 'upon', 'which', 'your', 'hair', 'and', 'cakes']
+
+RESULT
+for i dare to find a dull head
+among some way we have the dead
+and indeed there was much it will
+say at being one that if still
+discuss the praise of sweeney spreads
+his arms already known the beds
+the wind in the brown hair of steaks
+in upon which your hair and cakes
+
+numStatesExplored = 2059
+totalCost = 300
+graphSize = 2114
+actions = [('but',), 'our', 'sentimental', 'friend', 'you', 'will', 'say', 'how', 'you', 'all', 'the', 'end', 'the', 'new', 'year', 'us', 'take', 'my', 'morning', 'in', 'a', 'broken', 'blinds', 'and', 'turning', 'burbank', 'with', 'a', 'twisted', 'faces', 'from', 'the', 'women', 'come', 'and', 'ices', 'in', 'the', 'window', 'leaning', 'in', 'short', 'i', 'have', 'been', 'worth', 'it', 'have', 'no', 'sort']
+
+RESULT
+but our sentimental friend
+you will say how you all the end
+the new year us take my morning
+in a broken blinds and turning
+burbank with a twisted faces
+from the women come and ices
+in the window leaning in short
+i have been worth it have no sort
+
+numStatesExplored = 1826
+totalCost = 323
+graphSize = 1889
+actions = [('a',), 'wilderness', 'of', 'which', 'a', 'dry', 'and', 'dry', 'and', 'many', 'days', 'and', 'i', 'wakening', 'the', 'penny', 'world', 'came', 'back', 'upon', 'a', 'dying', 'with', 'the', 'lack', 'and', 'sang', 'within', 'a', 'harp', 'of', 'light', 'upon', 'which', 'your', 'hair', 'of', 'a', 'slight', 'the', 'air', 'in', 'the', 'wind', 'in', 'your', 'hair', 'behind', 'the', 'moon', 'has', 'a', 'pas', 'cher']
+
+RESULT
+a wilderness of which a dry
+and dry and many days and i
+wakening the penny world came back
+upon a dying with the lack
+and sang within a harp of light
+upon which your hair of a slight
+the air in the wind in your hair
+behind the moon has a pas cher
+
+numStatesExplored = 848
+totalCost = 217
+graphSize = 913
+actions = [('and',), 'time', 'for', 'a', 'stocking', 'up', 'high', 'sentence', 'but', 'what', 'can', 'you', 'have', 'i', 'she', 'then', 'sit', 'here', 'beside', 'you', 'heard', 'the', 'lamp', 'that', 'follow', 'like', 'the', 'word', 'the', 'sapient', 'sutlers', 'of', 'which', 'i', 'have', 'not', 'what', 'is', 'not', 'by', 'a', 'dry', 'spawned', 'in', 'sleep', 'and', 'when', 'the', 'door', 'sleep', 'prepare', 'for', 'sense', 'has', 'no', 'i', 'keep']
+
+RESULT
+and time for a stocking up high
+sentence but what can you have i
+she then sit here beside you heard
+the lamp that follow like the word
+the sapient sutlers of which i
+have not what is not by a dry
+spawned in sleep and when the door sleep
+prepare for sense has no i keep
+
+numStatesExplored = 1111
+totalCost = 277
+graphSize = 1188
+actions = [('the',), 'old', 'man', 'driven', 'by', 'short', 'i', 'suppose', 'was', 'meant', 'at', 'all', 'the', 'sky', 'the', 'world', 'i', 'am', 'pinned', 'and', 'would', 'it', 'you', 'will', 'sing', 'to', 'say', 'i', 'then', 'sit', 'i', 'then', 'does', 'not', 'think', 'now', 'a', 'friend', 'the', 'lamb', 'shall', 'wear', 'white', 'and', 'the', 'end', 'now', 'that', 'i', 'must', 'be', 'of', 'my', 'days', 'and', 'this', 'is', 'not', 'know', 'when', 'the', 'praise']
+
+RESULT
+the old man driven by short i
+suppose was meant at all the sky
+the world i am pinned and would it
+you will sing to say i then sit
+i then does not think now a friend
+the lamb shall wear white and the end
+now that i must be of my days
+and this is not know when the praise
+
+numStatesExplored = 122
+totalCost = 140
+graphSize = 186
+actions = [('le',), 'dos', 'cartant', 'les', 'rides', 'du', 'grand', 'air', 'indifferent', 'and', 'at', 'the', 'hand', 'clutching', 'at', 'the', 'potamus', 'can', 'sleep', 'and', 'broke', 'them', 'all', 'night', 'and', 'i', 'keep', 'a', 'slight', 'sensation', 'of', 'my', 'life', 'is', 'time', 'to', 'give', 'you', 'knew', 'the', 'knife', 'declines', 'the', 'word', 'within', 'the', 'street', 'were', 'sure', 'that', 'is', 'not', 'know', 'you', 'meet']
+
+RESULT
+le dos cartant les rides du grand
+air indifferent and at the hand
+clutching at the potamus can sleep
+and broke them all night and i keep
+a slight sensation of my life
+is time to give you knew the knife
+declines the word within the street
+were sure that is not know you meet
+
+numStatesExplored = 128
+totalCost = 410
+graphSize = 198
+actions = [('the',), 'wind', 'in', 'the', 'spring', 'in', 'short', 'square', 'fingers', 'of', 'the', 'damp', 'souls', 'of', 'hair', 'but', 'every', 'week', 'we', 'have', 'seen', 'my', 'hair', 'and', 'broke', 'them', 'all', 'the', 'screen', 'the', 'wind', 'blows', 'the', 'old', 'man', 'of', 'greek', 'text', 'inserted', 'here', 'comes', 'to', 'speak', 'i', 'say', 'but', 'every', 'street', 'lamp', 'muttered', 'in', 'a', 'glass', 'of', 'the', 'damp']
+
+RESULT
+the wind in the spring in short square
+fingers of the damp souls of hair
+but every week we have seen
+my hair and broke them all the screen
+the wind blows the old man of greek
+text inserted here comes to speak
+i say but every street lamp
+muttered in a glass of the damp
+
+numStatesExplored = 482
+totalCost = 281
+graphSize = 551
+actions = [('for',), 'decisions', 'and', 'he', 'is', 'weak', 'and', 'cross', 'across', 'her', 'with', 'a', 'greek', 'i', 'have', 'been', 'worth', 'while', 'the', 'dark', 'room', 'and', 'has', 'these', 'with', 'smell', 'of', 'the', 'bloom', 'on', 'a', 'minute', 'will', 'be', 'of', 'taste', 'and', 'i', 'have', 'i', 'have', 'talk', 'with', 'haste', 'let', 'the', 'sheets', 'in', 'her', 'aunts', 'were', 'time', 'there', 'how', 'should', 'have', 'seen', 'them', 'to', 'climb']
+
+RESULT
+for decisions and he is weak
+and cross across her with a greek
+i have been worth while the dark room
+and has these with smell of the bloom
+on a minute will be of taste
+and i have i have talk with haste
+let the sheets in her aunts were time
+there how should have seen them to climb
+
+numStatesExplored = 1193
+totalCost = 140
+graphSize = 1264
+actions = [('i',), 'my', 'countenance', 'i', 'am', 'not', 'know', 'you', 'will', 'say', 'i', 'know', 'the', 'lot', 'they', 'were', 'together', 'and', 'a', 'street', 'were', 'drawn', 'and', 'do', 'not', 'what', 'to', 'eat', 'that', 'had', 'loved', 'him', 'well', 'and', 'hands', 'was', 'such', 'was', 'running', 'along', 'a', 'pas', 'to', 'be', 'time', 'for', 'wonders', 'we', 'seize', 'and', 'bruised', 'by', 'short', 'i', 'dare', 'and', 'knees']
+
+RESULT
+i my countenance i am not
+know you will say i know the lot
+they were together and a street
+were drawn and do not what to eat
+that had loved him well and hands was
+such was running along a pas
+to be time for wonders we seize
+and bruised by short i dare and knees
+
+numStatesExplored = 378
+totalCost = 321
+graphSize = 442
+actions = [('the',), 'windy', 'spaces', 'of', 'the', 'street', 'lamp', 'that', 'it', 'at', 'last', 'twist', 'of', 'feet', 'with', 'the', 'middle', 'of', 'twisted', 'things', 'that', 'you', 'have', 'the', 'street', 'lamp', 'that', 'clings', 'with', 'i', 'have', 'been', 'worth', 'while', 'the', 'end', 'of', 'life', 'is', 'the', 'wind', 'in', 'a', 'friend', 'a', 'wilderness', 'of', 'the', 'lamp', 'spreads', 'his', 'arms', 'and', 'he', 'at', 'times', 'the', 'beds']
+
+RESULT
+the windy spaces of the street
+lamp that it at last twist of feet
+with the middle of twisted things
+that you have the street lamp that clings
+with i have been worth while the end
+of life is the wind in a friend
+a wilderness of the lamp spreads
+his arms and he at times the beds
+
+numStatesExplored = 1041
+totalCost = 313
+graphSize = 1113
+actions = [('from',), 'a', 'garden', 'if', 'the', 'fever', 'of', 'feet', 'her', 'hand', 'of', 'the', 'river', 'held', 'him', 'sing', 'to', 'smile', 'that', 'the', 'park', 'where', 'the', 'floors', 'of', 'life', 'in', 'the', 'dark', 'i', 'am', 'not', 'want', 'honour', 'in', 'hand', 'on', 'your', 'feet', 'and', 'behind', 'that', 'stand', 'the', 'seven', 'sacred', 'heart', 'was', 'drawn', 'and', 'you', 'and', 'we', 'would', 'meet', 'the', 'dawn']
+Time = 32.703906
+
+from a garden if the fever
+of feet her hand of the river
+held him sing to smile that the park
+where the floors of life in the dark
+i am not want honour in hand
+on your feet and behind that stand
+the seven sacred heart was drawn
+and you and we would meet the dawn
+
+
+numStatesExplored = 537
+totalCost = 301
+graphSize = 599
+actions = [('in',), 'the', 'slightest', 'twist', 'of', 'the', 'street', 'lamp', 'muttered', 'in', 'the', 'floors', 'of', 'feet', 'in', 'depraved', 'may', 'be', 'said', 'or', 'it', 'is', 'not', 'have', 'no', 'sort', 'of', 'a', 'bit', 'but', 'this', 'or', 'three', 'who', 'will', 'be', 'dry', 'brain', 'in', 'memory', 'throws', 'up', 'high', 'let', 'us', 'by', 'the', 'room', 'and', 'him', 'leave', 'it', 'have', 'been', 'together', 'and', 'grieve']
+Time = 13.024706
+
+in the slightest twist of the street
+lamp muttered in the floors of feet
+in depraved may be said or it
+is not have no sort of a bit
+but this or three who will be dry
+brain in memory throws up high
+let us by the room and him leave
+it have been together and grieve
+
+
+numStatesExplored = 235
+totalCost = 342
+graphSize = 302
+actions = [('of',), 'the', 'ladies', 'of', 'the', 'house', 'think', 'at', 'a', 'gesso', 'ground', 'and', 'go', 'and', 'drink', 'the', 'advantage', 'after', 'the', 'world', 'i', 'feel', 'as', 'she', 'is', 'time', 'and', 'curled', 'i', 'after', 'all', 'what', 'did', 'he', 'said', 'that', 'it', 'does', 'the', 'lamp', 'that', 'is', 'read', 'beyond', 'the', 'matter', 'with', 'a', 'dry', 'and', 'i', 'thought', 'of', 'her', 'hand', 'of', 'high']
+Time = 9.081280
+
+of the ladies of the house think
+at a gesso ground and go and drink
+the advantage after the world
+i feel as she is time and curled
+i after all what did he said
+that it does the lamp that is read
+beyond the matter with a dry
+and i thought of her hand of high
+
+
+numStatesExplored = 1086
+totalCost = 461
+graphSize = 1155
+actions = [('of',), 'the', 'street', 'hardly', 'know', 'you', 'meet', 'the', 'door', 'sleep', 'at', 'the', 'strength', 'to', 'eat', 'a', 'garden', 'if', 'i', 'saw', 'the', 'last', 'twist', 'of', 'the', 'form', 'that', 'it', 'is', 'passed', 'when', 'the', 'glazen', 'shelves', 'kept', 'must', 'leave', 'me', 'so', 'much', 'of', 'the', 'smoke', 'and', 'grieve', 'and', 'you', 'madam', 'are', 'not', 'by', 'flies', 'fought', 'in', 'the', 'lady', 'in', 'the', 'skies']
+Time = 38.460711
+
+of the street hardly know you meet
+the door sleep at the strength to eat
+a garden if i saw the last
+twist of the form that it is passed
+when the glazen shelves kept must leave
+me so much of the smoke and grieve
+and you madam are not by flies
+fought in the lady in the skies
+
+
+numStatesExplored = 1056
+totalCost = 227
+graphSize = 1131
+actions = [('the',), 'world', 'came', 'through', 'the', 'host', 'with', 'light', 'poor', 'travellers', 'to', 'find', 'a', 'slight', 'and', 'tear', 'from', 'over', 'a', 'smile', 'falls', 'from', 'ham', 'to', 'me', 'so', 'much', 'of', 'balls', 'she', 'is', 'a', 'pair', 'of', 'fog', 'that', 'was', 'there', 'is', 'not', 'believed', 'in', 'a', 'pas', 'are', 'the', 'street', 'lamp', 'said', 'so', 'all', 'night', 'comes', 'to', 'this', 'music', 'is', 'a', 'slight']
+Time = 29.647154
+
+the world came through the host with light
+poor travellers to find a slight
+and tear from over a smile falls
+from ham to me so much of balls
+she is a pair of fog that was
+there is not believed in a pas
+are the street lamp said so all night
+comes to this music is a slight
+
+
+numStatesExplored = 493
+totalCost = 145
+graphSize = 549
+actions = [('from',), 'the', 'hippos', 'feeble', 'steps', 'may', 'be', 'eaten', 'to', 'wonder', 'how', 'they', 'midnight', 'shakes', 'the', 'street', 'lamp', 'muttered', 'in', 'your', 'hair', 'over', 'her', 'shuttered', 'gaping', 'at', 'the', 'hard', 'and', 'for', 'it', 'cannot', 'see', 'the', 'saints', 'he', 'shall', 'sit', 'that', 'cross', 'across', 'the', 'footman', 'hold', 'it', 'now', 'when', 'i', 'have', 'heard', 'the', 'old']
+Time = 13.081681
+
+from the hippos feeble steps may
+be eaten to wonder how they
+midnight shakes the street lamp muttered
+in your hair over her shuttered
+gaping at the hard and for it
+cannot see the saints he shall sit
+that cross across the footman hold
+it now when i have heard the old
+
+
+numStatesExplored = 2965
+totalCost = 284
+graphSize = 3024
+actions = [('do',), 'i', 'use', 'it', 'until', 'the', 'smell', 'hearing', 'taste', 'and', 'go', 'through', 'the', 'bell', 'et', 'la', 'lune', 'ne', 'bave', 'pas', 'dans', 'un', 'courant', 'de', 'tout', 'gonfles', 'de', 'son', 'i', 'have', 'no', 'i', 'thought', 'to', 'a', 'field', 'of', 'lilacs', 'are', 'the', 'arms', 'and', 'peeled', 'and', 'when', 'i', 'am', 'pinned', 'and', 'it', 'may', 'be', 'washed', 'as', 'grishkin', 'in', 'the', 'day']
+Time = 71.332456
+
+do i use it until the smell
+hearing taste and go through the bell
+et la lune ne bave pas dans un
+courant de tout gonfles de son
+i have no i thought to a field
+of lilacs are the arms and peeled
+and when i am pinned and it may
+be washed as grishkin in the day
+
+
+numStatesExplored = 1318
+totalCost = 251
+graphSize = 1380
+actions = [('une',), 'nuit', 'dt', 'les', 'rides', 'du', 'grand', 'air', 'indifferent', 'and', 'him', 'shall', 'i', 'dare', 'among', 'velleities', 'and', 'modest', 'but', 'this', 'refer', 'to', 'an', 'august', 'as', 'if', 'the', 'hands', 'was', 'such', 'a', 'pink', 'from', 'you', 'see', 'the', 'street', 'were', 'not', 'think', 'and', 'the', 'garden', 'if', 'she', 'has', 'said', 'to', 'find', 'expression', 'in', 'the', 'bed']
+Time = 29.021565
+
+une nuit dt les rides du grand air
+indifferent and him shall i dare
+among velleities and modest
+but this refer to an august
+as if the hands was such a pink
+from you see the street were not think
+and the garden if she has said
+to find expression in the bed
+
+
+numStatesExplored = 1466
+totalCost = 267
+graphSize = 1542
+actions = [('by',), 'the', 'night', 'in', 'the', 'light', 'and', 'shake', 'of', 'greek', 'was', 'submarine', 'and', 'make', 'but', 'what', 'is', 'successful', 'with', 'i', 'shall', 'sit', 'for', 'i', 'feel', 'like', 'a', 'dry', 'in', 'the', 'floors', 'of', 'its', 'grey', 'and', 'clutch', 'and', 'time', 'there', 'will', 'be', 'time', 'and', 'touch', 'you', 'reach', 'your', 'hand', 'of', 'you', 'and', 'go', 'on', 'his', 'arms', 'that', 'clings', 'to', 'the', 'snow']
+Time = 34.080586
+
+by the night in the light and shake
+of greek was submarine and make
+but what is successful with i
+shall sit for i feel like a dry
+in the floors of its grey and clutch
+and time there will be time and touch
+you reach your hand of you and go
+on his arms that clings to the snow
+
+
+numStatesExplored = 247
+totalCost = 340
+graphSize = 324
+actions = [('is',), 'based', 'upon', 'your', 'hair', 'is', 'not', 'it', 'flow', 'from', 'a', 'toy', 'that', 'i', 'bought', 'i', 'mean', 'to', 'me', 'my', 'coat', 'my', 'friend', 'you', 'and', 'white', 'and', 'he', 'knew', 'the', 'end', 'and', 'a', 'thousand', 'small', 'house', 'is', 'not', 'it', 'perfume', 'from', 'the', 'world', 'i', 'bought', 'in', 'the', 'dark', 'room', 'and', 'he', 'is', 'read', 'among', 'the', 'soul', 'stretched', 'on', 'the', 'head']
+Time = 4.904671
+
+is based upon your hair is not
+it flow from a toy that i bought
+i mean to me my coat my friend
+you and white and he knew the end
+and a thousand small house is not
+it perfume from the world i bought
+in the dark room and he is read
+among the soul stretched on the head
+
+
+numStatesExplored = 2126
+totalCost = 308
+graphSize = 2192
+actions = [('for',), 'i', 'dare', 'to', 'find', 'a', 'dull', 'head', 'among', 'some', 'way', 'we', 'have', 'the', 'dead', 'and', 'indeed', 'there', 'was', 'much', 'it', 'will', 'say', 'at', 'being', 'one', 'that', 'if', 'still', 'discuss', 'the', 'praise', 'of', 'sweeney', 'spreads', 'his', 'arms', 'already', 'known', 'the', 'beds', 'the', 'wind', 'in', 'the', 'brown', 'hair', 'of', 'steaks', 'in', 'upon', 'which', 'your', 'hair', 'and', 'cakes']
+Time = 45.949682
+
+for i dare to find a dull head
+among some way we have the dead
+and indeed there was much it will
+say at being one that if still
+discuss the praise of sweeney spreads
+his arms already known the beds
+the wind in the brown hair of steaks
+in upon which your hair and cakes
+
+
+numStatesExplored = 2059
+totalCost = 300
+graphSize = 2114
+actions = [('but',), 'our', 'sentimental', 'friend', 'you', 'will', 'say', 'how', 'you', 'all', 'the', 'end', 'the', 'new', 'year', 'us', 'take', 'my', 'morning', 'in', 'a', 'broken', 'blinds', 'and', 'turning', 'burbank', 'with', 'a', 'twisted', 'faces', 'from', 'the', 'women', 'come', 'and', 'ices', 'in', 'the', 'window', 'leaning', 'in', 'short', 'i', 'have', 'been', 'worth', 'it', 'have', 'no', 'sort']
+Time = 38.096628
+
+but our sentimental friend
+you will say how you all the end
+the new year us take my morning
+in a broken blinds and turning
+burbank with a twisted faces
+from the women come and ices
+in the window leaning in short
+i have been worth it have no sort
+
+
+numStatesExplored = 1826
+totalCost = 323
+graphSize = 1889
+actions = [('a',), 'wilderness', 'of', 'which', 'a', 'dry', 'and', 'dry', 'and', 'many', 'days', 'and', 'i', 'wakening', 'the', 'penny', 'world', 'came', 'back', 'upon', 'a', 'dying', 'with', 'the', 'lack', 'and', 'sang', 'within', 'a', 'harp', 'of', 'light', 'upon', 'which', 'your', 'hair', 'of', 'a', 'slight', 'the', 'air', 'in', 'the', 'wind', 'in', 'your', 'hair', 'behind', 'the', 'moon', 'has', 'a', 'pas', 'cher']
+Time = 43.042155
+
+a wilderness of which a dry
+and dry and many days and i
+wakening the penny world came back
+upon a dying with the lack
+and sang within a harp of light
+upon which your hair of a slight
+the air in the wind in your hair
+behind the moon has a pas cher
+
+
+numStatesExplored = 848
+totalCost = 217
+graphSize = 913
+actions = [('and',), 'time', 'for', 'a', 'stocking', 'up', 'high', 'sentence', 'but', 'what', 'can', 'you', 'have', 'i', 'she', 'then', 'sit', 'here', 'beside', 'you', 'heard', 'the', 'lamp', 'that', 'follow', 'like', 'the', 'word', 'the', 'sapient', 'sutlers', 'of', 'which', 'i', 'have', 'not', 'what', 'is', 'not', 'by', 'a', 'dry', 'spawned', 'in', 'sleep', 'and', 'when', 'the', 'door', 'sleep', 'prepare', 'for', 'sense', 'has', 'no', 'i', 'keep']
+Time = 17.881908
+
+and time for a stocking up high
+sentence but what can you have i
+she then sit here beside you heard
+the lamp that follow like the word
+the sapient sutlers of which i
+have not what is not by a dry
+spawned in sleep and when the door sleep
+prepare for sense has no i keep
+
+
+numStatesExplored = 1111
+totalCost = 277
+graphSize = 1188
+actions = [('the',), 'old', 'man', 'driven', 'by', 'short', 'i', 'suppose', 'was', 'meant', 'at', 'all', 'the', 'sky', 'the', 'world', 'i', 'am', 'pinned', 'and', 'would', 'it', 'you', 'will', 'sing', 'to', 'say', 'i', 'then', 'sit', 'i', 'then', 'does', 'not', 'think', 'now', 'a', 'friend', 'the', 'lamb', 'shall', 'wear', 'white', 'and', 'the', 'end', 'now', 'that', 'i', 'must', 'be', 'of', 'my', 'days', 'and', 'this', 'is', 'not', 'know', 'when', 'the', 'praise']
+Time = 24.214654
+
+the old man driven by short i
+suppose was meant at all the sky
+the world i am pinned and would it
+you will sing to say i then sit
+i then does not think now a friend
+the lamb shall wear white and the end
+now that i must be of my days
+and this is not know when the praise
+
+
+numStatesExplored = 122
+totalCost = 140
+graphSize = 186
+actions = [('le',), 'dos', 'cartant', 'les', 'rides', 'du', 'grand', 'air', 'indifferent', 'and', 'at', 'the', 'hand', 'clutching', 'at', 'the', 'potamus', 'can', 'sleep', 'and', 'broke', 'them', 'all', 'night', 'and', 'i', 'keep', 'a', 'slight', 'sensation', 'of', 'my', 'life', 'is', 'time', 'to', 'give', 'you', 'knew', 'the', 'knife', 'declines', 'the', 'word', 'within', 'the', 'street', 'were', 'sure', 'that', 'is', 'not', 'know', 'you', 'meet']
+Time = 2.317337
+
+le dos cartant les rides du grand
+air indifferent and at the hand
+clutching at the potamus can sleep
+and broke them all night and i keep
+a slight sensation of my life
+is time to give you knew the knife
+declines the word within the street
+were sure that is not know you meet
+
+
+numStatesExplored = 128
+totalCost = 410
+graphSize = 198
+actions = [('the',), 'wind', 'in', 'the', 'spring', 'in', 'short', 'square', 'fingers', 'of', 'the', 'damp', 'souls', 'of', 'hair', 'but', 'every', 'week', 'we', 'have', 'seen', 'my', 'hair', 'and', 'broke', 'them', 'all', 'the', 'screen', 'the', 'wind', 'blows', 'the', 'old', 'man', 'of', 'greek', 'text', 'inserted', 'here', 'comes', 'to', 'speak', 'i', 'say', 'but', 'every', 'street', 'lamp', 'muttered', 'in', 'a', 'glass', 'of', 'the', 'damp']
+Time = 3.018242
+
+the wind in the spring in short square
+fingers of the damp souls of hair
+but every week we have seen
+my hair and broke them all the screen
+the wind blows the old man of greek
+text inserted here comes to speak
+i say but every street lamp
+muttered in a glass of the damp
+
+
+numStatesExplored = 482
+totalCost = 281
+graphSize = 551
+actions = [('for',), 'decisions', 'and', 'he', 'is', 'weak', 'and', 'cross', 'across', 'her', 'with', 'a', 'greek', 'i', 'have', 'been', 'worth', 'while', 'the', 'dark', 'room', 'and', 'has', 'these', 'with', 'smell', 'of', 'the', 'bloom', 'on', 'a', 'minute', 'will', 'be', 'of', 'taste', 'and', 'i', 'have', 'i', 'have', 'talk', 'with', 'haste', 'let', 'the', 'sheets', 'in', 'her', 'aunts', 'were', 'time', 'there', 'how', 'should', 'have', 'seen', 'them', 'to', 'climb']
+Time = 9.057083
+
+for decisions and he is weak
+and cross across her with a greek
+i have been worth while the dark room
+and has these with smell of the bloom
+on a minute will be of taste
+and i have i have talk with haste
+let the sheets in her aunts were time
+there how should have seen them to climb
+
+
+numStatesExplored = 1193
+totalCost = 140
+graphSize = 1264
+actions = [('i',), 'my', 'countenance', 'i', 'am', 'not', 'know', 'you', 'will', 'say', 'i', 'know', 'the', 'lot', 'they', 'were', 'together', 'and', 'a', 'street', 'were', 'drawn', 'and', 'do', 'not', 'what', 'to', 'eat', 'that', 'had', 'loved', 'him', 'well', 'and', 'hands', 'was', 'such', 'was', 'running', 'along', 'a', 'pas', 'to', 'be', 'time', 'for', 'wonders', 'we', 'seize', 'and', 'bruised', 'by', 'short', 'i', 'dare', 'and', 'knees']
+Time = 25.913190
+
+i my countenance i am not
+know you will say i know the lot
+they were together and a street
+were drawn and do not what to eat
+that had loved him well and hands was
+such was running along a pas
+to be time for wonders we seize
+and bruised by short i dare and knees
+
+
+numStatesExplored = 378
+totalCost = 321
+graphSize = 442
+actions = [('the',), 'windy', 'spaces', 'of', 'the', 'street', 'lamp', 'that', 'it', 'at', 'last', 'twist', 'of', 'feet', 'with', 'the', 'middle', 'of', 'twisted', 'things', 'that', 'you', 'have', 'the', 'street', 'lamp', 'that', 'clings', 'with', 'i', 'have', 'been', 'worth', 'while', 'the', 'end', 'of', 'life', 'is', 'the', 'wind', 'in', 'a', 'friend', 'a', 'wilderness', 'of', 'the', 'lamp', 'spreads', 'his', 'arms', 'and', 'he', 'at', 'times', 'the', 'beds']
+Time = 8.234577
+
+the windy spaces of the street
+lamp that it at last twist of feet
+with the middle of twisted things
+that you have the street lamp that clings
+with i have been worth while the end
+of life is the wind in a friend
+a wilderness of the lamp spreads
+his arms and he at times the beds
+
+
+[ ] attempted to satisfy 20 poems
+[ ] 20 found
+[ ] total time = 493.064172
+[ ] mean t = 24.653209
+[ ] median t = 25.063922
+[ ] stdev t = 17.275337
+[ ] mean s = 1035.850000
+[ ] median s = 1048.500000
+[ ] stdev s= 745.669114

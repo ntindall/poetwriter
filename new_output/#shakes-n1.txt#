@@ -1,0 +1,83 @@
+[ ] Loading the dictionary...
+[ ] Finished loading dictionary.
+[ ] Reading corpus file...
+[ ] Finished reading corpus, n-gram model generated.
+numStatesExplored = 60
+totalCost = 11973
+graphSize = 243
+actions = [('answer',), 'my', 'tallow', 'if', 'thou', 'must', 'be', 'fairly', 'note', 'to', 'my', 'lord', 'trust', 'and', 'flourish', 'enter', 'gloucester', 'go', 'my', 'throat', 'i', 'look', 'here', 'i', 'for', 'know', 'on', 'the', 'envy', 'swells', 'with', 'these', 'are', 'strewings', 'fitst', 'for', 'ever', 'scar', 'could', 'not', 'so', 'i', 'should', 'be', 'thy', 'fall', 'that', 'puts', 'forth', 'the', 'purpose', 'in', 'hall']
+
+RESULT
+answer my tallow if thou must
+be fairly note to my lord trust
+and flourish enter gloucester go
+my throat i look here i for know
+on the envy swells with these are
+strewings fitst for ever scar
+could not so i should be thy fall
+that puts forth the purpose in hall
+
+numStatesExplored = 77
+totalCost = 6690
+graphSize = 277
+actions = [('act',), 'v', 'scene', '1', 'are', 'you', 'and', 'would', 'her', 'subject', 'to', 'france', 'stand', 'up', 'good', 'where', 'it', 'is', 'expected', 'since', 'thou', 'know', 'not', 'in', 'if', 'the', 'bloody', 'brow', 'but', 'wail', 'the', 'pulse', 'what', 'sayst', 'thou', 'hast', 'made', 'your', 'leave', 'the', 'complete', 'of', 'cast', 'which', 'no', 'i', 'made', 'them', 'hence', 'these', 'greens', 'before', 'the', 'death', 'than', 'hes', 'no', 'means']
+
+RESULT
+act v scene 1 are you and would
+her subject to france stand up good
+where it is expected since thou
+know not in if the bloody brow
+but wail the pulse what sayst thou hast
+made your leave the complete of cast
+which no i made them hence these greens
+before the death than hes no means
+
+numStatesExplored = 14690
+totalCost = 14412
+graphSize = 14890
+actions = [('come',), 'or', 'to', 'whose', 'red', 'but', 'that', 'doth', 'say', 'if', 'thou', 'lead', 'these', 'news', 'to', 'moth', 'but', 'what', 'troyan', 'walls', 'hole', 'to', 'prove', 'a', 'horse', 'upon', 'it', 'and', 'i', 'move', 'that', 'english', 'weal', 'and', 'how', 'these', 'are', 'not', 'distributed', 'or', 'how', 'far', 'and', 'pluck', 'out', 'go', 'in', 'high', 'praise', 'hast', 'thou', 'shouldst', 'lose', 'his', 'sword', 'make', 'fast']
+
+RESULT
+come or to whose red but that doth
+say if thou lead these news to moth
+but what troyan walls hole to prove
+a horse upon it and i move
+that english weal and how these are
+not distributed or how far
+and pluck out go in high praise hast
+thou shouldst lose his sword make fast
+
+numStatesExplored = 31445
+totalCost = 6112
+graphSize = 31656
+actions = [('me',), 'who', 'is', 'copyright', 'status', 'with', 'thee', 'and', 'yet', 'he', 'is', 'practice', 'our', 'thanks', 'for', 'what', 'ho', 'the', 'place', 'make', 'one', 'another', 'part', 'of', 'grace', 'for', 'france', 'in', 'here', 'is', 'to', 'sir', 'you', 'have', 'staind', 'me', 'stay', 'give', 'you', 'hugh', 'then', 'ill', 'news', 'good', 'queen', 'with', 'thee', 'well', 'said', 'he', 'came', 'for', 'a', 'thing', 'of', 'hell']
+
+RESULT
+me who is copyright status
+with thee and yet he is practice
+our thanks for what ho the place
+make one another part of grace
+for france in here is to sir you
+have staind me stay give you hugh
+then ill news good queen with thee well
+said he came for a thing of hell
+
+numStatesExplored = 397
+totalCost = 15891
+graphSize = 573
+actions = [('leave',), 'the', 'imagind', 'person', 'or', 'did', 'vow', 'of', 'heros', 'virtue', 'hath', 'rid', 'the', 'florentine', 'called', 'ungrateful', 'country', 'he', 'take', 'him', 'with', 'dreadful', 'i', 'will', 'so', 'oft', 'we', 'are', 'not', 'been', 'out', 'clubs', 'these', 'articles', 'my', 'sin', 'and', '2', 'are', 'they', 'never', 'was', 'not', 'abuse', 'me', 'proudly', 'and', 'with', 'shot']
+
+RESULT
+leave the imagind person or did
+vow of heros virtue hath rid
+the florentine called ungrateful
+country he take him with dreadful
+i will so oft we are not been
+out clubs these articles my sin
+and 2 are they never was not
+abuse me proudly and with shot
+
+numStatesExplored = 9075
+totalCost = 12142
+graphSize = 9278
+a

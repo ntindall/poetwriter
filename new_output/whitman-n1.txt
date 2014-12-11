@@ -1,0 +1,633 @@
+[ ] Loading the dictionary...
+[ ] Finished loading dictionary.
+[ ] Reading corpus file...
+[ ] Finished reading corpus, n-gram model generated.
+numStatesExplored = 6270
+totalCost = 3886
+graphSize = 6445
+actions = [('on',), 'the', 'earth', 'ever', 'yet', 'all', 'is', 'my', 'hair', 'of', 'shine', 'the', 'world', 'but', 'tis', 'we', 'row', 'toward', 'the', 'modern', 'crowd', 'i', 'love', 'of', 'my', 'forehead', 'and', 'loud', 'i', 'am', 'he', 'is', 'just', 'entering', 'but', 'will', 'be', 'i', 'heard', 'murmuring', 'i', 'love', 'me', 'my', 'blood', 'clean', 'clothes', 'whip', 'is', 'you', 'smile', 'curving', 'and', 'the', 'ship']
+
+RESULT
+on the earth ever yet all is
+my hair of shine the world but tis
+we row toward the modern crowd
+i love of my forehead and loud
+i am he is just entering
+but will be i heard murmuring
+i love me my blood clean clothes whip
+is you smile curving and the ship
+
+numStatesExplored = 83
+totalCost = 5948
+graphSize = 282
+actions = [('as',), 'face', 'droopd', 'in', 'the', 'words', 'not', 'forget', 'you', 'call', 'mock', 'and', 'the', 'cot', 'the', 'white', 'flowers', 'and', 'the', 'seas', 'or', 'stop', 'here', 'is', 'circled', 'till', 'the', 'war', 'in', 'the', 'fighting', 'done', 'or', 'men', 'are', 'yet', 'and', 'the', 'young', 'of', 'these', 'are', 'far', 'i', 'am', 'good-fortune', 'i', 'hang', 'up', 'there', 'with', 'one', 'must', 'get', 'the', 'gang']
+
+RESULT
+as face droopd in the words not
+forget you call mock and the cot
+the white flowers and the seas or
+stop here is circled till the war
+in the fighting done or men are
+yet and the young of these are far
+i am good-fortune i hang
+up there with one must get the gang
+
+numStatesExplored = 11610
+totalCost = 4768
+graphSize = 11792
+actions = [('or',), 'defiled', 'my', 'emprises', 'have', 'meant', 'as', 'it', 'was', 'a', 'savage', 'and', 'went', 'for', 'city', 'of', 'the', 'like', 'of', 'wheat', 'and', 'the', 'staffs', 'all', 'over', 'all', 'meet', 'with', 'perfect', 'motion', 'and', 'the', 'big', 'and', 'masses', 'of', 'the', 'sea', 'and', 'fig', 'from', 'you', 'be', 'no', 'law', 'they', 'go', 'they', 'will', 'i', 'see', 'the', 'line', 'of', 'them', 'stay']
+
+RESULT
+or defiled my emprises have meant
+as it was a savage and went
+for city of the like of wheat
+and the staffs all over all meet
+with perfect motion and the big
+and masses of the sea and fig
+from you be no law they go they
+will i see the line of them stay
+
+numStatesExplored = 227
+totalCost = 6136
+graphSize = 394
+actions = [('like',), 'a', 'separate', 'himself', 'or', 'touch', 'of', 'the', 'earth', 'is', 'of', 'the', 'shore', 'i', 'think', 'a', 'young', 'woman', 'of', 'ships', 'machinery', 'and', 'clap', 'hands', 'hips', 'to', 'me', 'and', 'women', 'the', 'proud', 'fond', 'of', 'the', 'strong', 'legends', 'of', 'his', 'wand', 'when', 'the', 'past', 'entire', 'my', 'wits', 'i', 'see', 'you', 'only', 'am', 'he', 'sits']
+
+RESULT
+like a separate himself or
+touch of the earth is of the shore
+i think a young woman of ships
+machinery and clap hands hips
+to me and women the proud fond
+of the strong legends of his wand
+when the past entire my wits
+i see you only am he sits
+
+numStatesExplored = 20897
+totalCost = 3920
+graphSize = 21066
+actions = [('duly',), 'return', 'and', 'the', 'red', 'blood', 'of', 'teeming', 'plays', 'would', 'you', 'and', 'scud', 'the', 'noble', 'name', 'had', 'i', 'love', 'him', 'that', 'enterd', 'from', 'the', 'crowd', 'and', 'dim', 'for', 'i', 'did', 'you', 'straight', 'and', 'night', 'shows', 'the', 'shop-windows', 'of', 'man', 'knows', 'i', 'indeed', 'you', 'before', 'i', 'will', 'never', 'constraind', 'never', 'kill']
+
+RESULT
+duly return and the red blood
+of teeming plays would you and scud
+the noble name had i love him
+that enterd from the crowd and dim
+for i did you straight and night shows
+the shop-windows of man knows
+i indeed you before i will
+never constraind never kill
+
+numStatesExplored = 73
+totalCost = 2355
+graphSize = 273
+actions = [('comes',), 'back', 'on', 'the', 'east', 'and', 'all', 'is', 'this', 'child', 'that', 'carries', 'her', 'but', 'tis', 'and', 'straight', 'and', 'blowing', 'up', 'my', 'race', 'of', 'wild', 'wild', 'as', 'to', 'them', 'and', 'place', 'from', 'these', 'and', 'its', 'parts', 'of', 'me', 'or', 'thee', 'commune', 'with', 'me', 'young', 'of', 'war', 'now', 'i', 'have', 'positively', 'not', 'leave', 'the', 'rows', 'in', 'the', 'crowd', 'i', 'caught']
+
+RESULT
+comes back on the east and all is
+this child that carries her but tis
+and straight and blowing up my race
+of wild wild as to them and place
+from these and its parts of me or
+thee commune with me young of war
+now i have positively not
+leave the rows in the crowd i caught
+
+numStatesExplored = 70
+totalCost = 4491
+graphSize = 252
+actions = [('bard',), 'walks', 'with', 'trails', 'of', 'the', 'joys', 'speech', 'their', 'northerly', 'wilds', 'beasts', 'of', 'reach', 'this', 'hill', 'first', 'object', 'won', 'by', 'rote', 'years', 'old', 'poems', 'do', 'not', 'the', 'float', 'i', 'announce', 'the', 'pure', 'spaces', 'spread', 'ample', 'and', 'look', 'through', 'all', 'you', 'dread', 'i', 'am', 'destind', 'on', 'the', 'same', 'old', 'husband', 'and', 'what', 'is', 'all', 'the', 'cold']
+
+RESULT
+bard walks with trails of the joys speech
+their northerly wilds beasts of reach
+this hill first object won by rote
+years old poems do not the float
+i announce the pure spaces spread
+ample and look through all you dread
+i am destind on the same old
+husband and what is all the cold
+
+numStatesExplored = 4460
+totalCost = 5651
+graphSize = 4655
+actions = [('same',), 'as', 'any', 'more', 'heaven', 'whence', 'the', 'broad', 'with', 'his', 'ship', 'of', 'the', 'fence', 'the', 'future', 'is', 'worthy', 'the', 'train', 'themselves', 'against', 'yours', 'as', 'the', 'main', 'and', 'large', 'and', 'snowy', 'white', 'clouds', 'pass', 'through', 'me', 'and', 'done', 'their', 'white', 'and', 'grass', 'and', 'tongue', 'of', 'the', 'father', 'to', 'look', 'as', 'majestic', 'as', 'two', 'the', 'brook']
+
+RESULT
+same as any more heaven whence
+the broad with his ship of the fence
+the future is worthy the train
+themselves against yours as the main
+and large and snowy white clouds pass
+through me and done their white and grass
+and tongue of the father to look
+as majestic as two the brook
+
+numStatesExplored = 5998
+totalCost = 3538
+graphSize = 6144
+actions = [('body',), 'by', 'me', 'by', 'the', 'perfect', 'men', 'their', 'walls', 'shall', 'not', 'the', 'direct', 'he', 'left', 'thee', 'of', 'days', 'and', 'i', 'say', 'any', 'thing', 'according', 'to', 'stay', 'the', 'ferocity', 'of', 'evil', 'as', 'she', 'speeds', 'by', 'day', 'come', 'travel', 'the', 'pacific', 'railroad', 'the', 'snows', 'chilld', 'rivers', 'tides', 'with', 'all', 'goes']
+
+RESULT
+body by me by the perfect
+men their walls shall not the direct
+he left thee of days and i say
+any thing according to stay
+the ferocity of evil
+as she speeds by day come travel
+the pacific railroad the snows
+chilld rivers tides with all goes
+
+numStatesExplored = 25029
+totalCost = 5450
+graphSize = 25173
+actions = [('in',), 'the', 'equable', 'showers', 'i', 'and', 'land', 'in', 'the', 'torrents', 'of', 'high', 'the', 'wars', 'manners', 'favor', 'men', 'hills', 'southward', 'along', 'the', 'past', 'the', 'sills', 'the', 'earth', 'and', 'chills', 'as', 'a', 'part', 'i', 'and', 'roughness', 'among', 'the', 'streets', 'high', 'in', 'the', 'habitans', 'friendly', 'emblem', 'of', 'all', 'in', 'bays', 'and', 'how', 'solemn']
+
+RESULT
+in the equable showers i
+and land in the torrents of high
+the wars manners favor men hills
+southward along the past the sills
+the earth and chills as a part i
+and roughness among the streets high
+in the habitans friendly emblem
+of all in bays and how solemn
+
+numStatesExplored = 108
+totalCost = 5747
+graphSize = 263
+actions = [('house',), 'by', 'some', 'are', 'you', 'i', 'no', 'voice', 'arouse', 'me', 'at', 'the', 'world', 'the', 'choice', 'the', 'sight', 'of', 'a', 'sure', 'foundations', 'tied', 'at', 'a', 'hundred', 'ways', 'persons', 'the', 'auction-stand', 'the', 'same', 'waits', 'intrinsically', 'in', 'the', 'states', 'the', 'great', 'chastity', 'of', 'my', 'blood', 'of', 'fields', 'and', 'sisters', 'sleep', 'and', 'mud']
+
+RESULT
+house by some are you i no voice
+arouse me at the world the choice
+the sight of a sure foundations
+tied at a hundred ways persons
+the auction-stand the same waits
+intrinsically in the states
+the great chastity of my blood
+of fields and sisters sleep and mud
+
+numStatesExplored = 2593
+totalCost = 3568
+graphSize = 2764
+actions = [('we',), 'may', 'be', 'under', 'niagara', 'the', 'ship', 'oer', 'lands', 'as', 'the', 'opera', 'the', 'same', 'on', 'earth', 'by', 'those', 'through', 'you', 'wait', 'behind', 'all', 'is', 'done', 'the', 'cue', 'are', 'corrupting', 'below', 'deck', 'i', 'love', 'than', 'which', 'contains', 'all', 'the', 'sky', 'a', 'few', 'years', 'of', 'the', 'first', 'nothing', 'have', 'thy', 'beat', 'beat', 'up', 'o', 'something']
+
+RESULT
+we may be under niagara
+the ship oer lands as the opera
+the same on earth by those through you
+wait behind all is done the cue
+are corrupting below deck i
+love than which contains all the sky
+a few years of the first nothing
+have thy beat beat up o something
+
+numStatesExplored = 64
+totalCost = 2930
+graphSize = 242
+actions = [('a',), 'leaf', 'by', 'print', 'i', 'bring', 'no', 'thought', 'that', 'exhibits', 'itself', 'and', 'ought', 'i', 'stride', 'on', 'the', 'making', 'the', 'need', 'be', 'honest', 'men', 'and', 'wealth', 'nor', 'feed', 'and', 'now', 'finale', 'to', 'each', 'is', 'over', 'all', 'the', 'new', 'world', 'but', 'tis', 'to', 'this', 'hill', 'and', 'snow', 'rain', 'down', 'hang', 'from', 'the', 'horizons', 'edge', 'the', 'pang']
+
+RESULT
+a leaf by print i bring no thought
+that exhibits itself and ought
+i stride on the making the need
+be honest men and wealth nor feed
+and now finale to each is
+over all the new world but tis
+to this hill and snow rain down hang
+from the horizons edge the pang
+
+numStatesExplored = 64
+totalCost = 3577
+graphSize = 243
+actions = [('them',), 'or', 'touch', 'my', 'name', 'in', 'the', 'large', 'calm', 'how', 'to', 'me', 'the', 'greeks', 'and', 'charge', 'and', 'actress', 'those', 'countries', 'the', 'eyes', 'by', 'the', 'sea', 'the', 'orchards', 'and', 'wise', 'an', 'impalpable', 'air--for', 'life', 'it', 'did', 'you', 'reckond', 'the', 'hands', 'the', 'fit', 'as', 'of', 'the', 'exquisite', 'smell', 'you', 'are', 'these', 'i', 'with', 'the', 'dark', 'with', 'view']
+
+RESULT
+them or touch my name in the large
+calm how to me the greeks and charge
+and actress those countries the eyes
+by the sea the orchards and wise
+an impalpable air--for life it
+did you reckond the hands the fit
+as of the exquisite smell you
+are these i with the dark with view
+
+numStatesExplored = 82
+totalCost = 4546
+graphSize = 271
+actions = [('approach',), 'saw', 'your', 'shores', 'this', 'heart', 'i', 'see', 'grow', 'up', 'from', 'asia', 'and', 'sky', 'i', 'myself', 'and', 'saying', 'he', 'knows', 'you', 'my', 'captain', 'tales', 'of', 'the', 'shows', 'the', 'mannahatta', 'streets', 'of', 'all', 'souls', 'questions', 'askd', 'as', 'the', 'sounds', 'and', 'rolls', 'they', 'fell', 'unnamed', 'land', 'or', 'bad', 'i', 'thought', 'of', 'those', 'strata', 'piled', 'to', 'die']
+
+RESULT
+approach saw your shores this heart i
+see grow up from asia and sky
+i myself and saying he knows
+you my captain tales of the shows
+the mannahatta streets of all souls
+questions askd as the sounds and rolls
+they fell unnamed land or bad i
+thought of those strata piled to die
+
+numStatesExplored = 18399
+totalCost = 3935
+graphSize = 18557
+actions = [('back',), 'the', 'great', 'and', 'acts', 'beings', 'groups', 'of', 'leaves', 'of', 'his', 'face', 'in', 'the', 'troops', 'the', 'wool', 'unclipt', 'upon', 'me', 'does', 'all', 'her', 'own', 'days', 'of', 'each', 'for', 'twas', 'who', 'give', 'me', 'the', 'crushd', 'head', 'is', 'clear', 'waters', 'shall', 'be', 'this', 'new', 'tis', 'i', 'am', 'the', 'prodigal', 'you', 'are', 'all', 'that', 'forwards', 'perfect', 'and', 'far']
+
+RESULT
+back the great and acts beings groups
+of leaves of his face in the troops
+the wool unclipt upon me does
+all her own days of each for twas
+who give me the crushd head is
+clear waters shall be this new tis
+i am the prodigal you are
+all that forwards perfect and far
+
+numStatesExplored = 795
+totalCost = 5298
+graphSize = 944
+actions = [('the',), 'light', 'a', 'brood', 'and', 'several', 'points', 'of', 'those', 'delicious', 'word', 'the', 'joints', 'the', 'mystic', 'unseen', 'winds', 'piping', 'i', 'too', 'well', 'in', 'the', 'shore', 'dripping', 'the', 'awful', 'natural', 'life', 'there', 'is', 'every', 'thing', 'is', 'your', 'hair', 'the', 'outlet', 'song', 'your', 'mute', 'crops', 'grass', 'of', 'comrades', 'close', 'and', 'women', 'pass']
+
+RESULT
+the light a brood and several points
+of those delicious word the joints
+the mystic unseen winds piping
+i too well in the shore dripping
+the awful natural life there
+is every thing is your hair
+the outlet song your mute crops grass
+of comrades close and women pass
+
+numStatesExplored = 269
+totalCost = 3930
+graphSize = 414
+actions = [('upon',), 'this', 'puzzle', 'the', 'holy', 'calm', 'of', 'the', 'bed', 'i', 'will', 'duly', 'in', 'caprice', 'alone--some', 'grains', 'plants', 'parasites', 'with', 'desperate', 'and', 'chants', 'the', 'question', 'you--i', 'think', 'they', 'will', 'forever', 'affect', 'me', 'i', 'fill', 'but', 'mine', 'you', 'it', 'i', 'saw', 'the', 'banks', 'again', 'in', 'the', 'coffin', 'the', 'ranks']
+
+RESULT
+upon this puzzle the holy
+calm of the bed i will duly
+in caprice alone--some grains plants
+parasites with desperate and chants
+the question you--i think they will
+forever affect me i fill
+but mine you it i saw the banks
+again in the coffin the ranks
+
+numStatesExplored = 78
+totalCost = 3264
+graphSize = 248
+actions = [('where',), 'it', 'make', 'a', 'knock', 'of', 'you', 'are', 'two', 'together', 'i', 'to', 'the', 'far', 'the', 'people', 'rage', 'divine', 'and', 'height', 'reflecting', 'ours', 'to', 'the', 'bright', 'he', 'going', 'away', 'poems', 'songs', 'inventions', 'and', 'see', 'and', 'the', 'wrongs', 'as', 'he', 'sees', 'and', 'i', 'thee', 'o', 'how', 'she', 'went', 'forth', 'its', 'congress', 'and', 'thou']
+
+RESULT
+where it make a knock of you are
+two together i to the far
+the people rage divine and height
+reflecting ours to the bright
+he going away poems songs
+inventions and see and the wrongs
+as he sees and i thee o how
+she went forth its congress and thou
+
+numStatesExplored = 2012
+totalCost = 1391
+graphSize = 2174
+actions = [('can',), 'you', 'and', 'of', 'all', 'the', 'shore', 'years', 'straying', 'westward', 'from', 'all', 'the', 'ears', 'to', 'do', 'you', 'as', 'before', 'these', 'leaves', 'to', 'nothing', 'out', 'again', 'the', 'thieves', 'in', 'autumn', 'fields', 'and', 'many', 'long', 'slow', 'wail', 'and', 'plumb', 'in', 'death', 'and', 'strong', 'book', 'ii', 'had', 'been', 'young', 'or', 'alive', 'or', 'object', 'missing', 'me', 'the', 'hive']
+
+RESULT
+can you and of all the shore years
+straying westward from all the ears
+to do you as before these leaves
+to nothing out again the thieves
+in autumn fields and many long
+slow wail and plumb in death and strong
+book ii had been young or alive
+or object missing me the hive
+
+numStatesExplored = 6270
+totalCost = 3886
+graphSize = 6445
+actions = [('on',), 'the', 'earth', 'ever', 'yet', 'all', 'is', 'my', 'hair', 'of', 'shine', 'the', 'world', 'but', 'tis', 'we', 'row', 'toward', 'the', 'modern', 'crowd', 'i', 'love', 'of', 'my', 'forehead', 'and', 'loud', 'i', 'am', 'he', 'is', 'just', 'entering', 'but', 'will', 'be', 'i', 'heard', 'murmuring', 'i', 'love', 'me', 'my', 'blood', 'clean', 'clothes', 'whip', 'is', 'you', 'smile', 'curving', 'and', 'the', 'ship']
+Time = 1793.356460
+
+on the earth ever yet all is
+my hair of shine the world but tis
+we row toward the modern crowd
+i love of my forehead and loud
+i am he is just entering
+but will be i heard murmuring
+i love me my blood clean clothes whip
+is you smile curving and the ship
+
+
+numStatesExplored = 83
+totalCost = 5948
+graphSize = 282
+actions = [('as',), 'face', 'droopd', 'in', 'the', 'words', 'not', 'forget', 'you', 'call', 'mock', 'and', 'the', 'cot', 'the', 'white', 'flowers', 'and', 'the', 'seas', 'or', 'stop', 'here', 'is', 'circled', 'till', 'the', 'war', 'in', 'the', 'fighting', 'done', 'or', 'men', 'are', 'yet', 'and', 'the', 'young', 'of', 'these', 'are', 'far', 'i', 'am', 'good-fortune', 'i', 'hang', 'up', 'there', 'with', 'one', 'must', 'get', 'the', 'gang']
+Time = 45.574213
+
+as face droopd in the words not
+forget you call mock and the cot
+the white flowers and the seas or
+stop here is circled till the war
+in the fighting done or men are
+yet and the young of these are far
+i am good-fortune i hang
+up there with one must get the gang
+
+
+numStatesExplored = 11610
+totalCost = 4768
+graphSize = 11792
+actions = [('or',), 'defiled', 'my', 'emprises', 'have', 'meant', 'as', 'it', 'was', 'a', 'savage', 'and', 'went', 'for', 'city', 'of', 'the', 'like', 'of', 'wheat', 'and', 'the', 'staffs', 'all', 'over', 'all', 'meet', 'with', 'perfect', 'motion', 'and', 'the', 'big', 'and', 'masses', 'of', 'the', 'sea', 'and', 'fig', 'from', 'you', 'be', 'no', 'law', 'they', 'go', 'they', 'will', 'i', 'see', 'the', 'line', 'of', 'them', 'stay']
+Time = 3403.684172
+
+or defiled my emprises have meant
+as it was a savage and went
+for city of the like of wheat
+and the staffs all over all meet
+with perfect motion and the big
+and masses of the sea and fig
+from you be no law they go they
+will i see the line of them stay
+
+
+numStatesExplored = 227
+totalCost = 6136
+graphSize = 394
+actions = [('like',), 'a', 'separate', 'himself', 'or', 'touch', 'of', 'the', 'earth', 'is', 'of', 'the', 'shore', 'i', 'think', 'a', 'young', 'woman', 'of', 'ships', 'machinery', 'and', 'clap', 'hands', 'hips', 'to', 'me', 'and', 'women', 'the', 'proud', 'fond', 'of', 'the', 'strong', 'legends', 'of', 'his', 'wand', 'when', 'the', 'past', 'entire', 'my', 'wits', 'i', 'see', 'you', 'only', 'am', 'he', 'sits']
+Time = 75.280855
+
+like a separate himself or
+touch of the earth is of the shore
+i think a young woman of ships
+machinery and clap hands hips
+to me and women the proud fond
+of the strong legends of his wand
+when the past entire my wits
+i see you only am he sits
+
+
+numStatesExplored = 20897
+totalCost = 3920
+graphSize = 21066
+actions = [('duly',), 'return', 'and', 'the', 'red', 'blood', 'of', 'teeming', 'plays', 'would', 'you', 'and', 'scud', 'the', 'noble', 'name', 'had', 'i', 'love', 'him', 'that', 'enterd', 'from', 'the', 'crowd', 'and', 'dim', 'for', 'i', 'did', 'you', 'straight', 'and', 'night', 'shows', 'the', 'shop-windows', 'of', 'man', 'knows', 'i', 'indeed', 'you', 'before', 'i', 'will', 'never', 'constraind', 'never', 'kill']
+Time = 6096.366227
+
+duly return and the red blood
+of teeming plays would you and scud
+the noble name had i love him
+that enterd from the crowd and dim
+for i did you straight and night shows
+the shop-windows of man knows
+i indeed you before i will
+never constraind never kill
+
+
+numStatesExplored = 73
+totalCost = 2355
+graphSize = 273
+actions = [('comes',), 'back', 'on', 'the', 'east', 'and', 'all', 'is', 'this', 'child', 'that', 'carries', 'her', 'but', 'tis', 'and', 'straight', 'and', 'blowing', 'up', 'my', 'race', 'of', 'wild', 'wild', 'as', 'to', 'them', 'and', 'place', 'from', 'these', 'and', 'its', 'parts', 'of', 'me', 'or', 'thee', 'commune', 'with', 'me', 'young', 'of', 'war', 'now', 'i', 'have', 'positively', 'not', 'leave', 'the', 'rows', 'in', 'the', 'crowd', 'i', 'caught']
+Time = 34.638868
+
+comes back on the east and all is
+this child that carries her but tis
+and straight and blowing up my race
+of wild wild as to them and place
+from these and its parts of me or
+thee commune with me young of war
+now i have positively not
+leave the rows in the crowd i caught
+
+
+numStatesExplored = 70
+totalCost = 4491
+graphSize = 252
+actions = [('bard',), 'walks', 'with', 'trails', 'of', 'the', 'joys', 'speech', 'their', 'northerly', 'wilds', 'beasts', 'of', 'reach', 'this', 'hill', 'first', 'object', 'won', 'by', 'rote', 'years', 'old', 'poems', 'do', 'not', 'the', 'float', 'i', 'announce', 'the', 'pure', 'spaces', 'spread', 'ample', 'and', 'look', 'through', 'all', 'you', 'dread', 'i', 'am', 'destind', 'on', 'the', 'same', 'old', 'husband', 'and', 'what', 'is', 'all', 'the', 'cold']
+Time = 30.318585
+
+bard walks with trails of the joys speech
+their northerly wilds beasts of reach
+this hill first object won by rote
+years old poems do not the float
+i announce the pure spaces spread
+ample and look through all you dread
+i am destind on the same old
+husband and what is all the cold
+
+
+numStatesExplored = 4460
+totalCost = 5651
+graphSize = 4655
+actions = [('same',), 'as', 'any', 'more', 'heaven', 'whence', 'the', 'broad', 'with', 'his', 'ship', 'of', 'the', 'fence', 'the', 'future', 'is', 'worthy', 'the', 'train', 'themselves', 'against', 'yours', 'as', 'the', 'main', 'and', 'large', 'and', 'snowy', 'white', 'clouds', 'pass', 'through', 'me', 'and', 'done', 'their', 'white', 'and', 'grass', 'and', 'tongue', 'of', 'the', 'father', 'to', 'look', 'as', 'majestic', 'as', 'two', 'the', 'brook']
+Time = 1332.280633
+
+same as any more heaven whence
+the broad with his ship of the fence
+the future is worthy the train
+themselves against yours as the main
+and large and snowy white clouds pass
+through me and done their white and grass
+and tongue of the father to look
+as majestic as two the brook
+
+
+numStatesExplored = 5998
+totalCost = 3538
+graphSize = 6144
+actions = [('body',), 'by', 'me', 'by', 'the', 'perfect', 'men', 'their', 'walls', 'shall', 'not', 'the', 'direct', 'he', 'left', 'thee', 'of', 'days', 'and', 'i', 'say', 'any', 'thing', 'according', 'to', 'stay', 'the', 'ferocity', 'of', 'evil', 'as', 'she', 'speeds', 'by', 'day', 'come', 'travel', 'the', 'pacific', 'railroad', 'the', 'snows', 'chilld', 'rivers', 'tides', 'with', 'all', 'goes']
+Time = 1571.846693
+
+body by me by the perfect
+men their walls shall not the direct
+he left thee of days and i say
+any thing according to stay
+the ferocity of evil
+as she speeds by day come travel
+the pacific railroad the snows
+chilld rivers tides with all goes
+
+
+numStatesExplored = 25029
+totalCost = 5450
+graphSize = 25173
+actions = [('in',), 'the', 'equable', 'showers', 'i', 'and', 'land', 'in', 'the', 'torrents', 'of', 'high', 'the', 'wars', 'manners', 'favor', 'men', 'hills', 'southward', 'along', 'the', 'past', 'the', 'sills', 'the', 'earth', 'and', 'chills', 'as', 'a', 'part', 'i', 'and', 'roughness', 'among', 'the', 'streets', 'high', 'in', 'the', 'habitans', 'friendly', 'emblem', 'of', 'all', 'in', 'bays', 'and', 'how', 'solemn']
+Time = 6249.719579
+
+in the equable showers i
+and land in the torrents of high
+the wars manners favor men hills
+southward along the past the sills
+the earth and chills as a part i
+and roughness among the streets high
+in the habitans friendly emblem
+of all in bays and how solemn
+
+
+numStatesExplored = 108
+totalCost = 5747
+graphSize = 263
+actions = [('house',), 'by', 'some', 'are', 'you', 'i', 'no', 'voice', 'arouse', 'me', 'at', 'the', 'world', 'the', 'choice', 'the', 'sight', 'of', 'a', 'sure', 'foundations', 'tied', 'at', 'a', 'hundred', 'ways', 'persons', 'the', 'auction-stand', 'the', 'same', 'waits', 'intrinsically', 'in', 'the', 'states', 'the', 'great', 'chastity', 'of', 'my', 'blood', 'of', 'fields', 'and', 'sisters', 'sleep', 'and', 'mud']
+Time = 50.471321
+
+house by some are you i no voice
+arouse me at the world the choice
+the sight of a sure foundations
+tied at a hundred ways persons
+the auction-stand the same waits
+intrinsically in the states
+the great chastity of my blood
+of fields and sisters sleep and mud
+
+
+numStatesExplored = 2593
+totalCost = 3568
+graphSize = 2764
+actions = [('we',), 'may', 'be', 'under', 'niagara', 'the', 'ship', 'oer', 'lands', 'as', 'the', 'opera', 'the', 'same', 'on', 'earth', 'by', 'those', 'through', 'you', 'wait', 'behind', 'all', 'is', 'done', 'the', 'cue', 'are', 'corrupting', 'below', 'deck', 'i', 'love', 'than', 'which', 'contains', 'all', 'the', 'sky', 'a', 'few', 'years', 'of', 'the', 'first', 'nothing', 'have', 'thy', 'beat', 'beat', 'up', 'o', 'something']
+Time = 665.165913
+
+we may be under niagara
+the ship oer lands as the opera
+the same on earth by those through you
+wait behind all is done the cue
+are corrupting below deck i
+love than which contains all the sky
+a few years of the first nothing
+have thy beat beat up o something
+
+
+numStatesExplored = 64
+totalCost = 2930
+graphSize = 242
+actions = [('a',), 'leaf', 'by', 'print', 'i', 'bring', 'no', 'thought', 'that', 'exhibits', 'itself', 'and', 'ought', 'i', 'stride', 'on', 'the', 'making', 'the', 'need', 'be', 'honest', 'men', 'and', 'wealth', 'nor', 'feed', 'and', 'now', 'finale', 'to', 'each', 'is', 'over', 'all', 'the', 'new', 'world', 'but', 'tis', 'to', 'this', 'hill', 'and', 'snow', 'rain', 'down', 'hang', 'from', 'the', 'horizons', 'edge', 'the', 'pang']
+Time = 34.698179
+
+a leaf by print i bring no thought
+that exhibits itself and ought
+i stride on the making the need
+be honest men and wealth nor feed
+and now finale to each is
+over all the new world but tis
+to this hill and snow rain down hang
+from the horizons edge the pang
+
+
+numStatesExplored = 64
+totalCost = 3577
+graphSize = 243
+actions = [('them',), 'or', 'touch', 'my', 'name', 'in', 'the', 'large', 'calm', 'how', 'to', 'me', 'the', 'greeks', 'and', 'charge', 'and', 'actress', 'those', 'countries', 'the', 'eyes', 'by', 'the', 'sea', 'the', 'orchards', 'and', 'wise', 'an', 'impalpable', 'air--for', 'life', 'it', 'did', 'you', 'reckond', 'the', 'hands', 'the', 'fit', 'as', 'of', 'the', 'exquisite', 'smell', 'you', 'are', 'these', 'i', 'with', 'the', 'dark', 'with', 'view']
+Time = 47.486271
+
+them or touch my name in the large
+calm how to me the greeks and charge
+and actress those countries the eyes
+by the sea the orchards and wise
+an impalpable air--for life it
+did you reckond the hands the fit
+as of the exquisite smell you
+are these i with the dark with view
+
+
+numStatesExplored = 82
+totalCost = 4546
+graphSize = 271
+actions = [('approach',), 'saw', 'your', 'shores', 'this', 'heart', 'i', 'see', 'grow', 'up', 'from', 'asia', 'and', 'sky', 'i', 'myself', 'and', 'saying', 'he', 'knows', 'you', 'my', 'captain', 'tales', 'of', 'the', 'shows', 'the', 'mannahatta', 'streets', 'of', 'all', 'souls', 'questions', 'askd', 'as', 'the', 'sounds', 'and', 'rolls', 'they', 'fell', 'unnamed', 'land', 'or', 'bad', 'i', 'thought', 'of', 'those', 'strata', 'piled', 'to', 'die']
+Time = 26.277348
+
+approach saw your shores this heart i
+see grow up from asia and sky
+i myself and saying he knows
+you my captain tales of the shows
+the mannahatta streets of all souls
+questions askd as the sounds and rolls
+they fell unnamed land or bad i
+thought of those strata piled to die
+
+
+numStatesExplored = 18399
+totalCost = 3935
+graphSize = 18557
+actions = [('back',), 'the', 'great', 'and', 'acts', 'beings', 'groups', 'of', 'leaves', 'of', 'his', 'face', 'in', 'the', 'troops', 'the', 'wool', 'unclipt', 'upon', 'me', 'does', 'all', 'her', 'own', 'days', 'of', 'each', 'for', 'twas', 'who', 'give', 'me', 'the', 'crushd', 'head', 'is', 'clear', 'waters', 'shall', 'be', 'this', 'new', 'tis', 'i', 'am', 'the', 'prodigal', 'you', 'are', 'all', 'that', 'forwards', 'perfect', 'and', 'far']
+Time = 4683.292305
+
+back the great and acts beings groups
+of leaves of his face in the troops
+the wool unclipt upon me does
+all her own days of each for twas
+who give me the crushd head is
+clear waters shall be this new tis
+i am the prodigal you are
+all that forwards perfect and far
+
+
+numStatesExplored = 795
+totalCost = 5298
+graphSize = 944
+actions = [('the',), 'light', 'a', 'brood', 'and', 'several', 'points', 'of', 'those', 'delicious', 'word', 'the', 'joints', 'the', 'mystic', 'unseen', 'winds', 'piping', 'i', 'too', 'well', 'in', 'the', 'shore', 'dripping', 'the', 'awful', 'natural', 'life', 'there', 'is', 'every', 'thing', 'is', 'your', 'hair', 'the', 'outlet', 'song', 'your', 'mute', 'crops', 'grass', 'of', 'comrades', 'close', 'and', 'women', 'pass']
+Time = 241.525076
+
+the light a brood and several points
+of those delicious word the joints
+the mystic unseen winds piping
+i too well in the shore dripping
+the awful natural life there
+is every thing is your hair
+the outlet song your mute crops grass
+of comrades close and women pass
+
+
+numStatesExplored = 269
+totalCost = 3930
+graphSize = 414
+actions = [('upon',), 'this', 'puzzle', 'the', 'holy', 'calm', 'of', 'the', 'bed', 'i', 'will', 'duly', 'in', 'caprice', 'alone--some', 'grains', 'plants', 'parasites', 'with', 'desperate', 'and', 'chants', 'the', 'question', 'you--i', 'think', 'they', 'will', 'forever', 'affect', 'me', 'i', 'fill', 'but', 'mine', 'you', 'it', 'i', 'saw', 'the', 'banks', 'again', 'in', 'the', 'coffin', 'the', 'ranks']
+Time = 89.933030
+
+upon this puzzle the holy
+calm of the bed i will duly
+in caprice alone--some grains plants
+parasites with desperate and chants
+the question you--i think they will
+forever affect me i fill
+but mine you it i saw the banks
+again in the coffin the ranks
+
+
+numStatesExplored = 78
+totalCost = 3264
+graphSize = 248
+actions = [('where',), 'it', 'make', 'a', 'knock', 'of', 'you', 'are', 'two', 'together', 'i', 'to', 'the', 'far', 'the', 'people', 'rage', 'divine', 'and', 'height', 'reflecting', 'ours', 'to', 'the', 'bright', 'he', 'going', 'away', 'poems', 'songs', 'inventions', 'and', 'see', 'and', 'the', 'wrongs', 'as', 'he', 'sees', 'and', 'i', 'thee', 'o', 'how', 'she', 'went', 'forth', 'its', 'congress', 'and', 'thou']
+Time = 27.271832
+
+where it make a knock of you are
+two together i to the far
+the people rage divine and height
+reflecting ours to the bright
+he going away poems songs
+inventions and see and the wrongs
+as he sees and i thee o how
+she went forth its congress and thou
+
+
+numStatesExplored = 2012
+totalCost = 1391
+graphSize = 2174
+actions = [('can',), 'you', 'and', 'of', 'all', 'the', 'shore', 'years', 'straying', 'westward', 'from', 'all', 'the', 'ears', 'to', 'do', 'you', 'as', 'before', 'these', 'leaves', 'to', 'nothing', 'out', 'again', 'the', 'thieves', 'in', 'autumn', 'fields', 'and', 'many', 'long', 'slow', 'wail', 'and', 'plumb', 'in', 'death', 'and', 'strong', 'book', 'ii', 'had', 'been', 'young', 'or', 'alive', 'or', 'object', 'missing', 'me', 'the', 'hive']
+Time = 554.739891
+
+can you and of all the shore years
+straying westward from all the ears
+to do you as before these leaves
+to nothing out again the thieves
+in autumn fields and many long
+slow wail and plumb in death and strong
+book ii had been young or alive
+or object missing me the hive
+
+
+[ ] attempted to satisfy 20 poems
+[ ] 20 found
+[ ] total time = 27053.927451
+[ ] mean t = 1352.696373
+[ ] median t = 165.729053
+[ ] stdev t = 2017.956001
+[ ] mean s = 4959.050000
+[ ] median s = 532.000000
+[ ] stdev s= 7587.375063

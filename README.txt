@@ -32,7 +32,7 @@ constraints. Our algorithm has special optimizations for the
 corpora of rap artists in an attempt to generate rap-styled 
 poetry; however, the general case of the problem is one of 
 poetic generation. In this project, our constraints are on the 
-syllable counts of lines and the rhyming patterns between lines. 
+syllable counts within lines and the rhyming patterns between lines. 
 
 ---------------------------------------------------------------
 - FILES                                                       -
@@ -47,20 +47,24 @@ generator.py: Main execution
 * Run from command line to generate poetry, parses command line
   to orient hyperparameters of algorithm as specified by the
   user
-* Instantiates a corpus and runs n gram analysis.
+* See "Usage" below for invocation
+* Instantiates a corpus and runs n gram analysis
 * Determines parameters of the poetry object
 * Instantiates a grammar (language model) based upon the corpus
 * Runs search algorithm
 * Prints statistics 
 
 grammar.py: Corpus and Grammar Classes
-* The Corpus clas performs n gram analysis, generating a
+* The Corpus class performs n gram analysis, generating a
   frequency map, a word map, and a beginning word map.
 * The Grammar class is instantiated from the data structures
   of the Corpus model, and is general enough to work in a non
   search oriented implementation.
 
 new_word_data.p: Dictionary
+* Generated using the Moby Pronunciation Dictionary and Moby Part of Speech Dictionary, the largest public domain dictionaries of their kinds with over 100,000 entries. 
+* Our heuristic for syllable count is the number of unstressed vowels.
+* Our heuristic for rhyming is the last vowel in the word and any trailing consonants
 * Keys: words in plaintext
 * Values: (IPA Transcription, IPA Suffix, Number of Syllables,
            Part of Speech, isNotPrepOrArticle)
@@ -69,10 +73,11 @@ poetry.py: Poetry and Line Classes
 * Poetry class is comprised of Line classes. Evaluation returns
   true when all inter- and intra-line constraints have been 
   satisfied.
-* Line class is a 
+* Line class stores a list of the current words in the line, the current syllable count, and inter-line constraints it received or needs to propagate (which lines it must rhyme with)
 
 rap_genius_scraper.rb: A scraper for rapgenius.com
 * Used to aggregate rap corpora
+* Takes two command line arguments: the song id of the desired artists' song, and the name of the output file.
 
 searchutil.py: Search Algorithms
 * Houses UCS and DFS implementations

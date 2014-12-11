@@ -136,7 +136,8 @@ problem in the following manner:
   selects the r most frequent children or the first r children
   randomly selected (if probabilistic).
 * (-t), default quad
-  The type of poetry to output (options: sonnet, haiku, eight, octave, quad)
+  The type of poetry to output (options: sonnet, haiku, eight, 
+  octave, quad)
 * (-v), default 0
   The verbosity of the program
 

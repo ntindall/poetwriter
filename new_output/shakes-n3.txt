@@ -1,0 +1,314 @@
+[ ] Loading the dictionary...
+[ ] Finished loading dictionary.
+[ ] Reading corpus file...
+[ ] Finished reading corpus, n-gram model generated.
+numStatesExplored = 2881
+totalCost = 14611
+graphSize = 2977
+actions = [('foot', 'to', 'the'), 'which', 'as', 'i', 'think', 'you', 'are', 'come', 'to', 'you', 'at', 'the', 'first', 'view', 'and', 'when', 'i', 'have', 'told', 'thee', 'of', 'it', 'but', 'i', 'pray', 'you', 'let', 'us', 'go', 'sit', 'first', 'murtherer', 'wast', 'not', 'the', 'way', 'do', 'you', 'not', 'see', 'that', 'i', 'will', 'stay', 'and', 'come', 'to', 'me', 'and', 'say', 'thou', 'art', 'this', 'and', 'that', 'with', 'his', 'very', 'heart']
+
+RESULT
+foot to the which as i think you
+are come to you at the first view
+and when i have told thee of it
+but i pray you let us go sit
+first murtherer wast not the way
+do you not see that i will stay
+and come to me and say thou art
+this and that with his very heart
+
+numStatesExplored = 1103
+totalCost = 2421
+graphSize = 1168
+actions = [('true', 'spies', 'which'), 'i', 'wear', 'in', 'my', 'head', 'to', 'do', 'my', 'lord', 'and', 'i', 'have', 'read', 'of', 'mercy', 'but', 'they', 'knew', 'what', 'they', 'did', 'i', 'am', 'to', 'hear', 'what', 'i', 'say', 'he', 'never', 'did', 'harm', 'that', 'i', 'heard', 'of', 'you', 'my', 'lord', 'there', 'is', 'a', 'word', 'o', 'that', 'i', 'had', 'thought', 'to', 'have', 'told', 'thee', 'of', 'it', 'but', 'i', 'pray', 'thee', 'hold']
+
+RESULT
+true spies which i wear in my head
+to do my lord and i have read
+of mercy but they knew what they
+did i am to hear what i say
+he never did harm that i heard
+of you my lord there is a word
+o that i had thought to have told
+thee of it but i pray thee hold
+
+numStatesExplored = 2410
+totalCost = 10501
+graphSize = 2496
+actions = [('now', 'if', 'you'), 'are', 'not', 'the', 'things', 'they', 'do', 'not', 'point', 'on', 'me', 'and', 'you', 'say', 'the', 'beauty', 'of', 'the', 'world', 'is', 'not', 'for', 'you', 'to', 'hear', 'what', 'i', 'have', 'got', 'and', 'though', 'you', 'think', 'that', 'i', 'am', 'i', 'come', 'from', 'the', 'field', 'and', 'then', 'to', 'dry', 'shall', 'draw', 'him', 'on', 'to', 'fight', 'and', 'die', 'in', 'the', 'fall', 'but', 'tis', 'not', 'so', 'i']
+
+RESULT
+now if you are not the things they
+do not point on me and you say
+the beauty of the world is not
+for you to hear what i have got
+and though you think that i am i
+come from the field and then to dry
+shall draw him on to fight and die
+in the fall but tis not so i
+
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+numStatesExplored = 1879
+totalCost = 8466
+graphSize = 1995
+actions = [('i', 'will', 'not'), 'be', 'your', 'suitor', 'i', 'say', 'to', 'thee', 'that', 'i', 'have', 'been', 'dry', 'and', 'yet', 'the', 'son', 'of', 'the', 'king', 'i', 'can', 'tell', 'you', 'that', 'i', 'am', 'to', 'spy', 'a', 'man', 'in', 'all', 'the', 'rest', 'and', 'let', 'no', 'man', 'but', 'i', 'tell', 'thee', 'what-', 'get', 'mine', 'own', 'i', 'would', 'say', 'sir', 'i', 'know', 'not', 'but', 'i', 'know', 'to', 'florizel', 'o']
+
+RESULT
+i will not be your suitor i
+say to thee that i have been dry
+and yet the son of the king i
+can tell you that i am to spy
+a man in all the rest and let
+no man but i tell thee what- get
+mine own i would say sir i know
+not but i know to florizel o
+
+
+NO SOLUTION FOUND
+numStatesExplored = 1687
+totalCost = 5817
+graphSize = 1764
+actions = [('die', 'a', 'fair'), 'death', 'for', 'all', 'this', 'thou', 'shalt', 'answer', 'i', 'know', 'thee', 'well', 'how', 'to', 'me', 'should', 'be', 'in', 'the', 'world', 'i', 'am', 'a', 'man', 'i', 'would', 'have', 'him', 'die', 'that', 'by', 'this', 'you', 'would', 'not', 'have', 'been', 'so', 'brief', 'with', 'him', 'he', 'has', 'a', 'sin', 'duchess', 'well', 'said', 'my', 'lord', 'well', 'fare', 'you', 'well', 'for', 'i', 'will', 'not', 'be', 'there']
+
+RESULT
+die a fair death for all this thou
+shalt answer i know thee well how
+to me should be in the world i
+am a man i would have him die
+that by this you would not have been
+so brief with him he has a sin
+duchess well said my lord well fare
+you well for i will not be there
+
+
+NO SOLUTION FOUND
+numStatesExplored = 2381
+totalCost = 16940
+graphSize = 2463
+actions = [('the', 'heir', 'of'), 'the', 'lord', 'of', 'the', 'old', 'rage', 'bear', 'with', 'me', 'i', 'will', 'take', 'cold', 'and', 'follow', 'me', 'no', 'more', 'ado', 'but', 'whips', 'me', 'out', 'of', 'my', 'life', 'do', 'and', 'so', 'i', 'would', 'not', 'be', 'a', 'queen', 'in', 'jest', 'only', 'to', 'fill', 'the', 'scene', 'to', 'some', 'man', 'else', 'as', 'this', 'dead', 'man', 'than', 'you', 'shall', 'do', 'more', 'than', 'she', 'can']
+
+RESULT
+the heir of the lord of the old
+rage bear with me i will take cold
+and follow me no more ado
+but whips me out of my life do
+and so i would not be a queen
+in jest only to fill the scene
+to some man else as this dead man
+than you shall do more than she can
+
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+numStatesExplored = 1293
+totalCost = 9921
+graphSize = 1381
+actions = [('all', 'means', 'if'), 'it', 'be', 'so', 'and', 'let', 'no', 'man', 'but', 'i', 'tell', 'thee', 'what-', 'get', 'and', 'set', 'me', 'on', 'the', 'head', 'and', 'tie', 'the', 'beard', 'and', 'say', 'it', 'is', 'the', 'cry', 'boyet', 'so', 'please', 'your', 'majesty', 'i', 'would', 'i', 'had', 'known', 'no', 'more', 'but', 'fly', 'that', 'i', 'am', 'not', 'in', 'the', 'world', 'i', 'am', 'a', 'villain', 'if', 'i', 'do', 'die']
+
+RESULT
+all means if it be so and let
+no man but i tell thee what- get
+and set me on the head and tie
+the beard and say it is the cry
+boyet so please your majesty i
+would i had known no more but fly
+that i am not in the world i
+am a villain if i do die
+
+numStatesExplored = 3923
+totalCost = 3830
+graphSize = 4020
+actions = [('in', 'despite', 'of'), 'all', 'that', 'i', 'can', 'tell', 'you', 'that', 'which', 'you', 'are', 'a', 'man', 'i', 'will', 'be', 'so', 'bold', 'as', 'to', 'tell', 'you', 'that', 'i', 'am', 'not', 'mad', 'too', 'well', 'doug', 'as', 'heart', 'can', 'think', 'there', 'is', 'not', 'a', 'thing', 'to', 'you', 'there', 'is', 'a', 'plot', 'this', 'be', 'not', 'that', 'she', 'will', 'not', 'come', 'to', 'thee', 'for', 'i', 'have', 'seen', 'the', 'dumb']
+
+RESULT
+in despite of all that i can
+tell you that which you are a man
+i will be so bold as to tell
+you that i am not mad too well
+doug as heart can think there is not
+a thing to you there is a plot
+this be not that she will not come
+to thee for i have seen the dumb
+
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+numStatesExplored = 2409
+totalCost = 2561
+graphSize = 2480
+actions = [('one', 'it', 'must'), 'needs', 'be', 'like', 'my', 'lord', 'you', 'must', 'not', 'think', 'to', 'draw', 'my', 'sword', 'now', 'if', 'you', 'love', 'her', 'because', 'thou', 'knowst', 'i', 'do', 'i', 'know', 'not', 'how', 'caesar', 'i', 'should', 'have', 'been', 'my', 'son', 'i', 'pray', 'you', 'for', 'i', 'would', 'not', 'shun', 'enter', 'the', 'king', 'of', 'englands', 'stay', 'at', 'home', 'if', 'would', 'i', 'might', 'were', 'may']
+
+RESULT
+one it must needs be like my lord
+you must not think to draw my sword
+now if you love her because thou
+knowst i do i know not how
+caesar i should have been my son
+i pray you for i would not shun
+enter the king of englands stay
+at home if would i might were may
+
+numStatesExplored = 2881
+totalCost = 14611
+graphSize = 2977
+actions = [('foot', 'to', 'the'), 'which', 'as', 'i', 'think', 'you', 'are', 'come', 'to', 'you', 'at', 'the', 'first', 'view', 'and', 'when', 'i', 'have', 'told', 'thee', 'of', 'it', 'but', 'i', 'pray', 'you', 'let', 'us', 'go', 'sit', 'first', 'murtherer', 'wast', 'not', 'the', 'way', 'do', 'you', 'not', 'see', 'that', 'i', 'will', 'stay', 'and', 'come', 'to', 'me', 'and', 'say', 'thou', 'art', 'this', 'and', 'that', 'with', 'his', 'very', 'heart']
+Time = 13.930418
+
+foot to the which as i think you
+are come to you at the first view
+and when i have told thee of it
+but i pray you let us go sit
+first murtherer wast not the way
+do you not see that i will stay
+and come to me and say thou art
+this and that with his very heart
+
+
+numStatesExplored = 1103
+totalCost = 2421
+graphSize = 1168
+actions = [('true', 'spies', 'which'), 'i', 'wear', 'in', 'my', 'head', 'to', 'do', 'my', 'lord', 'and', 'i', 'have', 'read', 'of', 'mercy', 'but', 'they', 'knew', 'what', 'they', 'did', 'i', 'am', 'to', 'hear', 'what', 'i', 'say', 'he', 'never', 'did', 'harm', 'that', 'i', 'heard', 'of', 'you', 'my', 'lord', 'there', 'is', 'a', 'word', 'o', 'that', 'i', 'had', 'thought', 'to', 'have', 'told', 'thee', 'of', 'it', 'but', 'i', 'pray', 'thee', 'hold']
+Time = 12.307577
+
+true spies which i wear in my head
+to do my lord and i have read
+of mercy but they knew what they
+did i am to hear what i say
+he never did harm that i heard
+of you my lord there is a word
+o that i had thought to have told
+thee of it but i pray thee hold
+
+
+numStatesExplored = 2410
+totalCost = 10501
+graphSize = 2496
+actions = [('now', 'if', 'you'), 'are', 'not', 'the', 'things', 'they', 'do', 'not', 'point', 'on', 'me', 'and', 'you', 'say', 'the', 'beauty', 'of', 'the', 'world', 'is', 'not', 'for', 'you', 'to', 'hear', 'what', 'i', 'have', 'got', 'and', 'though', 'you', 'think', 'that', 'i', 'am', 'i', 'come', 'from', 'the', 'field', 'and', 'then', 'to', 'dry', 'shall', 'draw', 'him', 'on', 'to', 'fight', 'and', 'die', 'in', 'the', 'fall', 'but', 'tis', 'not', 'so', 'i']
+Time = 27.691385
+
+now if you are not the things they
+do not point on me and you say
+the beauty of the world is not
+for you to hear what i have got
+and though you think that i am i
+come from the field and then to dry
+shall draw him on to fight and die
+in the fall but tis not so i
+
+
+numStatesExplored = 1879
+totalCost = 8466
+graphSize = 1995
+actions = [('i', 'will', 'not'), 'be', 'your', 'suitor', 'i', 'say', 'to', 'thee', 'that', 'i', 'have', 'been', 'dry', 'and', 'yet', 'the', 'son', 'of', 'the', 'king', 'i', 'can', 'tell', 'you', 'that', 'i', 'am', 'to', 'spy', 'a', 'man', 'in', 'all', 'the', 'rest', 'and', 'let', 'no', 'man', 'but', 'i', 'tell', 'thee', 'what-', 'get', 'mine', 'own', 'i', 'would', 'say', 'sir', 'i', 'know', 'not', 'but', 'i', 'know', 'to', 'florizel', 'o']
+Time = 22.194686
+
+i will not be your suitor i
+say to thee that i have been dry
+and yet the son of the king i
+can tell you that i am to spy
+a man in all the rest and let
+no man but i tell thee what- get
+mine own i would say sir i know
+not but i know to florizel o
+
+
+numStatesExplored = 1687
+totalCost = 5817
+graphSize = 1764
+actions = [('die', 'a', 'fair'), 'death', 'for', 'all', 'this', 'thou', 'shalt', 'answer', 'i', 'know', 'thee', 'well', 'how', 'to', 'me', 'should', 'be', 'in', 'the', 'world', 'i', 'am', 'a', 'man', 'i', 'would', 'have', 'him', 'die', 'that', 'by', 'this', 'you', 'would', 'not', 'have', 'been', 'so', 'brief', 'with', 'him', 'he', 'has', 'a', 'sin', 'duchess', 'well', 'said', 'my', 'lord', 'well', 'fare', 'you', 'well', 'for', 'i', 'will', 'not', 'be', 'there']
+Time = 14.781444
+
+die a fair death for all this thou
+shalt answer i know thee well how
+to me should be in the world i
+am a man i would have him die
+that by this you would not have been
+so brief with him he has a sin
+duchess well said my lord well fare
+you well for i will not be there
+
+
+numStatesExplored = 2381
+totalCost = 16940
+graphSize = 2463
+actions = [('the', 'heir', 'of'), 'the', 'lord', 'of', 'the', 'old', 'rage', 'bear', 'with', 'me', 'i', 'will', 'take', 'cold', 'and', 'follow', 'me', 'no', 'more', 'ado', 'but', 'whips', 'me', 'out', 'of', 'my', 'life', 'do', 'and', 'so', 'i', 'would', 'not', 'be', 'a', 'queen', 'in', 'jest', 'only', 'to', 'fill', 'the', 'scene', 'to', 'some', 'man', 'else', 'as', 'this', 'dead', 'man', 'than', 'you', 'shall', 'do', 'more', 'than', 'she', 'can']
+Time = 19.984872
+
+the heir of the lord of the old
+rage bear with me i will take cold
+and follow me no more ado
+but whips me out of my life do
+and so i would not be a queen
+in jest only to fill the scene
+to some man else as this dead man
+than you shall do more than she can
+
+
+numStatesExplored = 1293
+totalCost = 9921
+graphSize = 1381
+actions = [('all', 'means', 'if'), 'it', 'be', 'so', 'and', 'let', 'no', 'man', 'but', 'i', 'tell', 'thee', 'what-', 'get', 'and', 'set', 'me', 'on', 'the', 'head', 'and', 'tie', 'the', 'beard', 'and', 'say', 'it', 'is', 'the', 'cry', 'boyet', 'so', 'please', 'your', 'majesty', 'i', 'would', 'i', 'had', 'known', 'no', 'more', 'but', 'fly', 'that', 'i', 'am', 'not', 'in', 'the', 'world', 'i', 'am', 'a', 'villain', 'if', 'i', 'do', 'die']
+Time = 23.766422
+
+all means if it be so and let
+no man but i tell thee what- get
+and set me on the head and tie
+the beard and say it is the cry
+boyet so please your majesty i
+would i had known no more but fly
+that i am not in the world i
+am a villain if i do die
+
+
+numStatesExplored = 3923
+totalCost = 3830
+graphSize = 4020
+actions = [('in', 'despite', 'of'), 'all', 'that', 'i', 'can', 'tell', 'you', 'that', 'which', 'you', 'are', 'a', 'man', 'i', 'will', 'be', 'so', 'bold', 'as', 'to', 'tell', 'you', 'that', 'i', 'am', 'not', 'mad', 'too', 'well', 'doug', 'as', 'heart', 'can', 'think', 'there', 'is', 'not', 'a', 'thing', 'to', 'you', 'there', 'is', 'a', 'plot', 'this', 'be', 'not', 'that', 'she', 'will', 'not', 'come', 'to', 'thee', 'for', 'i', 'have', 'seen', 'the', 'dumb']
+Time = 19.313238
+
+in despite of all that i can
+tell you that which you are a man
+i will be so bold as to tell
+you that i am not mad too well
+doug as heart can think there is not
+a thing to you there is a plot
+this be not that she will not come
+to thee for i have seen the dumb
+
+
+numStatesExplored = 2409
+totalCost = 2561
+graphSize = 2480
+actions = [('one', 'it', 'must'), 'needs', 'be', 'like', 'my', 'lord', 'you', 'must', 'not', 'think', 'to', 'draw', 'my', 'sword', 'now', 'if', 'you', 'love', 'her', 'because', 'thou', 'knowst', 'i', 'do', 'i', 'know', 'not', 'how', 'caesar', 'i', 'should', 'have', 'been', 'my', 'son', 'i', 'pray', 'you', 'for', 'i', 'would', 'not', 'shun', 'enter', 'the', 'king', 'of', 'englands', 'stay', 'at', 'home', 'if', 'would', 'i', 'might', 'were', 'may']
+Time = 17.723963
+
+one it must needs be like my lord
+you must not think to draw my sword
+now if you love her because thou
+knowst i do i know not how
+caesar i should have been my son
+i pray you for i would not shun
+enter the king of englands stay
+at home if would i might were may
+
+
+[ ] attempted to satisfy 20 poems
+[ ] 9 found
+[ ] total time = 299.287442
+[ ] mean t = 14.964372
+[ ] median t = 13.661402
+[ ] stdev t = 5.122566
+[ ] mean s = 1220.900000
+[ ] median s = 1023.000000
+[ ] stdev s= 1111.898102

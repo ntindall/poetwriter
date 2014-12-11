@@ -1,0 +1,140 @@
+[ ] Loading the dictionary...
+[ ] Finished loading dictionary.
+[ ] Reading corpus file...
+[ ] Finished reading corpus, n-gram model generated.
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+numStatesExplored = 18879
+totalCost = 1871
+graphSize = 19843
+actions = [('not', 'know', 'what'), 'it', 'is', 'all', 'the', 'same', 'to', 'me', 'i', 'know', 'not', 'how', 'i', 'came', 'to', 'me', 'and', 'i', 'do', 'not', 'doubt', 'i', 'am', 'to', 'wait', 'i', 'do', 'not', 'deny', 'and', 'i', 'do', 'not', 'say', 'they', 'are', 'not', 'there', 'because', 'they', 'are', 'not', 'one', 'jot', 'and', 'i', 'do', 'not', 'say', 'they', 'are', 'not', 'there', 'because', 'they', 'are', 'not', 'one', 'jot']
+
+RESULT
+not know what it is all the same
+to me i know not how i came
+to me and i do not doubt i
+am to wait i do not deny
+and i do not say they are not
+there because they are not one jot
+and i do not say they are not
+there because they are not one jot
+
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+numStatesExplored = 6784
+totalCost = 2989
+graphSize = 8307
+actions = [('will', 'make', 'the'), 'songs', 'of', 'the', 'glory', 'of', 'the', 'race', 'and', 'of', 'the', 'merry', 'from', 'the', 'hour', 'of', 'death', 'the', 'great', 'spheres', 'time', 'and', 'space', 'i', 'him', 'dilate', 'i', 'see', 'the', 'harpooneer', 'standing', 'up', 'i', 'see', 'the', 'shells', 'exploding', 'the', 'love', 'of', 'the', 'most', 'friends', 'for', 'i', 'know', 'very', 'well', 'i', 'could', 'not', 'die']
+
+RESULT
+will make the songs of the glory
+of the race and of the merry
+from the hour of death the great
+spheres time and space i him dilate
+i see the harpooneer standing
+up i see the shells exploding
+the love of the most friends for i
+know very well i could not die
+
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+numStatesExplored = 4528
+totalCost = 2672
+graphSize = 5920
+actions = [('what', 'do', 'you'), 'think', 'a', 'great', 'city', 'is', 'that', 'which', 'has', 'the', 'quality', 'i', 'sing', 'the', 'songs', 'of', 'the', 'glory', 'of', 'the', 'race', 'and', 'of', 'the', 'merry', 'now', 'i', 'see', 'what', 'you', 'do', 'not', 'say', 'they', 'are', 'not', 'vile', 'any', 'more', 'they', 'the', 'love', 'of', 'the', 'most', 'friends', 'for', 'i', 'know', 'very', 'well', 'i', 'could', 'not', 'die']
+
+RESULT
+what do you think a great city
+is that which has the quality
+i sing the songs of the glory
+of the race and of the merry
+now i see what you do not say
+they are not vile any more they
+the love of the most friends for i
+know very well i could not die
+
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+
+NO SOLUTION FOUND
+numStatesExplored = 18879
+totalCost = 1871
+graphSize = 19843
+actions = [('not', 'know', 'what'), 'it', 'is', 'all', 'the', 'same', 'to', 'me', 'i', 'know', 'not', 'how', 'i', 'came', 'to', 'me', 'and', 'i', 'do', 'not', 'doubt', 'i', 'am', 'to', 'wait', 'i', 'do', 'not', 'deny', 'and', 'i', 'do', 'not', 'say', 'they', 'are', 'not', 'there', 'because', 'they', 'are', 'not', 'one', 'jot', 'and', 'i', 'do', 'not', 'say', 'they', 'are', 'not', 'there', 'because', 'they', 'are', 'not', 'one', 'jot']
+Time = 17.540441
+
+not know what it is all the same
+to me i know not how i came
+to me and i do not doubt i
+am to wait i do not deny
+and i do not say they are not
+there because they are not one jot
+and i do not say they are not
+there because they are not one jot
+
+
+numStatesExplored = 6784
+totalCost = 2989
+graphSize = 8307
+actions = [('will', 'make', 'the'), 'songs', 'of', 'the', 'glory', 'of', 'the', 'race', 'and', 'of', 'the', 'merry', 'from', 'the', 'hour', 'of', 'death', 'the', 'great', 'spheres', 'time', 'and', 'space', 'i', 'him', 'dilate', 'i', 'see', 'the', 'harpooneer', 'standing', 'up', 'i', 'see', 'the', 'shells', 'exploding', 'the', 'love', 'of', 'the', 'most', 'friends', 'for', 'i', 'know', 'very', 'well', 'i', 'could', 'not', 'die']
+Time = 8.485174
+
+will make the songs of the glory
+of the race and of the merry
+from the hour of death the great
+spheres time and space i him dilate
+i see the harpooneer standing
+up i see the shells exploding
+the love of the most friends for i
+know very well i could not die
+
+
+numStatesExplored = 4528
+totalCost = 2672
+graphSize = 5920
+actions = [('what', 'do', 'you'), 'think', 'a', 'great', 'city', 'is', 'that', 'which', 'has', 'the', 'quality', 'i', 'sing', 'the', 'songs', 'of', 'the', 'glory', 'of', 'the', 'race', 'and', 'of', 'the', 'merry', 'now', 'i', 'see', 'what', 'you', 'do', 'not', 'say', 'they', 'are', 'not', 'vile', 'any', 'more', 'they', 'the', 'love', 'of', 'the', 'most', 'friends', 'for', 'i', 'know', 'very', 'well', 'i', 'could', 'not', 'die']
+Time = 6.905858
+
+what do you think a great city
+is that which has the quality
+i sing the songs of the glory
+of the race and of the merry
+now i see what you do not say
+they are not vile any more they
+the love of the most friends for i
+know very well i could not die
+
+
+[ ] attempted to satisfy 20 poems
+[ ] 3 found
+[ ] total time = 69.624905
+[ ] mean t = 3.481245
+[ ] median t = 2.222666
+[ ] stdev t = 3.658823
+[ ] mean s = 1759.850000
+[ ] median s = 172.000000
+[ ] stdev s= 4268.656654

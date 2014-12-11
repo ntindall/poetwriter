@@ -1,0 +1,643 @@
+[ ] Loading the dictionary...
+[ ] Finished loading dictionary.
+[ ] Reading corpus file...
+[ ] Finished reading corpus, n-gram model generated.
+numStatesExplored = 3775
+totalCost = 3229
+graphSize = 3878
+actions = [('mind', 'not'), 'the', 'soul', 'is', 'of', 'the', 'hands', 'and', 'the', 'unseen', 'soul', 'of', 'the', 'stands', 'for', 'the', 'blood', 'of', 'the', 'flames', 'of', 'it', 'to', 'you', 'a', 'song', 'that', 'when', 'i', 'sit', 'the', 'dirt', 'to', 'grow', 'in', 'the', 'morning', 'as', 'i', 'am', 'for', 'those', 'hardening', 'the', 'pleasures', 'of', 'heaven', 'or', 'hell', 'than', 'there', 'is', 'the', 'life', 'is', 'not', 'well']
+
+RESULT
+mind not the soul is of the hands
+and the unseen soul of the stands
+for the blood of the flames of it
+to you a song that when i sit
+the dirt to grow in the morning
+as i am for those hardening
+the pleasures of heaven or hell
+than there is the life is not well
+
+numStatesExplored = 580
+totalCost = 3765
+graphSize = 706
+actions = [('better', 'than'), 'they', 'are', 'so', 'much', 'i', 'am', 'dead', 'and', 'lay', 'them', 'in', 'the', 'sky', 'the', 'current', 'songs', 'of', 'the', 'real', 'life', 'of', 'life', 'and', 'for', 'you', 'of', 'the', 'wife', 'and', 'then', 'in', 'the', 'midst', 'of', 'the', 'herd', 'around', 'to', 'enjoy', 'them', 'a', 'word', 'the', 'list', 'of', 'things', 'and', 'of', 'the', 'night', 'relievd', 'to', 'the', 'earth', 'and', 'the', 'white']
+
+RESULT
+better than they are so much i
+am dead and lay them in the sky
+the current songs of the real life
+of life and for you of the wife
+and then in the midst of the herd
+around to enjoy them a word
+the list of things and of the night
+relievd to the earth and the white
+
+numStatesExplored = 2942
+totalCost = 3239
+graphSize = 3047
+actions = [('where', 'are'), 'your', 'own', 'or', 'any', 'part', 'of', 'the', 'grass', 'and', 'fields', 'of', 'the', 'heart', 'the', 'lyrists', 'measurd', 'beat', 'the', 'drum', 'of', 'war', 'the', 'same', 'and', 'the', 'same', 'come', 'but', 'now', 'i', 'pierce', 'the', 'woods', 'of', 'maine', 'or', 'of', 'the', 'world', 'for', 'all', 'the', 'slain', 'the', 'schooner', 'near', 'by', 'the', 'hand', 'i', 'make', 'my', 'way', 'from', 'life', 'and', 'the', 'high']
+
+RESULT
+where are your own or any part
+of the grass and fields of the heart
+the lyrists measurd beat the drum
+of war the same and the same come
+but now i pierce the woods of maine
+or of the world for all the slain
+the schooner near by the hand i
+make my way from life and the high
+
+numStatesExplored = 3220
+totalCost = 3155
+graphSize = 3346
+actions = [('than', 'the'), 'rest', 'are', 'you', 'have', 'not', 'done', 'justice', 'to', 'you', 'from', 'me', 'and', 'none', 'the', 'red', 'squaw', 'staid', 'all', 'the', 'dark', 'suns', 'i', 'see', 'the', 'cities', 'and', 'the', 'ones', 'i', 'see', 'the', 'athletes', 'and', 'i', 'will', 'be', 'well', 'for', 'what', 'is', 'it', 'is', 'still', 'or', 'the', 'lives', 'of', 'the', 'mother', 'shines', 'on', 'the', 'ocean', 'shore', 'and', 'the', 'mines']
+
+RESULT
+than the rest are you have not done
+justice to you from me and none
+the red squaw staid all the dark suns
+i see the cities and the ones
+i see the athletes and i will
+be well for what is it is still
+or the lives of the mother shines
+on the ocean shore and the mines
+
+numStatesExplored = 2161
+totalCost = 2863
+graphSize = 2268
+actions = [('night', 'or'), 'as', 'i', 'chant', 'i', 'see', 'life', 'is', 'the', 'best', 'backer', 'of', 'the', 'wife', 'i', 'see', 'forests', 'of', 'the', 'present', 'content', 'with', 'all', 'the', 'argument', 'the', 'universe', 'i', 'saw', 'them', 'high', 'in', 'the', 'open', 'fields', 'and', 'farms', 'i', 'he', 'has', 'the', 'rain', 'the', 'growing', 'corn', 'the', 'breeze', 'in', 'the', 'face', 'of', 'the', 'horn']
+
+RESULT
+night or as i chant i see life
+is the best backer of the wife
+i see forests of the present
+content with all the argument
+the universe i saw them high
+in the open fields and farms i
+he has the rain the growing corn
+the breeze in the face of the horn
+
+numStatesExplored = 1370
+totalCost = 2916
+graphSize = 1486
+actions = [('be', 'a'), 'woman', 'waits', 'for', 'you', 'or', 'for', 'the', 'same', 'as', 'life', 'and', 'the', 'war', 'and', 'ever', 'will', 'be', 'will', 'be', 'there', 'and', 'wait', 'till', 'i', 'go', 'from', 'the', 'mare', 'and', 'who', 'art', 'thou', 'not', 'there', 'is', 'just', 'as', 'much', 'for', 'me', 'when', 'i', 'am', 'must', 'the', 'oceans', 'to', 'be', 'this', 'thing', 'or', 'that', 'the', 'rest', 'in', 'the', 'long', 'past', 'war']
+
+RESULT
+be a woman waits for you or
+for the same as life and the war
+and ever will be will be there
+and wait till i go from the mare
+and who art thou not there is just
+as much for me when i am must
+the oceans to be this thing or
+that the rest in the long past war
+
+numStatesExplored = 5222
+totalCost = 1810
+graphSize = 5358
+actions = [('i', 'help'), 'myself', 'to', 'you', 'and', 'then', 'row', 'back', 'to', 'the', 'winds', 'of', 'the', 'wren', 'o', 'lands', 'would', 'you', 'trick', 'me', 'with', 'long', 'white', 'hair', 'of', 'the', 'sea', 'of', 'the', 'strong', 'and', 'all', 'i', 'lie', 'in', 'the', 'woman', 'the', 'same', 'as', 'the', 'men', 'and', 'women', 'and', 'who', 'proudest', 'for', 'i', 'feard', 'i', 'might', 'tell', 'what', 'i', 'am', 'not', 'the', 'cry']
+
+RESULT
+i help myself to you and then
+row back to the winds of the wren
+o lands would you trick me with long
+white hair of the sea of the strong
+and all i lie in the woman
+the same as the men and women
+and who proudest for i feard i
+might tell what i am not the cry
+
+numStatesExplored = 165
+totalCost = 2512
+graphSize = 249
+actions = [('hear', 'the'), 'sounds', 'there', 'also', 'sounding', 'the', 'howl', 'of', 'the', 'earth', 'expanding', 'and', 'i', 'or', 'you', 'are', 'sick', 'as', 'they', 'who', 'give', 'the', 'hearts', 'of', 'the', 'globe', 'lay', 'as', 'down', 'the', 'storm', 'shall', 'dash', 'thy', 'face', 'the', 'limbs', 'of', 'the', 'sea', 'in', 'the', 'race', 'the', 'simple', 'house', 'of', 'himself', 'or', 'herself', 'not', 'for', 'life', 'and', 'the', 'war']
+
+RESULT
+hear the sounds there also sounding
+the howl of the earth expanding
+and i or you are sick as they
+who give the hearts of the globe lay
+as down the storm shall dash thy face
+the limbs of the sea in the race
+the simple house of himself or
+herself not for life and the war
+
+numStatesExplored = 964
+totalCost = 1769
+graphSize = 1074
+actions = [('swiftly', 'bending'), 'round', 'the', 'earth', 'it', 'is', 'in', 'you', 'i', 'am', 'not', 'a', 'bit', 'they', 'rise', 'and', 'fall', 'of', 'the', 'one', 'i', 'love', 'to', 'look', 'on', 'wife', 'and', 'the', 'high', 'this', 'face', 'is', 'clearer', 'and', 'more', 'are', 'flashing', 'to', 'you', 'but', 'i', 'see', 'far', 'the', 'sheriff', 'at', 'hand', 'the', 'pavement', 'here', 'and', 'now', 'to', 'raise', 'the', 'present']
+
+RESULT
+swiftly bending round the earth it
+is in you i am not a bit
+they rise and fall of the one i
+love to look on wife and the high
+this face is clearer and more are
+flashing to you but i see far
+the sheriff at hand the pavement
+here and now to raise the present
+
+numStatesExplored = 816
+totalCost = 1744
+graphSize = 915
+actions = [('and', 'when'), 'i', 'am', 'more', 'than', 'this', 'day', 'with', 'calm', 'gaze', 'or', 'with', 'your', 'own', 'way', 'many', 'no', 'doubt', 'thought', 'of', 'death', 'how', 'i', 'love', 'to', 'me', 'and', 'all', 'to', 'plough', 'as', 'toilsome', 'i', 'wanderd', 'alone', 'over', 'the', 'shut', 'eyes', 'of', 'the', 'known', 'the', 'brain', 'and', 'beauty', 'of', 'the', 'north', 'and', 'again', 'as', 'i', 'stand', 'henceforth']
+
+RESULT
+and when i am more than this day
+with calm gaze or with your own way
+many no doubt thought of death how
+i love to me and all to plough
+as toilsome i wanderd alone
+over the shut eyes of the known
+the brain and beauty of the north
+and again as i stand henceforth
+
+numStatesExplored = 562
+totalCost = 2199
+graphSize = 673
+actions = [('walk', 'hand'), 'in', 'hand', 'they', 'twain', 'apart', 'from', 'them', 'at', 'last', 'to', 'surely', 'start', 'as', 'the', 'sky', 'are', 'for', 'i', 'knew', 'i', 'could', 'not', 'die', 'till', 'i', 'see', 'the', 'high', 'to', 'a', 'certain', 'part', 'of', 'life', 'or', 'death', 'or', 'life', 'for', 'the', 'war', 'the', 'war', 'the', 'singers', 'were', 'singing', 'so', 'long', 'to', 'be', 'a', 'soldier', 'and', 'the', 'strong']
+
+RESULT
+walk hand in hand they twain apart
+from them at last to surely start
+as the sky are for i knew i
+could not die till i see the high
+to a certain part of life or
+death or life for the war the war
+the singers were singing so long
+to be a soldier and the strong
+
+numStatesExplored = 288
+totalCost = 2780
+graphSize = 402
+actions = [('the', 'grave'), 'of', 'the', 'night', 'ere', 'the', 'greek', 'and', 'long', 'to', 'leave', 'all', 'in', 'a', 'week', 'i', 'say', 'awed', 'me', 'and', 'i', 'do', 'not', 'forget', 'you', 'they', 'are', 'not', 'one', 'jot', 'in', 'one', 'by', 'one', 'or', 'two', 'torn', 'just', 'as', 'much', 'as', 'i', 'ebbd', 'with', 'the', 'dust', 'i', 'see', 'the', 'clear', 'waters', 'the', 'great', 'stars', 'and', 'of', 'man', 'is', 'the', 'same', 'wait']
+
+RESULT
+the grave of the night ere the greek
+and long to leave all in a week
+i say awed me and i do not
+forget you they are not one jot
+in one by one or two torn just
+as much as i ebbd with the dust
+i see the clear waters the great
+stars and of man is the same wait
+
+numStatesExplored = 2569
+totalCost = 3196
+graphSize = 2666
+actions = [('the', 'people'), 'in', 'their', 'hands', 'as', 'they', 'fall', 'on', 'the', 'ground', 'for', 'all', 'that', 'day', 'the', 'herbs', 'of', 'the', 'garden', 'the', 'west', 'or', 'north', 'or', 'inland', 'to', 'the', 'rest', 'for', 'strong', 'upright', 'men', 'i', 'saw', 'him', 'loved', 'him', 'all', 'yield', 'up', 'to', 'the', 'brim', 'the', 'singers', 'that', 'sing', 'the', 'body', 'and', 'soul', 'the', 'same', 'and', 'the', 'sturdy']
+
+RESULT
+the people in their hands as they
+fall on the ground for all that day
+the herbs of the garden the west
+or north or inland to the rest
+for strong upright men i saw him
+loved him all yield up to the brim
+the singers that sing the body
+and soul the same and the sturdy
+
+numStatesExplored = 1056
+totalCost = 3009
+graphSize = 1177
+actions = [('they', 'scorn'), 'the', 'attacks', 'of', 'the', 'first', 'step', 'i', 'say', 'to', 'that', 'of', 'the', 'worst', 'the', 'banners', 'voice', 'and', 'that', 'we', 'are', 'one', 'of', 'these', 'states', 'is', 'to', 'me', 'mar', 'it', 'is', 'so', 'real', 'as', 'they', 'go', 'they', 'go', 'the', 'song', 'of', 'the', 'night', 'and', 'day', 'i', 'see', 'again', 'the', 'long', 'and', 'then', 'row', 'back', 'to', 'a', 'sight', 'in', 'my', 'men']
+
+RESULT
+they scorn the attacks of the first
+step i say to that of the worst
+the banners voice and that we are
+one of these states is to me mar
+it is so real as they go they
+go the song of the night and day
+i see again the long and then
+row back to a sight in my men
+
+numStatesExplored = 1212
+totalCost = 2610
+graphSize = 1312
+actions = [('of', 'the'), 'war', 'for', 'you', 'o', 'prairies', 'of', 'you', 'is', 'one', 'of', 'those', 'countries', 'o', 'slender', 'leaves', 'o', 'the', 'great', 'star', 'early', 'droopd', 'in', 'the', 'far', 'far', 'the', 'old', 'men', 'show', 'them', 'how', 'i', 'heard', 'that', 'it', 'is', 'to', 'be', 'from', 'the', 'word', 'and', 'might', 'prove', 'as', 'of', 'my', 'blood', 'i', 'see', 'the', 'filaments', 'of', 'the', 'sly']
+
+RESULT
+of the war for you o prairies
+of you is one of those countries
+o slender leaves o the great star
+early droopd in the far far
+the old men show them how i heard
+that it is to be from the word
+and might prove as of my blood i
+see the filaments of the sly
+
+numStatesExplored = 1156
+totalCost = 1802
+graphSize = 1267
+actions = [('i', 'take'), 'part', 'i', 'see', 'and', 'know', 'it', 'not', 'a', 'day', 'passes', 'not', 'a', 'bit', 'o', 'then', 'i', 'will', 'make', 'the', 'people', 'or', 'by', 'the', 'shore', 'the', 'same', 'ample', 'and', 'debouch', 'to', 'the', 'ocean', 'shores', 'land', 'of', 'sierras', 'and', 'the', 'wars', 'and', 'the', 'sailors', 'heave', 'at', 'the', 'head', 'of', 'the', 'new', 'husband', 'and', 'the', 'red']
+
+RESULT
+i take part i see and know it
+not a day passes not a bit
+o then i will make the people
+or by the shore the same ample
+and debouch to the ocean shores
+land of sierras and the wars
+and the sailors heave at the head
+of the new husband and the red
+
+numStatesExplored = 3745
+totalCost = 460
+graphSize = 3836
+actions = [('thine', 'all'), 'thine', 'own', 'o', 'my', 'mother', 'and', 'the', 'drums', 'give', 'you', 'my', 'brother', 'where', 'the', 'populace', 'rise', 'at', 'peep', 'of', 'day', 'and', 'night', 'and', 'i', 'will', 'sleep', 'we', 'are', 'seas', 'mingling', 'we', 'are', 'what', 'the', 'crowd', 'not', 'one', 'of', 'the', 'far', 'my', 'brood', 'of', 'the', 'spirit', 'of', 'man', 'is', 'shaped', 'in', 'the', 'day', 'when', 'i', 'can']
+
+RESULT
+thine all thine own o my mother
+and the drums give you my brother
+where the populace rise at peep
+of day and night and i will sleep
+we are seas mingling we are
+what the crowd not one of the far
+my brood of the spirit of man
+is shaped in the day when i can
+
+numStatesExplored = 254
+totalCost = 1116
+graphSize = 386
+actions = [('the', 'crowd'), 'for', 'their', 'time', 'the', 'world', 'i', 'see', 'it', 'is', 'to', 'grow', 'in', 'the', 'sky', 'for', 'before', 'the', 'judge', 'with', 'hands', 'tight', 'to', 'the', 'free', 'and', 'the', 'little', 'light', 'and', 'i', 'know', 'not', 'whence', 'was', 'the', 'new', 'world', 'i', 'sing', 'to', 'my', 'soul', 'renew', 'that', 'may-be', 'you', 'are', 'for', 'i', 'would', 'do', 'you', 'say', 'to', 'me', 'they', 'are', 'good']
+
+RESULT
+the crowd for their time the world i
+see it is to grow in the sky
+for before the judge with hands tight
+to the free and the little light
+and i know not whence was the new
+world i sing to my soul renew
+that may-be you are for i would
+do you say to me they are good
+
+numStatesExplored = 296
+totalCost = 1686
+graphSize = 408
+actions = [('if', 'to'), 'confound', 'me', 'and', 'i', 'will', 'show', 'that', 'there', 'is', 'i', 'it', 'is', 'still', 'thou', 'pausing', 'a', 'moment', 'long', 'it', 'holds', 'at', 'the', 'best', 'i', 'had', 'him', 'sit', 'to', 'leave', 'all', 'and', 'am', 'silent', 'i', 'stood', 'and', 'watchd', 'you', 'through', 'the', 'sky', 'i', 'hear', 'the', 'chirp', 'of', 'the', 'best', 'or', 'as', 'good', 'as', 'the', 'earth', 'and', 'the', 'war']
+
+RESULT
+if to confound me and i will
+show that there is i it is still
+thou pausing a moment long it
+holds at the best i had him sit
+to leave all and am silent i
+stood and watchd you through the sky
+i hear the chirp of the best or
+as good as the earth and the war
+
+numStatesExplored = 1759
+totalCost = 2186
+graphSize = 1856
+actions = [('is', 'it'), 'the', 'nebula', 'cohered', 'to', 'an', 'area', 'of', 'my', 'beard', 'i', 'see', 'the', 'kruman', 'in', 'his', 'boat', 'and', 'lookd', 'forth', 'from', 'its', 'diffuse', 'float', 'how', 'i', 'love', 'day', 'and', 'night', 'i', 'sing', 'as', 'they', 'go', 'to', 'all', 'in', 'the', 'spring', 'and', 'wool', 'and', 'wheat', 'and', 'the', 'real', 'i', 'myself', 'i', 'say', 'of', 'them', 'as', 'high']
+
+RESULT
+is it the nebula cohered
+to an area of my beard
+i see the kruman in his boat
+and lookd forth from its diffuse float
+how i love day and night i sing
+as they go to all in the spring
+and wool and wheat and the real i
+myself i say of them as high
+
+
+
+
+
+
+
+
+
+
+
+numStatesExplored = 3775
+totalCost = 3229
+graphSize = 3878
+actions = [('mind', 'not'), 'the', 'soul', 'is', 'of', 'the', 'hands', 'and', 'the', 'unseen', 'soul', 'of', 'the', 'stands', 'for', 'the', 'blood', 'of', 'the', 'flames', 'of', 'it', 'to', 'you', 'a', 'song', 'that', 'when', 'i', 'sit', 'the', 'dirt', 'to', 'grow', 'in', 'the', 'morning', 'as', 'i', 'am', 'for', 'those', 'hardening', 'the', 'pleasures', 'of', 'heaven', 'or', 'hell', 'than', 'there', 'is', 'the', 'life', 'is', 'not', 'well']
+Time = 47.944126
+
+mind not the soul is of the hands
+and the unseen soul of the stands
+for the blood of the flames of it
+to you a song that when i sit
+the dirt to grow in the morning
+as i am for those hardening
+the pleasures of heaven or hell
+than there is the life is not well
+
+
+numStatesExplored = 580
+totalCost = 3765
+graphSize = 706
+actions = [('better', 'than'), 'they', 'are', 'so', 'much', 'i', 'am', 'dead', 'and', 'lay', 'them', 'in', 'the', 'sky', 'the', 'current', 'songs', 'of', 'the', 'real', 'life', 'of', 'life', 'and', 'for', 'you', 'of', 'the', 'wife', 'and', 'then', 'in', 'the', 'midst', 'of', 'the', 'herd', 'around', 'to', 'enjoy', 'them', 'a', 'word', 'the', 'list', 'of', 'things', 'and', 'of', 'the', 'night', 'relievd', 'to', 'the', 'earth', 'and', 'the', 'white']
+Time = 8.798332
+
+better than they are so much i
+am dead and lay them in the sky
+the current songs of the real life
+of life and for you of the wife
+and then in the midst of the herd
+around to enjoy them a word
+the list of things and of the night
+relievd to the earth and the white
+
+
+numStatesExplored = 2942
+totalCost = 3239
+graphSize = 3047
+actions = [('where', 'are'), 'your', 'own', 'or', 'any', 'part', 'of', 'the', 'grass', 'and', 'fields', 'of', 'the', 'heart', 'the', 'lyrists', 'measurd', 'beat', 'the', 'drum', 'of', 'war', 'the', 'same', 'and', 'the', 'same', 'come', 'but', 'now', 'i', 'pierce', 'the', 'woods', 'of', 'maine', 'or', 'of', 'the', 'world', 'for', 'all', 'the', 'slain', 'the', 'schooner', 'near', 'by', 'the', 'hand', 'i', 'make', 'my', 'way', 'from', 'life', 'and', 'the', 'high']
+Time = 30.806420
+
+where are your own or any part
+of the grass and fields of the heart
+the lyrists measurd beat the drum
+of war the same and the same come
+but now i pierce the woods of maine
+or of the world for all the slain
+the schooner near by the hand i
+make my way from life and the high
+
+
+numStatesExplored = 3220
+totalCost = 3155
+graphSize = 3346
+actions = [('than', 'the'), 'rest', 'are', 'you', 'have', 'not', 'done', 'justice', 'to', 'you', 'from', 'me', 'and', 'none', 'the', 'red', 'squaw', 'staid', 'all', 'the', 'dark', 'suns', 'i', 'see', 'the', 'cities', 'and', 'the', 'ones', 'i', 'see', 'the', 'athletes', 'and', 'i', 'will', 'be', 'well', 'for', 'what', 'is', 'it', 'is', 'still', 'or', 'the', 'lives', 'of', 'the', 'mother', 'shines', 'on', 'the', 'ocean', 'shore', 'and', 'the', 'mines']
+Time = 32.614114
+
+than the rest are you have not done
+justice to you from me and none
+the red squaw staid all the dark suns
+i see the cities and the ones
+i see the athletes and i will
+be well for what is it is still
+or the lives of the mother shines
+on the ocean shore and the mines
+
+
+numStatesExplored = 2161
+totalCost = 2863
+graphSize = 2268
+actions = [('night', 'or'), 'as', 'i', 'chant', 'i', 'see', 'life', 'is', 'the', 'best', 'backer', 'of', 'the', 'wife', 'i', 'see', 'forests', 'of', 'the', 'present', 'content', 'with', 'all', 'the', 'argument', 'the', 'universe', 'i', 'saw', 'them', 'high', 'in', 'the', 'open', 'fields', 'and', 'farms', 'i', 'he', 'has', 'the', 'rain', 'the', 'growing', 'corn', 'the', 'breeze', 'in', 'the', 'face', 'of', 'the', 'horn']
+Time = 23.281211
+
+night or as i chant i see life
+is the best backer of the wife
+i see forests of the present
+content with all the argument
+the universe i saw them high
+in the open fields and farms i
+he has the rain the growing corn
+the breeze in the face of the horn
+
+
+numStatesExplored = 1370
+totalCost = 2916
+graphSize = 1486
+actions = [('be', 'a'), 'woman', 'waits', 'for', 'you', 'or', 'for', 'the', 'same', 'as', 'life', 'and', 'the', 'war', 'and', 'ever', 'will', 'be', 'will', 'be', 'there', 'and', 'wait', 'till', 'i', 'go', 'from', 'the', 'mare', 'and', 'who', 'art', 'thou', 'not', 'there', 'is', 'just', 'as', 'much', 'for', 'me', 'when', 'i', 'am', 'must', 'the', 'oceans', 'to', 'be', 'this', 'thing', 'or', 'that', 'the', 'rest', 'in', 'the', 'long', 'past', 'war']
+Time = 14.700632
+
+be a woman waits for you or
+for the same as life and the war
+and ever will be will be there
+and wait till i go from the mare
+and who art thou not there is just
+as much for me when i am must
+the oceans to be this thing or
+that the rest in the long past war
+
+
+numStatesExplored = 5222
+totalCost = 1810
+graphSize = 5358
+actions = [('i', 'help'), 'myself', 'to', 'you', 'and', 'then', 'row', 'back', 'to', 'the', 'winds', 'of', 'the', 'wren', 'o', 'lands', 'would', 'you', 'trick', 'me', 'with', 'long', 'white', 'hair', 'of', 'the', 'sea', 'of', 'the', 'strong', 'and', 'all', 'i', 'lie', 'in', 'the', 'woman', 'the', 'same', 'as', 'the', 'men', 'and', 'women', 'and', 'who', 'proudest', 'for', 'i', 'feard', 'i', 'might', 'tell', 'what', 'i', 'am', 'not', 'the', 'cry']
+Time = 38.333791
+
+i help myself to you and then
+row back to the winds of the wren
+o lands would you trick me with long
+white hair of the sea of the strong
+and all i lie in the woman
+the same as the men and women
+and who proudest for i feard i
+might tell what i am not the cry
+
+
+numStatesExplored = 165
+totalCost = 2512
+graphSize = 249
+actions = [('hear', 'the'), 'sounds', 'there', 'also', 'sounding', 'the', 'howl', 'of', 'the', 'earth', 'expanding', 'and', 'i', 'or', 'you', 'are', 'sick', 'as', 'they', 'who', 'give', 'the', 'hearts', 'of', 'the', 'globe', 'lay', 'as', 'down', 'the', 'storm', 'shall', 'dash', 'thy', 'face', 'the', 'limbs', 'of', 'the', 'sea', 'in', 'the', 'race', 'the', 'simple', 'house', 'of', 'himself', 'or', 'herself', 'not', 'for', 'life', 'and', 'the', 'war']
+Time = 4.017101
+
+hear the sounds there also sounding
+the howl of the earth expanding
+and i or you are sick as they
+who give the hearts of the globe lay
+as down the storm shall dash thy face
+the limbs of the sea in the race
+the simple house of himself or
+herself not for life and the war
+
+
+numStatesExplored = 964
+totalCost = 1769
+graphSize = 1074
+actions = [('swiftly', 'bending'), 'round', 'the', 'earth', 'it', 'is', 'in', 'you', 'i', 'am', 'not', 'a', 'bit', 'they', 'rise', 'and', 'fall', 'of', 'the', 'one', 'i', 'love', 'to', 'look', 'on', 'wife', 'and', 'the', 'high', 'this', 'face', 'is', 'clearer', 'and', 'more', 'are', 'flashing', 'to', 'you', 'but', 'i', 'see', 'far', 'the', 'sheriff', 'at', 'hand', 'the', 'pavement', 'here', 'and', 'now', 'to', 'raise', 'the', 'present']
+Time = 8.958617
+
+swiftly bending round the earth it
+is in you i am not a bit
+they rise and fall of the one i
+love to look on wife and the high
+this face is clearer and more are
+flashing to you but i see far
+the sheriff at hand the pavement
+here and now to raise the present
+
+
+numStatesExplored = 816
+totalCost = 1744
+graphSize = 915
+actions = [('and', 'when'), 'i', 'am', 'more', 'than', 'this', 'day', 'with', 'calm', 'gaze', 'or', 'with', 'your', 'own', 'way', 'many', 'no', 'doubt', 'thought', 'of', 'death', 'how', 'i', 'love', 'to', 'me', 'and', 'all', 'to', 'plough', 'as', 'toilsome', 'i', 'wanderd', 'alone', 'over', 'the', 'shut', 'eyes', 'of', 'the', 'known', 'the', 'brain', 'and', 'beauty', 'of', 'the', 'north', 'and', 'again', 'as', 'i', 'stand', 'henceforth']
+Time = 8.688250
+
+and when i am more than this day
+with calm gaze or with your own way
+many no doubt thought of death how
+i love to me and all to plough
+as toilsome i wanderd alone
+over the shut eyes of the known
+the brain and beauty of the north
+and again as i stand henceforth
+
+
+numStatesExplored = 562
+totalCost = 2199
+graphSize = 673
+actions = [('walk', 'hand'), 'in', 'hand', 'they', 'twain', 'apart', 'from', 'them', 'at', 'last', 'to', 'surely', 'start', 'as', 'the', 'sky', 'are', 'for', 'i', 'knew', 'i', 'could', 'not', 'die', 'till', 'i', 'see', 'the', 'high', 'to', 'a', 'certain', 'part', 'of', 'life', 'or', 'death', 'or', 'life', 'for', 'the', 'war', 'the', 'war', 'the', 'singers', 'were', 'singing', 'so', 'long', 'to', 'be', 'a', 'soldier', 'and', 'the', 'strong']
+Time = 7.018534
+
+walk hand in hand they twain apart
+from them at last to surely start
+as the sky are for i knew i
+could not die till i see the high
+to a certain part of life or
+death or life for the war the war
+the singers were singing so long
+to be a soldier and the strong
+
+
+numStatesExplored = 288
+totalCost = 2780
+graphSize = 402
+actions = [('the', 'grave'), 'of', 'the', 'night', 'ere', 'the', 'greek', 'and', 'long', 'to', 'leave', 'all', 'in', 'a', 'week', 'i', 'say', 'awed', 'me', 'and', 'i', 'do', 'not', 'forget', 'you', 'they', 'are', 'not', 'one', 'jot', 'in', 'one', 'by', 'one', 'or', 'two', 'torn', 'just', 'as', 'much', 'as', 'i', 'ebbd', 'with', 'the', 'dust', 'i', 'see', 'the', 'clear', 'waters', 'the', 'great', 'stars', 'and', 'of', 'man', 'is', 'the', 'same', 'wait']
+Time = 4.480276
+
+the grave of the night ere the greek
+and long to leave all in a week
+i say awed me and i do not
+forget you they are not one jot
+in one by one or two torn just
+as much as i ebbd with the dust
+i see the clear waters the great
+stars and of man is the same wait
+
+
+numStatesExplored = 2569
+totalCost = 3196
+graphSize = 2666
+actions = [('the', 'people'), 'in', 'their', 'hands', 'as', 'they', 'fall', 'on', 'the', 'ground', 'for', 'all', 'that', 'day', 'the', 'herbs', 'of', 'the', 'garden', 'the', 'west', 'or', 'north', 'or', 'inland', 'to', 'the', 'rest', 'for', 'strong', 'upright', 'men', 'i', 'saw', 'him', 'loved', 'him', 'all', 'yield', 'up', 'to', 'the', 'brim', 'the', 'singers', 'that', 'sing', 'the', 'body', 'and', 'soul', 'the', 'same', 'and', 'the', 'sturdy']
+Time = 23.571365
+
+the people in their hands as they
+fall on the ground for all that day
+the herbs of the garden the west
+or north or inland to the rest
+for strong upright men i saw him
+loved him all yield up to the brim
+the singers that sing the body
+and soul the same and the sturdy
+
+
+numStatesExplored = 1056
+totalCost = 3009
+graphSize = 1177
+actions = [('they', 'scorn'), 'the', 'attacks', 'of', 'the', 'first', 'step', 'i', 'say', 'to', 'that', 'of', 'the', 'worst', 'the', 'banners', 'voice', 'and', 'that', 'we', 'are', 'one', 'of', 'these', 'states', 'is', 'to', 'me', 'mar', 'it', 'is', 'so', 'real', 'as', 'they', 'go', 'they', 'go', 'the', 'song', 'of', 'the', 'night', 'and', 'day', 'i', 'see', 'again', 'the', 'long', 'and', 'then', 'row', 'back', 'to', 'a', 'sight', 'in', 'my', 'men']
+Time = 12.307231
+
+they scorn the attacks of the first
+step i say to that of the worst
+the banners voice and that we are
+one of these states is to me mar
+it is so real as they go they
+go the song of the night and day
+i see again the long and then
+row back to a sight in my men
+
+
+numStatesExplored = 1212
+totalCost = 2610
+graphSize = 1312
+actions = [('of', 'the'), 'war', 'for', 'you', 'o', 'prairies', 'of', 'you', 'is', 'one', 'of', 'those', 'countries', 'o', 'slender', 'leaves', 'o', 'the', 'great', 'star', 'early', 'droopd', 'in', 'the', 'far', 'far', 'the', 'old', 'men', 'show', 'them', 'how', 'i', 'heard', 'that', 'it', 'is', 'to', 'be', 'from', 'the', 'word', 'and', 'might', 'prove', 'as', 'of', 'my', 'blood', 'i', 'see', 'the', 'filaments', 'of', 'the', 'sly']
+Time = 11.560228
+
+of the war for you o prairies
+of you is one of those countries
+o slender leaves o the great star
+early droopd in the far far
+the old men show them how i heard
+that it is to be from the word
+and might prove as of my blood i
+see the filaments of the sly
+
+
+numStatesExplored = 1156
+totalCost = 1802
+graphSize = 1267
+actions = [('i', 'take'), 'part', 'i', 'see', 'and', 'know', 'it', 'not', 'a', 'day', 'passes', 'not', 'a', 'bit', 'o', 'then', 'i', 'will', 'make', 'the', 'people', 'or', 'by', 'the', 'shore', 'the', 'same', 'ample', 'and', 'debouch', 'to', 'the', 'ocean', 'shores', 'land', 'of', 'sierras', 'and', 'the', 'wars', 'and', 'the', 'sailors', 'heave', 'at', 'the', 'head', 'of', 'the', 'new', 'husband', 'and', 'the', 'red']
+Time = 11.893912
+
+i take part i see and know it
+not a day passes not a bit
+o then i will make the people
+or by the shore the same ample
+and debouch to the ocean shores
+land of sierras and the wars
+and the sailors heave at the head
+of the new husband and the red
+
+
+numStatesExplored = 3745
+totalCost = 460
+graphSize = 3836
+actions = [('thine', 'all'), 'thine', 'own', 'o', 'my', 'mother', 'and', 'the', 'drums', 'give', 'you', 'my', 'brother', 'where', 'the', 'populace', 'rise', 'at', 'peep', 'of', 'day', 'and', 'night', 'and', 'i', 'will', 'sleep', 'we', 'are', 'seas', 'mingling', 'we', 'are', 'what', 'the', 'crowd', 'not', 'one', 'of', 'the', 'far', 'my', 'brood', 'of', 'the', 'spirit', 'of', 'man', 'is', 'shaped', 'in', 'the', 'day', 'when', 'i', 'can']
+Time = 32.978452
+
+thine all thine own o my mother
+and the drums give you my brother
+where the populace rise at peep
+of day and night and i will sleep
+we are seas mingling we are
+what the crowd not one of the far
+my brood of the spirit of man
+is shaped in the day when i can
+
+
+numStatesExplored = 254
+totalCost = 1116
+graphSize = 386
+actions = [('the', 'crowd'), 'for', 'their', 'time', 'the', 'world', 'i', 'see', 'it', 'is', 'to', 'grow', 'in', 'the', 'sky', 'for', 'before', 'the', 'judge', 'with', 'hands', 'tight', 'to', 'the', 'free', 'and', 'the', 'little', 'light', 'and', 'i', 'know', 'not', 'whence', 'was', 'the', 'new', 'world', 'i', 'sing', 'to', 'my', 'soul', 'renew', 'that', 'may-be', 'you', 'are', 'for', 'i', 'would', 'do', 'you', 'say', 'to', 'me', 'they', 'are', 'good']
+Time = 4.685132
+
+the crowd for their time the world i
+see it is to grow in the sky
+for before the judge with hands tight
+to the free and the little light
+and i know not whence was the new
+world i sing to my soul renew
+that may-be you are for i would
+do you say to me they are good
+
+
+numStatesExplored = 296
+totalCost = 1686
+graphSize = 408
+actions = [('if', 'to'), 'confound', 'me', 'and', 'i', 'will', 'show', 'that', 'there', 'is', 'i', 'it', 'is', 'still', 'thou', 'pausing', 'a', 'moment', 'long', 'it', 'holds', 'at', 'the', 'best', 'i', 'had', 'him', 'sit', 'to', 'leave', 'all', 'and', 'am', 'silent', 'i', 'stood', 'and', 'watchd', 'you', 'through', 'the', 'sky', 'i', 'hear', 'the', 'chirp', 'of', 'the', 'best', 'or', 'as', 'good', 'as', 'the', 'earth', 'and', 'the', 'war']
+Time = 8.492166
+
+if to confound me and i will
+show that there is i it is still
+thou pausing a moment long it
+holds at the best i had him sit
+to leave all and am silent i
+stood and watchd you through the sky
+i hear the chirp of the best or
+as good as the earth and the war
+
+
+numStatesExplored = 1759
+totalCost = 2186
+graphSize = 1856
+actions = [('is', 'it'), 'the', 'nebula', 'cohered', 'to', 'an', 'area', 'of', 'my', 'beard', 'i', 'see', 'the', 'kruman', 'in', 'his', 'boat', 'and', 'lookd', 'forth', 'from', 'its', 'diffuse', 'float', 'how', 'i', 'love', 'day', 'and', 'night', 'i', 'sing', 'as', 'they', 'go', 'to', 'all', 'in', 'the', 'spring', 'and', 'wool', 'and', 'wheat', 'and', 'the', 'real', 'i', 'myself', 'i', 'say', 'of', 'them', 'as', 'high']
+Time = 28.938240
+
+is it the nebula cohered
+to an area of my beard
+i see the kruman in his boat
+and lookd forth from its diffuse float
+how i love day and night i sing
+as they go to all in the spring
+and wool and wheat and the real i
+myself i say of them as high
+
+
+[ ] attempted to satisfy 20 poems
+[ ] 20 found
+[ ] total time = 364.068130
+[ ] mean t = 18.203406
+[ ] median t = 12.100571
+[ ] stdev t = 12.711313
+[ ] mean s = 1705.600000
+[ ] median s = 1184.000000
+[ ] stdev s= 1397.462822

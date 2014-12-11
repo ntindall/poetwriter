@@ -1,0 +1,158 @@
+[ ] Loading the dictionary...
+[ ] Finished loading dictionary.
+[ ] Reading corpus file...
+[ ] Finished reading corpus, n-gram model generated.
+numStatesExplored = 699
+totalCost = 3835
+graphSize = 783
+actions = [('expounded',), 'by', 'night', 'but', 'really', 'do', 'their', 'orders', 'or', 'a', 'motley', 'i', 'heard', 'it', 'avails', 'not', 'an', 'old', 'and', 'countenance', 'persons', 'not', 'fold', 'the', 'coming', 'home', 'of', 'mighty', 'guns', 'out', 'in', 'the', 'staffs', 'and', 'all', 'the', 'ones', 'with', 'his', 'shroud', 'i', 'no', 'more', 'than', 'i', 'not', 'any', 'companion', 'and', 'high']
+
+RESULT
+expounded by night but really
+do their orders or a motley
+i heard it avails not an old
+and countenance persons not fold
+the coming home of mighty guns
+out in the staffs and all the ones
+with his shroud i no more than i
+not any companion and high
+
+numStatesExplored = 875
+totalCost = 9346
+graphSize = 967
+actions = [('a',), 'shop', 'yard', 'of', 'the', 'wind', 'it', 'was', 'before', 'the', 'landmarks', 'of', 'the', 'cause', 'lands', 'of', 'love--house', 'of', 'the', 'tracks', 'of', 'the', 'light', 'is', 'it', 'is', 'the', 'flax', 'the', 'recruits', 'even', 'with', 'the', 'shows', 'of', 'the', 'midst', 'i', 'chanting', 'the', 'snows', 'i', 'swing', 'around', 'and', 'falling', 'still', 'it', 'lags', 'nor', 'ten', 'thousand', 'years', 'will']
+
+RESULT
+a shop yard of the wind it was
+before the landmarks of the cause
+lands of love--house of the tracks
+of the light is it is the flax
+the recruits even with the shows
+of the midst i chanting the snows
+i swing around and falling still
+it lags nor ten thousand years will
+
+numStatesExplored = 63
+totalCost = 2629
+graphSize = 151
+actions = [('lo',), 'i', 'believe', 'lately', 'i', 'hear', 'the', 'light', 'the', 'efflux', 'of', 'the', 'ear', 'some', 'to', 'return', 'indifferent', 'hand', 'the', 'roof', 'shall', 'dash', 'me', 'that', 'i', 'stand', 'from', 'the', 'white', 'hair', 'mounted', 'the', 'beach', 'the', 'woman', 'and', 'to', 'splash', 'of', 'speech', 'for', 'facades', 'or', 'north', 'from', 'the', 'axe', 'supported', 'by', 'the', 'wings', 'of', 'backs']
+
+RESULT
+lo i believe lately i hear
+the light the efflux of the ear
+some to return indifferent hand
+the roof shall dash me that i stand
+from the white hair mounted the beach
+the woman and to splash of speech
+for facades or north from the axe
+supported by the wings of backs
+
+numStatesExplored = 989
+totalCost = 3399
+graphSize = 1091
+actions = [('future',), 'song', 'that', 'city', 'in', 'sex', 'from', 'her', 'she', 'is', 'sure', 'weave', 'in', 'specks', 'of', 'them', 'a', 'kosmos', 'of', 'death', 'or', 'she', 'is', 'not', 'he', 'left', 'out', 'of', 'war', 'the', 'sudden', 'oath', 'the', 'cool', 'night', 'ships', 'they', 'seem', 'live', 'old', 'world', 'too', 'dead', 'lips', 'i', 'caught', 'from', 'the', 'obi', 'or', 'by', 'trees', 'the', 'granite', 'floor', 'the', 'sense', 'their', 'knees']
+
+RESULT
+future song that city in sex
+from her she is sure weave in specks
+of them a kosmos of death or
+she is not he left out of war
+the sudden oath the cool night ships
+they seem live old world too dead lips
+i caught from the obi or by trees
+the granite floor the sense their knees
+
+numStatesExplored = 146
+totalCost = 6244
+graphSize = 232
+actions = [('still',), 'woods', 'the', 'new', 'politics', 'creeds', 'arts', 'libraries', 'legends', 'of', 'weeds', 'come', 'travel', 'out', 'of', 'the', 'fields', 'or', 'together', 'no', 'less', 'could', 'not', 'war', 'the', 'whole', 'composite', 'sound', 'the', 'oar', 'the', 'north', 'east', 'and', 'rocks', 'of', 'the', 'floor', 'and', 'healthy', 'uplands', 'and', 'green', 'leaves', 'and', 'place', 'and', 'women', 'of', 'the', 'thieves']
+
+RESULT
+still woods the new politics creeds
+arts libraries legends of weeds
+come travel out of the fields or
+together no less could not war
+the whole composite sound the oar
+the north east and rocks of the floor
+and healthy uplands and green leaves
+and place and women of the thieves
+
+numStatesExplored = 84
+totalCost = 2477
+graphSize = 173
+actions = [('it',), 'stings', 'to', 'california', 'song', 'for', 'not', 'give', 'you', 'looking', 'from', 'long', 'o', 'death', 'and', 'ever', 'have', 'some', 'great', 'achievements', 'of', 'it', 'is', 'the', 'plate', 'the', 'divine', 'power', 'one', 'side', 'you', 'know', 'that', 'music', 'their', 'nest', 'of', 'view', 'all', 'were', 'put', 'in', 'my', 'city', 'stands', 'in', 'arriere', 'the', 'young', 'wife', 'and', 'hands']
+
+RESULT
+it stings to california song
+for not give you looking from long
+o death and ever have some great
+achievements of it is the plate
+the divine power one side you
+know that music their nest of view
+all were put in my city stands
+in arriere the young wife and hands
+
+numStatesExplored = 843
+totalCost = 3384
+graphSize = 940
+actions = [('yet',), 'to', 'last', 'to', 'do', 'you', 'see', 'just', 'as', 'where', 'the', 'body', 'and', 'the', 'dust', 'but', 'i', 'speed', 'on', 'earth', 'you', 'what', 'am', 'speeding', 'through', 'the', 'heart', 'like', 'the', 'jamb', 'or', 'can', 'be', 'slighted', 'none', 'but', 'i', 'heard', 'at', 'the', 'water', 'there', 'with', 'dry', 'the', 'posts', 'of', 'them', 'long', 'long', 'and', 'was', 'reserving', 'it', 'lies', 'on', 'the', 'cause']
+
+RESULT
+yet to last to do you see just
+as where the body and the dust
+but i speed on earth you what am
+speeding through the heart like the jamb
+or can be slighted none but i
+heard at the water there with dry
+the posts of them long long and was
+reserving it lies on the cause
+
+numStatesExplored = 723
+totalCost = 7901
+graphSize = 795
+actions = [('not',), 'the', 'limbs', 'glossy', 'and', 'duly', 'by', 'the', 'lobsters', 'are', 'you', 'only', 'the', 'joys', 'of', 'the', 'clank', 'of', 'his', 'train', 'of', 'the', 'walnut-husks', 'and', 'gain', 'and', 'golden', 'shall', 'yet', 'nearer', 'field', 'with', 'me', 'to-day', 'and', 'hear', 'the', 'yield', 'the', 'decay', 'of', 'the', 'making', 'smells', 'of', 'all', 'he', 'shall', 'tie', 'you', 'there', 'swells']
+
+RESULT
+not the limbs glossy and duly
+by the lobsters are you only
+the joys of the clank of his train
+of the walnut-husks and gain
+and golden shall yet nearer field
+with me to-day and hear the yield
+the decay of the making smells
+of all he shall tie you there swells
+
+numStatesExplored = 1479
+totalCost = 2810
+graphSize = 1560
+actions = [('where',), 'the', 'rills', 'of', 'myself', 'to', 'lean', 'on', 'sure', 'the', 'beautiful', 'to', 'glean', 'the', 'longest', 'day', 'and', 'friendly', 'bees', 'were', 'all', 'is', 'that', 'there', 'like', 'those', 'trees', 'and', 'a', 'noiseless', 'as', 'the', 'wars', 'and', 'make', 'me', 'i', 'pass', 'through', 'you', 'doors', 'in', 'his', 'own', 'rebellious', 'self', 'is', 'henceforth', 'yielding', 'up', 'again', 'tis']
+
+RESULT
+where the rills of myself to lean
+on sure the beautiful to glean
+the longest day and friendly bees
+were all is that there like those trees
+and a noiseless as the wars
+and make me i pass through you doors
+in his own rebellious self is
+henceforth yielding up again tis
+
+numStatesExplored = 736
+totalCost = 4553
+graphSize = 830
+actions = [('from',), 'fifty', 'are', 'the', 'living', 'sleep', 'in', 'your', 'brown', 'hands', 'here', 'and', 'the', 'deep', 'but', 'i', 'may', 'bud', 'and', 'of', 'the', 'net', 'is', 'truth', 'of', 'a', 'few', 'sands', 'and', 'wet', 'the', 'prisons', 'slaves', 'and', 'soils', 'rocks', 'leaves', 'and', 'stakes', 'his', 'worlds', 'and', 'stripes', 'of', 'thieves', 'was', 'before', 'a', 'grand', 'is', 'that', 'it', 'to', 'be', 'filld', 'and', 'the', 'sky', 'the', 'fit']
+
+RESULT
+from fifty are the living sleep
+in your brown hands here and the deep
+but i may bud and of the net
+is truth of a few sands and wet
+the prisons slaves and soils rocks leaves
+and stakes his worlds and stripes of thieves
+was before a grand is that it
+to be filld and the sky the fit
+
+numStatesExplored = 557
+totalCost = 3620
+graphSize = 645
+actions = [('odor',), 'id', 'thought', 'of', 'troy', 'and', 'go', 'forth', 'to', 'their', 'boats', 'others', 'the', 'glow', 'the', 'music', 'yet', 'to', 'me', 'one', 'can', 'commune', 'with', 'messengers', 'for', 'man', 'i', 'see', 'to', 'be'

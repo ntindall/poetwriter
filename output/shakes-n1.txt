@@ -1,0 +1,83 @@
+[ ] Loading the dictionary...
+[ ] Finished loading dictionary.
+[ ] Reading corpus file...
+[ ] Finished reading corpus, n-gram model generated.
+numStatesExplored = 96
+totalCost = 8603
+graphSize = 192
+actions = [('of',), 'epidaurus', 'this', 'bloody', 'then', 'he', 'so', 'far', 'this', 'town', 'with', 'me', 'pen', 'i', 'know', 'nought', 'nor', 'nothing', 'ill', 'peach', 'for', 'it', 'own', 'doors', 'are', 'for', 'twill', 'to', 'a', 'woe', 'might', 'have', 'earnd', 'them', 'work', 'is', 'come', 'captain', 'will', 'not', 'his', 'clerk', 'from', 'my', 'wit', 'could', 'ken', 'the', 'swallow', 'my', 'voice', 'was', 'got', 'thee', 'well', 'follow']
+
+RESULT
+of epidaurus this bloody then
+he so far this town with me pen
+i know nought nor nothing ill
+peach for it own doors are for twill
+to a woe might have earnd them work
+is come captain will not his clerk
+from my wit could ken the swallow
+my voice was got thee well follow
+
+numStatesExplored = 884
+totalCost = 8400
+graphSize = 981
+actions = [('your',), 'grace', 'of', 'my', 'son', 'to', 'prison', 'then', 'on', 'all', 'naught', 'to', 'my', 'cousin', 'like', 'a', 'most', 'mighty', 'hold', 'your', 'or', 'art', 'worthy', 'maecenas', 'let', 'me', 'pour', 'exeunt', 'all', 'christian', 'blood', 'are', 'fierce', 'tempest', 'to', 'my', 'stirrup', 'and', 'pierce', 'i', 'be', 'for', 'that', 'scorn', 'to', 'have', 'done', 'this', 'most', 'vain', 'conceit', 'is', 'the', 'sun']
+
+RESULT
+your grace of my son to prison
+then on all naught to my cousin
+like a most mighty hold your or
+art worthy maecenas let me pour
+exeunt all christian blood are fierce
+tempest to my stirrup and pierce
+i be for that scorn to have done
+this most vain conceit is the sun
+
+numStatesExplored = 1041
+totalCost = 8903
+graphSize = 1127
+actions = [('when',), 'i', 'will', 'conceive', 'the', 'realm', 'shall', 'endure', 'such', 'a', 'world', 'fear', 'me', 'hal', 'brutus', 'should', 'wear', 'them', 'which', 'not', 'think', 'meet', 'displeasure', 'aside', 'i', 'drink', 'for', 'ever', 'but', 'yesterday', 'we', 'do', 'not', 'give', 'thee', 'well', 'what', 'is', 'qui', 'which', 'bettered', 'rather', 'than', 'i', 'would', 'prevail', 'in', 'the', 'cocks', 'do', 'thou', 'good']
+
+RESULT
+when i will conceive the realm shall
+endure such a world fear me hal
+brutus should wear them which not think
+meet displeasure aside i drink
+for ever but yesterday we
+do not give thee well what is qui
+which bettered rather than i would
+prevail in the cocks do thou good
+
+numStatesExplored = 61
+totalCost = 13109
+graphSize = 152
+actions = [('fool',), 'positive', 'gainst', 'mine', 'ear', 'close', 'the', 'one', 'that', 'have', 'been', 'i', 'here', 'and', 'take', 'heed', 'sirrah-', 'farewell', 'go', 'you', 'saw', 'him', 'first', 'citizen', 'woe', 'i', 'begin', 'there', 'be', 'assurd', 'you', 'what', 'is', 'tears', 'and', 'she', 'was', 'i', 'view', 'king', 'edward', 'so', 'many', 'will', 'soon', 'forsaken', 'and', 'find', 'out', 'of', 'tune']
+
+RESULT
+fool positive gainst mine ear
+close the one that have been i here
+and take heed sirrah- farewell go
+you saw him first citizen woe
+i begin there be assurd you
+what is tears and she was i view
+king edward so many will soon
+forsaken and find out of tune
+
+numStatesExplored = 106
+totalCost = 9313
+graphSize = 205
+actions = [('was',), 'thrust', 'him', 'go', 'thou', 'woo', 'her', 'signs', 'of', 'this', 'offer', 'to', 'me', 'that', 'shines', 'that', 'right', 'true', 'as', 'easy', 'and', 'fetch', 'the', 'comfort', 'thee', 'kate', 'but', 'well', 'stretch', 'to', 'meet', 'the', 'king', 'my', 'pocket', 'was', 'she', 'will', 'dot', 'at', 'my', 'eyes', 'that', 'cause', 'with', 'much', 'sad', 'thoughts', 'tiring', 'day', 'find', 'in', 'nought', 'knowing', 'him', 'that', 'kind']
+
+RESULT
+was thrust him go thou woo her signs
+of this offer to me that shines
+that right true as easy and fetch
+the comfort thee kate but well stretch
+to meet the king my pocket was
+she will dot at my eyes that cause
+with much sad thoughts tiring day find
+in nought knowing him that kind
+
+numStatesExplored = 1207
+totalCost = 6641
+graphSize = 1310
+actions = [('and',)

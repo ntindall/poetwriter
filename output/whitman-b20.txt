@@ -1,0 +1,83 @@
+[ ] Loading the dictionary...
+[ ] Finished loading dictionary.
+[ ] Reading corpus file...
+[ ] Finished reading corpus, n-gram model generated.
+numStatesExplored = 1385
+totalCost = 4052
+graphSize = 4952
+actions = [('and', 'the'), 'blanket', 'on', 'the', 'black', 'smoke', 'from', 'the', 'earth', 'and', 'sea', 'and', 'i', 'broke', 'the', 'people', 'taken', 'off', 'my', 'hat', 'as', 'i', 'wend', 'to', 'the', 'north', 'the', 'cat', 'i', 'fold', 'thenceforth', 'or', 'seek', 'to', 'put', 'rapport', 'the', 'mountains', 'of', 'my', 'foot', 'the', 'sleepers', 'are', 'very', 'well', 'i', 'have', 'told', 'them', 'a', 'word', 'of', 'the', 'sky']
+
+RESULT
+and the blanket on the black smoke
+from the earth and sea and i broke
+the people taken off my hat
+as i wend to the north the cat
+i fold thenceforth or seek to put
+rapport the mountains of my foot
+the sleepers are very well i
+have told them a word of the sky
+
+numStatesExplored = 2757
+totalCost = 4085
+graphSize = 6637
+actions = [('the', 'slaughter'), 'of', 'the', 'day', 'with', 'stars', 'brought', 'from', 'the', 'water', 'by', 'the', 'bars', 'the', 'drover', 'watching', 'his', 'drove', 'sings', 'out', 'to', 'sea', 'in', 'the', 'east', 'wind', 'brings', 'i', 'feel', 'the', 'presence', 'of', 'a', 'youth', 'who', 'loves', 'me', 'and', 'i', 'as', 'the', 'truth', 'the', 'same', 'at', 'last', 'in', 'the', 'sky', 'staid', 'with', 'me', 'the', 'signs', 'and', 'i', 'have', 'made']
+
+RESULT
+the slaughter of the day with stars
+brought from the water by the bars
+the drover watching his drove sings
+out to sea in the east wind brings
+i feel the presence of a youth
+who loves me and i as the truth
+the same at last in the sky staid
+with me the signs and i have made
+
+numStatesExplored = 2481
+totalCost = 1739
+graphSize = 4707
+actions = [('that', 'rise'), 'so', 'high', 'in', 'the', 'open', 'air', 'and', 'the', 'same', 'as', 'i', 'happen', 'and', 'go', 'toward', 'the', 'mystic', 'play', 'of', 'shine', 'and', 'shade', 'on', 'the', 'ships', 'they', 'for', 'them', 'for', 'them', 'for', 'them', 'have', 'i', 'given', 'up', 'to', 'the', 'earth', 'and', 'sky', 'and', 'the', 'offspring', 'great', 'or', 'small', 'or', 'great', 'i', 'know', 'i', 'have', 'for', 'the', 'war']
+
+RESULT
+that rise so high in the open
+air and the same as i happen
+and go toward the mystic play
+of shine and shade on the ships they
+for them for them for them have i
+given up to the earth and sky
+and the offspring great or small or
+great i know i have for the war
+
+numStatesExplored = 282
+totalCost = 2823
+graphSize = 2587
+actions = [('i', 'confess'), 'i', 'have', 'seen', 'the', 'light', 'and', 'the', 'pulse', 'of', 'you', 'in', 'the', 'night', 'i', 'saw', 'you', 'at', 'last', 'to', 'me', 'night', 'and', 'i', 'answer', 'that', 'i', 'hold', 'tight', 'the', 'head', 'of', 'any', 'else', 'that', 'head', 'is', 'over', 'all', 'and', 'i', 'will', 'thread', 'as', 'profound', 'as', 'any', 'thing', 'i', 'have', 'lived', 'to', 'behold', 'the', 'sea', 'high']
+
+RESULT
+i confess i have seen the light
+and the pulse of you in the night
+i saw you at last to me night
+and i answer that i hold tight
+the head of any else that head
+is over all and i will thread
+as profound as any thing i
+have lived to behold the sea high
+
+numStatesExplored = 324
+totalCost = 4177
+graphSize = 4748
+actions = [('the', 'best'), 'of', 'nature', 'fields', 'and', 'farms', 'i', 'see', 'the', 'tents', 'of', 'the', 'white', 'arms', 'the', 'ring', 'is', 'circled', 'the', 'journey', 'work', 'of', 'the', 'tents', 'of', 'the', 'brawny', 'the', 'wrestle', 'of', 'evil', 'with', 'good', 'strong', 'hand', 'and', 'the', 'fields', 'and', 'the', 'wood', 'i', 'but', 'enter', 'by', 'them', 'be', 'said', 'to', 'you', 'on', 'the', 'ground', 'in', 'the', 'bed']
+
+RESULT
+the best of nature fields and farms
+i see the tents of the white arms
+the ring is circled the journey
+work of the tents of the brawny
+the wrestle of evil with good
+strong hand and the fields and the wood
+i but enter by them be said
+to you on the ground in the bed
+
+numStatesExplored = 1695
+totalCost = 4486
+graphSize = 5904
+actions = [('i', 'dare'), 

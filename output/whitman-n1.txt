@@ -155,4 +155,87 @@ to be filld and the sky the fit
 numStatesExplored = 557
 totalCost = 3620
 graphSize = 645
-actions = [('odor',), 'id', 'thought', 'of', 'troy', 'and', 'go', 'forth', 'to', 'their', 'boats', 'others', 'the', 'glow', 'the', 'music', 'yet', 'to', 'me', 'one', 'can', 'commune', 'with', 'messengers', 'for', 'man', 'i', 'see', 'to', 'be'
+actions = [('odor',), 'id', 'thought', 'of', 'troy', 'and', 'go', 'forth', 'to', 'their', 'boats', 'others', 'the', 'glow', 'the', 'music', 'yet', 'to', 'me', 'one', 'can', 'commune', 'with', 'messengers', 'for', 'man', 'i', 'see', 'to', 'be', 'happy', 'you', 'guess', 'at', 'last', 'in', 'their', 'drink', 'from', 'the', 'press', 'she', 'passes', 'none', 'not', 'go', 'only', 'holds', 'out', 'for', 'thee', 'home', 'and', 'tally']
+
+RESULT
+odor id thought of troy and go
+forth to their boats others the glow
+the music yet to me one can
+commune with messengers for man
+i see to be happy you guess
+at last in their drink from the press
+she passes none not go only
+holds out for thee home and tally
+
+numStatesExplored = 66
+totalCost = 7671
+graphSize = 150
+actions = [('some',), 'vast', 'and', 'the', 'crowd', 'i', 'stand', 'cool', 'of', 'the', 'myriad', 'waves', 'the', 'school', 'the', 'vastnesses', 'of', 'thousands', 'slain', 'persons', 'to', 'arrive', 'there', 'in', 'vain', 'the', 'noble', 'name', 'of', 'states', 'me', 'you', 'are', 'nigh', 'glooming', 'a', 'good', 'of', 'view', 'the', 'burial', 'clouds', 'o', 'lands', 'lands', 'of', 'the', 'menacing', 'voice', 'that', 'stands']
+
+RESULT
+some vast and the crowd i stand cool
+of the myriad waves the school
+the vastnesses of thousands slain
+persons to arrive there in vain
+the noble name of states me you
+are nigh glooming a good of view
+the burial clouds o lands lands
+of the menacing voice that stands
+
+numStatesExplored = 1011
+totalCost = 5010
+graphSize = 1097
+actions = [('the',), 'flashing', 'missouri', 'praise', 'not', 'really', 'undying', 'one', 'a', 'shot', 'i', 'see', 'again', 'death', 'is', 'here', 'you', 'place', 'is', 'spread', 'your', 'ears', 'of', 'the', 'cue', 'i', 'love', 'of', 'my', 'own', 'day', 'or', 'st', 'lawrence', 'reminiscence', 'of', 'heat', 'i', 'pensive', 'life', 'but', 'abruptly', 'to', 'think', 'life', 'the', 'body', 'only']
+
+RESULT
+the flashing missouri praise not
+really undying one a shot
+i see again death is here you
+place is spread your ears of the cue
+i love of my own day or st
+lawrence reminiscence of heat
+i pensive life but abruptly
+to think life the body only
+
+numStatesExplored = 665
+totalCost = 794
+graphSize = 745
+actions = [('are',), 'not', 'desert', 'you', 'blood', 'short', 'wild', 'herds', 'of', 'preparation', 'and', 'child', 'of', 'love', 'working', 'in', 'public', 'road', 'of', 'forming', 'endless', 'grass', 'the', 'load', 'aye', 'this', 'moment', 'i', 'lookd', 'forth', 'i', 'have', 'my', 'true', 'arenas', 'of', 'lie', 'o', 'pioneers', 'o', 'a', 'briny', 'tear', 'a', 'million', 'children', 'that', 'it', 'there']
+
+RESULT
+are not desert you blood short wild
+herds of preparation and child
+of love working in public road
+of forming endless grass the load
+aye this moment i lookd forth i
+have my true arenas of lie
+o pioneers o a briny tear
+a million children that it there
+
+numStatesExplored = 756
+totalCost = 2272
+graphSize = 854
+actions = [('songs',), 'of', 'mechanics', 'working', 'i', 'swear', 'i', 'praise', 'praise', 'what', 'you', 'i', 'lie', 'i', 'myself', 'am', 'a', 'wafted', 'clouds', 'in', 'a', 'woman', 'i', 'blow', 'the', 'crowds', 'you', 'this', 'face', 'from', 'texas', 'and', 'dark', 'by', 'time', 'and', 'crowded', 'and', 'the', 'shark', 'that', 'the', 'stars', 'only', 'one', 'breath', 'will', 'sing', 'thou', 'who', 'are', 'dumb', 'man', 'and', 'still']
+
+RESULT
+songs of mechanics working i
+swear i praise praise what you i lie
+i myself am a wafted clouds
+in a woman i blow the crowds
+you this face from texas and dark
+by time and crowded and the shark
+that the stars only one breath will
+sing thou who are dumb man and still
+
+numStatesExplored = 118
+totalCost = 2627
+graphSize = 206
+actions = [('his',), 'looking-glass', 'is', 'no', 'doubt', 'that', 'rattle', 'drums', 'and', 'blood', 'the', 'rout', 'then', 'may', 'he', 'is', 'a', 'secret', 'wish', 'him', 'horse', 'and', 'the', 'hard', 'to', 'the', 'fish', 'like', 'a', 'minute--no', 'one', 'when', 'you', 'sweet', 'and', 'shades', 'of', 'the', 'slopes', 'of', 'view', 'all', 'over', 'he', 'is', 'one', 'but', 'i', 'too', 'certain', 'to', 'nothing', 'to', 'die']
+
+RESULT
+his looking-glass is no doubt
+that rattle drums and blood the rout
+then may he is a secret wish
+him horse and the hard to the fish
+like a minute--no one when you
+sweet and shades 

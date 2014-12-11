@@ -238,4 +238,396 @@ that rattle drums and blood the rout
 then may he is a secret wish
 him horse and the hard to the fish
 like a minute--no one when you
-sweet and shades 
+sweet and shades of the slopes of view
+all over he is one but i
+too certain to nothing to die
+
+numStatesExplored = 226
+totalCost = 2597
+graphSize = 317
+actions = [('casting',), 'swift', 'again', 'nod', 'to', 'sing', 'with', 'any', 'thing', 'is', 'to', 'the', 'ring', 'a', 'refuse', 'this', 'salute', 'of', 'view', 'and', 'all', 'these', 'leaves', 'steady', 'and', 'you', 'like', 'you', 'o', 'powerful', 'yet', 'bear', 'you', 'are', 'for', 'roots', 'and', 'i', 'see', 'there', 'i', 'am', 'for', 'me', 'o', 'what', 'locust', 'chestnut', 'shade', 'also', 'the', 'meanest']
+
+RESULT
+casting swift again nod to sing
+with any thing is to the ring
+a refuse this salute of view
+and all these leaves steady and you
+like you o powerful yet bear
+you are for roots and i see there
+i am for me o what locust
+chestnut shade also the meanest
+
+numStatesExplored = 261
+totalCost = 3005
+graphSize = 346
+actions = [('of',), 'power', 'wealth', 'nor', 'in', 'its', 'thought', 'i', 'bend', 'close', 'calmly', 'close', 'and', 'brought', 'or', 'small', 'as', 'good', 'old', 'and', 'flaunting', 'from', 'the', 'wheel', 'on', 'the', 'departing', 'and', 'civilization', 'must', 'sleep', 'have', 'you', 'tides', 'or', 'move', 'to', 'be', 'deep', 'nor', 'harps', 'nor', 'sound', 'of', 'the', 'hookd', 'arm', 'the', 'sound', 'with', 'you', 'find', 'out', 'the', 'farm']
+
+RESULT
+of power wealth nor in its thought
+i bend close calmly close and brought
+or small as good old and flaunting
+from the wheel on the departing
+and civilization must sleep
+have you tides or move to be deep
+nor harps nor sound of the hookd arm
+the sound with you find out the farm
+
+numStatesExplored = 94
+totalCost = 4109
+graphSize = 187
+actions = [('and',), 'more', 'complaints', 'or', 'shout', 'in', 'range', 'and', 'to', 'have', 'brought', 'out', 'of', 'the', 'strange', 'strong', 'terrific', 'ideal', 'tried', 'taught', 'and', 'male', 'is', 'more', 'in', 'front', 'and', 'brought', 'the', 'universal', 'god', 'from', 'sleep', 'with', 'tears', 'the', 'pictures', 'and', 'the', 'deep', 'to', 'thee', 'a', 'life', 'is', 'good', 'as', 'they', 'are', 'not', 'call', 'id', 'bring', 'thee', 'i', 'may']
+
+RESULT
+and more complaints or shout in range
+and to have brought out of the strange
+strong terrific ideal tried taught
+and male is more in front and brought
+the universal god from sleep
+with tears the pictures and the deep
+to thee a life is good as they
+are not call id bring thee i may
+
+numStatesExplored = 771
+totalCost = 3649
+graphSize = 853
+actions = [('south',), 'are', 'not', 'question', 'you--i', 'think', 'nothing', 'i', 'cease', 'from', 'mine', 'and', 'pink', 'as', 'far', 'breathd', 'land', 'tender', 'lip', 'nor', 'honord', 'middle', 'states', 'i', 'strip', 'in', 'the', 'short', 'last', 'those', 'men', 'at', 'high', 'in', 'his', 'throat', 'and', 'the', 'blocks', 'up', 'i', 'and', 'good--year', 'of', 'the', 'mothers', 'bowels', 'as', 'i', 'no', 'balk', 'others']
+
+RESULT
+south are not question you--i think
+nothing i cease from mine and pink
+as far breathd land tender lip
+nor honord middle states i strip
+in the short last those men at high
+in his throat and the blocks up i
+and good--year of the mothers
+bowels as i no balk others
+
+numStatesExplored = 699
+totalCost = 3835
+graphSize = 783
+actions = [('expounded',), 'by', 'night', 'but', 'really', 'do', 'their', 'orders', 'or', 'a', 'motley', 'i', 'heard', 'it', 'avails', 'not', 'an', 'old', 'and', 'countenance', 'persons', 'not', 'fold', 'the', 'coming', 'home', 'of', 'mighty', 'guns', 'out', 'in', 'the', 'staffs', 'and', 'all', 'the', 'ones', 'with', 'his', 'shroud', 'i', 'no', 'more', 'than', 'i', 'not', 'any', 'companion', 'and', 'high']
+Time = 285.019210
+
+expounded by night but really
+do their orders or a motley
+i heard it avails not an old
+and countenance persons not fold
+the coming home of mighty guns
+out in the staffs and all the ones
+with his shroud i no more than i
+not any companion and high
+
+
+numStatesExplored = 875
+totalCost = 9346
+graphSize = 967
+actions = [('a',), 'shop', 'yard', 'of', 'the', 'wind', 'it', 'was', 'before', 'the', 'landmarks', 'of', 'the', 'cause', 'lands', 'of', 'love--house', 'of', 'the', 'tracks', 'of', 'the', 'light', 'is', 'it', 'is', 'the', 'flax', 'the', 'recruits', 'even', 'with', 'the', 'shows', 'of', 'the', 'midst', 'i', 'chanting', 'the', 'snows', 'i', 'swing', 'around', 'and', 'falling', 'still', 'it', 'lags', 'nor', 'ten', 'thousand', 'years', 'will']
+Time = 283.580936
+
+a shop yard of the wind it was
+before the landmarks of the cause
+lands of love--house of the tracks
+of the light is it is the flax
+the recruits even with the shows
+of the midst i chanting the snows
+i swing around and falling still
+it lags nor ten thousand years will
+
+
+numStatesExplored = 63
+totalCost = 2629
+graphSize = 151
+actions = [('lo',), 'i', 'believe', 'lately', 'i', 'hear', 'the', 'light', 'the', 'efflux', 'of', 'the', 'ear', 'some', 'to', 'return', 'indifferent', 'hand', 'the', 'roof', 'shall', 'dash', 'me', 'that', 'i', 'stand', 'from', 'the', 'white', 'hair', 'mounted', 'the', 'beach', 'the', 'woman', 'and', 'to', 'splash', 'of', 'speech', 'for', 'facades', 'or', 'north', 'from', 'the', 'axe', 'supported', 'by', 'the', 'wings', 'of', 'backs']
+Time = 50.812837
+
+lo i believe lately i hear
+the light the efflux of the ear
+some to return indifferent hand
+the roof shall dash me that i stand
+from the white hair mounted the beach
+the woman and to splash of speech
+for facades or north from the axe
+supported by the wings of backs
+
+
+numStatesExplored = 989
+totalCost = 3399
+graphSize = 1091
+actions = [('future',), 'song', 'that', 'city', 'in', 'sex', 'from', 'her', 'she', 'is', 'sure', 'weave', 'in', 'specks', 'of', 'them', 'a', 'kosmos', 'of', 'death', 'or', 'she', 'is', 'not', 'he', 'left', 'out', 'of', 'war', 'the', 'sudden', 'oath', 'the', 'cool', 'night', 'ships', 'they', 'seem', 'live', 'old', 'world', 'too', 'dead', 'lips', 'i', 'caught', 'from', 'the', 'obi', 'or', 'by', 'trees', 'the', 'granite', 'floor', 'the', 'sense', 'their', 'knees']
+Time = 350.747078
+
+future song that city in sex
+from her she is sure weave in specks
+of them a kosmos of death or
+she is not he left out of war
+the sudden oath the cool night ships
+they seem live old world too dead lips
+i caught from the obi or by trees
+the granite floor the sense their knees
+
+
+numStatesExplored = 146
+totalCost = 6244
+graphSize = 232
+actions = [('still',), 'woods', 'the', 'new', 'politics', 'creeds', 'arts', 'libraries', 'legends', 'of', 'weeds', 'come', 'travel', 'out', 'of', 'the', 'fields', 'or', 'together', 'no', 'less', 'could', 'not', 'war', 'the', 'whole', 'composite', 'sound', 'the', 'oar', 'the', 'north', 'east', 'and', 'rocks', 'of', 'the', 'floor', 'and', 'healthy', 'uplands', 'and', 'green', 'leaves', 'and', 'place', 'and', 'women', 'of', 'the', 'thieves']
+Time = 72.364144
+
+still woods the new politics creeds
+arts libraries legends of weeds
+come travel out of the fields or
+together no less could not war
+the whole composite sound the oar
+the north east and rocks of the floor
+and healthy uplands and green leaves
+and place and women of the thieves
+
+
+numStatesExplored = 84
+totalCost = 2477
+graphSize = 173
+actions = [('it',), 'stings', 'to', 'california', 'song', 'for', 'not', 'give', 'you', 'looking', 'from', 'long', 'o', 'death', 'and', 'ever', 'have', 'some', 'great', 'achievements', 'of', 'it', 'is', 'the', 'plate', 'the', 'divine', 'power', 'one', 'side', 'you', 'know', 'that', 'music', 'their', 'nest', 'of', 'view', 'all', 'were', 'put', 'in', 'my', 'city', 'stands', 'in', 'arriere', 'the', 'young', 'wife', 'and', 'hands']
+Time = 34.197533
+
+it stings to california song
+for not give you looking from long
+o death and ever have some great
+achievements of it is the plate
+the divine power one side you
+know that music their nest of view
+all were put in my city stands
+in arriere the young wife and hands
+
+
+numStatesExplored = 843
+totalCost = 3384
+graphSize = 940
+actions = [('yet',), 'to', 'last', 'to', 'do', 'you', 'see', 'just', 'as', 'where', 'the', 'body', 'and', 'the', 'dust', 'but', 'i', 'speed', 'on', 'earth', 'you', 'what', 'am', 'speeding', 'through', 'the', 'heart', 'like', 'the', 'jamb', 'or', 'can', 'be', 'slighted', 'none', 'but', 'i', 'heard', 'at', 'the', 'water', 'there', 'with', 'dry', 'the', 'posts', 'of', 'them', 'long', 'long', 'and', 'was', 'reserving', 'it', 'lies', 'on', 'the', 'cause']
+Time = 302.421334
+
+yet to last to do you see just
+as where the body and the dust
+but i speed on earth you what am
+speeding through the heart like the jamb
+or can be slighted none but i
+heard at the water there with dry
+the posts of them long long and was
+reserving it lies on the cause
+
+
+numStatesExplored = 723
+totalCost = 7901
+graphSize = 795
+actions = [('not',), 'the', 'limbs', 'glossy', 'and', 'duly', 'by', 'the', 'lobsters', 'are', 'you', 'only', 'the', 'joys', 'of', 'the', 'clank', 'of', 'his', 'train', 'of', 'the', 'walnut-husks', 'and', 'gain', 'and', 'golden', 'shall', 'yet', 'nearer', 'field', 'with', 'me', 'to-day', 'and', 'hear', 'the', 'yield', 'the', 'decay', 'of', 'the', 'making', 'smells', 'of', 'all', 'he', 'shall', 'tie', 'you', 'there', 'swells']
+Time = 241.471249
+
+not the limbs glossy and duly
+by the lobsters are you only
+the joys of the clank of his train
+of the walnut-husks and gain
+and golden shall yet nearer field
+with me to-day and hear the yield
+the decay of the making smells
+of all he shall tie you there swells
+
+
+numStatesExplored = 1479
+totalCost = 2810
+graphSize = 1560
+actions = [('where',), 'the', 'rills', 'of', 'myself', 'to', 'lean', 'on', 'sure', 'the', 'beautiful', 'to', 'glean', 'the', 'longest', 'day', 'and', 'friendly', 'bees', 'were', 'all', 'is', 'that', 'there', 'like', 'those', 'trees', 'and', 'a', 'noiseless', 'as', 'the', 'wars', 'and', 'make', 'me', 'i', 'pass', 'through', 'you', 'doors', 'in', 'his', 'own', 'rebellious', 'self', 'is', 'henceforth', 'yielding', 'up', 'again', 'tis']
+Time = 501.628663
+
+where the rills of myself to lean
+on sure the beautiful to glean
+the longest day and friendly bees
+were all is that there like those trees
+and a noiseless as the wars
+and make me i pass through you doors
+in his own rebellious self is
+henceforth yielding up again tis
+
+
+numStatesExplored = 736
+totalCost = 4553
+graphSize = 830
+actions = [('from',), 'fifty', 'are', 'the', 'living', 'sleep', 'in', 'your', 'brown', 'hands', 'here', 'and', 'the', 'deep', 'but', 'i', 'may', 'bud', 'and', 'of', 'the', 'net', 'is', 'truth', 'of', 'a', 'few', 'sands', 'and', 'wet', 'the', 'prisons', 'slaves', 'and', 'soils', 'rocks', 'leaves', 'and', 'stakes', 'his', 'worlds', 'and', 'stripes', 'of', 'thieves', 'was', 'before', 'a', 'grand', 'is', 'that', 'it', 'to', 'be', 'filld', 'and', 'the', 'sky', 'the', 'fit']
+Time = 225.126506
+
+from fifty are the living sleep
+in your brown hands here and the deep
+but i may bud and of the net
+is truth of a few sands and wet
+the prisons slaves and soils rocks leaves
+and stakes his worlds and stripes of thieves
+was before a grand is that it
+to be filld and the sky the fit
+
+
+numStatesExplored = 557
+totalCost = 3620
+graphSize = 645
+actions = [('odor',), 'id', 'thought', 'of', 'troy', 'and', 'go', 'forth', 'to', 'their', 'boats', 'others', 'the', 'glow', 'the', 'music', 'yet', 'to', 'me', 'one', 'can', 'commune', 'with', 'messengers', 'for', 'man', 'i', 'see', 'to', 'be', 'happy', 'you', 'guess', 'at', 'last', 'in', 'their', 'drink', 'from', 'the', 'press', 'she', 'passes', 'none', 'not', 'go', 'only', 'holds', 'out', 'for', 'thee', 'home', 'and', 'tally']
+Time = 198.116577
+
+odor id thought of troy and go
+forth to their boats others the glow
+the music yet to me one can
+commune with messengers for man
+i see to be happy you guess
+at last in their drink from the press
+she passes none not go only
+holds out for thee home and tally
+
+
+numStatesExplored = 66
+totalCost = 7671
+graphSize = 150
+actions = [('some',), 'vast', 'and', 'the', 'crowd', 'i', 'stand', 'cool', 'of', 'the', 'myriad', 'waves', 'the', 'school', 'the', 'vastnesses', 'of', 'thousands', 'slain', 'persons', 'to', 'arrive', 'there', 'in', 'vain', 'the', 'noble', 'name', 'of', 'states', 'me', 'you', 'are', 'nigh', 'glooming', 'a', 'good', 'of', 'view', 'the', 'burial', 'clouds', 'o', 'lands', 'lands', 'of', 'the', 'menacing', 'voice', 'that', 'stands']
+Time = 50.843128
+
+some vast and the crowd i stand cool
+of the myriad waves the school
+the vastnesses of thousands slain
+persons to arrive there in vain
+the noble name of states me you
+are nigh glooming a good of view
+the burial clouds o lands lands
+of the menacing voice that stands
+
+
+numStatesExplored = 1011
+totalCost = 5010
+graphSize = 1097
+actions = [('the',), 'flashing', 'missouri', 'praise', 'not', 'really', 'undying', 'one', 'a', 'shot', 'i', 'see', 'again', 'death', 'is', 'here', 'you', 'place', 'is', 'spread', 'your', 'ears', 'of', 'the', 'cue', 'i', 'love', 'of', 'my', 'own', 'day', 'or', 'st', 'lawrence', 'reminiscence', 'of', 'heat', 'i', 'pensive', 'life', 'but', 'abruptly', 'to', 'think', 'life', 'the', 'body', 'only']
+Time = 339.838150
+
+the flashing missouri praise not
+really undying one a shot
+i see again death is here you
+place is spread your ears of the cue
+i love of my own day or st
+lawrence reminiscence of heat
+i pensive life but abruptly
+to think life the body only
+
+
+numStatesExplored = 665
+totalCost = 794
+graphSize = 745
+actions = [('are',), 'not', 'desert', 'you', 'blood', 'short', 'wild', 'herds', 'of', 'preparation', 'and', 'child', 'of', 'love', 'working', 'in', 'public', 'road', 'of', 'forming', 'endless', 'grass', 'the', 'load', 'aye', 'this', 'moment', 'i', 'lookd', 'forth', 'i', 'have', 'my', 'true', 'arenas', 'of', 'lie', 'o', 'pioneers', 'o', 'a', 'briny', 'tear', 'a', 'million', 'children', 'that', 'it', 'there']
+Time = 197.021977
+
+are not desert you blood short wild
+herds of preparation and child
+of love working in public road
+of forming endless grass the load
+aye this moment i lookd forth i
+have my true arenas of lie
+o pioneers o a briny tear
+a million children that it there
+
+
+numStatesExplored = 756
+totalCost = 2272
+graphSize = 854
+actions = [('songs',), 'of', 'mechanics', 'working', 'i', 'swear', 'i', 'praise', 'praise', 'what', 'you', 'i', 'lie', 'i', 'myself', 'am', 'a', 'wafted', 'clouds', 'in', 'a', 'woman', 'i', 'blow', 'the', 'crowds', 'you', 'this', 'face', 'from', 'texas', 'and', 'dark', 'by', 'time', 'and', 'crowded', 'and', 'the', 'shark', 'that', 'the', 'stars', 'only', 'one', 'breath', 'will', 'sing', 'thou', 'who', 'are', 'dumb', 'man', 'and', 'still']
+Time = 212.618423
+
+songs of mechanics working i
+swear i praise praise what you i lie
+i myself am a wafted clouds
+in a woman i blow the crowds
+you this face from texas and dark
+by time and crowded and the shark
+that the stars only one breath will
+sing thou who are dumb man and still
+
+
+numStatesExplored = 118
+totalCost = 2627
+graphSize = 206
+actions = [('his',), 'looking-glass', 'is', 'no', 'doubt', 'that', 'rattle', 'drums', 'and', 'blood', 'the', 'rout', 'then', 'may', 'he', 'is', 'a', 'secret', 'wish', 'him', 'horse', 'and', 'the', 'hard', 'to', 'the', 'fish', 'like', 'a', 'minute--no', 'one', 'when', 'you', 'sweet', 'and', 'shades', 'of', 'the', 'slopes', 'of', 'view', 'all', 'over', 'he', 'is', 'one', 'but', 'i', 'too', 'certain', 'to', 'nothing', 'to', 'die']
+Time = 37.100390
+
+his looking-glass is no doubt
+that rattle drums and blood the rout
+then may he is a secret wish
+him horse and the hard to the fish
+like a minute--no one when you
+sweet and shades of the slopes of view
+all over he is one but i
+too certain to nothing to die
+
+
+numStatesExplored = 226
+totalCost = 2597
+graphSize = 317
+actions = [('casting',), 'swift', 'again', 'nod', 'to', 'sing', 'with', 'any', 'thing', 'is', 'to', 'the', 'ring', 'a', 'refuse', 'this', 'salute', 'of', 'view', 'and', 'all', 'these', 'leaves', 'steady', 'and', 'you', 'like', 'you', 'o', 'powerful', 'yet', 'bear', 'you', 'are', 'for', 'roots', 'and', 'i', 'see', 'there', 'i', 'am', 'for', 'me', 'o', 'what', 'locust', 'chestnut', 'shade', 'also', 'the', 'meanest']
+Time = 73.456033
+
+casting swift again nod to sing
+with any thing is to the ring
+a refuse this salute of view
+and all these leaves steady and you
+like you o powerful yet bear
+you are for roots and i see there
+i am for me o what locust
+chestnut shade also the meanest
+
+
+numStatesExplored = 261
+totalCost = 3005
+graphSize = 346
+actions = [('of',), 'power', 'wealth', 'nor', 'in', 'its', 'thought', 'i', 'bend', 'close', 'calmly', 'close', 'and', 'brought', 'or', 'small', 'as', 'good', 'old', 'and', 'flaunting', 'from', 'the', 'wheel', 'on', 'the', 'departing', 'and', 'civilization', 'must', 'sleep', 'have', 'you', 'tides', 'or', 'move', 'to', 'be', 'deep', 'nor', 'harps', 'nor', 'sound', 'of', 'the', 'hookd', 'arm', 'the', 'sound', 'with', 'you', 'find', 'out', 'the', 'farm']
+Time = 102.390205
+
+of power wealth nor in its thought
+i bend close calmly close and brought
+or small as good old and flaunting
+from the wheel on the departing
+and civilization must sleep
+have you tides or move to be deep
+nor harps nor sound of the hookd arm
+the sound with you find out the farm
+
+
+numStatesExplored = 94
+totalCost = 4109
+graphSize = 187
+actions = [('and',), 'more', 'complaints', 'or', 'shout', 'in', 'range', 'and', 'to', 'have', 'brought', 'out', 'of', 'the', 'strange', 'strong', 'terrific', 'ideal', 'tried', 'taught', 'and', 'male', 'is', 'more', 'in', 'front', 'and', 'brought', 'the', 'universal', 'god', 'from', 'sleep', 'with', 'tears', 'the', 'pictures', 'and', 'the', 'deep', 'to', 'thee', 'a', 'life', 'is', 'good', 'as', 'they', 'are', 'not', 'call', 'id', 'bring', 'thee', 'i', 'may']
+Time = 35.357131
+
+and more complaints or shout in range
+and to have brought out of the strange
+strong terrific ideal tried taught
+and male is more in front and brought
+the universal god from sleep
+with tears the pictures and the deep
+to thee a life is good as they
+are not call id bring thee i may
+
+
+numStatesExplored = 771
+totalCost = 3649
+graphSize = 853
+actions = [('south',), 'are', 'not', 'question', 'you--i', 'think', 'nothing', 'i', 'cease', 'from', 'mine', 'and', 'pink', 'as', 'far', 'breathd', 'land', 'tender', 'lip', 'nor', 'honord', 'middle', 'states', 'i', 'strip', 'in', 'the', 'short', 'last', 'those', 'men', 'at', 'high', 'in', 'his', 'throat', 'and', 'the', 'blocks', 'up', 'i', 'and', 'good--year', 'of', 'the', 'mothers', 'bowels', 'as', 'i', 'no', 'balk', 'others']
+Time = 285.620926
+
+south are not question you--i think
+nothing i cease from mine and pink
+as far breathd land tender lip
+nor honord middle states i strip
+in the short last those men at high
+in his throat and the blocks up i
+and good--year of the mothers
+bowels as i no balk others
+
+
+[ ] attempted to satisfy 20 poems
+[ ] 20 found
+[ ] total time = 3879.732430
+[ ] mean t = 193.986622
+[ ] median t = 205.367500
+[ ] stdev t = 129.337647
+[ ] mean s = 558.100000
+[ ] median s = 682.000000
+[ ] stdev s= 392.719735

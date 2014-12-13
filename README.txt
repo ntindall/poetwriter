@@ -16,10 +16,11 @@ README.txt
 - CONTENTS                                                    -
 ---------------------------------------------------------------
 * INTRODUCTION
-* FILES
-* ALGORITHMIC APPROACH
 * USAGE
 * EXAMPLE
+* FILES
+* ALGORITHMIC APPROACH
+* DATA
 
 ---------------------------------------------------------------
 - INTRODUCTION                                                -
@@ -33,6 +34,46 @@ corpora of rap artists in an attempt to generate rap-styled
 poetry; however, the general case of the problem is one of 
 poetic generation. In this project, our constraints are on the 
 syllable counts within lines and the rhyming patterns between lines. 
+
+---------------------------------------------------------------
+- USAGE                                                       -
+---------------------------------------------------------------
+The algorithm can be invoked by running generator.py, with the 
+following flags:
+* (-n), default 1
+  Order of the n gram model
+* (-f), default "whitman.txt"
+  Corpus file, used to train the language model.
+* (-o), default 3
+  The number of poems to output
+* (-l), default 1
+  The phrase length (number of lines that the n-gram wraps 
+  around before reseeding).
+* (-s)
+  The type of corpus, in order to facilitate corpus cleanup
+* (-p), default true
+  Whether the model is probabalistic when selecting actions (if 
+  not selected, chooses more frequent seeds first
+* (-b), default 3
+  The number of initial seeds to try before backtracking 
+  (when the grammar is reseeded)
+* (-r)
+  The number of children seeds to try before backtracking, 
+  selects the r most frequent children or the first r children
+  randomly selected (if probabilistic).
+* (-t), default quad
+  The type of poetry to output (options: sonnet, haiku, eight, 
+  octave, quad)
+* (-v), default 0
+  The verbosity of the program
+
+---------------------------------------------------------------
+- EXAMPLE                                                     -
+---------------------------------------------------------------
+# python generator.py -n 2 -f lyrics/eminem.txt -o 4
+# python generator.py -f corpora/shakespeare.txt -n 2 -o 1 -s rap -l 2 -b 10 -t octave -r 3 -p 1
+# python generator.py -f corpora/shakespeare.txt -n 2 -o 2 -l 2 -b 10 -t eight -r 3 -p 1 -v 1
+# python generator.py -f corpora/chance.txt -n 2 -o 5 -l 2 -b 10 -t eight -r 3 -p 1 -v 1
 
 ---------------------------------------------------------------
 - FILES                                                       -
@@ -116,41 +157,40 @@ problem in the following manner:
   carded if they break the constraints of the model.
 
 ---------------------------------------------------------------
-- USAGE                                                       -
+- Data		            	                              -
 ---------------------------------------------------------------
+eliot.txt
+* n=1: Mean time = 91.66s; Median time = 66.84s; Mean states = 4773.75; 
+Median states = 3547.5; Completion rate = 100%; Semantic score = 1.35
+* n=2: Mean time = 0.21s; Median time = .18s; Mean states = 163.05; 
+Median states = 111.5; Completion rate = 0%; Semantic score = N/A
+* n=3: Mean time = 0.09s; Median time = 0.09s; Mean states = 16.5; 
+Median states = 16; Completion rate = 0%; Semantic score = N/A
 
-* (-n), default 1
-  Order of the n gram model
-* (-f), default "whitman.txt"
-  Corpus file, used to train the languaeg model
-* (-o), default 3
-  The number of poems to output
-* (-l), default 1
-  The phrase length (number of lines that the n-gram wraps 
-  around before reseeding).
-* (-s)
-  The type of corpus, in order to facilitate corpus cleanup
-* (-p), default true
-  Whether the model is probabalistic when selecting actions (if 
-  not selected, chooses more frequent seeds first
-* (-b), default 3
-  The number of initial seeds to try before backtracking 
-  (when the grammar is reseeded)
-* (-r)
-  The number of children seeds to try before backtracking, 
-  selects the r most frequent children or the first r children
-  randomly selected (if probabilistic).
-* (-t), default quad
-  The type of poetry to output (options: sonnet, haiku, eight, 
-  octave, quad)
-* (-v), default 0
-  The verbosity of the program
+whitman.txt
+* n=1: Mean time = 1352.69s; Median time = 165.73s; Mean states = 4959; 
+Median states = 532; Completion rate = 100%; Semantic score = 1.66
+* n=2: Mean time = 18.203s; Median time = 12.101; Mean states = 1705.6; 
+Median states = 1184; Completion rate = 100%; Semantic score = 2.45
+* n=3: Mean time = 1.548s; Median time = 1.415s; Mean states = 80.2; 
+Median states = 60.5; Completion rate = 0%; Semantic score = N/A
 
----------------------------------------------------------------
-- EXAMPLE                                                     -
----------------------------------------------------------------
-# python generator.py -n 2 -f lyrics/eminem.txt -o 4
-# python generator.py -f corpora/shakespeare.txt -n 2 -o 1 -s rap -l 2 -b 10 -t octave -r 3 -p 1
-# python generator.py -f corpora/shakespeare.txt -n 2 -o 2 -l 2 -b 10 -t eight -r 3 -p 1 -v 1
-# python generator.py -f corpora/chance.txt -n 2 -o 5 -l 2 -b 10 -t eight -r 3 -p 1 -v 1
+shakespeare.txt
+* n=1: Mean time = 6480s; Median time = 6480s; Mean states = 9333.80; 
+Median states = 397; Completion rate = 100%; Semantic score = 1.20
+(Only five poems generated after 9 hour run time; only these data points reported)
+* n=2: Mean time = 81.918s; Median time = 30.761s; Mean states = 3784; 
+Median states = 1305.05; Completion rate = 100%; Semantic score = 2.18
+* n=3: Mean time = 14.96s; Median time = 13.66s; Mean states = 1220.90; 
+Median states = 1023; Completion rate = 45%; Semantic score = 3.22
+
+
+
+
+
+
+
+
+
+
 

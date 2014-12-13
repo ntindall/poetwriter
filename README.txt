@@ -65,7 +65,8 @@ following flags:
   The type of poetry to output (options: sonnet, haiku, eight, 
   octave, quad)
 * (-v), default 0
-  The verbosity of the program
+  The verbosity of the program. A value of 1 or higher lets you
+  watch the algorithm's search process.
 
 ---------------------------------------------------------------
 - EXAMPLE                                                     -

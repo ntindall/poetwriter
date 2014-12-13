@@ -2,10 +2,36 @@
 \BOOKMARK [1][-]{section.2}{Related Work}{}% 2
 \BOOKMARK [1][-]{section.3}{Task Definition}{}% 3
 \BOOKMARK [1][-]{section.4}{Approach}{}% 4
-\BOOKMARK [1][-]{section.5}{Baseline}{}% 5
-\BOOKMARK [1][-]{section.6}{Oracle}{}% 6
-\BOOKMARK [1][-]{section.7}{Advanced Method}{}% 7
-\BOOKMARK [1][-]{section.8}{Data \046 Experiments}{}% 8
-\BOOKMARK [1][-]{section.9}{Analysis}{}% 9
-\BOOKMARK [1][-]{section.10}{Conclusion}{}% 10
-\BOOKMARK [1][-]{section.11}{References}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{Language Model}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Handling Constraints}{section.4}% 6
+\BOOKMARK [1][-]{section.5}{Baseline}{}% 7
+\BOOKMARK [1][-]{section.6}{Oracle}{}% 8
+\BOOKMARK [1][-]{section.7}{Advanced Method}{}% 9
+\BOOKMARK [2][-]{subsection.7.1}{Enforcing Constraints}{section.7}% 10
+\BOOKMARK [2][-]{subsection.7.2}{Improving Content}{section.7}% 11
+\BOOKMARK [2][-]{subsection.7.3}{Improving Runtime}{section.7}% 12
+\BOOKMARK [1][-]{section.8}{Data \046 Experiments}{}% 13
+\BOOKMARK [2][-]{subsection.8.1}{Varying N-gram}{section.8}% 14
+\BOOKMARK [2][-]{subsection.8.2}{Varying Input Sources}{section.8}% 15
+\BOOKMARK [2][-]{subsection.8.3}{Branching Limit Analysis}{section.8}% 16
+\BOOKMARK [2][-]{subsection.8.4}{Progress Analysis}{section.8}% 17
+\BOOKMARK [1][-]{section.9}{Conclusion \046 Further Work}{}% 18
+\BOOKMARK [1][-]{section*.2}{Appendices}{}% 19
+\BOOKMARK [1][-]{Appendix.1.A}{Appendix Example Poems}{}% 20
+\BOOKMARK [2][-]{subsection.1.A.1}{Baseline}{Appendix.1.A}% 21
+\BOOKMARK [3][-]{subsubsection.1.A.1.1}{Eliot}{subsection.1.A.1}% 22
+\BOOKMARK [3][-]{subsubsection.1.A.1.2}{Shakespeare}{subsection.1.A.1}% 23
+\BOOKMARK [2][-]{subsection.1.A.2}{n=1}{Appendix.1.A}% 24
+\BOOKMARK [3][-]{subsubsection.1.A.2.1}{Eliot}{subsection.1.A.2}% 25
+\BOOKMARK [3][-]{subsubsection.1.A.2.2}{Whitman}{subsection.1.A.2}% 26
+\BOOKMARK [3][-]{subsubsection.1.A.2.3}{Shakespeare}{subsection.1.A.2}% 27
+\BOOKMARK [2][-]{subsection.1.A.3}{n=2}{Appendix.1.A}% 28
+\BOOKMARK [3][-]{subsubsection.1.A.3.1}{Whitman}{subsection.1.A.3}% 29
+\BOOKMARK [3][-]{subsubsection.1.A.3.2}{Shakespeare}{subsection.1.A.3}% 30
+\BOOKMARK [2][-]{subsection.1.A.4}{n=3}{Appendix.1.A}% 31
+\BOOKMARK [3][-]{subsubsection.1.A.4.1}{Whitman}{subsection.1.A.4}% 32
+\BOOKMARK [3][-]{subsubsection.1.A.4.2}{Shakespeare}{subsection.1.A.4}% 33
+\BOOKMARK [1][-]{Appendix.1.B}{Appendix More examples}{}% 34
+\BOOKMARK [2][-]{subsection.1.B.1}{Kanye West, n=2}{Appendix.1.B}% 35
+\BOOKMARK [2][-]{subsection.1.B.2}{Plato, sonnet, n=2}{Appendix.1.B}% 36
+\BOOKMARK [2][-]{subsection.1.B.3}{Collection of Frank Ocean haikus, n=2}{Appendix.1.B}% 37

@@ -1,5 +1,4 @@
-README.txt
-TO DOWNLOAD PDF Writeup:
+TO DOWNLOAD FINAL PDF WRITEUP:
 https://github.com/ntindall/poetwriter/blob/master/tex/writeup.pdf?raw=true
 
 ---------------------------------------------------------------

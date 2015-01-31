@@ -152,7 +152,7 @@ class Line (object):
                 return True
             else:
                 return False
-        # word doesn't fit
+        # word doesn't fit, return False
         else:
             return False 
 
